@@ -15,3 +15,4 @@ Post-processing for common icon theme packs. Normalizes themes to PNG at standar
 | Theme   | Source                | Sizes                              | Formats  | Status  |
 |---------|-----------------------|------------------------------------|----------|---------|
 | nuvola  | David Vignoni (2004)  | 16, 22, 32, 48, 64, 128, 256, SVG | PNG, SVG | Raw     |
+| oxygen  | KDE Project           | 8, 16, 22, 24, 32, 48, 64, 128, 256 | PNG, SVG | Raw     |
