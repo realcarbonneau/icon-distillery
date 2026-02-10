@@ -10,6 +10,7 @@
 - [Hints](#hints)
 - [Duplicates](#duplicates)
 - [Labels](#labels)
+- [TODO](#todo)
 
 ## Directory Convention
 
@@ -22,7 +23,7 @@ icon-distillery/
     icon_theme_processor.py
     icon_next_hints.py
     icon_duplicates.py
-    icon_generate_names.py
+    icon_generate_labels.py
   nuvola/                       <- directory name = theme key "nuvola"
     metadata.json
     index.theme
@@ -61,6 +62,7 @@ Located at `{theme}/metadata.json`. Contains the icon catalog for that theme: ev
 | `hints` | Array of 5-8 search keywords (see [Hints](#hints)) |
 | `duplicates` | Array of icon keys that are duplicates of this primary |
 | `duplicate_of` | Icon key of the primary if this icon is a duplicate |
+| `notes` | Optional freeform string to document exceptional issues (e.g., corrupted filenames, upstream quirks) |
 
 ## Icon Keys
 
@@ -112,9 +114,22 @@ Duplicates are detected by MD5 content hash using `icon_duplicates.py`.
 
 ## Labels
 
-Generated from filenames by `icon_generate_names.py`:
-- Strip file extension
-- Replace `-` and `_` with spaces
-- Title case each word
+Generated from filenames by `icon_generate_labels.py`. Processing order:
 
-Example: `print_printer.png` becomes `Print Printer`
+1. Strip file extension
+2. Replace `c++` with `Cpp` (hardcoded)
+3. Replace `-` and `_` with spaces
+4. Apply custom `--replace` regex rules (if provided)
+5. Title case each word
+6. Validate — any remaining non-alphanumeric characters (except spaces) are flagged as errors
+
+The `--replace` option handles filenames with special characters (e.g., dots in MIME types, `+` in format names). Can be specified multiple times. See script help for usage.
+
+Examples:
+- `print_printer.png` → `Print Printer`
+- `text-x-c++src.png` → `Text X Cpp Src`
+- `application-atom+xml.png` with `--replace '\+' ' '` → `Application Atom Xml`
+
+## TODO
+
+1. **Oxygen applets use reversed path layout.** The oxygen theme's `applets/` category stores icons as `applets/{size}x{size}/{file}` instead of the theme's standard `{size}x{size}/{category}/{file}`. The parser fails to match these paths, so all applets icons (146 SVGs including `-symbolic` variants) are silently skipped during scanning. The path pattern system only supports a single layout per theme; supporting mixed layouts would require either a per-category override or a secondary pattern.
