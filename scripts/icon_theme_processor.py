@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Common library for icon theme processing.
 
-Used by icon_grid_browser.py, icon_next_hints.py, and icon_duplicates.py.
+Used by icon_generate_labels.py, icon_next_hints.py, and icon_duplicates.py.
 Provides ThemeProcessor class for parsing, scanning, and key generation.
 """
 
@@ -15,10 +15,24 @@ from pathlib import Path
 # Path to ICON_THEME_CATALOG.json
 _SCRIPT_DIR = Path(__file__).parent
 _PROJECT_DIR = _SCRIPT_DIR.parent
-_CANON_THEMES_PATH = _PROJECT_DIR / "taskcoachlib" / "gui" / "icons" / "ICON_THEME_CATALOG.json"
+_CANON_THEMES_PATH = _SCRIPT_DIR / "ICON_THEME_CATALOG.json"
 
 # Cached catalog (loaded once)
 _canon_themes_cache = None
+
+
+def save_json_compact_arrays(filepath, data):
+    """Save JSON with indent=2 but arrays on single lines."""
+    text = json.dumps(data, indent=2)
+    def collapse_array(match):
+        content = match.group(0)
+        collapsed = re.sub(r'\[\s+', '[', content)
+        collapsed = re.sub(r'\s+\]', ']', collapsed)
+        collapsed = re.sub(r',\s+', ', ', collapsed)
+        return collapsed
+    text = re.sub(r'\[\s*\n\s+[^\[\]]*?\s*\]', collapse_array, text)
+    with open(filepath, "w") as f:
+        f.write(text)
 
 
 def load_canon_themes():
@@ -44,6 +58,40 @@ def get_theme_config(theme):
         print(f"FATAL ERROR! Theme '{theme}' not found in ICON_THEME_CATALOG.json")
         sys.exit(1)
     return config
+
+
+def print_available_themes():
+    """Print available and missing themes for usage/help output."""
+    catalog = load_canon_themes()
+    for theme in sorted(catalog.keys()):
+        if (_PROJECT_DIR / theme).is_dir():
+            print(f"  {theme}: Available", file=sys.stderr)
+        else:
+            print(f"  {theme}: Directory not found", file=sys.stderr)
+
+
+def load_theme_metadata(theme):
+    """Load and return parsed metadata.json for a theme."""
+    json_path = _PROJECT_DIR / theme / "metadata.json"
+    if not json_path.is_file():
+        print(f"FATAL ERROR! metadata.json not found: {json_path}")
+        sys.exit(1)
+    with open(json_path) as f:
+        return json.load(f)
+
+
+def get_theme_metadata_path(theme):
+    """Return the path to a theme's metadata.json."""
+    return str(_PROJECT_DIR / theme / "metadata.json")
+
+
+def get_theme_dir(theme):
+    """Return the path to a theme's directory."""
+    theme_dir = _PROJECT_DIR / theme
+    if not theme_dir.is_dir():
+        print(f"FATAL ERROR! Theme directory not found: {theme_dir}")
+        sys.exit(1)
+    return str(theme_dir)
 
 
 class ThemeProcessor:
@@ -160,9 +208,6 @@ class ThemeProcessor:
 
         discovered = {}
         for f in all_files:
-            if "-symbolic" in f.name:
-                continue
-
             parsed = self.parse(str(f))
             if not parsed:
                 continue
