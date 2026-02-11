@@ -22,16 +22,14 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-from icon_theme_processor import (
-    ThemeProcessor, get_theme_dir, load_theme_metadata, print_available_themes,
-)
+from icon_theme_processor import ThemeCatalog, fatal_error
 
 
 def load_catalog_marked(data):
     """Extract duplicate marking info from metadata.
 
     Args:
-        data: Parsed metadata.json dict.
+        data: Parsed icons.json dict.
 
     Returns:
         (has_duplicates, has_duplicate_of, refers_to_map, catalog_by_name)
@@ -39,7 +37,7 @@ def load_catalog_marked(data):
     icons = data.get("icons", {})
     has_duplicates = set()  # icons with "duplicates" array (primary icons)
     has_duplicate_of = set()  # icons with "duplicate_of" field
-    refers_to_map = {}  # target_key -> list of referrer keys
+    refers_to_map = {}  # target_id -> list of referrer keys
     catalog_by_name = {}  # icon key -> icon info dict
 
     for key, info in icons.items():
@@ -74,30 +72,29 @@ def find_icons(start_path):
 
 
 def main():
+    catalog = ThemeCatalog()
+
     if len(sys.argv) < 2:
-        print("Usage: python scripts/icon_duplicates.py <theme>", file=sys.stderr)
-        print_available_themes()
-        sys.exit(1)
+        catalog.print_available()
+        fatal_error("Usage: python scripts/icon_duplicates.py <theme>")
 
-    theme = sys.argv[1]
-    start_path = get_theme_dir(theme)
+    theme = catalog[sys.argv[1]]
+    start_path = theme.dir
 
-    print(f"Theme: {theme}", file=sys.stderr)
+    print(f"Theme: {theme.theme_id}", file=sys.stderr)
     print(f"Scanning: {start_path}", file=sys.stderr)
 
-    proc = ThemeProcessor(theme, start_path)
-
     # Load metadata to see which icons are already marked
-    data = load_theme_metadata(theme)
+    data = theme.icons_data
     has_duplicates, has_duplicate_of, refers_to_map, catalog_by_name = load_catalog_marked(data)
 
-    def get_dup_of(icon_key):
+    def get_dup_of(icon_id):
         """Get duplicate_of value for icon, or None."""
-        return catalog_by_name.get(icon_key, {}).get("duplicate_of")
+        return catalog_by_name.get(icon_id, {}).get("duplicate_of")
 
-    def print_dup_of(icon_key, indent="    "):
+    def print_dup_of(icon_id, indent="    "):
         """Print HAS duplicate_of line if icon has one. Returns the value."""
-        dup_of = get_dup_of(icon_key)
+        dup_of = get_dup_of(icon_id)
         if dup_of:
             print(f"{indent}HAS duplicate_of: {dup_of}")
         return dup_of
@@ -128,23 +125,20 @@ def main():
     all_files = find_icons(start_path)
     print(f"Found {len(all_files)} icon files", file=sys.stderr)
 
-    # Build icon inventory: icon_key -> {size: (path, hash)}
+    # Build icon inventory: icon_id -> {size: (path, hash)}
     icons = defaultdict(dict)
 
     for i, path in enumerate(all_files):
         if (i + 1) % 500 == 0:
             print(f"Processing: {i + 1}/{len(all_files)}", file=sys.stderr)
 
-        parsed = proc.parse(path)
-        if not parsed:
-            continue
-
-        size = parsed["size"]
-        category = parsed["category"]
-        filename = parsed["file"]
+        info = theme.get_file_info(path)
+        size = info["effective_size"]
+        context = info["xdg_context"]
+        filename = info["file"]
 
         # Use canonical key from theme processor
-        icon_key = proc.generate_key(category, filename)
+        icon_id = theme.generate_id(context, filename)
 
         try:
             h = hash_file(path)
@@ -153,7 +147,7 @@ def main():
             sym_target = None
             if is_sym:
                 sym_target = os.path.relpath(os.path.realpath(path), start_path)
-            icons[icon_key][size] = {
+            icons[icon_id][size] = {
                 "path": rel_path,
                 "hash": h,
                 "file_size": os.path.getsize(path),
@@ -240,15 +234,15 @@ def main():
         print("Steps for each group:")
         print("  1. Read every icon name in the group")
         print("  2. Pick the best primary icon for the group")
-        print("  3. On the primary entry in metadata.json, add a \"duplicates\" array")
+        print("  3. On the primary entry in icons.json, add a \"duplicates\" array")
         print("     listing all the other keys")
-        print("  4. On each copy entry in metadata.json, add \"duplicate_of\" pointing")
+        print("  4. On each copy entry in icons.json, add \"duplicate_of\" pointing")
         print("     to the primary key")
         print()
         print("Example (from nuvola — 1 primary + 2 copies):")
         print("  PRIMARY — gets \"duplicates\" array:")
         print("    \"nuvola_devices_media-optical\": {")
-        print("      \"category\": \"devices\",")
+        print("      \"context\": \"devices\",")
         print("      \"file\": \"media-optical.png\",")
         print("      \"sizes\": [16, 22, 32, 48, 64, 128],")
         print("      \"duplicates\": [\"nuvola_actions_cd\", \"nuvola_actions_mix_cd\"],")
@@ -256,7 +250,7 @@ def main():
         print("    }")
         print("  COPY 1 — gets \"duplicate_of\":")
         print("    \"nuvola_actions_cd\": {")
-        print("      \"category\": \"actions\",")
+        print("      \"context\": \"actions\",")
         print("      \"file\": \"cd.png\",")
         print("      \"sizes\": [16, 22, 32, 48],")
         print("      \"duplicate_of\": \"nuvola_devices_media-optical\",")
@@ -264,7 +258,7 @@ def main():
         print("    }")
         print("  COPY 2 — gets \"duplicate_of\":")
         print("    \"nuvola_actions_mix_cd\": {")
-        print("      \"category\": \"actions\",")
+        print("      \"context\": \"actions\",")
         print("      \"file\": \"mix_cd.png\",")
         print("      \"sizes\": [22],")
         print("      \"duplicate_of\": \"nuvola_devices_media-optical\",")
@@ -282,11 +276,11 @@ def main():
 
             # Find icons that refer to any icon in this group via duplicate_of
             referring_icons = []
-            for icon_key in group:
-                if icon_key in refers_to_map:
-                    for ref_key in refers_to_map[icon_key]:
-                        if ref_key not in group:  # Don't include icons already in group
-                            referring_icons.append(ref_key)
+            for icon_id in group:
+                if icon_id in refers_to_map:
+                    for ref_id in refers_to_map[icon_id]:
+                        if ref_id not in group:  # Don't include icons already in group
+                            referring_icons.append(ref_id)
 
             # Check if ALL icons in this group are marked (either PRIMARY or duplicate_of)
             all_marked = all(n in has_duplicates or n in has_duplicate_of for n in group)
@@ -301,8 +295,8 @@ def main():
                 print("      ALL SIZES MATCH: Every file of every icon in this group is identical.")
                 if referring_icons:
                     print("      DUPLICATE_OF REFERRERS:")
-                    for ref_key in sorted(referring_icons):
-                        print(f"        {ref_key}")
+                    for ref_id in sorted(referring_icons):
+                        print(f"        {ref_id}")
             # Show symlink dirs found in file paths of this group
             all_paths = [d["path"] for n in group for d in icons[n].values()]
             print_symlink_dirs(all_paths)
@@ -330,8 +324,8 @@ def main():
                 print(f"    [+{len(referring_icons)} referrers: {', '.join(sorted(referring_icons))}]")
 
             targets_outside = set()
-            for icon_key in group:
-                icon_info = catalog_by_name.get(icon_key, {})
+            for icon_id in group:
+                icon_info = catalog_by_name.get(icon_id, {})
                 dup_of = icon_info.get("duplicate_of")
                 if dup_of and dup_of not in group:
                     targets_outside.add(dup_of)
@@ -425,11 +419,11 @@ def main():
 
             # Check if any matching full-dup icon has referrers (exclude self)
             referrer_info = []
-            for other_key in full_dup_matches:
-                if other_key in refers_to_map:
-                    for ref_key in refers_to_map[other_key]:
-                        if ref_key != icon_name:  # Don't include self
-                            referrer_info.append(ref_key)
+            for other_id in full_dup_matches:
+                if other_id in refers_to_map:
+                    for ref_id in refers_to_map[other_id]:
+                        if ref_id != icon_name:  # Don't include self
+                            referrer_info.append(ref_id)
             has_referrers = len(referrer_info) > 0
 
             # Build status flags
@@ -458,10 +452,10 @@ def main():
             if icon_dups:
                 # Get all icons that match ALL our sizes (candidates for duplicates)
                 expected_dups = set()
-                for other_key, matched_sizes in all_matches.items():
+                for other_id, matched_sizes in all_matches.items():
                     # If other icon matches at ALL of our sizes, it should be a duplicate
                     if len(matched_sizes) == len(sizes):
-                        expected_dups.add(other_key)
+                        expected_dups.add(other_id)
 
                 # Check 1: All listed duplicates have duplicate_of pointing to us
                 all_point_back = all(get_dup_of(d) == icon_name for d in icon_dups)
@@ -479,8 +473,8 @@ def main():
             print_dup_of(icon_name)
             if icon_dups:
                 print(f"    JSON DUPLICATES LIST:")
-                for dup_key in icon_dups:
-                    print(f"      {dup_key}")
+                for dup_id in icon_dups:
+                    print(f"      {dup_id}")
 
             # Find largest PNG for this icon
             png_paths = [(s, d["path"]) for s, d in size_data.items() if d["path"].endswith('.png')]
@@ -506,8 +500,8 @@ def main():
                     print(f"      MULTIPLE DUPLICATES: Matches {len(full_dup_matches)} [FULL-DUP] icons.")
                 if has_referrers:
                     print("      DUPLICATE_OF REFERRERS:")
-                    for ref_key in sorted(referrer_info):
-                        print(f"        {ref_key}")
+                    for ref_id in sorted(referrer_info):
+                        print(f"        {ref_id}")
                 print("      ACTION - REQUIRED STEPS:")
                 print("        1. List ALL sizes for EACH icon being compared")
                 print("        2. View EVERY size for each icon - no exceptions")
@@ -516,8 +510,8 @@ def main():
                 print("        5. Compare side-by-side at each common size")
                 print("        6. Only skip if images are VISUALLY DIFFERENT after viewing ALL")
                 print("      Review these sections:")
-                for match_key in sorted(all_matches.keys()):
-                    print(f"        {match_key}")
+                for match_id in sorted(all_matches.keys()):
+                    print(f"        {match_id}")
 
             # Show symlink dirs found in file paths of this icon
             print_symlink_dirs([d["path"] for d in size_data.values()])
@@ -532,12 +526,12 @@ def main():
                 if others:
                     print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (duplicate){sym_tag}")
                     print_sym_target(d["symlink_target"], indent="          -> ")
-                    for other_key, other_size in sorted(others):
-                        other_d = icons[other_key][other_size]
+                    for other_id, other_size in sorted(others):
+                        other_d = icons[other_id][other_size]
                         other_sym_tag = "  (symlink)" if other_d["is_symlink"] else ""
                         print(f"  {other_size:4d}px  {d['hash'][:12]}  {other_d['path']}  (duplicate){other_sym_tag}")
                         print_sym_target(other_d["symlink_target"], indent="          -> ")
-                        print_dup_of(other_key, indent="          -> ")
+                        print_dup_of(other_id, indent="          -> ")
                 else:
                     print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (unique){sym_tag}")
                     print_sym_target(d["symlink_target"], indent="          -> ")

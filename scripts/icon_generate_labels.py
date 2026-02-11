@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate 'label' field for icons in theme metadata.json files.
+"""Generate 'label' field for icons in theme icons.json files.
 
 Usage:
     python scripts/icon_generate_labels.py <theme> [--replace PATTERN REPLACEMENT ...]
@@ -29,10 +29,7 @@ import os
 import re
 import sys
 
-from icon_theme_processor import (
-    get_theme_metadata_path, load_theme_metadata,
-    print_available_themes, save_json_compact_arrays,
-)
+from icon_theme_processor import ThemeCatalog, fatal_error, save_json_compact_arrays
 
 
 def generate_label(filename, replacements=None):
@@ -65,29 +62,28 @@ def check_label(label):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python scripts/icon_generate_labels.py <theme>", file=sys.stderr)
-        print_available_themes()
-        sys.exit(1)
+    catalog = ThemeCatalog()
 
-    theme = sys.argv[1]
+    if len(sys.argv) < 2:
+        catalog.print_available()
+        fatal_error("Usage: python scripts/icon_generate_labels.py <theme>")
+
+    theme = catalog[sys.argv[1]]
     replacements = []
     i = 2
     while i < len(sys.argv):
         if sys.argv[i] == '--replace':
             if i + 2 >= len(sys.argv):
-                print("Error: --replace requires PATTERN and REPLACEMENT", file=sys.stderr)
-                sys.exit(1)
+                fatal_error("--replace requires PATTERN and REPLACEMENT")
             replacements.append((sys.argv[i + 1], sys.argv[i + 2]))
             i += 3
         else:
-            print(f"Error: Unknown argument '{sys.argv[i]}'", file=sys.stderr)
-            sys.exit(1)
+            fatal_error(f"Unknown argument '{sys.argv[i]}'")
 
-    json_path = get_theme_metadata_path(theme)
-    data = load_theme_metadata(theme)
+    json_path = theme.icons_path
+    data = theme.icons_data
 
-    print(f"Theme: {theme}")
+    print(f"Theme: {theme.theme_id}")
     print(f"File: {json_path}")
     if replacements:
         for pattern, repl in replacements:
@@ -99,21 +95,21 @@ def main():
     names_added = 0
     errors = []
 
-    for icon_key, icon_data in icons.items():
+    for icon_id, icon_data in icons.items():
         if "label" in icon_data:
             already_have_name += 1
             continue
 
         filename = icon_data.get("file", "")
         if not filename:
-            errors.append(f"ERROR: {icon_key} has no 'file' field")
+            errors.append(f"ERROR: {icon_id} has no 'file' field")
             continue
 
         label = generate_label(filename, replacements)
 
         unexpected = check_label(label)
         if unexpected:
-            errors.append(f"{icon_key}\n    Label: \"{label}\"  ERROR: unexpected characters: {unexpected}")
+            errors.append(f"{icon_id}\n    Label: \"{label}\"  ERROR: unexpected characters: {unexpected}")
             continue
 
         icon_data["label"] = label
