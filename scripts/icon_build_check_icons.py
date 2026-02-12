@@ -25,15 +25,15 @@ Usage:
 import os
 import sys
 
-from icon_theme_processor import ThemeCatalog, fatal_error, save_json_compact_arrays
+from icon_theme_processor import ThemeCatalog, save_json_compact_arrays, usage_error
 
 
 def main():
     catalog = ThemeCatalog()
 
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         catalog.print_available()
-        fatal_error("Usage: python scripts/icon_build_check_icons.py <theme> [--insert-missing]")
+        usage_error(__doc__)
 
     theme_arg = None
     insert_missing = False
@@ -46,10 +46,7 @@ def main():
         elif theme_arg is None:
             theme_arg = arg
         else:
-            fatal_error(f"Unknown argument '{arg}'")
-
-    if theme_arg is None:
-        fatal_error("Theme argument required")
+            usage_error(__doc__, f"Unknown argument '{arg}'")
 
     theme = catalog.get_theme(theme_arg)
     print(f"Scanning disk against index.theme...")
@@ -99,6 +96,26 @@ def main():
         json_sizes = existing[icon_id].get("sizes", [])
         if disk_sizes != json_sizes:
             size_mismatches.append((icon_id, json_sizes, disk_sizes))
+
+    # Check path conflicts (multiple files mapping to same icon id + size)
+    path_conflicts = []
+    for icon_id in sorted(discovered):
+        info = discovered[icon_id]
+        for size in info["sizes"]:
+            paths = info["paths"][size]
+            if len(paths) > 1:
+                path_conflicts.append((icon_id, size, paths))
+                break
+    # Build full conflict info for reporting
+    conflict_details = []
+    for icon_id, _, _ in path_conflicts:
+        info = discovered[icon_id]
+        size_paths = {}
+        for size in info["sizes"]:
+            paths = info["paths"][size]
+            if len(paths) > 1:
+                size_paths[size] = paths
+        conflict_details.append((icon_id, size_paths))
 
     # Report
     print(f"\nINDEXED ON DISK, NOT IN JSON: {len(on_disk_not_json)} icons")
@@ -153,10 +170,24 @@ def main():
     else:
         print(f"  *** None ***")
 
-    if not on_disk_not_json and not in_json_not_disk and not size_mismatches:
+    print(f"\nPATH CONFLICTS: {len(conflict_details)} icons")
+    if conflict_details:
+        for icon_id, size_paths in conflict_details:
+            print(f"  {icon_id}")
+            for size, paths in sorted(size_paths.items()):
+                rel_paths = [theme.strip_dir_base(p) for p in paths]
+                print(f"    size {size}: {len(paths)} files")
+                for rp in rel_paths:
+                    print(f"      {rp}")
+    else:
+        print(f"  *** None ***")
+
+    all_issues = [on_disk_not_json, in_json_not_disk, size_mismatches,
+                  conflict_details]
+    if not any(all_issues):
         print(f"\nAll {len(existing)} icons match between disk and icons.json")
     else:
-        total = len(on_disk_not_json) + len(in_json_not_disk) + len(size_mismatches)
+        total = sum(len(x) for x in all_issues)
         print(f"\n{total} differences found")
 
     # Update sizes mode

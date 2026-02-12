@@ -17,7 +17,7 @@ import os
 import sys
 
 from icon_theme_processor import (
-    ICON_EXTENSIONS, ThemeCatalog, fatal_error, save_json_compact_arrays,
+    ICON_EXTENSIONS, ThemeCatalog, save_json_compact_arrays, usage_error,
 )
 
 
@@ -65,9 +65,9 @@ def collect_symbolic_files(theme_dir):
 def main():
     catalog = ThemeCatalog()
 
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         catalog.print_available()
-        fatal_error("Usage: python scripts/icon_build_check_symbolic.py <theme>")
+        usage_error(__doc__)
 
     theme = catalog.get_theme(sys.argv[1])
 
@@ -94,7 +94,6 @@ def main():
     missing = 0
     for fn in sorted(symbolic_files):
         if fn not in file_to_icons:
-            print(f"  WARNING: No icon entry for {fn}")
             missing += 1
             continue
         for icon_id in file_to_icons[fn]:
@@ -108,7 +107,7 @@ def main():
     print(f"  Already set: {already_set}")
     print(f"  Updated: {updated}")
     if missing:
-        print(f"  Missing from icons.json: {missing}")
+        print(f"  Skipped {missing} — not in icons.json, thus not in index.theme")
 
     if updated > 0:
         save_json_compact_arrays(theme.icons_path, data)

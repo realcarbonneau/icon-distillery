@@ -16,13 +16,11 @@ Examples:
 """
 
 import hashlib
-import json
 import os
 import sys
 from collections import defaultdict
-from pathlib import Path
 
-from icon_theme_processor import ThemeCatalog, fatal_error
+from icon_theme_processor import ThemeCatalog, usage_error
 
 
 def load_catalog_marked(data):
@@ -61,22 +59,12 @@ def hash_file(path):
         return hashlib.md5(f.read()).hexdigest()
 
 
-def find_icons(start_path):
-    """Find all PNG and SVG files under start_path."""
-    icons = []
-    for root, dirs, files in os.walk(start_path):
-        for name in files:
-            if name.lower().endswith((".png", ".svg")):
-                icons.append(os.path.join(root, name))
-    return icons
-
-
 def main():
     catalog = ThemeCatalog()
 
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         catalog.print_available()
-        fatal_error("Usage: python scripts/icon_duplicates.py <theme>")
+        usage_error(__doc__)
 
     theme = catalog.get_theme(sys.argv[1])
     start_path = theme.dir
@@ -96,75 +84,26 @@ def main():
             print(f"{indent}HAS duplicate_of: {dup_of}")
         return dup_of
 
-    def print_sym_target(sym_target, indent="              "):
-        """Print SYMLINK TO line if icon at this size is a symlink."""
-        if sym_target:
-            print(f"{indent}SYMLINK TO -> {sym_target}")
+    # Scan indexed directories (skips symlinks and non-indexed dirs)
+    discovered = theme.scan_directory()
+    print(f"Found {len(discovered)} unique icons", file=sys.stderr)
 
-    def print_symlink_dirs(file_paths):
-        """Print SYMLINK DIRS section if any file path traverses a symlink directory.
-
-        Note: Should never trigger because find_icons() uses os.walk which
-        does not follow symlink directories. Kept as a safeguard.
-        """
-        sdirs = set()
-        for rel_path in file_paths:
-            for p in Path(rel_path).parents:
-                key = str(p)
-                if key in theme_symlink_dirs:
-                    sdirs.add((key, theme_symlink_dirs[key]))
-        if sdirs:
-            print("      SYMLINK DIRS:")
-            for source, target in sorted(sdirs):
-                print(f"          {source}/ -> {target}/")
-
-    # Find all icons
-    all_files = find_icons(start_path)
-    print(f"Found {len(all_files)} icon files", file=sys.stderr)
-
-    # Build icon inventory: icon_id -> {size: (path, hash)}
+    # Build icon inventory with hashes: icon_id -> {size: {path, hash, file_size}}
     icons = defaultdict(dict)
-
-    for i, path in enumerate(all_files):
-        if (i + 1) % 500 == 0:
-            print(f"Processing: {i + 1}/{len(all_files)}", file=sys.stderr)
-
-        info = theme.get_file_info(path)
-        size = info["effective_size"]
-        context = info["xdg_context"]
-        filename = info["file"]
-
-        # Use canonical key from theme processor
-        icon_id = theme.generate_id(context, filename)
-
-        try:
-            h = hash_file(path)
-            rel_path = os.path.relpath(path, start_path)
-            is_sym = Path(path).is_symlink()
-            sym_target = None
-            if is_sym:
-                sym_target = os.path.relpath(os.path.realpath(path), start_path)
-            icons[icon_id][size] = {
-                "path": rel_path,
-                "hash": h,
-                "file_size": os.path.getsize(path),
-                "is_symlink": is_sym,
-                "symlink_target": sym_target,
-            }
-        except Exception as e:
-            print(f"Error hashing {path}: {e}", file=sys.stderr)
-
-    print(f"Found {len(icons)} unique icons", file=sys.stderr)
-
-    # Scan for symlink directories under theme root (keyed by relative path)
-    theme_symlink_dirs = {}  # rel_path -> target_rel_path
-    for root, dirs, _files in os.walk(start_path, followlinks=False):
-        for d in dirs:
-            full = os.path.join(root, d)
-            if os.path.islink(full):
-                rel = os.path.relpath(full, start_path)
-                target = os.path.relpath(os.path.realpath(full), os.path.realpath(start_path))
-                theme_symlink_dirs[rel] = target
+    for icon_id, info in discovered.items():
+        for size in info["sizes"]:
+            paths = info["paths"][size]
+            path = paths[0]  # use first path if multiple
+            try:
+                h = hash_file(path)
+                rel_path = os.path.relpath(path, start_path)
+                icons[icon_id][size] = {
+                    "path": rel_path,
+                    "hash": h,
+                    "file_size": os.path.getsize(path),
+                }
+            except Exception as e:
+                print(f"Error hashing {path}: {e}", file=sys.stderr)
 
     # Build hash signature for each icon (sorted tuple of (size, hash) pairs)
     # This lets us compare if two icons have identical content at all sizes
@@ -294,9 +233,6 @@ def main():
                     print("      DUPLICATE_OF REFERRERS:")
                     for ref_id in sorted(referring_icons):
                         print(f"        {ref_id}")
-            # Show symlink dirs found in file paths of this group
-            all_paths = [d["path"] for n in group for d in icons[n].values()]
-            print_symlink_dirs(all_paths)
             for icon_name in sorted(group):
                 size_data = icons[icon_name]
                 sizes = sorted(size_data.keys())
@@ -312,9 +248,7 @@ def main():
 
                 for size in sizes:
                     d = size_data[size]
-                    sym_tag = "  (symlink)" if d["is_symlink"] else ""
-                    print(f"        {size:4d}px  {d['hash'][:12]}  {d['path']}{sym_tag}")
-                    print_sym_target(d["symlink_target"], indent="              ")
+                    print(f"        {size:4d}px  {d['hash'][:12]}  {d['path']}")
 
             # Show referrers and targets summary
             if referring_icons:
@@ -356,8 +290,8 @@ def main():
         # Sort icons by number of duplicate matches, then by name
         def count_dup_matches(icon_name):
             count = 0
-            for size, (path, h, *_) in icons[icon_name].items():
-                others = [n for n, s in hash_to_other_icons.get(h, []) if n != icon_name]
+            for size, d in icons[icon_name].items():
+                others = [n for n, s in hash_to_other_icons.get(d["hash"], []) if n != icon_name]
                 count += len(others)
             return count
 
@@ -473,12 +407,6 @@ def main():
                 for dup_id in icon_dups:
                     print(f"      {dup_id}")
 
-            # Find largest PNG for this icon
-            png_paths = [(s, d["path"]) for s, d in size_data.items() if d["path"].endswith('.png')]
-            if not png_paths:
-                continue  # Skip if no PNG
-            largest_png = max(png_paths, key=lambda x: x[0])[1]
-
             # Print worker instructions if there are any duplicates
             if all_matches:
                 print("    WORKER INSTRUCTIONS:")
@@ -510,28 +438,20 @@ def main():
                 for match_id in sorted(all_matches.keys()):
                     print(f"        {match_id}")
 
-            # Show symlink dirs found in file paths of this icon
-            print_symlink_dirs([d["path"] for d in size_data.values()])
-
             for size in sizes:
                 d = size_data[size]
-                sym_tag = "  (symlink)" if d["is_symlink"] else ""
                 # Find other icons with same hash at this size
                 others = [(k, s) for k, s in hash_to_other_icons.get(d["hash"], [])
                           if k != icon_name]
 
                 if others:
-                    print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (duplicate){sym_tag}")
-                    print_sym_target(d["symlink_target"], indent="          -> ")
+                    print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (duplicate)")
                     for other_id, other_size in sorted(others):
                         other_d = icons[other_id][other_size]
-                        other_sym_tag = "  (symlink)" if other_d["is_symlink"] else ""
-                        print(f"  {other_size:4d}px  {d['hash'][:12]}  {other_d['path']}  (duplicate){other_sym_tag}")
-                        print_sym_target(other_d["symlink_target"], indent="          -> ")
+                        print(f"  {other_size:4d}px  {d['hash'][:12]}  {other_d['path']}  (duplicate)")
                         print_dup_of(other_id, indent="          -> ")
                 else:
-                    print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (unique){sym_tag}")
-                    print_sym_target(d["symlink_target"], indent="          -> ")
+                    print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (unique)")
 
             print()
 

@@ -15,14 +15,14 @@ Also updates the xdg_contexts summary list in ICON_THEME_CATALOG.json,
 aggregated across all variants per base theme.
 
 Usage:
-    python scripts/icon_build_check_contexts.py [theme]
+    python scripts/icon_build_check_contexts.py <theme>
 """
 
 import json
 import os
 import sys
 
-from icon_theme_processor import ThemeCatalog, save_json_compact_arrays
+from icon_theme_processor import ThemeCatalog, save_json_compact_arrays, usage_error
 
 
 # Default overrides applied after lowercase conversion.
@@ -58,30 +58,23 @@ def build_contexts_from_index(theme_index_dir_map):
 
 def main():
     catalog = ThemeCatalog()
-    filter_theme = sys.argv[1] if len(sys.argv) > 1 else None
+
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+        catalog.print_available()
+        usage_error(__doc__)
+
+    theme = catalog.get_theme(sys.argv[1])
     had_differences = False
-    base_xdg_contexts = {}
 
-    theme_ids = [filter_theme] if filter_theme else catalog.theme_ids()
-    for theme_id in theme_ids:
-        theme = catalog.get_theme(theme_id)
+    contexts = build_contexts_from_index(theme.index)
+    existing = theme.contexts
+    contexts_path = theme.contexts_path
 
-        contexts = build_contexts_from_index(theme.index)
-        existing = theme.contexts
-        contexts_path = theme.contexts_path
-
-        # Accumulate xdg_contexts per base theme
-        if theme.theme_base_id not in base_xdg_contexts:
-            base_xdg_contexts[theme.theme_base_id] = set()
-        for ctx_info in contexts.values():
-            base_xdg_contexts[theme.theme_base_id].add(ctx_info["xdg_context"])
-
-        if existing is None:
-            save_json_compact_arrays(contexts_path, contexts)
-            keys = ", ".join(contexts.keys())
-            print(f"  {theme.theme_id}: created contexts.json ({len(contexts)} contexts: {keys})")
-            continue
-
+    if existing is None:
+        save_json_compact_arrays(contexts_path, contexts)
+        keys = ", ".join(contexts.keys())
+        print(f"  {theme.theme_id}: created contexts.json ({len(contexts)} contexts: {keys})")
+    else:
         # Compare existing with generated from index
         existing_keys = set(existing.keys())
         contexts_keys = set(contexts.keys())
@@ -100,7 +93,6 @@ def main():
         if not in_json_not_theme_index and not in_theme_index_not_json and not xdg_changed:
             print(f"  {theme.theme_id}: contexts.json up to date ({len(existing)} contexts)")
         else:
-            # Report differences
             had_differences = True
             print(f"  {theme.theme_id}: DIFFERENCES FOUND")
 
@@ -121,60 +113,53 @@ def main():
             print(f"    Manual review required. Edit {contexts_path}")
 
         # Validate icons.json icon contexts
-        if not os.path.isfile(theme.icons_path):
-            continue
-        valid_contexts = existing_keys if existing is not None else contexts_keys
-        metadata = theme.icons_data
-        icons = metadata.get("icons", {})
-        missing_context = []
-        invalid_context = {}
-        for icon_id, icon_data in icons.items():
-            ctx = icon_data.get("context")
-            if ctx is None:
-                missing_context.append(icon_id)
-            elif ctx not in valid_contexts:
-                if ctx not in invalid_context:
-                    invalid_context[ctx] = []
-                invalid_context[ctx].append(icon_id)
+        if os.path.isfile(theme.icons_path):
+            valid_contexts = existing_keys
+            metadata = theme.icons_data
+            icons = metadata.get("icons", {})
+            missing_context = []
+            invalid_context = {}
+            for icon_id, icon_data in icons.items():
+                ctx = icon_data.get("context")
+                if ctx is None:
+                    missing_context.append(icon_id)
+                elif ctx not in valid_contexts:
+                    if ctx not in invalid_context:
+                        invalid_context[ctx] = []
+                    invalid_context[ctx].append(icon_id)
 
-        if missing_context or invalid_context:
-            had_differences = True
-            print(f"  {theme.theme_id}: METADATA CONTEXT ERRORS")
-            if missing_context:
-                print(f"    MISSING CONTEXT: {len(missing_context)} icons have no context property")
-                for icon_id in missing_context:
-                    print(f"      {icon_id}")
-            if invalid_context:
-                for ctx, icon_ids in sorted(invalid_context.items()):
-                    print(f"    INVALID CONTEXT '{ctx}': {len(icon_ids)} icons")
-                    for icon_id in icon_ids:
+            if missing_context or invalid_context:
+                had_differences = True
+                print(f"  {theme.theme_id}: METADATA CONTEXT ERRORS")
+                if missing_context:
+                    print(f"    MISSING CONTEXT: {len(missing_context)} icons have no context property")
+                    for icon_id in missing_context:
                         print(f"      {icon_id}")
-        else:
-            if icons:
-                print(f"  {theme.theme_id}: icons.json contexts valid ({len(icons)} icons)")
+                if invalid_context:
+                    for ctx, icon_ids in sorted(invalid_context.items()):
+                        print(f"    INVALID CONTEXT '{ctx}': {len(icon_ids)} icons")
+                        for icon_id in icon_ids:
+                            print(f"      {icon_id}")
+            else:
+                if icons:
+                    print(f"  {theme.theme_id}: icons.json contexts valid ({len(icons)} icons)")
 
     # Update xdg_contexts in catalog
+    xdg_set = {ctx_info["xdg_context"] for ctx_info in contexts.values()}
     catalog_path = catalog.catalog_path()
     with open(catalog_path) as f:
         catalog_data = json.load(f)
 
-    catalog_updated = False
-    for theme_base_id, xdg_set in base_xdg_contexts.items():
-        new_list = sorted(xdg_set)
-        old_list = catalog_data[theme_base_id].get("xdg_contexts", [])
-        if new_list != old_list:
-            print(f"  {theme_base_id} xdg_contexts: {old_list} -> {new_list}")
-            catalog_data[theme_base_id]["xdg_contexts"] = new_list
-            catalog_updated = True
-
-    if catalog_updated:
+    new_list = sorted(xdg_set)
+    old_list = catalog_data[theme.theme_base_id].get("xdg_contexts", [])
+    if new_list != old_list:
+        print(f"  {theme.theme_base_id} xdg_contexts: {old_list} -> {new_list}")
+        catalog_data[theme.theme_base_id]["xdg_contexts"] = new_list
         save_json_compact_arrays(catalog_path, catalog_data)
         print(f"\nUpdated {catalog_path}")
 
     if had_differences:
         print("\nDifferences found — manual intervention required.")
-    elif not catalog_updated:
-        print("\nAll contexts.json files up to date.")
 
 
 if __name__ == "__main__":
