@@ -12,6 +12,7 @@
 - [Hints](#hints)
 - [Duplicates](#duplicates)
 - [Labels](#labels)
+- [Scripts](#scripts)
 - [icon_theme_processor.py API](#icon_theme_processorpy-api)
 - [TODO](#todo)
 
@@ -23,12 +24,14 @@ Each theme pack lives in a top-level directory whose name **is** the theme id. T
 icon-distillery/
   scripts/
     ICON_THEME_CATALOG.json
-    icon_theme_processor.py
-    icon_next_hints.py
-    icon_duplicates.py
-    icon_generate_labels.py
-    icon_rebuild_catalog_sizes.py
-    icon_build_check_contexts.py
+    icon_theme_processor.py        <- shared library (ThemeCatalog, Theme)
+    icon_build_check_icons.py      <- verify/update icons.json vs disk
+    icon_build_check_contexts.py   <- verify/build contexts.json
+    icon_build_check_symbolic.py   <- detect and tag symbolic icons
+    icon_duplicates.py             <- find duplicate icons by content hash
+    icon_generate_labels.py        <- generate label fields from filenames
+    icon_next_hints.py             <- find next icon needing hints
+    icon_rebuild_catalog_sizes.py  <- rebuild effective_sizes in catalog
   nuvola/                       <- directory name = theme id "nuvola"
     icons.json
     contexts.json
@@ -207,6 +210,100 @@ Examples:
 - `text-x-c++src.png` → `Text X Cpp Src`
 - `application-atom+xml.png` with `--replace '\+' ' '` → `Application Atom Xml`
 
+## Scripts
+
+All scripts live in `scripts/` and use `icon_theme_processor.py` as a shared library. Run from the project root.
+
+### icon_build_check_icons.py
+
+Verify and update the `icons.json` inventory against what's on disk. Scans the theme directory for PNG/SVG/SVGZ files in directories declared in `index.theme`, skipping symlinks (files and directories).
+
+```
+python scripts/icon_build_check_icons.py <theme> [--insert-missing] [--update-sizes]
+```
+
+- With no flags: reports differences between `icons.json` and disk (icons missing from JSON, icons in JSON but not on disk or symlink-only, and size mismatches)
+- `--insert-missing` — add icons found on disk but missing from `icons.json` (does not remove or modify existing entries)
+- `--update-sizes` — update `sizes` arrays in `icons.json` to match what's actually on disk
+
+If `icons.json` does not exist, builds it from the disk scan.
+
+### icon_build_check_contexts.py
+
+Build or verify `contexts.json` from `index.theme`. Also updates the `xdg_contexts` summary in `ICON_THEME_CATALOG.json`.
+
+```
+python scripts/icon_build_check_contexts.py [theme]
+```
+
+- If `contexts.json` doesn't exist: builds it
+- If it exists: checks against `index.theme` and reports differences
+- Validates every icon in `icons.json` has a valid context
+- Optional `theme` argument filters to a single theme; omit to process all themes
+
+### icon_build_check_symbolic.py
+
+Detect and tag symbolic (monochrome) icons in `icons.json` by collecting evidence from directory structure and filenames.
+
+```
+python scripts/icon_build_check_symbolic.py <theme>
+```
+
+- Pass 1: collects symbolic evidence from `*/symbolic/` or `*/symbolic-*/` directories and `-symbolic` filename suffixes
+- Pass 2: sets `"symbolic": true` on matching icons that don't already have the property (does not overwrite existing values)
+
+### icon_duplicates.py
+
+Find duplicate icon files by content hash. Reports full duplicates (all sizes match) and partial duplicates (some sizes match).
+
+```
+python scripts/icon_duplicates.py <theme>
+```
+
+- Hashes all icon files and groups by content
+- Reports icons already marked with `duplicate_of` / `duplicates` metadata
+- Used to identify candidates for duplicate linking in `icons.json`
+
+### icon_generate_labels.py
+
+Generate `label` fields for icons from filenames.
+
+```
+python scripts/icon_generate_labels.py <theme> [--replace PATTERN REPLACEMENT ...]
+```
+
+- Transforms filename stem: strip extension, replace `c++` → `Cpp`, replace `-` and `_` with spaces, apply `--replace` rules, title case
+- `--replace PATTERN REPLACEMENT` — regex substitution pairs applied before title casing (can be specified multiple times)
+- Flags errors for any remaining non-alphanumeric characters (except spaces)
+
+Example: `python scripts/icon_generate_labels.py oxygen --replace '\.' ' ' --replace '\+' 'plus'`
+
+### icon_next_hints.py
+
+Find the next icon without hints and display its image files for visual review.
+
+```
+python scripts/icon_next_hints.py <theme>
+```
+
+- Finds the first icon in `icons.json` missing a `hints` property
+- Searches the icon's context directories for all size variants
+- Converts SVGs to PNG if needed for viewing
+- Logs anomalies (missing files, zero-size PNGs) to `{theme_id}_anomalies.txt`
+
+### icon_rebuild_catalog_sizes.py
+
+Rebuild `effective_sizes` in `ICON_THEME_CATALOG.json` from `index.theme` files.
+
+```
+python scripts/icon_rebuild_catalog_sizes.py
+```
+
+- No arguments — processes all themes with `index.theme`
+- Collects effective sizes (Size x Scale) from each theme's index
+- For themes with variants, aggregates sizes across all variants
+- Updates the catalog file if changes are detected
+
 ## icon_theme_processor.py API
 
 The shared library `scripts/icon_theme_processor.py` provides two classes and one utility function.
@@ -282,4 +379,7 @@ Module-level utility. Writes JSON with `indent=2` but collapses arrays onto sing
 4. **Coherence validation script.** Create a script that reviews index.theme and metadata JSON for coherence: verifies every icon in the JSON has matching files on disk at the declared sizes, every file on disk has an entry in the JSON, and all index.theme directories are consistent with the catalog. Other scripts (hints, labels) assume coherence and should not run until validation passes.
 5. **Review theme variant dedup (Dark/Light).** For themes with variants (e.g., Papirus, Papirus-Dark, Papirus-Light), review whether duplicates should be detected within each variant or across all variants. In theory, shared files across variants should be symlinks. Needs investigation.
 6. **Lowercase icon IDs.** `generate_id()` currently uses the filename stem as-is, producing mixed-case icon IDs (e.g., `oxygen_actions_Info-amarok`, `papirus_actions_SuggestionError`). Icon IDs should be fully lowercase. Affected: 12 in oxygen, 1 in nuvola, 2,056 in papirus. Fix: add `.lower()` to stem in `generate_id()`, then rekey all existing icons.json entries.
-7. **Remove symlink-only icons from icons.json.** Icons where ALL files on disk are symlinks (620 in oxygen) should not have entries in icons.json — they are aliases of other icons and were never meant to be indexed. The primary icon (symlink target) is already indexed. Run `icon_build_check_icons.py` to identify and remove these entries.
+7. ~~**Remove symlink-only icons from icons.json.**~~ Done — removed all symlink-only entries and cross-context symlink aliases from oxygen/icons.json. Run `icon_build_check_icons.py` to verify.
+8. **Update sizes to match disk.** Run `icon_build_check_icons.py <theme> --update-sizes` to sync sizes arrays in icons.json with what's actually on disk. Use `--insert-missing` to add newly discovered icons.
+9. **Decide on custom_sizes / source_sizes tracking.** When generating missing PNG sizes (e.g., rendering a 16px PNG from a symbolic SVG), we need a way to distinguish original upstream sizes from locally generated ones in icons.json. Options: `sizes` = all available + `source_sizes` = original (omit when identical); or `sizes` = original + `generated_sizes` = added. Note: symbolic SVGs already have a size (e.g., `[22]`) from the directory they sit in — after generating PNGs at other sizes, `sizes` would grow (e.g., `[16, 22, 32]`) and we need `generated_sizes` or similar to record which ones we created. Leaning toward a `generated_sizes` array since it only appears when we've added something, keeping the JSON lean. First real test case: generate PNGs for all applet symbolic SVGs that only have SVG files and no raster sizes.
+10. **Separate SVG-to-PNG conversion script.** Currently `icon_next_hints.py` converts SVGs to PNG inline as a side effect while processing hints. This should be a dedicated preparation script (e.g., `icon_convert_svgs.py`) that walks the index.theme directories, finds all SVG/SVGZ files, and pre-converts them to PNGs. The icons.json already has the filename (as `.png`), so we know what the expected output is. The script should prepare all icon sizes in advance based on what index.theme declares for SVGs, if applicable. Once this script exists, `icon_next_hints.py` can drop its SVG conversion logic and only deal with PNGs.

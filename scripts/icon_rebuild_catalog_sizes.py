@@ -11,10 +11,11 @@ Usage:
     python scripts/icon_rebuild_catalog_sizes.py
 """
 
+import json
 import os
 import sys
 
-from icon_theme_processor import ThemeCatalog
+from icon_theme_processor import ThemeCatalog, save_json_compact_arrays
 
 
 def main():
@@ -23,14 +24,15 @@ def main():
     # Collect effective_sizes per top-level theme key (across all variants)
     theme_sizes = {}
 
-    for theme in catalog:
+    for theme_id in catalog.theme_ids():
+        theme = catalog.get_theme(theme_id)
         index_path = os.path.join(theme.dir, "index.theme")
         if not os.path.isfile(index_path):
-            print(f"  {theme.theme_id}: no index.theme, skipping")
+            print(f"  no index.theme, skipping")
             continue
 
         dir_map = theme.index
-        print(f"  {theme.theme_id}: {len(dir_map)} index entries")
+        print(f"  {len(dir_map)} index entries")
 
         if theme.theme_base_id not in theme_sizes:
             theme_sizes[theme.theme_base_id] = set()
@@ -39,22 +41,25 @@ def main():
             theme_sizes[theme.theme_base_id].add(meta["effective_size"])
 
     # Update catalog
+    catalog_path = catalog.catalog_path()
+    with open(catalog_path) as f:
+        catalog_data = json.load(f)
+
     updated = False
     for theme_base_id, sizes in theme_sizes.items():
-        config = catalog.raw[theme_base_id]
         new_sizes = sorted(sizes)
-        old_sizes = config.get("effective_sizes", [])
+        old_sizes = catalog_data[theme_base_id].get("effective_sizes", [])
 
         if new_sizes != old_sizes:
             print(f"  {theme_base_id} effective_sizes: {old_sizes} -> {new_sizes}")
-            config["effective_sizes"] = new_sizes
+            catalog_data[theme_base_id]["effective_sizes"] = new_sizes
             updated = True
         else:
             print(f"  {theme_base_id}: no changes")
 
     if updated:
-        catalog.save()
-        print(f"\nUpdated {catalog.path}")
+        save_json_compact_arrays(catalog_path, catalog_data)
+        print(f"\nUpdated {catalog_path}")
     else:
         print(f"\nNo changes needed")
 

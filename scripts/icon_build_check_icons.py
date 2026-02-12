@@ -10,14 +10,16 @@ Modes:
   - If icons.json exists, reports differences:
       INDEXED ON DISK, NOT IN JSON — icons in valid index.theme
           directories but missing from icons.json
-      IN JSON, NOT IN INDEXED DIRS — icons in icons.json but not found
-          in any index.theme-declared directory on disk
+      IN JSON, NOT-INDEXED OR SYMLINK-ONLY OR NOT-ON-DISK — icons in
+          icons.json but not found in any index.theme-declared directory
+          on disk, or only present as symlinks, or missing entirely
       SIZE MISMATCH — icons where the sizes list differs
-  - With --update-inserts: adds missing icons to icons.json.
+  - With --insert-missing: adds missing icons to icons.json.
       Does NOT remove or modify existing entries.
+  - With --update-sizes: updates sizes arrays in icons.json to match disk.
 
 Usage:
-    python scripts/icon_build_check_icons.py <theme> [--update-inserts]
+    python scripts/icon_build_check_icons.py <theme> [--insert-missing] [--update-sizes]
 """
 
 import os
@@ -31,13 +33,16 @@ def main():
 
     if len(sys.argv) < 2:
         catalog.print_available()
-        fatal_error("Usage: python scripts/icon_build_check_icons.py <theme> [--update-inserts]")
+        fatal_error("Usage: python scripts/icon_build_check_icons.py <theme> [--insert-missing]")
 
     theme_arg = None
-    update_inserts = False
+    insert_missing = False
+    update_sizes = False
     for arg in sys.argv[1:]:
-        if arg == "--update-inserts":
-            update_inserts = True
+        if arg == "--insert-missing":
+            insert_missing = True
+        elif arg == "--update-sizes":
+            update_sizes = True
         elif theme_arg is None:
             theme_arg = arg
         else:
@@ -46,10 +51,7 @@ def main():
     if theme_arg is None:
         fatal_error("Theme argument required")
 
-    theme = catalog[theme_arg]
-
-    print(f"Theme: {theme.theme_id}")
-    print(f"Directory: {theme.dir}")
+    theme = catalog.get_theme(theme_arg)
     print(f"Scanning disk against index.theme...")
 
     discovered = theme.scan_directory()
@@ -109,7 +111,7 @@ def main():
     else:
         print(f"  *** None ***")
 
-    print(f"\nIN JSON, NOT INDEXED OR SYMLINK-ONLY: {len(in_json_not_disk)} icons")
+    print(f"\nIN JSON, NOT-INDEXED OR SYMLINK-ONLY OR NOT-ON-DISK: {len(in_json_not_disk)} icons")
     if in_json_not_disk:
         for icon_id in in_json_not_disk:
             info = existing[icon_id]
@@ -131,7 +133,12 @@ def main():
                     else:
                         files.append(f"    {rel} [REAL]")
             has_real = any("[REAL]" in f for f in files)
-            flag = "[MIXED]" if has_real else "[100%-SYMLINKS]"
+            if not files:
+                flag = "[NOT-ON-DISK]"
+            elif has_real:
+                flag = "[MIXED]"
+            else:
+                flag = "[100%-SYMLINKS]"
             print(f"  {icon_id} {flag}")
             for f in files:
                 print(f)
@@ -152,8 +159,19 @@ def main():
         total = len(on_disk_not_json) + len(in_json_not_disk) + len(size_mismatches)
         print(f"\n{total} differences found")
 
+    # Update sizes mode
+    if update_sizes and size_mismatches:
+        updated = 0
+        for icon_id, json_sizes, disk_sizes in size_mismatches:
+            existing[icon_id]["sizes"] = disk_sizes
+            updated += 1
+        save_json_compact_arrays(json_path, data)
+        print(f"\nUpdated sizes for {updated} icons in {json_path}")
+    elif update_sizes:
+        print("\nNo size mismatches to update")
+
     # Update inserts mode
-    if not update_inserts:
+    if not insert_missing:
         return
     if not on_disk_not_json:
         print("\nNo icons to insert")
@@ -174,8 +192,6 @@ def main():
         existing[icon_id] = entry
         added += 1
 
-    # Re-sort icons by key
-    data["icons"] = dict(sorted(existing.items()))
     save_json_compact_arrays(json_path, data)
     print(f"\nInserted {added} icons into {json_path}")
 

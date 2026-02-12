@@ -18,7 +18,7 @@
     },
     "oxygen_actions_albumfolder-importimages": {
       "file": "albumfolder-importimages.png",
-      "sizes": [16, 22, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_actions_document-import",
       "hints": ["album", "folder", "import", "images", "photos", "arrow", "download", "transfer"],
       "label": "Albumfolder Importimages",
@@ -26,7 +26,7 @@
     },
     "oxygen_actions_albumfolder-properties": {
       "file": "albumfolder-properties.png",
-      "sizes": [16, 22, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_actions_configure",
       "hints": ["album", "folder", "properties", "photos", "images", "edit", "pencil"],
       "label": "Albumfolder Properties",
@@ -34,8 +34,8 @@
     },
     "oxygen_actions_align-horizontal-bottom-out": {
       "file": "align-horizontal-bottom-out.png",
-      "sizes": [16, 22, 32, 48],
-            "hints": ["align", "horizontal", "bottom", "out", "layout", "objects", "rectangles"],
+      "sizes": [16, 32, 48],
+      "hints": ["align", "horizontal", "bottom", "out", "layout", "objects", "rectangles"],
       "label": "Align Horizontal Bottom Out",
       "context": "actions"
     },
@@ -96,7 +96,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["align", "horizontal", "top", "outside", "layout", "objects", "position"],
       "label": "Align Horizontal Top Out",
-            "context": "actions"
+      "context": "actions"
     },
     "oxygen_actions_align-vertical-bottom": {
       "file": "align-vertical-bottom.png",
@@ -145,18 +145,10 @@
       "label": "Application Exit",
       "context": "actions"
     },
-    "oxygen_actions_applications-internet": {
-      "file": "applications-internet.png",
-      "sizes": [16, 22],
-      "hints": ["internet", "applications", "globe", "world", "web", "browser", "online"],
-      "duplicate_of": "oxygen_places_folder-html",
-      "label": "Applications Internet",
-      "context": "actions"
-    },
     "oxygen_actions_appointment-new": {
       "file": "appointment-new.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "duplicates": ["oxygen_actions_clock"],
+      "duplicates": [],
       "hints": ["appointment", "new", "calendar", "plus", "event", "schedule", "add", "meeting"],
       "label": "Appointment New",
       "context": "actions"
@@ -178,7 +170,7 @@
     },
     "oxygen_actions_archive-insert-directory": {
       "file": "archive-insert-directory.png",
-      "sizes": [16, 22, 32, 48, 128, 256],
+      "sizes": [16, 22, 32, 48, 256],
       "duplicates": [],
       "hints": ["archive", "folder", "add", "insert", "directory", "plus", "new folder"],
       "label": "Archive Insert Directory",
@@ -271,7 +263,7 @@
     },
     "oxygen_actions_bookmarks": {
       "file": "bookmarks.png",
-      "sizes": [16, 22],
+      "sizes": [22],
       "duplicate_of": "oxygen_actions_bookmark-new",
       "hints": ["bookmarks", "star", "favorite", "save", "mark", "browser", "saved"],
       "label": "Bookmarks",
@@ -313,27 +305,11 @@
       "label": "Checkbox",
       "context": "actions"
     },
-    "oxygen_actions_checkmark": {
-      "file": "checkmark.png",
-      "sizes": [16, 22],
-      "duplicate_of": "oxygen_actions_dialog-ok-apply",
-      "hints": ["checkmark", "done", "complete", "ok", "approve", "success", "tick", "confirm"],
-      "label": "Checkmark",
-      "context": "actions"
-    },
     "oxygen_actions_chronometer": {
       "file": "chronometer.png",
       "sizes": [16, 22, 32, 48, 64],
-            "hints": ["chronometer", "stopwatch", "timer", "time", "clock", "measure", "speed"],
+      "hints": ["chronometer", "stopwatch", "timer", "time", "clock", "measure", "speed"],
       "label": "Chronometer",
-      "context": "actions"
-    },
-    "oxygen_actions_clock": {
-      "file": "clock.png",
-      "sizes": [16, 22],
-      "duplicate_of": "oxygen_actions_appointment-new",
-      "hints": ["clock", "time", "plus", "add", "schedule", "alarm", "timer", "watch"],
-      "label": "Clock",
       "context": "actions"
     },
     "oxygen_actions_code-block": {
@@ -369,7 +345,7 @@
     "oxygen_actions_code-typedef": {
       "file": "code-typedef.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["typedef", "code", "type", "definition", "green", "programming", "alias"],
+      "hints": ["typedef", "code", "type", "definition", "green", "programming", "alias"],
       "label": "Code Typedef",
       "context": "actions"
     },
@@ -541,7 +517,7 @@
     "oxygen_actions_dialog-ok-apply": {
       "file": "dialog-ok-apply.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "duplicates": ["oxygen_actions_checkmark"],
+      "duplicates": [],
       "hints": ["dialog", "ok", "apply", "checkmark", "green", "confirm", "accept", "tick"],
       "label": "Dialog Ok Apply",
       "context": "actions"
@@ -663,7 +639,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["document", "decrypt", "unlock", "padlock", "security", "open", "unprotect"],
       "label": "Document Decrypt",
-      "duplicates": ["oxygen_status_object-unlocked"],
+      "duplicates": [],
       "context": "actions"
     },
     "oxygen_actions_document-edit": {
@@ -722,7 +698,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["encrypt", "document", "lock", "security", "padlock", "protect", "secure"],
       "label": "Document Encrypt",
-      "duplicates": ["oxygen_status_object-locked"],
+      "duplicates": [],
       "context": "actions"
     },
     "oxygen_actions_document-encrypted": {
@@ -756,14 +732,6 @@
       "label": "Document Import",
       "context": "actions"
     },
-    "oxygen_actions_document-multiple": {
-      "file": "document-multiple.png",
-      "sizes": [16, 22],
-      "duplicate_of": "oxygen_actions_edit-copy",
-      "hints": ["document", "multiple", "pages", "stack", "files", "many"],
-      "label": "Document Multiple",
-      "context": "actions"
-    },
     "oxygen_actions_document-new": {
       "file": "document-new.png",
       "sizes": [16, 22, 32, 48],
@@ -782,7 +750,7 @@
     },
     "oxygen_actions_document-open-data": {
       "file": "document-open-data.png",
-      "sizes": [16, 22],
+      "sizes": [16],
       "duplicate_of": "oxygen_actions_document-open",
       "hints": ["document", "open", "data", "folder", "file", "load", "import", "browse"],
       "label": "Document Open Data",
@@ -819,7 +787,7 @@
     "oxygen_actions_document-preview-archive": {
       "file": "document-preview-archive.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-            "hints": ["document", "preview", "archive", "box", "package", "magnify", "search", "zip"],
+      "hints": ["document", "preview", "archive", "box", "package", "magnify", "search", "zip"],
       "label": "Document Preview Archive",
       "context": "actions"
     },
@@ -1091,7 +1059,7 @@
     "oxygen_actions_draw-spiral": {
       "file": "draw-spiral.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["spiral", "draw", "curve", "swirl", "shape", "vector", "coil"],
+      "hints": ["spiral", "draw", "curve", "swirl", "shape", "vector", "coil"],
       "label": "Draw Spiral",
       "context": "actions"
     },
@@ -1199,7 +1167,7 @@
     "oxygen_actions_edit-copy": {
       "file": "edit-copy.png",
       "sizes": [16, 22, 32, 48],
-      "duplicates": ["oxygen_actions_document-multiple"],
+      "duplicates": [],
       "hints": ["copy", "duplicate", "clone", "documents", "clipboard", "edit", "paste", "pages"],
       "label": "Edit Copy",
       "context": "actions"
@@ -1301,7 +1269,7 @@
     },
     "oxygen_actions_edit-link": {
       "file": "edit-link.png",
-      "sizes": [16, 22],
+      "sizes": [16],
       "duplicate_of": "oxygen_emblems_emblem-symbolic-link",
       "hints": ["edit", "link", "chain", "hyperlink", "url", "anchor", "connection", "web"],
       "label": "Edit Link",
@@ -1384,7 +1352,7 @@
     "oxygen_actions_edit-table-delete-row": {
       "file": "edit-table-delete-row.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["edit", "table", "delete", "row", "remove", "grid", "spreadsheet"],
+      "hints": ["edit", "table", "delete", "row", "remove", "grid", "spreadsheet"],
       "label": "Edit Table Delete Row",
       "context": "actions"
     },
@@ -1449,7 +1417,7 @@
     "oxygen_actions_feed-subscribe": {
       "file": "feed-subscribe.png",
       "sizes": [16, 22, 32, 48],
-      "duplicates": ["oxygen_status_mail-tagged"],
+      "duplicates": [],
       "hints": ["feed", "subscribe", "rss", "atom", "news", "syndication", "follow"],
       "label": "Feed Subscribe",
       "context": "actions"
@@ -1472,7 +1440,7 @@
     },
     "oxygen_actions_fileview-preview": {
       "file": "fileview-preview.png",
-      "sizes": [16, 22, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_actions_view-preview",
       "hints": ["preview", "file", "view", "thumbnail", "image", "picture", "look", "display"],
       "label": "Fileview Preview",
@@ -1525,7 +1493,7 @@
     },
     "oxygen_actions_folder-new": {
       "file": "folder-new.png",
-      "sizes": [16, 22, 32, 48, 256],
+      "sizes": [16, 22, 32],
       "hints": ["folder", "new", "create", "directory", "add", "plus", "files"],
       "label": "Folder New",
       "duplicates": [],
@@ -1534,14 +1502,14 @@
     "oxygen_actions_folder-sync": {
       "file": "folder-sync.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["folder", "sync", "synchronize", "refresh", "update", "directory", "backup"],
+      "hints": ["folder", "sync", "synchronize", "refresh", "update", "directory", "backup"],
       "label": "Folder Sync",
       "context": "actions"
     },
     "oxygen_actions_fork": {
       "file": "fork.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["fork", "utensil", "eat", "branch", "split", "silverware", "dining"],
+      "hints": ["fork", "utensil", "eat", "branch", "split", "silverware", "dining"],
       "label": "Fork",
       "context": "actions"
     },
@@ -2069,7 +2037,7 @@
     "oxygen_actions_help-about": {
       "file": "help-about.png",
       "sizes": [16, 22, 32, 48],
-      "duplicates": ["oxygen_status_data-information", "oxygen_status_dialog-information"],
+      "duplicates": ["oxygen_status_dialog-information"],
       "hints": ["about", "info", "information", "help", "details", "i", "circle", "dialog"],
       "label": "Help About",
       "context": "actions"
@@ -2210,7 +2178,7 @@
     },
     "oxygen_actions_im-skype": {
       "file": "im-skype.png",
-      "sizes": [16, 22, 32, 48],
+      "sizes": [48],
       "duplicate_of": "oxygen_actions_call-start",
       "hints": ["skype", "call", "phone", "chat", "video", "voice", "communication", "im"],
       "label": "Im Skype",
@@ -2226,7 +2194,7 @@
     "oxygen_actions_im-user": {
       "file": "im-user.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "duplicates": ["oxygen_actions_user-identity"],
+      "duplicates": [],
       "hints": ["user", "im", "person", "contact", "avatar", "profile", "chat", "buddy"],
       "label": "Im User",
       "context": "actions"
@@ -2490,7 +2458,7 @@
     },
     "oxygen_actions_mail-forward": {
       "file": "mail-forward.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "hints": ["mail", "forward", "envelope", "email", "arrow", "send", "share"],
       "label": "Mail Forward",
       "context": "actions"
@@ -2527,7 +2495,7 @@
     },
     "oxygen_actions_mail-mark-junk": {
       "file": "mail-mark-junk.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "duplicates": [],
       "hints": ["mail", "junk", "spam", "block", "mark", "email", "filter"],
       "label": "Mail Mark Junk",
@@ -2566,7 +2534,7 @@
     },
     "oxygen_actions_mail-mark-unread-new": {
       "file": "mail-mark-unread-new.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "duplicates": ["oxygen_status_mail-unread-new"],
       "hints": ["mail", "unread", "new", "envelope", "starburst", "email", "inbox"],
       "label": "Mail Mark Unread New",
@@ -2581,7 +2549,7 @@
     },
     "oxygen_actions_mail-message-new": {
       "file": "mail-message-new.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "hints": ["mail", "message", "new", "email", "envelope", "compose", "plus", "write"],
       "label": "Mail Message New",
       "context": "actions"
@@ -2595,7 +2563,7 @@
     },
     "oxygen_actions_mail-queue": {
       "file": "mail-queue.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "duplicates": ["oxygen_status_mail-queued"],
       "hints": ["mail", "queue", "envelope", "outbox", "email", "pending", "letter"],
       "label": "Mail Queue",
@@ -2617,7 +2585,7 @@
     },
     "oxygen_actions_mail-reply-all": {
       "file": "mail-reply-all.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "hints": ["reply", "all", "mail", "email", "respond", "envelope", "message", "everyone"],
       "label": "Mail Reply All",
       "context": "actions"
@@ -2645,14 +2613,14 @@
     },
     "oxygen_actions_mail-reply-sender": {
       "file": "mail-reply-sender.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "hints": ["mail", "reply", "email", "sender", "envelope", "respond", "arrow"],
       "label": "Mail Reply Sender",
       "context": "actions"
     },
     "oxygen_actions_mail-send": {
       "file": "mail-send.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "hints": ["mail", "send", "stamp", "postage", "email", "post", "letter"],
       "label": "Mail Send",
       "context": "actions"
@@ -2681,7 +2649,7 @@
     },
     "oxygen_actions_mail-signed-fully": {
       "file": "mail-signed-fully.png",
-      "sizes": [16, 22],
+      "sizes": [16],
       "duplicate_of": "oxygen_actions_mail-signed-full",
       "hints": ["mail", "signed", "verified", "email", "envelope", "secure", "certificate"],
       "label": "Mail Signed Fully",
@@ -3263,14 +3231,14 @@
     "oxygen_actions_player-time": {
       "file": "player-time.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["player", "time", "stopwatch", "chronometer", "play", "duration", "media"],
+      "hints": ["player", "time", "stopwatch", "chronometer", "play", "duration", "media"],
       "label": "Player Time",
       "context": "actions"
     },
     "oxygen_actions_player-volume": {
       "file": "player-volume.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["player", "volume", "speaker", "sound", "audio", "media", "loud"],
+      "hints": ["player", "volume", "speaker", "sound", "audio", "media", "loud"],
       "label": "Player Volume",
       "context": "actions"
     },
@@ -3559,7 +3527,7 @@
     "oxygen_actions_speaker": {
       "file": "speaker.png",
       "sizes": [16, 22, 32, 48],
-      "duplicates": ["oxygen_devices_speaker"],
+      "duplicates": [],
       "hints": ["speaker", "audio", "sound", "music", "volume", "loudspeaker", "driver", "output"],
       "label": "Speaker",
       "context": "actions"
@@ -3580,7 +3548,7 @@
     },
     "oxygen_actions_stroke-cap-bevel": {
       "file": "stroke-cap-bevel.png",
-      "sizes": [16, 22],
+      "sizes": [22],
       "duplicate_of": "oxygen_actions_stroke-join-bevel",
       "hints": ["stroke", "cap", "bevel", "line", "angled", "path", "vector"],
       "label": "Stroke Cap Bevel",
@@ -3595,7 +3563,7 @@
     },
     "oxygen_actions_stroke-cap-miter": {
       "file": "stroke-cap-miter.png",
-      "sizes": [16, 22],
+      "sizes": [22],
       "duplicate_of": "oxygen_actions_stroke-join-miter",
       "hints": ["stroke", "cap", "miter", "corner", "sharp", "join", "line", "vector"],
       "label": "Stroke Cap Miter",
@@ -3782,7 +3750,7 @@
     },
     "oxygen_actions_tag-assigned": {
       "file": "tag-assigned.png",
-      "sizes": [22, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_emblems_emblem-symbolic-link",
       "hints": ["tag", "assigned", "label", "checkmark", "complete", "yellow", "mark"],
       "label": "Tag Assigned",
@@ -3790,7 +3758,7 @@
     },
     "oxygen_actions_tag-delete": {
       "file": "tag-delete.png",
-      "sizes": [16, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_actions_edit-delete",
       "hints": ["tag", "delete", "remove", "label", "trash", "metadata"],
       "label": "Tag Delete",
@@ -3798,7 +3766,7 @@
     },
     "oxygen_actions_tag-events": {
       "file": "tag-events.png",
-      "sizes": [16, 32],
+      "sizes": [32],
       "hints": ["tag", "events", "calendar", "label", "mark", "schedule", "annotate"],
       "label": "Tag Events",
       "duplicate_of": "oxygen_actions_view-calendar",
@@ -3806,7 +3774,7 @@
     },
     "oxygen_actions_tag-folder": {
       "file": "tag-folder.png",
-      "sizes": [16, 22, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_actions_document-open",
       "hints": ["tag", "folder", "label", "categorize", "directory", "organize", "bookmark"],
       "label": "Tag Folder",
@@ -3821,7 +3789,7 @@
     },
     "oxygen_actions_tag-properties": {
       "file": "tag-properties.png",
-      "sizes": [16, 22, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_actions_configure",
       "hints": ["tag", "properties", "label", "edit", "settings", "metadata", "configure", "bookmark"],
       "label": "Tag Properties",
@@ -3836,7 +3804,7 @@
     },
     "oxygen_actions_tag-reset": {
       "file": "tag-reset.png",
-      "sizes": [16, 22, 32],
+      "sizes": [32],
       "duplicate_of": "oxygen_actions_edit-undo",
       "hints": ["tag", "reset", "label", "undo", "restore", "refresh", "clear", "default"],
       "label": "Tag Reset",
@@ -3915,7 +3883,7 @@
     },
     "oxygen_actions_tools-media-optical-copy": {
       "file": "tools-media-optical-copy.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 22, 32, 48, 128, 256],
       "hints": ["tools", "media", "optical", "copy", "disc", "cd", "dvd"],
       "label": "Tools Media Optical Copy",
       "context": "actions"
@@ -3940,7 +3908,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["tools", "report", "bug", "ladybug", "insect", "issue", "error", "debug"],
       "label": "Tools Report Bug",
-      "duplicates": ["oxygen_status_script-error"],
+      "duplicates": [],
       "context": "actions"
     },
     "oxygen_actions_tools-rip-audio-cd": {
@@ -4006,7 +3974,7 @@
     "oxygen_actions_transform-scale": {
       "file": "transform-scale.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-            "hints": ["scale", "transform", "resize", "size", "stretch", "shrink", "zoom", "handles"],
+      "hints": ["scale", "transform", "resize", "size", "stretch", "shrink", "zoom", "handles"],
       "label": "Transform Scale",
       "context": "actions"
     },
@@ -4064,7 +4032,7 @@
     "oxygen_actions_user-group-delete": {
       "file": "user-group-delete.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/actions/user-group-delete.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/actions/user-group-delete.png"],
+      "hints": ["people", "group", "delete", "remove", "users", "red x", "team", "members"],
       "label": "User Group Delete",
       "context": "actions"
     },
@@ -4083,14 +4051,6 @@
       "label": "User Group Properties",
       "context": "actions"
     },
-    "oxygen_actions_user-identity": {
-      "file": "user-identity.png",
-      "sizes": [16, 22],
-      "duplicate_of": "oxygen_actions_im-user",
-      "hints": ["user", "identity", "person", "profile", "account", "avatar", "blue"],
-      "label": "User Identity",
-      "context": "actions"
-    },
     "oxygen_actions_user-properties": {
       "file": "user-properties.png",
       "sizes": [16, 22, 32, 48],
@@ -4100,7 +4060,7 @@
     },
     "oxygen_actions_view-bank": {
       "file": "view-bank.png",
-      "sizes": [16, 22, 32, 48],
+      "sizes": [16, 32, 48],
       "hints": ["bank", "building", "financial", "columns", "institution", "money", "finance"],
       "label": "View Bank",
       "duplicates": ["oxygen_actions_view-bank-account"],
@@ -4401,7 +4361,7 @@
     "oxygen_actions_view-filter": {
       "file": "view-filter.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["filter", "funnel", "view", "sort", "refine", "search", "narrow"],
+      "hints": ["filter", "funnel", "view", "sort", "refine", "search", "narrow"],
       "label": "View Filter",
       "context": "actions"
     },
@@ -4579,14 +4539,14 @@
     "oxygen_actions_view-media-lyrics": {
       "file": "view-media-lyrics.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-            "hints": ["lyrics", "media", "music", "song", "text", "notes", "words", "karaoke"],
+      "hints": ["lyrics", "media", "music", "song", "text", "notes", "words", "karaoke"],
       "label": "View Media Lyrics",
       "context": "actions"
     },
     "oxygen_actions_view-media-playlist": {
       "file": "view-media-playlist.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-            "hints": ["media", "playlist", "view", "list", "tracks", "songs", "queue"],
+      "hints": ["media", "playlist", "view", "list", "tracks", "songs", "queue"],
       "label": "View Media Playlist",
       "context": "actions"
     },
@@ -4722,7 +4682,7 @@
     },
     "oxygen_actions_view-process-tree": {
       "file": "view-process-tree.png",
-      "sizes": [16, 22],
+      "sizes": [16],
       "hints": ["view", "process", "tree", "hierarchy", "parent", "child", "structure", "tasks"],
       "label": "View Process Tree",
       "duplicate_of": "oxygen_actions_view-list-tree",
@@ -4740,7 +4700,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["view", "refresh", "reload", "green", "circular", "arrow", "update", "sync"],
       "label": "View Refresh",
-      "duplicates": ["oxygen_apps_system-reboot", "oxygen_status_appointment-recurring", "oxygen_status_task-recurring"],
+      "duplicates": [],
       "context": "actions"
     },
     "oxygen_actions_view-resource-calendar": {
@@ -4810,7 +4770,7 @@
     "oxygen_actions_view-statistics": {
       "file": "view-statistics.png",
       "sizes": [16, 22, 32, 48],
-            "hints": ["statistics", "chart", "bar", "graph", "data", "analytics", "report", "metrics"],
+      "hints": ["statistics", "chart", "bar", "graph", "data", "analytics", "report", "metrics"],
       "label": "View Statistics",
       "context": "actions"
     },
@@ -5135,7 +5095,7 @@
     "oxygen_apps_applets-template": {
       "file": "applets-template.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/applets-template.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/applets-template.png"],
+      "hints": ["widget", "applet", "template", "panel", "plasma", "placeholder", "dark", "kde"],
       "label": "Applets Template",
       "context": "apps"
     },
@@ -5163,7 +5123,7 @@
     },
     "oxygen_apps_baloo": {
       "file": "baloo.png",
-      "sizes": [32, 64, 128],
+      "sizes": [128],
       "hints": ["baloo", "search", "index", "magnifying-glass", "paw", "find", "file-search"],
       "label": "Baloo",
       "duplicate_of": "oxygen_apps_nepomuk",
@@ -5241,7 +5201,7 @@
     },
     "oxygen_apps_device-notifier": {
       "file": "device-notifier.png",
-      "sizes": [22, 32, 64, 128],
+      "sizes": [22, 32, 128],
       "hints": ["device", "notifier", "usb", "monitor", "disc", "removable", "plug"],
       "label": "Device Notifier",
       "context": "apps"
@@ -5312,7 +5272,7 @@
     },
     "oxygen_apps_hotspot": {
       "file": "hotspot.png",
-      "sizes": [128, 256],
+      "sizes": [256],
       "hints": ["hotspot", "fire", "flame", "orange", "ball", "hot", "wireless"],
       "label": "Hotspot",
       "context": "apps"
@@ -5334,7 +5294,7 @@
     },
     "oxygen_apps_internet-mail": {
       "file": "internet-mail.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [22, 32, 48, 64, 128],
       "hints": ["email", "mail", "envelope", "airmail", "pen", "write", "message", "letter"],
       "label": "Internet Mail",
       "duplicate_of": "oxygen_actions_view-pim-mail",
@@ -5371,7 +5331,7 @@
     },
     "oxygen_apps_kaddressbook": {
       "file": "kaddressbook.png",
-      "sizes": [22, 48, 64, 128],
+      "sizes": [128],
       "hints": ["addressbook", "contacts", "badge", "card", "person", "identity", "kde"],
       "label": "Kaddressbook",
       "duplicate_of": "oxygen_actions_view-pim-contacts",
@@ -5428,7 +5388,7 @@
     },
     "oxygen_apps_kde": {
       "file": "kde.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [64, 128],
       "hints": ["kde", "logo", "gear", "blue", "desktop", "linux", "plasma"],
       "label": "Kde",
       "duplicates": ["oxygen_animations_process-idle-kde", "oxygen_places_start-here-kde"],
@@ -5464,7 +5424,7 @@
     },
     "oxygen_apps_kfind": {
       "file": "kfind.png",
-      "sizes": [16, 32, 48, 64],
+      "sizes": [16, 32, 48],
       "hints": ["find", "search", "binoculars", "gear", "files", "locate", "discover"],
       "label": "Kfind",
       "duplicate_of": "oxygen_actions_system-search",
@@ -5522,14 +5482,14 @@
     "oxygen_apps_kmail": {
       "file": "kmail.png",
       "hints": ["email", "mail", "envelope", "pen", "write", "message", "letter", "compose"],
-      "sizes": [16, 22, 32, 48, 128],
+      "sizes": [16, 22, 32, 48],
       "label": "Kmail",
       "duplicate_of": "oxygen_actions_view-pim-mail",
       "context": "apps"
     },
     "oxygen_apps_kmail2": {
       "file": "kmail2.png",
-      "sizes": [64, 128, 256],
+      "sizes": [128, 256],
       "hints": ["kmail", "email", "envelope", "mail", "stamp", "pen", "message"],
       "label": "Kmail2",
       "context": "apps"
@@ -5620,7 +5580,7 @@
     },
     "oxygen_apps_korg-todo": {
       "file": "korg-todo.png",
-      "sizes": [22, 32, 48, 64, 128],
+      "sizes": [22, 64, 128],
       "duplicate_of": "oxygen_actions_mail-mark-task",
       "hints": ["todo", "checklist", "clipboard", "task", "pencil", "checkbox", "organizer"],
       "label": "Korg Todo",
@@ -5752,14 +5712,14 @@
     },
     "oxygen_apps_lokalize": {
       "file": "lokalize.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 22, 32, 48, 128, 256],
       "hints": ["flag", "translation", "localize", "localization", "language", "quotation marks", "international"],
       "label": "Lokalize",
       "context": "apps"
     },
     "oxygen_apps_mameexecutor": {
       "file": "mameexecutor.png",
-      "sizes": [64, 128, 256],
+      "sizes": [128, 256],
       "hints": ["mame", "arcade", "emulator", "joystick", "retro", "game", "pong", "television"],
       "label": "Mameexecutor",
       "context": "apps"
@@ -5795,7 +5755,7 @@
     },
     "oxygen_apps_office-calendar": {
       "file": "office-calendar.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48],
       "hints": ["calendar", "schedule", "date", "appointment", "planner", "event", "desk"],
       "label": "Office Calendar",
       "duplicate_of": "oxygen_apps_korganizer",
@@ -5810,7 +5770,7 @@
     },
     "oxygen_apps_okular": {
       "file": "okular.png",
-      "sizes": [16, 22, 48, 64, 128],
+      "sizes": [16, 22, 128],
       "hints": ["okular", "pdf", "document", "viewer", "glasses", "reading", "page"],
       "label": "Okular",
       "duplicate_of": "oxygen_apps_graphics-viewer-document",
@@ -5819,273 +5779,273 @@
     "oxygen_apps_org.kde.ktpcontactlist": {
       "file": "org.kde.ktpcontactlist.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.ktpcontactlist.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.ktpcontactlist.png"],
+      "hints": ["contacts", "list", "buddies", "chat", "messenger", "presence", "status", "telepathy"],
       "label": "Org Kde Ktpcontactlist",
       "context": "apps"
     },
     "oxygen_apps_org.kde.muonnotifier": {
       "file": "org.kde.muonnotifier.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.muonnotifier.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.muonnotifier.png"],
+      "hints": ["updates", "notifier", "software", "packages", "security", "install", "upgrade", "muon"],
       "label": "Org Kde Muonnotifier",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.activitybar": {
       "file": "org.kde.plasma.activitybar.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.activitybar.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.activitybar.png"],
+      "hints": ["activity", "switcher", "bar", "workspace", "panel", "list", "plasma", "desktop"],
       "label": "Org Kde Plasma Activitybar",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.analogclock": {
       "file": "org.kde.plasma.analogclock.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.analogclock.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.analogclock.png"],
+      "hints": ["clock", "analog", "time", "watch", "round", "hands", "dark", "widget"],
       "label": "Org Kde Plasma Analogclock",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.battery": {
       "file": "org.kde.plasma.battery.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.battery.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.battery.png"],
+      "hints": ["battery", "power", "brightness", "charging", "energy", "laptop", "widget", "management"],
       "label": "Org Kde Plasma Battery",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.binaryclock": {
       "file": "org.kde.plasma.binaryclock.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.binaryclock.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.binaryclock.png"],
+      "hints": ["binary", "clock", "time", "grid", "squares", "digital", "geek", "widget"],
       "label": "Org Kde Plasma Binaryclock",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.calculator": {
       "file": "org.kde.plasma.calculator.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.calculator.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.calculator.png"],
+      "hints": ["calculator", "math", "numbers", "buttons", "arithmetic", "keypad", "widget", "compute"],
       "label": "Org Kde Plasma Calculator",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.calendar": {
       "file": "org.kde.plasma.calendar.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.calendar.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.calendar.png"],
+      "hints": ["calendar", "date", "month", "days", "schedule", "september", "grid", "widget"],
       "label": "Org Kde Plasma Calendar",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.clipboard": {
       "file": "org.kde.plasma.clipboard.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.clipboard.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.clipboard.png"],
+      "hints": ["clipboard", "paste", "history", "copy", "search", "snippets", "text", "widget"],
       "label": "Org Kde Plasma Clipboard",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.colorpicker": {
       "file": "org.kde.plasma.colorpicker.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.colorpicker.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.colorpicker.png"],
+      "hints": ["color", "picker", "palette", "swatches", "hex", "eyedropper", "design", "widget"],
       "label": "Org Kde Plasma Colorpicker",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.comic": {
       "file": "org.kde.plasma.comic.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.comic.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.comic.png"],
+      "hints": ["comic", "strip", "xkcd", "humor", "cartoon", "speech bubble", "stick figures", "widget"],
       "label": "Org Kde Plasma Comic",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.devicenotifier": {
       "file": "org.kde.plasma.devicenotifier.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.devicenotifier.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.devicenotifier.png"],
+      "hints": ["device", "storage", "usb", "removable", "eject", "media", "flash", "widget"],
       "label": "Org Kde Plasma Devicenotifier",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.digitalclock": {
       "file": "org.kde.plasma.digitalclock.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.digitalclock.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.digitalclock.png"],
+      "hints": ["clock", "digital", "time", "date", "numbers", "display", "widget", "panel"],
       "label": "Org Kde Plasma Digitalclock",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.fifteenpuzzle": {
       "file": "org.kde.plasma.fifteenpuzzle.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.fifteenpuzzle.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.fifteenpuzzle.png"],
+      "hints": ["puzzle", "fifteen", "sliding", "tiles", "numbers", "game", "grid", "widget"],
       "label": "Org Kde Plasma Fifteenpuzzle",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.folder": {
       "file": "org.kde.plasma.folder.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.folder.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.folder.png"],
+      "hints": ["folder", "home", "files", "directory", "browser", "desktop", "icons", "widget"],
       "label": "Org Kde Plasma Folder",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.frame": {
       "file": "org.kde.plasma.frame.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.frame.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.frame.png"],
+      "hints": ["frame", "picture", "photo", "wallpaper", "geometric", "pastel", "display", "widget"],
       "label": "Org Kde Plasma Frame",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.fuzzyclock": {
       "file": "org.kde.plasma.fuzzyclock.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.fuzzyclock.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.fuzzyclock.png"],
+      "hints": ["clock", "fuzzy", "time", "text", "words", "approximate", "readable", "widget"],
       "label": "Org Kde Plasma Fuzzyclock",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.icontasks": {
       "file": "org.kde.plasma.icontasks.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.icontasks.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.icontasks.png"],
+      "hints": ["taskbar", "icons", "launcher", "applications", "grid", "dock", "shortcuts", "widget"],
       "label": "Org Kde Plasma Icontasks",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.kicker": {
       "file": "org.kde.plasma.kicker.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.kicker.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.kicker.png"],
+      "hints": ["menu", "launcher", "start", "applications", "categories", "search", "kicker", "widget"],
       "label": "Org Kde Plasma Kicker",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.kickerdash": {
       "file": "org.kde.plasma.kickerdash.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.kickerdash.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.kickerdash.png"],
+      "hints": ["dashboard", "launcher", "search", "applications", "grid", "icons", "fullscreen", "widget"],
       "label": "Org Kde Plasma Kickerdash",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.kickoff": {
       "file": "org.kde.plasma.kickoff.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.kickoff.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.kickoff.png"],
+      "hints": ["kickoff", "menu", "start", "launcher", "search", "favorites", "applications", "widget"],
       "label": "Org Kde Plasma Kickoff",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.mediacontroller": {
       "file": "org.kde.plasma.mediacontroller.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.mediacontroller.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.mediacontroller.png"],
+      "hints": ["media", "player", "music", "controls", "play", "pause", "album", "widget"],
       "label": "Org Kde Plasma Mediacontroller",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.networkmanagement": {
       "file": "org.kde.plasma.networkmanagement.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.networkmanagement.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.networkmanagement.png"],
+      "hints": ["network", "wifi", "connections", "wired", "vpn", "wireless", "internet", "widget"],
       "label": "Org Kde Plasma Networkmanagement",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.notes": {
       "file": "org.kde.plasma.notes.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.notes.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.notes.png"],
+      "hints": ["notes", "sticky", "memo", "text", "reminder", "write", "desktop", "widget"],
       "label": "Org Kde Plasma Notes",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.pager": {
       "file": "org.kde.plasma.pager.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.pager.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.pager.png"],
+      "hints": ["pager", "desktops", "virtual", "workspace", "grid", "switcher", "windows", "widget"],
       "label": "Org Kde Plasma Pager",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.quicklaunch": {
       "file": "org.kde.plasma.quicklaunch.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.quicklaunch.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.quicklaunch.png"],
+      "hints": ["quicklaunch", "shortcuts", "icons", "launcher", "toolbar", "applications", "panel", "widget"],
       "label": "Org Kde Plasma Quicklaunch",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.showActivityManager": {
       "file": "org.kde.plasma.showActivityManager.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.showActivityManager.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.showActivityManager.png"],
+      "hints": ["activities", "manager", "workspaces", "list", "documents", "apps", "overview", "widget"],
       "label": "Org Kde Plasma Showactivitymanager",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.systemloadviewer": {
       "file": "org.kde.plasma.systemloadviewer.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemloadviewer.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemloadviewer.png"],
+      "hints": ["system", "load", "cpu", "memory", "swap", "monitor", "bars", "widget"],
       "label": "Org Kde Plasma Systemloadviewer",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.systemmonitor.cpu": {
       "file": "org.kde.plasma.systemmonitor.cpu.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.cpu.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.cpu.png"],
+      "hints": ["cpu", "processor", "load", "monitor", "graph", "usage", "performance", "widget"],
       "label": "Org Kde Plasma Systemmonitor Cpu",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.systemmonitor.diskactivity": {
       "file": "org.kde.plasma.systemmonitor.diskactivity.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.diskactivity.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.diskactivity.png"],
+      "hints": ["disk", "io", "hard drive", "monitor", "activity", "read", "write", "widget"],
       "label": "Org Kde Plasma Systemmonitor Diskactivity",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.systemmonitor.diskusage": {
       "file": "org.kde.plasma.systemmonitor.diskusage.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.diskusage.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.diskusage.png"],
+      "hints": ["disk", "space", "usage", "storage", "partitions", "capacity", "monitor", "widget"],
       "label": "Org Kde Plasma Systemmonitor Diskusage",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.systemmonitor.memory": {
       "file": "org.kde.plasma.systemmonitor.memory.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.memory.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.memory.png"],
+      "hints": ["memory", "ram", "swap", "usage", "physical", "monitor", "graph", "widget"],
       "label": "Org Kde Plasma Systemmonitor Memory",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.systemmonitor.net": {
       "file": "org.kde.plasma.systemmonitor.net.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.net.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemmonitor.net.png"],
+      "hints": ["network", "monitor", "traffic", "bandwidth", "ethernet", "graph", "speed", "widget"],
       "label": "Org Kde Plasma Systemmonitor Net",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.systemtray": {
       "file": "org.kde.plasma.systemtray.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemtray.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.systemtray.png"],
+      "hints": ["system tray", "notification", "icons", "status", "panel", "indicators", "taskbar", "widget"],
       "label": "Org Kde Plasma Systemtray",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.taskmanager": {
       "file": "org.kde.plasma.taskmanager.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.taskmanager.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.taskmanager.png"],
+      "hints": ["taskbar", "windows", "running", "applications", "list", "switcher", "panel", "widget"],
       "label": "Org Kde Plasma Taskmanager",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.timer": {
       "file": "org.kde.plasma.timer.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.timer.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.timer.png"],
+      "hints": ["timer", "countdown", "stopwatch", "clock", "digits", "alarm", "elapsed", "widget"],
       "label": "Org Kde Plasma Timer",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.userswitcher": {
       "file": "org.kde.plasma.userswitcher.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.userswitcher.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.userswitcher.png"],
+      "hints": ["user", "switcher", "accounts", "login", "session", "profiles", "avatar", "widget"],
       "label": "Org Kde Plasma Userswitcher",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.volume": {
       "file": "org.kde.plasma.volume.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.volume.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.volume.png"],
+      "hints": ["volume", "audio", "sound", "speaker", "mixer", "playback", "slider", "widget"],
       "label": "Org Kde Plasma Volume",
       "context": "apps"
     },
     "oxygen_apps_org.kde.plasma.windowlist": {
       "file": "org.kde.plasma.windowlist.png",
       "sizes": [256],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.windowlist.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/applets/org.kde.plasma.windowlist.png"],
+      "hints": ["windows", "list", "actions", "running", "applications", "switcher", "open", "widget"],
       "label": "Org Kde Plasma Windowlist",
       "context": "apps"
     },
@@ -6098,7 +6058,7 @@
     },
     "oxygen_apps_panorama": {
       "file": "panorama.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "hints": ["photos", "panorama", "gallery", "landscape", "thumbnails", "pictures", "images", "stitch"],
       "label": "Panorama",
       "context": "apps"
@@ -6251,7 +6211,7 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["bell", "notification", "alert", "alarm", "red", "reminder", "ring", "sound"],
       "label": "Preferences Desktop Notification Bell",
-      "duplicates": ["oxygen_status_appointment-reminder", "oxygen_status_task-reminder"],
+      "duplicates": [],
       "context": "apps"
     },
     "oxygen_apps_preferences-desktop-printer": {
@@ -6270,7 +6230,7 @@
     },
     "oxygen_apps_preferences-desktop-search": {
       "file": "preferences-desktop-search.png",
-      "sizes": [32, 64, 128, 256],
+      "sizes": [32, 128, 256],
       "hints": ["search", "binoculars", "find", "look", "preferences", "desktop", "discover"],
       "label": "Preferences Desktop Search",
       "context": "apps"
@@ -6298,7 +6258,7 @@
     },
     "oxygen_apps_preferences-desktop-thunderbolt": {
       "file": "preferences-desktop-thunderbolt.png",
-      "sizes": [32, 64, 128, 256],
+      "sizes": [32, 128, 256],
       "hints": ["thunderbolt", "port", "connector", "lightning", "preferences", "hardware", "desktop"],
       "label": "Preferences Desktop Thunderbolt",
       "context": "apps"
@@ -6369,7 +6329,7 @@
     },
     "oxygen_apps_preferences-system-network-ethernet": {
       "file": "preferences-system-network-ethernet.png",
-      "sizes": [64, 128],
+      "sizes": [128],
       "hints": ["ethernet", "network", "rj45", "port", "connector", "lan", "preferences"],
       "label": "Preferences System Network Ethernet",
       "context": "apps"
@@ -6482,7 +6442,7 @@
     "oxygen_apps_semn": {
       "file": "semn.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/apps/semn.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/apps/semn.png"],
+      "hints": ["bookmark", "note", "sticky", "diagram", "flowchart", "sketch", "yellow", "mind map"],
       "label": "Semn",
       "context": "apps"
     },
@@ -6530,7 +6490,7 @@
     },
     "oxygen_apps_system-diagnosis": {
       "file": "system-diagnosis.png",
-      "sizes": [64, 128, 256],
+      "sizes": [128, 256],
       "hints": ["system", "diagnosis", "stethoscope", "syringe", "monitor", "health", "repair"],
       "label": "System Diagnosis",
       "context": "apps"
@@ -6542,14 +6502,6 @@
       "label": "System File Manager",
       "context": "apps"
     },
-    "oxygen_apps_system-reboot": {
-      "file": "system-reboot.png",
-      "sizes": [22],
-      "hints": ["system", "reboot", "restart", "refresh", "green", "arrow", "cycle"],
-      "label": "System Reboot",
-      "duplicate_of": "oxygen_actions_view-refresh",
-      "context": "apps"
-    },
     "oxygen_apps_system-software-update": {
       "file": "system-software-update.png",
       "hints": ["update", "software", "refresh", "system", "download", "install", "upgrade", "gear"],
@@ -6559,7 +6511,7 @@
     },
     "oxygen_apps_system-users": {
       "file": "system-users.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 48, 64, 128],
       "duplicate_of": "oxygen_actions_meeting-attending",
       "hints": ["users", "people", "accounts", "group", "man", "woman", "team", "system"],
       "label": "System Users",
@@ -6581,7 +6533,7 @@
     },
     "oxygen_apps_timevault": {
       "file": "timevault.png",
-      "sizes": [128, 256],
+      "sizes": [256],
       "hints": ["timevault", "vault", "safe", "backup", "date", "time", "security"],
       "label": "Timevault",
       "context": "apps"
@@ -6596,7 +6548,7 @@
     "oxygen_apps_utilities-file-archiver": {
       "file": "utilities-file-archiver.png",
       "hints": ["archive", "zip", "compress", "box", "package", "file", "storage"],
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16],
       "label": "Utilities File Archiver",
       "duplicate_of": "oxygen_apps_ark",
       "context": "apps"
@@ -6836,7 +6788,7 @@
     },
     "oxygen_categories_preferences-desktop-wallpaper": {
       "file": "preferences-desktop-wallpaper.png",
-      "sizes": [64, 128],
+      "sizes": [128],
       "hints": ["wallpaper", "desktop", "monitor", "background", "screen", "display", "preferences"],
       "label": "Preferences Desktop Wallpaper",
       "context": "categories"
@@ -6871,7 +6823,7 @@
     },
     "oxygen_categories_preferences-system-network-ethernet": {
       "file": "preferences-system-network-ethernet.png",
-      "sizes": [32, 128, 256],
+      "sizes": [32, 256],
       "hints": ["ethernet", "network", "rj45", "port", "connector", "lan", "preferences"],
       "label": "Preferences System Network Ethernet",
       "context": "categories"
@@ -6885,7 +6837,7 @@
     },
     "oxygen_categories_system-users": {
       "file": "system-users.png",
-      "sizes": [32, 64, 128, 256],
+      "sizes": [32, 128, 256],
       "hints": ["users", "people", "accounts", "group", "system", "profile", "contacts"],
       "label": "System Users",
       "duplicates": [],
@@ -7017,7 +6969,7 @@
     },
     "oxygen_devices_input-mouse": {
       "file": "input-mouse.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["mouse", "pointer", "click", "scroll wheel", "input", "peripheral", "cursor"],
       "label": "Input Mouse",
       "duplicate_of": "oxygen_apps_preferences-desktop-mouse",
@@ -7180,7 +7132,7 @@
     },
     "oxygen_devices_network-wireless": {
       "file": "network-wireless.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16],
       "hints": ["wifi", "wireless", "antenna", "signal", "network", "radio", "802.11"],
       "label": "Network Wireless",
       "duplicate_of": "oxygen_devices_network-wireless-connected-100",
@@ -7296,14 +7248,6 @@
       "hints": ["smartphone", "iphone", "mobile", "touchscreen", "cell phone", "android", "ios"],
       "label": "Smartphone",
       "duplicates": [],
-      "context": "devices"
-    },
-    "oxygen_devices_speaker": {
-      "file": "speaker.png",
-      "sizes": [16, 22, 32],
-      "duplicate_of": "oxygen_actions_speaker",
-      "hints": ["speaker", "audio", "sound", "cone", "driver", "woofer", "output"],
-      "label": "Speaker",
       "context": "devices"
     },
     "oxygen_devices_tablet": {
@@ -7536,7 +7480,7 @@
     },
     "oxygen_emblems_vcs-removed": {
       "file": "vcs-removed.png",
-      "sizes": [8, 16, 22, 32],
+      "sizes": [16, 22, 32],
       "hints": ["vcs", "removed", "delete", "git", "version", "control", "minus", "emblem"],
       "label": "Vcs Removed",
       "duplicates": ["oxygen_emblems_emblem-unavailable"],
@@ -7566,7 +7510,7 @@
     "oxygen_emotes_face-angel": {
       "file": "face-angel.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-angel",
+      "hints": ["angel", "smiley", "halo", "innocent", "happy", "emoticon", "yellow", "good"],
       "label": "Face Angel",
       "context": "emotes"
     },
@@ -7615,7 +7559,7 @@
     "oxygen_emotes_face-embarrassed": {
       "file": "face-embarrassed.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-embarrassed",
+      "hints": ["embarrassed", "blushing", "surprised", "shocked", "red cheeks", "emoticon", "oops", "smiley"],
       "label": "Face Embarrassed",
       "context": "emotes"
     },
@@ -7657,14 +7601,14 @@
     "oxygen_emotes_face-kiss": {
       "file": "face-kiss.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-kiss",
+      "hints": ["kiss", "lips", "love", "smooch", "red", "emoticon", "affection", "smiley"],
       "label": "Face Kiss",
       "context": "emotes"
     },
     "oxygen_emotes_face-laugh": {
       "file": "face-laugh.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-laugh",
+      "hints": ["laugh", "happy", "grin", "joy", "funny", "emoticon", "teeth", "smiley"],
       "label": "Face Laugh",
       "context": "emotes"
     },
@@ -7692,7 +7636,7 @@
     "oxygen_emotes_face-plain": {
       "file": "face-plain.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-plain",
+      "hints": ["neutral", "plain", "straight face", "flat", "meh", "emoticon", "expressionless", "smiley"],
       "label": "Face Plain",
       "context": "emotes"
     },
@@ -7706,14 +7650,14 @@
     "oxygen_emotes_face-raspberry": {
       "file": "face-raspberry.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-raspberry",
+      "hints": ["raspberry", "tongue", "playful", "teasing", "silly", "emoticon", "cheeky", "smiley"],
       "label": "Face Raspberry",
       "context": "emotes"
     },
     "oxygen_emotes_face-sad": {
       "file": "face-sad.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-sad",
+      "hints": ["sad", "frown", "unhappy", "down", "disappointed", "emoticon", "upset", "smiley"],
       "label": "Face Sad",
       "context": "emotes"
     },
@@ -7741,14 +7685,14 @@
     "oxygen_emotes_face-smile": {
       "file": "face-smile.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-smile",
+      "hints": ["smile", "happy", "friendly", "cheerful", "positive", "emoticon", "yellow", "smiley"],
       "label": "Face Smile",
       "context": "emotes"
     },
     "oxygen_emotes_face-smile-big": {
       "file": "face-smile-big.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-smile-big",
+      "hints": ["grin", "big smile", "happy", "teeth", "cheerful", "emoticon", "beaming", "smiley"],
       "label": "Face Smile Big",
       "context": "emotes"
     },
@@ -7790,7 +7734,7 @@
     "oxygen_emotes_face-surprise": {
       "file": "face-surprise.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-surprise",
+      "hints": ["surprise", "shocked", "wow", "open mouth", "amazed", "emoticon", "gasp", "smiley"],
       "label": "Face Surprise",
       "context": "emotes"
     },
@@ -7804,7 +7748,7 @@
     "oxygen_emotes_face-wink": {
       "file": "face-wink.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "inherits": "oxygen_emotes_face-wink",
+      "hints": ["wink", "flirt", "smile", "playful", "cheeky", "emoticon", "one eye", "smiley"],
       "label": "Face Wink",
       "context": "emotes"
     },
@@ -7984,7 +7928,7 @@
     },
     "oxygen_mimetypes_application-pkcs7-mime": {
       "file": "application-pkcs7-mime.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [64, 128, 256],
       "hints": ["pkcs7", "encrypted", "security", "certificate", "signed", "crypto", "smime", "secure"],
       "label": "Application Pkcs7 Mime",
       "duplicate_of": "oxygen_mimetypes_application-pgp-keys",
@@ -8146,7 +8090,7 @@
     },
     "oxygen_mimetypes_application-vnd.oasis.opendocument.text": {
       "file": "application-vnd.oasis.opendocument.text.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 256],
       "hints": ["odt", "opendocument", "text", "document", "libreoffice", "odf", "writer", "word"],
       "duplicates": ["oxygen_mimetypes_application-vnd.oasis.opendocument.text-master", "oxygen_mimetypes_application-vnd.oasis.opendocument.text-template", "oxygen_mimetypes_application-vnd.sun.xml.writer.template"],
       "label": "Application Vnd Oasis Opendocument Text",
@@ -8154,7 +8098,7 @@
     },
     "oxygen_mimetypes_application-vnd.oasis.opendocument.text-master": {
       "file": "application-vnd.oasis.opendocument.text-master.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 32, 48, 64, 128, 256],
       "hints": ["odt", "master", "opendocument", "text", "libreoffice", "odm", "document", "writer"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.text",
       "label": "Application Vnd Oasis Opendocument Text Master",
@@ -8162,7 +8106,7 @@
     },
     "oxygen_mimetypes_application-vnd.oasis.opendocument.text-template": {
       "file": "application-vnd.oasis.opendocument.text-template.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 32, 64, 128],
       "hints": ["ott", "odf", "template", "text", "writer", "pen", "ruler", "oasis"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.text",
       "label": "Application Vnd Oasis Opendocument Text Template",
@@ -8170,7 +8114,7 @@
     },
     "oxygen_mimetypes_application-vnd.oasis.opendocument.web.template": {
       "file": "application-vnd.oasis.opendocument.web.template.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 32, 48, 64, 128, 256],
       "hints": ["oth", "opendocument", "web", "template", "html", "globe", "internet", "oasis"],
       "duplicate_of": "oxygen_mimetypes_application-x-mswinurl",
       "label": "Application Vnd Oasis Opendocument Web Template",
@@ -8180,7 +8124,7 @@
       "file": "application-vnd.rn-realmedia.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["realmedia", "real", "rm", "ram", "video", "streaming", "clapperboard", "media"],
-      "duplicate_of": "oxygen_mimetypes_video-x-generic",
+      "duplicates": ["oxygen_mimetypes_video-x-flv"],
       "label": "Application Vnd Rn Realmedia",
       "context": "mimetypes"
     },
@@ -8193,7 +8137,7 @@
     },
     "oxygen_mimetypes_application-vnd.stardivision.mail": {
       "file": "application-vnd.stardivision.mail.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 32, 48, 64, 128, 256],
       "hints": ["starmail", "mail", "email", "staroffice", "stardivision", "message", "letter", "envelope"],
       "duplicates": ["oxygen_mimetypes_application-x-mimearchive", "oxygen_mimetypes_mail-message-new-list"],
       "label": "Application Vnd Stardivision Mail",
@@ -8201,7 +8145,7 @@
     },
     "oxygen_mimetypes_application-vnd.sun.xml.calc.template": {
       "file": "application-vnd.sun.xml.calc.template.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22],
       "hints": ["calc", "template", "spreadsheet", "openoffice", "staroffice", "stc", "table", "grid"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.spreadsheet-template",
       "label": "Application Vnd Sun Xml Calc Template",
@@ -8217,7 +8161,7 @@
     },
     "oxygen_mimetypes_application-vnd.sun.xml.impress.template": {
       "file": "application-vnd.sun.xml.impress.template.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [48],
       "hints": ["sun", "impress", "template", "presentation", "slides", "staroffice", "sti", "stationery"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.presentation-template",
       "label": "Application Vnd Sun Xml Impress Template",
@@ -8225,7 +8169,7 @@
     },
     "oxygen_mimetypes_application-vnd.sun.xml.writer.template": {
       "file": "application-vnd.sun.xml.writer.template.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [48],
       "hints": ["sun", "writer", "stw", "staroffice", "template", "pen", "document", "ruler"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.text",
       "label": "Application Vnd Sun Xml Writer Template",
@@ -8248,7 +8192,7 @@
     },
     "oxygen_mimetypes_application-x-applix-word": {
       "file": "application-x-applix-word.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["applix", "word", "document", "text", "processor", "anyware", "office", "writing"],
       "label": "Application X Applix Word",
       "duplicates": [],
@@ -8363,14 +8307,14 @@
     },
     "oxygen_mimetypes_application-x-dgn": {
       "file": "application-x-dgn.png",
-      "sizes": [64, 128, 256],
+      "sizes": [64, 256],
       "hints": ["dgn", "design", "cad", "blueprint", "floorplan", "architecture", "drawing"],
       "label": "Application X Dgn",
       "context": "mimetypes"
     },
     "oxygen_mimetypes_application-x-egon": {
       "file": "application-x-egon.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 22, 48, 64, 128, 256],
       "hints": ["egon", "photo", "image", "picture", "viewer", "gallery", "album", "kde"],
       "duplicates": ["oxygen_mimetypes_image-gif", "oxygen_mimetypes_image-x-adobe-dng"],
       "label": "Application X Egon",
@@ -8386,7 +8330,7 @@
     },
     "oxygen_mimetypes_application-x-flash-video": {
       "file": "application-x-flash-video.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["flv", "flash", "video", "swf", "movie", "media", "adobe", "streaming"],
       "label": "Application X Flash Video",
       "duplicate_of": "oxygen_mimetypes_application-x-shockwave-flash",
@@ -8418,7 +8362,7 @@
     },
     "oxygen_mimetypes_application-x-font-pcf": {
       "file": "application-x-font-pcf.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["pcf", "font", "bitmap", "pixel", "typeface", "portable", "compiled", "xorg"],
       "duplicate_of": "oxygen_mimetypes_application-x-font-bdf",
       "label": "Application X Font Pcf",
@@ -8426,7 +8370,7 @@
     },
     "oxygen_mimetypes_application-x-font-snf": {
       "file": "application-x-font-snf.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["snf", "font", "x11", "bitmap", "typeface", "server", "xorg", "typography"],
       "duplicate_of": "oxygen_mimetypes_application-x-font-bdf",
       "label": "Application X Font Snf",
@@ -8442,7 +8386,7 @@
     },
     "oxygen_mimetypes_application-x-font-type1": {
       "file": "application-x-font-type1.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 256],
       "hints": ["font", "type1", "postscript", "typeface", "typography", "text", "character", "letter"],
       "duplicate_of": "oxygen_mimetypes_application-x-font-afm",
       "label": "Application X Font Type1",
@@ -8450,7 +8394,7 @@
     },
     "oxygen_mimetypes_application-x-gzpostscript": {
       "file": "application-x-gzpostscript.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["postscript", "ps", "gzip", "compressed", "print", "gz", "document", "printer"],
       "label": "Application X Gzpostscript",
       "duplicate_of": "oxygen_mimetypes_application-postscript",
@@ -8458,7 +8402,7 @@
     },
     "oxygen_mimetypes_application-x-iso": {
       "file": "application-x-iso.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["iso", "disc", "image", "cd", "dvd", "optical", "mount", "burn"],
       "duplicate_of": "oxygen_mimetypes_application-x-cd-image",
       "label": "Application X Iso",
@@ -8466,7 +8410,7 @@
     },
     "oxygen_mimetypes_application-x-java": {
       "file": "application-x-java.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["java", "jar", "application", "coffee", "jvm", "bytecode", "class", "oracle"],
       "duplicate_of": "oxygen_mimetypes_application-x-java-applet",
       "label": "Application X Java",
@@ -8518,7 +8462,7 @@
     },
     "oxygen_mimetypes_application-x-kexiproject-sqlite": {
       "file": "application-x-kexiproject-sqlite.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["kexi", "sqlite", "database", "project", "db", "file", "kde", "data"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.database",
       "label": "Application X Kexiproject Sqlite",
@@ -8533,7 +8477,7 @@
     },
     "oxygen_mimetypes_application-x-kontour": {
       "file": "application-x-kontour.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["kontour", "vector", "graphics", "bezier", "curve", "kde", "drawing", "karbon"],
       "duplicates": ["oxygen_mimetypes_image-svg+xml-compressed"],
       "label": "Application X Kontour",
@@ -8585,7 +8529,7 @@
     },
     "oxygen_mimetypes_application-x-mimearchive": {
       "file": "application-x-mimearchive.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22],
       "hints": ["mime", "archive", "message", "email", "mht", "mhtml", "file", "web"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.stardivision.mail",
       "label": "Application X Mimearchive",
@@ -8593,7 +8537,7 @@
     },
     "oxygen_mimetypes_application-x-ms-dos-executable": {
       "file": "application-x-ms-dos-executable.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["exe", "executable", "dos", "windows", "program", "gear", "terminal", "binary"],
       "duplicate_of": "oxygen_mimetypes_application-x-executable-script",
       "label": "Application X Ms Dos Executable",
@@ -8623,7 +8567,7 @@
     },
     "oxygen_mimetypes_application-x-pem-key": {
       "file": "application-x-pem-key.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["pem", "key", "certificate", "safe", "dial", "crypto", "ssl", "security"],
       "label": "Application X Pem Key",
       "duplicate_of": "oxygen_mimetypes_application-pgp-keys",
@@ -8681,7 +8625,7 @@
     },
     "oxygen_mimetypes_application-x-shellscript": {
       "file": "application-x-shellscript.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 32, 48, 64, 128, 256],
       "hints": ["shell", "script", "bash", "terminal", "command", "sh", "console", "unix"],
       "duplicate_of": "oxygen_mimetypes_application-x-awk",
       "label": "Application X Shellscript",
@@ -8689,7 +8633,7 @@
     },
     "oxygen_mimetypes_application-x-shockwave-flash": {
       "file": "application-x-shockwave-flash.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["flash", "swf", "shockwave", "adobe", "animation", "movie", "player", "media"],
       "duplicates": ["oxygen_mimetypes_application-x-flash-video"],
       "label": "Application X Shockwave Flash",
@@ -8735,7 +8679,7 @@
     },
     "oxygen_mimetypes_application-x-subrip": {
       "file": "application-x-subrip.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["srt", "subrip", "subtitle", "caption", "video", "text", "sub", "movie"],
       "duplicate_of": "oxygen_mimetypes_application-x-srt",
       "label": "Application X Subrip",
@@ -8773,7 +8717,7 @@
     },
     "oxygen_mimetypes_application-xml": {
       "file": "application-xml.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["xml", "markup", "data", "code", "configuration", "web", "document", "structured"],
       "duplicate_of": "oxygen_mimetypes_application-xhtml+xml",
       "label": "Application Xml",
@@ -8788,7 +8732,7 @@
     },
     "oxygen_mimetypes_application-xslt+xml": {
       "file": "application-xslt+xml.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [48, 64, 128, 256],
       "hints": ["xslt", "xml", "stylesheet", "transformation", "document", "web", "globe", "transform"],
       "duplicate_of": "oxygen_mimetypes_application-x-mswinurl",
       "label": "Application Xslt Xml",
@@ -8812,7 +8756,7 @@
     },
     "oxygen_mimetypes_audio-x-adpcm": {
       "file": "audio-x-adpcm.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["adpcm", "audio", "waveform", "music", "sound", "compressed", "pcm", "note"],
       "label": "Audio X Adpcm",
       "duplicates": [],
@@ -8820,7 +8764,7 @@
     },
     "oxygen_mimetypes_audio-x-flac+ogg": {
       "file": "audio-x-flac+ogg.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [48, 64, 128, 256],
       "hints": ["flac", "ogg", "audio", "music", "lossless", "sound", "codec", "vorbis"],
       "duplicates": ["oxygen_mimetypes_text-vnd.abc"],
       "label": "Audio X Flac Ogg",
@@ -8828,7 +8772,7 @@
     },
     "oxygen_mimetypes_audio-x-mpeg": {
       "file": "audio-x-mpeg.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 32, 48, 64, 128],
       "hints": ["mpeg", "mp3", "audio", "music", "sound", "mp2", "layer3", "multimedia"],
       "label": "Audio X Mpeg",
       "duplicates": [],
@@ -8843,7 +8787,7 @@
     },
     "oxygen_mimetypes_encrypted": {
       "file": "encrypted.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["encrypted", "secure", "locked", "protected", "cipher", "password", "security", "cryptography"],
       "label": "Encrypted",
       "duplicate_of": "oxygen_mimetypes_application-pgp-keys",
@@ -8851,7 +8795,7 @@
     },
     "oxygen_mimetypes_image-gif": {
       "file": "image-gif.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["gif", "image", "picture", "photo", "graphics", "animation", "raster", "web"],
       "duplicate_of": "oxygen_mimetypes_application-x-egon",
       "label": "Image Gif",
@@ -8859,7 +8803,7 @@
     },
     "oxygen_mimetypes_image-svg+xml-compressed": {
       "file": "image-svg+xml-compressed.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["svgz", "svg", "compressed", "vector", "image", "graphic", "xml", "scalable"],
       "duplicate_of": "oxygen_mimetypes_application-x-kontour",
       "label": "Image Svg Xml Compressed",
@@ -8867,7 +8811,7 @@
     },
     "oxygen_mimetypes_image-vnd.dgn": {
       "file": "image-vnd.dgn.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 128],
       "hints": ["dgn", "microstation", "cad", "blueprint", "design", "architecture", "drawing", "bentley"],
       "label": "Image Vnd Dgn",
       "context": "mimetypes"
@@ -8881,7 +8825,7 @@
     },
     "oxygen_mimetypes_image-x-adobe-dng": {
       "file": "image-x-adobe-dng.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["dng", "adobe", "raw", "camera", "negative", "rgb", "photo", "digital"],
       "duplicate_of": "oxygen_mimetypes_application-x-egon",
       "label": "Image X Adobe Dng",
@@ -8905,13 +8849,13 @@
       "file": "inode-directory.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "directory", "dir", "inode", "filesystem", "files", "container", "path"],
-      "duplicates": ["oxygen_places_folder", "oxygen_places_stock_folder"],
+      "duplicates": ["oxygen_places_folder"],
       "label": "Inode Directory",
       "context": "mimetypes"
     },
     "oxygen_mimetypes_libreoffice-oasis-formula": {
       "file": "libreoffice-oasis-formula.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["formula", "math", "equation", "libreoffice", "odf", "greek", "symbols", "scientific"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.formula",
       "label": "Libreoffice Oasis Formula",
@@ -8919,7 +8863,7 @@
     },
     "oxygen_mimetypes_mail-message-new-list": {
       "file": "mail-message-new-list.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [32, 48, 64],
       "hints": ["mail", "email", "message", "list", "envelope", "mailing", "newsletter", "new"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.stardivision.mail",
       "label": "Mail Message New List",
@@ -8941,7 +8885,7 @@
     },
     "oxygen_mimetypes_odf": {
       "file": "odf.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 256],
       "hints": ["odf", "opendocument", "libreoffice", "document", "oasis", "pen", "office", "open"],
       "duplicate_of": "oxygen_mimetypes_application-msword",
       "label": "Odf",
@@ -8949,7 +8893,7 @@
     },
     "oxygen_mimetypes_package-x-generic": {
       "file": "package-x-generic.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["package", "generic", "archive", "box", "container", "install", "software", "files"],
       "label": "Package X Generic",
       "duplicates": [],
@@ -8965,7 +8909,7 @@
     },
     "oxygen_mimetypes_text-csharp": {
       "file": "text-csharp.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64],
       "hints": ["csharp", "cs", "dotnet", "microsoft", "code", "programming", "source", "blue"],
       "duplicates": ["oxygen_mimetypes_text-x-csharp"],
       "label": "Text Csharp",
@@ -8973,7 +8917,7 @@
     },
     "oxygen_mimetypes_text-css": {
       "file": "text-css.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["css", "stylesheet", "style", "web", "design", "html", "formatting", "code"],
       "duplicate_of": "oxygen_mimetypes_application-x-srt",
       "label": "Text Css",
@@ -8981,7 +8925,7 @@
     },
     "oxygen_mimetypes_text-csv": {
       "file": "text-csv.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["csv", "spreadsheet", "table", "data", "comma", "separated", "values", "excel"],
       "duplicate_of": "oxygen_mimetypes_application-vnd.oasis.opendocument.spreadsheet",
       "label": "Text Csv",
@@ -9003,7 +8947,7 @@
     },
     "oxygen_mimetypes_text-plain": {
       "file": "text-plain.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["txt", "text", "plain", "ascii", "document", "notepad", "file", "simple"],
       "duplicates": [],
       "label": "Text Plain",
@@ -9019,7 +8963,7 @@
     },
     "oxygen_mimetypes_text-sgml": {
       "file": "text-sgml.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["sgml", "markup", "text", "document", "xml", "html", "standard", "generalized"],
       "label": "Text Sgml",
       "duplicates": ["oxygen_mimetypes_text-x-plain", "oxygen_mimetypes_text-x-readme"],
@@ -9027,7 +8971,7 @@
     },
     "oxygen_mimetypes_text-troff": {
       "file": "text-troff.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["troff", "groff", "man", "manual", "roff", "unix", "document", "typeset"],
       "duplicate_of": "oxygen_mimetypes_application-x-troff-man",
       "label": "Text Troff",
@@ -9035,7 +8979,7 @@
     },
     "oxygen_mimetypes_text-vcalendar": {
       "file": "text-vcalendar.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [48, 64, 128, 256],
       "hints": ["vcalendar", "vcs", "calendar", "event", "schedule", "green", "appointment", "date"],
       "label": "Text Vcalendar",
       "duplicate_of": "oxygen_mimetypes_text-calendar",
@@ -9043,7 +8987,7 @@
     },
     "oxygen_mimetypes_text-vnd.abc": {
       "file": "text-vnd.abc.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["abc", "music", "notation", "text", "document", "file", "sheet", "score"],
       "duplicate_of": "oxygen_mimetypes_audio-x-flac+ogg",
       "label": "Text Vnd Abc",
@@ -9058,7 +9002,7 @@
     },
     "oxygen_mimetypes_text-x-authors": {
       "file": "text-x-authors.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["authors", "contributors", "names", "developers", "maintainers", "text", "credits", "team"],
       "duplicate_of": "oxygen_mimetypes_application-rtf",
       "label": "Text X Authors",
@@ -9096,7 +9040,7 @@
     },
     "oxygen_mimetypes_text-x-cmake": {
       "file": "text-x-cmake.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["cmake", "build", "makefile", "script", "configuration", "compile", "project", "kitware"],
       "duplicate_of": "oxygen_mimetypes_application-rtf",
       "label": "Text X Cmake",
@@ -9104,7 +9048,7 @@
     },
     "oxygen_mimetypes_text-x-copying": {
       "file": "text-x-copying.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["copying", "license", "gpl", "legal", "copyright", "text", "document", "terms"],
       "label": "Text X Copying",
       "duplicates": [],
@@ -9112,7 +9056,7 @@
     },
     "oxygen_mimetypes_text-x-csharp": {
       "file": "text-x-csharp.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 32, 48, 64, 128, 256],
       "hints": ["csharp", "dotnet", "code", "programming", "microsoft", "source", "cs", "mono"],
       "duplicate_of": "oxygen_mimetypes_text-csharp",
       "label": "Text X Csharp",
@@ -9142,7 +9086,7 @@
     },
     "oxygen_mimetypes_text-x-install": {
       "file": "text-x-install.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["install", "instructions", "setup", "readme", "text", "documentation", "howto", "guide"],
       "duplicate_of": "oxygen_mimetypes_application-rtf",
       "label": "Text X Install",
@@ -9150,7 +9094,7 @@
     },
     "oxygen_mimetypes_text-x-java": {
       "file": "text-x-java.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["java", "coffee", "cup", "code", "programming", "source", "class", "jvm"],
       "label": "Text X Java",
       "duplicates": [],
@@ -9158,7 +9102,7 @@
     },
     "oxygen_mimetypes_text-x-katefilelist": {
       "file": "text-x-katefilelist.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["kate", "filelist", "session", "editor", "kde", "pen", "text", "files"],
       "duplicate_of": "oxygen_mimetypes_application-rtf",
       "label": "Text X Katefilelist",
@@ -9181,7 +9125,7 @@
     },
     "oxygen_mimetypes_text-x-log": {
       "file": "text-x-log.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["log", "text", "file", "journal", "debug", "system", "record", "messages"],
       "duplicate_of": "oxygen_mimetypes_application-rtf",
       "label": "Text X Log",
@@ -9189,7 +9133,7 @@
     },
     "oxygen_mimetypes_text-x-makefile": {
       "file": "text-x-makefile.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22, 32, 48, 64, 128, 256],
       "hints": ["makefile", "make", "build", "gear", "compile", "automation", "script", "gnu"],
       "duplicate_of": "oxygen_mimetypes_application-x-m4",
       "label": "Text X Makefile",
@@ -9197,7 +9141,7 @@
     },
     "oxygen_mimetypes_text-x-objchdr": {
       "file": "text-x-objchdr.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [22],
       "hints": ["objc", "header", "h", "objective", "apple", "cocoa", "include", "pink"],
       "duplicate_of": "oxygen_mimetypes_text-x-chdr",
       "label": "Text X Objchdr",
@@ -9219,7 +9163,7 @@
     },
     "oxygen_mimetypes_text-x-plain": {
       "file": "text-x-plain.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64],
       "hints": ["txt", "text", "plain", "file", "document", "notepad", "ascii", "readme"],
       "duplicate_of": "oxygen_mimetypes_text-sgml",
       "label": "Text X Plain",
@@ -9248,7 +9192,7 @@
     },
     "oxygen_mimetypes_text-x-readme": {
       "file": "text-x-readme.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["readme", "documentation", "text", "info", "help", "instructions", "read", "txt"],
       "duplicate_of": "oxygen_mimetypes_text-sgml",
       "label": "Text X Readme",
@@ -9263,7 +9207,7 @@
     },
     "oxygen_mimetypes_text-x-script": {
       "file": "text-x-script.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [48, 64, 128, 256],
       "hints": ["script", "shell", "bash", "command", "terminal", "executable", "sh", "code"],
       "duplicate_of": "oxygen_mimetypes_application-x-awk",
       "label": "Text X Script",
@@ -9285,7 +9229,7 @@
     },
     "oxygen_mimetypes_text-x-tex": {
       "file": "text-x-tex.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [128],
       "hints": ["tex", "latex", "typeset", "document", "math", "science", "publishing", "text"],
       "duplicate_of": "oxygen_mimetypes_text-x-bibtex",
       "label": "Text X Tex",
@@ -9300,7 +9244,7 @@
     },
     "oxygen_mimetypes_text-x-vcard": {
       "file": "text-x-vcard.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [64, 128, 256],
       "hints": ["vcard", "vcf", "contact", "address", "person", "phone", "card", "contacts"],
       "duplicate_of": "oxygen_mimetypes_text-x-ldif",
       "label": "Text X Vcard",
@@ -9308,7 +9252,7 @@
     },
     "oxygen_mimetypes_text-xml": {
       "file": "text-xml.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["xml", "markup", "code", "tags", "brackets", "purple", "data", "config"],
       "duplicate_of": "oxygen_mimetypes_application-xhtml+xml",
       "label": "Text Xml",
@@ -9323,7 +9267,7 @@
     },
     "oxygen_mimetypes_uri-mms": {
       "file": "uri-mms.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [32, 48, 64, 128, 256],
       "hints": ["mms", "stream", "microsoft", "media", "globe", "clapperboard", "uri", "video"],
       "duplicates": [],
       "label": "Uri Mms",
@@ -9331,18 +9275,10 @@
     },
     "oxygen_mimetypes_video-x-flv": {
       "file": "video-x-flv.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 32],
       "hints": ["flv", "flash", "video", "movie", "clapperboard", "film", "streaming", "adobe"],
-      "duplicate_of": "oxygen_mimetypes_video-x-generic",
+      "duplicate_of": "oxygen_mimetypes_application-vnd.rn-realmedia",
       "label": "Video X Flv",
-      "context": "mimetypes"
-    },
-    "oxygen_mimetypes_video-x-generic": {
-      "file": "video-x-generic.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["video", "generic", "movie", "film", "clapperboard", "media", "clip", "multimedia"],
-      "duplicates": ["oxygen_mimetypes_application-vnd.rn-realmedia", "oxygen_mimetypes_video-x-flv"],
-      "label": "Video X Generic",
       "context": "mimetypes"
     },
     "oxygen_mimetypes_x-kde-nsplugin-generated": {
@@ -9406,7 +9342,7 @@
     },
     "oxygen_places_favorites": {
       "file": "favorites.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 256],
       "hints": ["star", "favorite", "gold", "yellow", "bookmark", "rating", "important", "featured"],
       "duplicate_of": "oxygen_places_bookmarks",
       "label": "Favorites",
@@ -9414,7 +9350,7 @@
     },
     "oxygen_places_folder": {
       "file": "folder.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16],
       "hints": ["folder", "blue", "directory", "generic", "storage", "files", "default"],
       "label": "Folder",
       "duplicate_of": "oxygen_mimetypes_inode-directory",
@@ -9422,7 +9358,7 @@
     },
     "oxygen_places_folder-activities": {
       "file": "folder-activities.png",
-      "sizes": [8, 16, 22, 32, 48, 64, 128, 256],
+      "sizes": [16, 22, 32, 48, 128, 256],
       "hints": ["folder", "activities", "spheres", "orbs", "colorful", "blue", "plasma", "desktop"],
       "label": "Folder Activities",
       "context": "places"
@@ -9467,7 +9403,7 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "development", "hammer", "build", "tools", "blue", "construction", "programming"],
       "label": "Folder Development",
-      "duplicates": ["oxygen_places_folder-script"],
+      "duplicates": [],
       "context": "places"
     },
     "oxygen_places_folder-documents": {
@@ -9518,14 +9454,14 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "html", "web", "browser", "globe", "internet", "blue", "website"],
       "label": "Folder Html",
-      "duplicates": ["oxygen_actions_applications-internet", "oxygen_places_folder_html"],
+      "duplicates": [],
       "context": "places"
     },
     "oxygen_places_folder-image": {
       "file": "folder-image.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "image", "photos", "pictures", "gallery", "blue", "media", "colorful"],
-      "duplicate_of": "oxygen_places_folder-pictures",
+      "duplicates": [],
       "label": "Folder Image",
       "context": "places"
     },
@@ -9558,14 +9494,6 @@
       "label": "Folder Network",
       "context": "places"
     },
-    "oxygen_places_folder-open": {
-      "file": "folder-open.png",
-      "sizes": [16, 22, 32, 48],
-      "hints": ["folder", "open", "blue", "directory", "expanded", "files", "documents", "opened"],
-      "label": "Folder Open",
-      "duplicate_of": "oxygen_status_folder-open",
-      "context": "places"
-    },
     "oxygen_places_folder-orange": {
       "file": "folder-orange.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
@@ -9573,43 +9501,11 @@
       "label": "Folder Orange",
       "context": "places"
     },
-    "oxygen_places_folder-picture": {
-      "file": "folder-picture.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "picture", "photos", "images", "gallery", "blue", "media", "colorful"],
-      "duplicate_of": "oxygen_places_folder-pictures",
-      "label": "Folder Picture",
-      "context": "places"
-    },
-    "oxygen_places_folder-pictures": {
-      "file": "folder-pictures.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "pictures", "photos", "images", "gallery", "blue", "media", "photography"],
-      "duplicates": ["oxygen_places_folder-image", "oxygen_places_folder-picture"],
-      "label": "Folder Pictures",
-      "context": "places"
-    },
     "oxygen_places_folder-print": {
       "file": "folder-print.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "print", "printer", "documents", "blue", "output", "paper", "printing"],
       "label": "Folder Print",
-      "context": "places"
-    },
-    "oxygen_places_folder-public": {
-      "file": "folder-public.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "public", "globe", "world", "blue", "shared", "network", "internet"],
-      "label": "Folder Public",
-      "duplicate_of": "oxygen_places_folder-remote",
-      "context": "places"
-    },
-    "oxygen_places_folder-publicshare": {
-      "file": "folder-publicshare.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "public", "share", "globe", "world", "blue", "network", "internet"],
-      "label": "Folder Publicshare",
-      "duplicate_of": "oxygen_places_folder-remote",
       "context": "places"
     },
     "oxygen_places_folder-red": {
@@ -9624,15 +9520,7 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "remote", "network", "globe", "world", "blue", "ftp", "server"],
       "label": "Folder Remote",
-      "duplicates": ["oxygen_places_folder-public", "oxygen_places_folder-publicshare"],
-      "context": "places"
-    },
-    "oxygen_places_folder-script": {
-      "file": "folder-script.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "script", "hammer", "build", "development", "tools", "code", "blue"],
-      "label": "Folder Script",
-      "duplicate_of": "oxygen_places_folder-development",
+      "duplicates": [],
       "context": "places"
     },
     "oxygen_places_folder-sound": {
@@ -9640,7 +9528,7 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "sound", "music", "notes", "audio", "blue", "green", "songs"],
       "label": "Folder Sound",
-      "duplicates": ["oxygen_places_library-music"],
+      "duplicates": [],
       "context": "places"
     },
     "oxygen_places_folder-tar": {
@@ -9657,20 +9545,12 @@
       "label": "Folder Temp",
       "context": "places"
     },
-    "oxygen_places_folder-text": {
-      "file": "folder-text.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "text", "pencil", "documents", "blue", "yellow", "write", "edit"],
-      "label": "Folder Text",
-      "duplicate_of": "oxygen_places_folder-txt",
-      "context": "places"
-    },
     "oxygen_places_folder-txt": {
       "file": "folder-txt.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "text", "pencil", "documents", "blue", "directory", "files", "edit"],
       "label": "Folder Txt",
-      "duplicates": ["oxygen_places_folder-text"],
+      "duplicates": [],
       "context": "places"
     },
     "oxygen_places_folder-video": {
@@ -9678,15 +9558,7 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "video", "movie", "clapperboard", "film", "blue", "slate", "cinema"],
       "label": "Folder Video",
-      "duplicates": ["oxygen_places_folder-videos"],
-      "context": "places"
-    },
-    "oxygen_places_folder-videos": {
-      "file": "folder-videos.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "videos", "movie", "clapperboard", "film", "blue", "slate", "cinema"],
-      "label": "Folder Videos",
-      "duplicate_of": "oxygen_places_folder-video",
+      "duplicates": [],
       "context": "places"
     },
     "oxygen_places_folder-violet": {
@@ -9701,22 +9573,6 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["folder", "yellow", "gold", "directory", "storage", "files", "generic", "manilla"],
       "label": "Folder Yellow",
-      "context": "places"
-    },
-    "oxygen_places_folder_html": {
-      "file": "folder_html.png",
-      "sizes": [16, 22, 32, 48],
-      "hints": ["folder", "html", "web", "browser", "blue", "globe", "webpage", "internet"],
-      "label": "Folder Html",
-      "duplicate_of": "oxygen_places_folder-html",
-      "context": "places"
-    },
-    "oxygen_places_library-music": {
-      "file": "library-music.png",
-      "sizes": [32, 64],
-      "hints": ["music", "library", "folder", "notes", "audio", "collection", "songs"],
-      "duplicate_of": "oxygen_places_folder-sound",
-      "label": "Library Music",
       "context": "places"
     },
     "oxygen_places_mail-folder-inbox": {
@@ -9750,7 +9606,7 @@
     },
     "oxygen_places_network-server": {
       "file": "network-server.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [64, 128, 256],
       "hints": ["server", "network", "rack", "data center", "computer", "hosting", "storage", "silver"],
       "duplicate_of": "oxygen_mimetypes_application-x-smb-server",
       "label": "Network Server",
@@ -9765,7 +9621,7 @@
     },
     "oxygen_places_network-workgroup": {
       "file": "network-workgroup.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [48, 64, 128, 256],
       "hints": ["network", "workgroup", "globe", "world", "lan", "connection", "computers", "ethernet"],
       "duplicate_of": "oxygen_mimetypes_application-x-smb-workgroup",
       "label": "Network Workgroup",
@@ -9794,18 +9650,10 @@
     },
     "oxygen_places_start-here-kde": {
       "file": "start-here-kde.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
+      "sizes": [256],
       "hints": ["kde", "start", "home", "menu", "gear", "cog", "blue", "logo"],
       "label": "Start Here Kde",
       "duplicate_of": "oxygen_apps_kde",
-      "context": "places"
-    },
-    "oxygen_places_stock_folder": {
-      "file": "stock_folder.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["folder", "stock", "blue", "directory", "generic", "storage", "files", "default"],
-      "label": "Stock Folder",
-      "duplicate_of": "oxygen_mimetypes_inode-directory",
       "context": "places"
     },
     "oxygen_places_user-desktop": {
@@ -9837,14 +9685,6 @@
       "label": "User Trash",
       "context": "places"
     },
-    "oxygen_places_user-trash-full": {
-      "file": "user-trash-full.png",
-      "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["trash", "full", "recycle", "bin", "delete", "paper", "waste", "garbage"],
-      "label": "User Trash Full",
-      "duplicate_of": "oxygen_status_user-trash-full",
-      "context": "places"
-    },
     "oxygen_special_file-zoom-in": {
       "file": "file-zoom-in.png",
       "sizes": [16, 22],
@@ -9859,39 +9699,26 @@
       "label": "File Zoom Out",
       "context": "special"
     },
-    "oxygen_status_appointment-recurring": {
-      "file": "appointment-recurring.png",
-      "sizes": [16, 22, 32],
-      "hints": ["appointment", "recurring", "repeat", "calendar", "event", "cycle", "loop", "schedule"],
-      "label": "Appointment Recurring",
-      "duplicate_of": "oxygen_actions_view-refresh",
-      "context": "status"
-    },
-    "oxygen_status_appointment-reminder": {
-      "file": "appointment-reminder.png",
-      "sizes": [16, 22, 32],
-      "hints": ["appointment", "reminder", "bell", "notification", "alarm", "alert", "event", "calendar"],
-      "label": "Appointment Reminder",
-      "duplicate_of": "oxygen_apps_preferences-desktop-notification-bell",
-      "context": "status"
-    },
     "oxygen_status_audio-headphones-symbolic": {
       "file": "audio-headphones-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Audio Headphones Symbolic"
     },
     "oxygen_status_audio-headset-symbolic": {
       "file": "audio-headset-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Audio Headset Symbolic"
     },
     "oxygen_status_audio-off-symbolic": {
       "file": "audio-off-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Audio Off Symbolic"
     },
     "oxygen_status_audio-volume-high": {
       "file": "audio-volume-high.png",
@@ -9912,7 +9739,8 @@
       "file": "audio-volume-low-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Audio Volume Low Symbolic"
     },
     "oxygen_status_audio-volume-medium": {
       "file": "audio-volume-medium.png",
@@ -9925,7 +9753,8 @@
       "file": "audio-volume-medium-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Audio Volume Medium Symbolic"
     },
     "oxygen_status_audio-volume-muted": {
       "file": "audio-volume-muted.png",
@@ -9939,43 +9768,50 @@
       "file": "battery-000-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 000 Symbolic"
     },
     "oxygen_status_battery-010-charging-symbolic": {
       "file": "battery-010-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 010 Charging Symbolic"
     },
     "oxygen_status_battery-010-symbolic": {
       "file": "battery-010-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 010 Symbolic"
     },
     "oxygen_status_battery-020-charging-symbolic": {
       "file": "battery-020-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 020 Charging Symbolic"
     },
     "oxygen_status_battery-020-symbolic": {
       "file": "battery-020-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 020 Symbolic"
     },
     "oxygen_status_battery-030-charging-symbolic": {
       "file": "battery-030-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 030 Charging Symbolic"
     },
     "oxygen_status_battery-030-symbolic": {
       "file": "battery-030-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 030 Symbolic"
     },
     "oxygen_status_battery-040": {
       "file": "battery-040.png",
@@ -9988,25 +9824,29 @@
       "file": "battery-040-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 040 Charging Symbolic"
     },
     "oxygen_status_battery-040-symbolic": {
       "file": "battery-040-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 040 Symbolic"
     },
     "oxygen_status_battery-050-charging-symbolic": {
       "file": "battery-050-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 050 Charging Symbolic"
     },
     "oxygen_status_battery-050-symbolic": {
       "file": "battery-050-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 050 Symbolic"
     },
     "oxygen_status_battery-060": {
       "file": "battery-060.png",
@@ -10019,25 +9859,29 @@
       "file": "battery-060-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 060 Charging Symbolic"
     },
     "oxygen_status_battery-060-symbolic": {
       "file": "battery-060-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 060 Symbolic"
     },
     "oxygen_status_battery-070-charging-symbolic": {
       "file": "battery-070-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 070 Charging Symbolic"
     },
     "oxygen_status_battery-070-symbolic": {
       "file": "battery-070-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 070 Symbolic"
     },
     "oxygen_status_battery-080": {
       "file": "battery-080.png",
@@ -10050,25 +9894,29 @@
       "file": "battery-080-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 080 Charging Symbolic"
     },
     "oxygen_status_battery-080-symbolic": {
       "file": "battery-080-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 080 Symbolic"
     },
     "oxygen_status_battery-090-charging-symbolic": {
       "file": "battery-090-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 090 Charging Symbolic"
     },
     "oxygen_status_battery-090-symbolic": {
       "file": "battery-090-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 090 Symbolic"
     },
     "oxygen_status_battery-100": {
       "file": "battery-100.png",
@@ -10081,7 +9929,8 @@
       "file": "battery-100-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery 100 Symbolic"
     },
     "oxygen_status_battery-caution": {
       "file": "battery-caution.png",
@@ -10094,7 +9943,7 @@
       "file": "battery-charging.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["battery", "charging", "power", "lightning", "bolt", "energy", "electricity", "plugged"],
-      "duplicates": ["oxygen_status_battery-full-charging"],
+      "duplicates": [],
       "label": "Battery Charging",
       "context": "status"
     },
@@ -10137,33 +9986,29 @@
       "file": "battery-empty-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery Empty Charging Symbolic"
     },
     "oxygen_status_battery-empty-symbolic": {
       "file": "battery-empty-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
-    },
-    "oxygen_status_battery-full-charging": {
-      "file": "battery-full-charging.png",
-      "sizes": [16, 22, 32],
-      "hints": ["battery", "full", "charging", "100 percent", "power", "lightning", "complete", "plugged"],
-      "duplicate_of": "oxygen_status_battery-charging",
-      "label": "Battery Full Charging",
-      "context": "status"
+      "symbolic": true,
+      "label": "Battery Empty Symbolic"
     },
     "oxygen_status_battery-full-charging-symbolic": {
       "file": "battery-full-charging-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery Full Charging Symbolic"
     },
     "oxygen_status_battery-full-symbolic": {
       "file": "battery-full-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery Full Symbolic"
     },
     "oxygen_status_battery-low": {
       "file": "battery-low.png",
@@ -10183,87 +10028,62 @@
       "file": "battery-missing-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery Missing Symbolic"
     },
     "oxygen_status_battery-profile-performance-symbolic": {
       "file": "battery-profile-performance-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Battery Profile Performance Symbolic"
     },
     "oxygen_status_camera-photo-symbolic": {
       "file": "camera-photo-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Camera Photo Symbolic"
     },
     "oxygen_status_camera-video-symbolic": {
       "file": "camera-video-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Camera Video Symbolic"
     },
     "oxygen_status_camera-web-symbolic": {
       "file": "camera-web-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Camera Web Symbolic"
     },
     "oxygen_status_car-symbolic": {
       "file": "car-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
-    },
-    "oxygen_status_cloudstatus": {
-      "file": "cloudstatus.png",
-      "sizes": [16, 22],
-      "hints": ["cloud", "status", "computer", "desktop", "monitor", "online", "sync", "network"],
-      "label": "Cloudstatus",
-      "duplicates": ["oxygen_status_dropboxstatus-busy2", "oxygen_status_dropboxstatus-logo"],
-      "context": "status"
+      "symbolic": true,
+      "label": "Car Symbolic"
     },
     "oxygen_status_computer-laptop-symbolic": {
       "file": "computer-laptop-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
-    },
-    "oxygen_status_data-error": {
-      "file": "data-error.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["data", "error", "red", "x", "failed", "database", "corrupt", "problem"],
-      "label": "Data Error",
-      "duplicate_of": "oxygen_status_dialog-error",
-      "context": "status"
-    },
-    "oxygen_status_data-information": {
-      "file": "data-information.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["data", "information", "info", "blue", "help", "about", "details", "notice"],
-      "label": "Data Information",
-      "duplicate_of": "oxygen_actions_help-about",
-      "context": "status"
-    },
-    "oxygen_status_data-warning": {
-      "file": "data-warning.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["data", "warning", "alert", "triangle", "exclamation", "yellow", "caution", "attention"],
-      "label": "Data Warning",
-      "duplicate_of": "oxygen_status_dialog-warning",
-      "context": "status"
+      "symbolic": true,
+      "label": "Computer Laptop Symbolic"
     },
     "oxygen_status_dialog-error": {
       "file": "dialog-error.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["dialog", "error", "red", "x", "close", "failed", "stop", "cancel"],
       "label": "Dialog Error",
-      "duplicates": ["oxygen_status_data-error"],
+      "duplicates": [],
       "context": "status"
     },
     "oxygen_status_dialog-information": {
       "file": "dialog-information.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [64, 128],
       "duplicate_of": "oxygen_actions_help-about",
       "hints": ["dialog", "information", "info", "blue", "help", "about", "notice", "details"],
       "label": "Dialog Information",
@@ -10281,56 +10101,44 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["dialog", "warning", "alert", "triangle", "exclamation", "yellow", "caution", "attention"],
       "label": "Dialog Warning",
-      "duplicates": ["oxygen_status_data-warning"],
+      "duplicates": [],
       "context": "status"
     },
     "oxygen_status_drive-harddisk-encrypted-symbolic": {
       "file": "drive-harddisk-encrypted-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Drive Harddisk Encrypted Symbolic"
     },
     "oxygen_status_drive-harddisk-root-symbolic": {
       "file": "drive-harddisk-root-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Drive Harddisk Root Symbolic"
     },
     "oxygen_status_drive-harddisk-symbolic": {
       "file": "drive-harddisk-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
-    },
-    "oxygen_status_dropboxstatus-busy2": {
-      "file": "dropboxstatus-busy2.png",
-      "sizes": [16, 22],
-      "hints": ["dropbox", "sync", "syncing", "busy", "folder", "cloud", "arrows", "refresh"],
-      "label": "Dropboxstatus Busy2",
-      "duplicate_of": "oxygen_status_cloudstatus",
-      "context": "status"
-    },
-    "oxygen_status_dropboxstatus-logo": {
-      "file": "dropboxstatus-logo.png",
-      "sizes": [16, 22],
-      "hints": ["dropbox", "logo", "folder", "cloud", "sync", "storage", "blue", "brand"],
-      "label": "Dropboxstatus Logo",
-      "duplicate_of": "oxygen_status_cloudstatus",
-      "context": "status"
+      "symbolic": true,
+      "label": "Drive Harddisk Symbolic"
     },
     "oxygen_status_folder-open": {
       "file": "folder-open.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["folder", "open", "directory", "files", "storage", "browse", "expanded", "blue"],
       "label": "Folder Open",
-      "duplicates": ["oxygen_places_folder-open"],
+      "duplicates": [],
       "context": "status"
     },
     "oxygen_status_handset-symbolic": {
       "file": "handset-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Handset Symbolic"
     },
     "oxygen_status_image-loading": {
       "file": "image-loading.png",
@@ -10350,37 +10158,43 @@
       "file": "input-mouse-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Input Mouse Symbolic"
     },
     "oxygen_status_input-tablet-symbolic": {
       "file": "input-tablet-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Input Tablet Symbolic"
     },
     "oxygen_status_input-touchpad-symbolic": {
       "file": "input-touchpad-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Input Touchpad Symbolic"
     },
     "oxygen_status_input-tvremote-symbolic": {
       "file": "input-tvremote-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Input Tvremote Symbolic"
     },
     "oxygen_status_kdeconnect-tray-symbolic": {
       "file": "kdeconnect-tray-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Kdeconnect Tray Symbolic"
     },
     "oxygen_status_klipper-symbolic": {
       "file": "klipper-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Klipper Symbolic"
     },
     "oxygen_status_mail-attachment": {
       "file": "mail-attachment.png",
@@ -10391,7 +10205,7 @@
     },
     "oxygen_status_mail-queued": {
       "file": "mail-queued.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 64],
       "duplicate_of": "oxygen_actions_mail-queue",
       "hints": ["mail", "queued", "envelope", "email", "pending", "send", "waiting", "outbox"],
       "label": "Mail Queued",
@@ -10418,17 +10232,9 @@
       "label": "Mail Sent",
       "context": "status"
     },
-    "oxygen_status_mail-tagged": {
-      "file": "mail-tagged.png",
-      "sizes": [16, 32, 48],
-      "duplicate_of": "oxygen_actions_feed-subscribe",
-      "hints": ["mail", "tagged", "email", "label", "envelope", "marked", "flag", "categorized"],
-      "label": "Mail Tagged",
-      "context": "status"
-    },
     "oxygen_status_mail-task": {
       "file": "mail-task.png",
-      "sizes": [16, 22],
+      "sizes": [16],
       "duplicate_of": "oxygen_actions_mail-mark-task",
       "hints": ["mail", "task", "email", "todo", "checklist", "document", "paper", "assignment"],
       "label": "Mail Task",
@@ -10443,7 +10249,7 @@
     },
     "oxygen_status_mail-unread-new": {
       "file": "mail-unread-new.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 64],
       "duplicate_of": "oxygen_actions_mail-mark-unread-new",
       "hints": ["mail", "unread", "new", "envelope", "email", "message", "star", "notification"],
       "label": "Mail Unread New",
@@ -10453,19 +10259,22 @@
       "file": "media-playback-paused-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Media Playback Paused Symbolic"
     },
     "oxygen_status_media-playback-playing-symbolic": {
       "file": "media-playback-playing-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Media Playback Playing Symbolic"
     },
     "oxygen_status_media-playback-stopped-symbolic": {
       "file": "media-playback-stopped-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Media Playback Stopped Symbolic"
     },
     "oxygen_status_media-playlist-repeat": {
       "file": "media-playlist-repeat.png",
@@ -10527,85 +10336,99 @@
       "file": "mic-off-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Mic Off Symbolic"
     },
     "oxygen_status_mic-ready-symbolic": {
       "file": "mic-ready-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Mic Ready Symbolic"
     },
     "oxygen_status_microphone-sensitivity-high-symbolic": {
       "file": "microphone-sensitivity-high-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Microphone Sensitivity High Symbolic"
     },
     "oxygen_status_microphone-sensitivity-low-symbolic": {
       "file": "microphone-sensitivity-low-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Microphone Sensitivity Low Symbolic"
     },
     "oxygen_status_microphone-sensitivity-medium-symbolic": {
       "file": "microphone-sensitivity-medium-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Microphone Sensitivity Medium Symbolic"
     },
     "oxygen_status_microphone-sensitivity-muted-symbolic": {
       "file": "microphone-sensitivity-muted-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Microphone Sensitivity Muted Symbolic"
     },
     "oxygen_status_monitor-symbolic": {
       "file": "monitor-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Monitor Symbolic"
     },
     "oxygen_status_network-bluetooth-activated-locked-symbolic": {
       "file": "network-bluetooth-activated-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Bluetooth Activated Locked Symbolic"
     },
     "oxygen_status_network-bluetooth-activated-symbolic": {
       "file": "network-bluetooth-activated-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Bluetooth Activated Symbolic"
     },
     "oxygen_status_network-bluetooth-inactive-symbolic": {
       "file": "network-bluetooth-inactive-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Bluetooth Inactive Symbolic"
     },
     "oxygen_status_network-bluetooth-symbolic": {
       "file": "network-bluetooth-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Bluetooth Symbolic"
     },
     "oxygen_status_network-flightmode-on-symbolic": {
       "file": "network-flightmode-on-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Flightmode On Symbolic"
     },
     "oxygen_status_network-limited-symbolic": {
       "file": "network-limited-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Limited Symbolic"
     },
     "oxygen_status_network-mobile-00-5g-locked-symbolic": {
       "file": "network-mobile-00-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 00 5G Locked Symbolic"
     },
     "oxygen_status_network-mobile-00-5g.symbolic": {
       "file": "network-mobile-00-5g.symbolic.svg",
@@ -10616,13 +10439,15 @@
       "file": "network-mobile-00-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 00 Symbolic"
     },
     "oxygen_status_network-mobile-100-5g-locked-symbolic": {
       "file": "network-mobile-100-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 100 5G Locked Symbolic"
     },
     "oxygen_status_network-mobile-100-5g.symbolic": {
       "file": "network-mobile-100-5g.symbolic.svg",
@@ -10633,13 +10458,15 @@
       "file": "network-mobile-100-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 100 Symbolic"
     },
     "oxygen_status_network-mobile-20-5g-locked-symbolic": {
       "file": "network-mobile-20-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 20 5G Locked Symbolic"
     },
     "oxygen_status_network-mobile-20-5g.symbolic": {
       "file": "network-mobile-20-5g.symbolic.svg",
@@ -10650,13 +10477,15 @@
       "file": "network-mobile-20-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 20 Symbolic"
     },
     "oxygen_status_network-mobile-40-5g-locked-symbolic": {
       "file": "network-mobile-40-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 40 5G Locked Symbolic"
     },
     "oxygen_status_network-mobile-40-5g.symbolic": {
       "file": "network-mobile-40-5g.symbolic.svg",
@@ -10667,13 +10496,15 @@
       "file": "network-mobile-40-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 40 Symbolic"
     },
     "oxygen_status_network-mobile-60-5g-locked-symbolic": {
       "file": "network-mobile-60-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 60 5G Locked Symbolic"
     },
     "oxygen_status_network-mobile-60-5g.symbolic": {
       "file": "network-mobile-60-5g.symbolic.svg",
@@ -10684,13 +10515,15 @@
       "file": "network-mobile-60-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 60 Symbolic"
     },
     "oxygen_status_network-mobile-80-5g-locked-symbolic": {
       "file": "network-mobile-80-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 80 5G Locked Symbolic"
     },
     "oxygen_status_network-mobile-80-5g.symbolic": {
       "file": "network-mobile-80-5g.symbolic.svg",
@@ -10701,281 +10534,311 @@
       "file": "network-mobile-80-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Mobile 80 Symbolic"
     },
     "oxygen_status_network-unavailable-symbolic": {
       "file": "network-unavailable-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Unavailable Symbolic"
     },
     "oxygen_status_network-wired-activated-locked-symbolic": {
       "file": "network-wired-activated-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wired Activated Locked Symbolic"
     },
     "oxygen_status_network-wired-activated-symbolic": {
       "file": "network-wired-activated-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wired Activated Symbolic"
     },
     "oxygen_status_network-wired-available-symbolic": {
       "file": "network-wired-available-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wired Available Symbolic"
     },
     "oxygen_status_network-wired-symbolic": {
       "file": "network-wired-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wired Symbolic"
     },
     "oxygen_status_network-wired-unavailable-symbolic": {
       "file": "network-wired-unavailable-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wired Unavailable Symbolic"
     },
     "oxygen_status_network-wireless-0-limited-symbolic": {
       "file": "network-wireless-0-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 0 Limited Symbolic"
     },
     "oxygen_status_network-wireless-0-locked": {
       "file": "network-wireless-0-locked.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 0 Locked"
     },
     "oxygen_status_network-wireless-0-locked-symbolic": {
       "file": "network-wireless-0-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 0 Locked Symbolic"
     },
     "oxygen_status_network-wireless-00": {
       "file": "network-wireless-00.svg",
       "sizes": [32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 00"
     },
     "oxygen_status_network-wireless-00-symbolic": {
       "file": "network-wireless-00-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 00 Symbolic"
     },
     "oxygen_status_network-wireless-100": {
       "file": "network-wireless-100.svg",
       "sizes": [32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 100"
     },
     "oxygen_status_network-wireless-100-limited-symbolic": {
       "file": "network-wireless-100-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 100 Limited Symbolic"
     },
     "oxygen_status_network-wireless-100-locked": {
       "file": "network-wireless-100-locked.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 100 Locked"
     },
     "oxygen_status_network-wireless-100-locked-symbolic": {
       "file": "network-wireless-100-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 100 Locked Symbolic"
     },
     "oxygen_status_network-wireless-100-symbolic": {
       "file": "network-wireless-100-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 100 Symbolic"
     },
     "oxygen_status_network-wireless-20": {
       "file": "network-wireless-20.svg",
       "sizes": [32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 20"
     },
     "oxygen_status_network-wireless-20-limited-symbolic": {
       "file": "network-wireless-20-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 20 Limited Symbolic"
     },
     "oxygen_status_network-wireless-20-locked": {
       "file": "network-wireless-20-locked.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 20 Locked"
     },
     "oxygen_status_network-wireless-20-locked-symbolic": {
       "file": "network-wireless-20-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 20 Locked Symbolic"
     },
     "oxygen_status_network-wireless-20-symbolic": {
       "file": "network-wireless-20-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 20 Symbolic"
     },
     "oxygen_status_network-wireless-40": {
       "file": "network-wireless-40.svg",
       "sizes": [32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 40"
     },
     "oxygen_status_network-wireless-40-limited-symbolic": {
       "file": "network-wireless-40-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 40 Limited Symbolic"
     },
     "oxygen_status_network-wireless-40-locked": {
       "file": "network-wireless-40-locked.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 40 Locked"
     },
     "oxygen_status_network-wireless-40-locked-symbolic": {
       "file": "network-wireless-40-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 40 Locked Symbolic"
     },
     "oxygen_status_network-wireless-40-symbolic": {
       "file": "network-wireless-40-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 40 Symbolic"
     },
     "oxygen_status_network-wireless-60": {
       "file": "network-wireless-60.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 60"
     },
     "oxygen_status_network-wireless-60-limited-symbolic": {
       "file": "network-wireless-60-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 60 Limited Symbolic"
     },
     "oxygen_status_network-wireless-60-locked": {
       "file": "network-wireless-60-locked.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 60 Locked"
     },
     "oxygen_status_network-wireless-60-locked-symbolic": {
       "file": "network-wireless-60-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 60 Locked Symbolic"
     },
     "oxygen_status_network-wireless-60-symbolic": {
       "file": "network-wireless-60-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 60 Symbolic"
     },
     "oxygen_status_network-wireless-80": {
       "file": "network-wireless-80.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 80"
     },
     "oxygen_status_network-wireless-80-limited-symbolic": {
       "file": "network-wireless-80-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 80 Limited Symbolic"
     },
     "oxygen_status_network-wireless-80-locked": {
       "file": "network-wireless-80-locked.svg",
       "sizes": [22, 32],
-      "context": "status"
+      "context": "status",
+      "label": "Network Wireless 80 Locked"
     },
     "oxygen_status_network-wireless-80-locked-symbolic": {
       "file": "network-wireless-80-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 80 Locked Symbolic"
     },
     "oxygen_status_network-wireless-80-symbolic": {
       "file": "network-wireless-80-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless 80 Symbolic"
     },
     "oxygen_status_network-wireless-bluetooth-symbolic": {
       "file": "network-wireless-bluetooth-symbolic.svg",
       "sizes": [32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless Bluetooth Symbolic"
     },
     "oxygen_status_network-wireless-disconnected-symbolic": {
       "file": "network-wireless-disconnected-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless Disconnected Symbolic"
     },
     "oxygen_status_network-wireless-off-symbolic": {
       "file": "network-wireless-off-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Network Wireless Off Symbolic"
     },
     "oxygen_status_nm-signal-00-symbolic": {
       "file": "nm-signal-00-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Nm Signal 00 Symbolic"
     },
     "oxygen_status_nm-signal-100-symbolic": {
       "file": "nm-signal-100-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Nm Signal 100 Symbolic"
     },
     "oxygen_status_nm-signal-25-symbolic": {
       "file": "nm-signal-25-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Nm Signal 25 Symbolic"
     },
     "oxygen_status_nm-signal-50-symbolic": {
       "file": "nm-signal-50-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Nm Signal 50 Symbolic"
     },
     "oxygen_status_nm-signal-75-symbolic": {
       "file": "nm-signal-75-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
-    },
-    "oxygen_status_object-locked": {
-      "file": "object-locked.png",
-      "sizes": [16, 22, 32, 48],
-      "hints": ["object", "locked", "padlock", "lock", "closed", "security", "protected", "secure"],
-      "label": "Object Locked",
-      "duplicate_of": "oxygen_actions_document-encrypt",
-      "context": "status"
-    },
-    "oxygen_status_object-unlocked": {
-      "file": "object-unlocked.png",
-      "sizes": [16, 22, 32, 48],
-      "hints": ["object", "unlocked", "padlock", "lock", "open", "security", "access", "unlock"],
-      "label": "Object Unlocked",
-      "duplicate_of": "oxygen_actions_document-decrypt",
-      "context": "status"
+      "symbolic": true,
+      "label": "Nm Signal 75 Symbolic"
     },
     "oxygen_status_phone-battery-symbolic": {
       "file": "phone-battery-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Phone Battery Symbolic"
     },
     "oxygen_status_printer-error": {
       "file": "printer-error.png",
@@ -10989,14 +10852,6 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["printer", "printing", "print", "document", "paper", "active", "progress", "output"],
       "label": "Printer Printing",
-      "context": "status"
-    },
-    "oxygen_status_script-error": {
-      "file": "script-error.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["script", "error", "bug", "ladybug", "code", "debug", "programming", "red"],
-      "label": "Script Error",
-      "duplicate_of": "oxygen_actions_tools-report-bug",
       "context": "status"
     },
     "oxygen_status_security-high": {
@@ -11024,25 +10879,29 @@
       "file": "speaker-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Speaker Symbolic"
     },
     "oxygen_status_speaker-symbolic-danger-symbolic": {
       "file": "speaker-symbolic-danger-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Speaker Symbolic Danger Symbolic"
     },
     "oxygen_status_speaker-symbolic-warning-symbolic": {
       "file": "speaker-symbolic-warning-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Speaker Symbolic Warning Symbolic"
     },
     "oxygen_status_tablet-symbolic": {
       "file": "tablet-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Tablet Symbolic"
     },
     "oxygen_status_task-accepted": {
       "file": "task-accepted.png",
@@ -11086,27 +10945,11 @@
       "label": "Task Ongoing",
       "context": "status"
     },
-    "oxygen_status_task-recurring": {
-      "file": "task-recurring.png",
-      "sizes": [16, 22, 32],
-      "hints": ["recurring", "repeat", "task", "refresh", "circular", "arrow", "cycle", "loop"],
-      "label": "Task Recurring",
-      "duplicate_of": "oxygen_actions_view-refresh",
-      "context": "status"
-    },
     "oxygen_status_task-reject": {
       "file": "task-reject.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["task", "reject", "red", "failed", "cancel", "error", "cross", "x"],
       "label": "Task Reject",
-      "context": "status"
-    },
-    "oxygen_status_task-reminder": {
-      "file": "task-reminder.png",
-      "sizes": [16, 22, 32],
-      "hints": ["task", "reminder", "bell", "notification", "alarm", "alert", "todo", "due"],
-      "label": "Task Reminder",
-      "duplicate_of": "oxygen_apps_preferences-desktop-notification-bell",
       "context": "status"
     },
     "oxygen_status_update-high": {
@@ -11184,14 +11027,15 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["trash", "full", "bin", "delete", "garbage", "waste", "recycle", "papers"],
       "label": "User Trash Full",
-      "duplicates": ["oxygen_places_user-trash-full"],
+      "duplicates": [],
       "context": "status"
     },
     "oxygen_status_video-television-symbolic": {
       "file": "video-television-symbolic.svg",
       "sizes": [22],
       "context": "status",
-      "symbolic": true
+      "symbolic": true,
+      "label": "Video Television Symbolic"
     },
     "oxygen_status_wallet-closed": {
       "file": "wallet-closed.png",
@@ -11249,14 +11093,6 @@
       "label": "Weather Few Clouds Night",
       "context": "status"
     },
-    "oxygen_status_weather-fog": {
-      "file": "weather-fog.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["weather", "fog", "mist", "haze", "visibility", "gray", "cloudy", "murky"],
-      "label": "Weather Fog",
-      "duplicate_of": "oxygen_status_weather-mist",
-      "context": "status"
-    },
     "oxygen_status_weather-freezing-rain": {
       "file": "weather-freezing-rain.png",
       "sizes": [16, 22, 32, 48, 64, 128],
@@ -11274,9 +11110,8 @@
     "oxygen_status_weather-many-clouds": {
       "file": "weather-many-clouds.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["FILE_ERROR: path_pattern did not match: /home/user/Downloads/icons/oxygen-icons-master/scalable/status/weather-many-clouds.svg", "FILE_ERROR: PNG missing after conversion: /home/user/Downloads/icons/oxygen-icons-master/scalable/status/weather-many-clouds.png"],
       "label": "Weather Many Clouds",
-      "duplicates": ["oxygen_status_weather-overcast"],
+      "duplicates": [],
       "context": "status"
     },
     "oxygen_status_weather-mist": {
@@ -11284,22 +11119,14 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["weather", "mist", "fog", "haze", "visibility", "gray", "cloudy", "murky"],
       "label": "Weather Mist",
-      "duplicates": ["oxygen_status_weather-fog"],
+      "duplicates": [],
       "context": "status"
     },
     "oxygen_status_weather-none-available": {
       "file": "weather-none-available.png",
-      "sizes": [32, 64, 128],
+      "sizes": [32, 128],
       "hints": ["weather", "unavailable", "none", "prohibited", "no-data", "status", "error"],
       "label": "Weather None Available",
-      "context": "status"
-    },
-    "oxygen_status_weather-overcast": {
-      "file": "weather-overcast.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["weather", "overcast", "clouds", "cloudy", "gray", "sky", "gloomy", "covered"],
-      "label": "Weather Overcast",
-      "duplicate_of": "oxygen_status_weather-many-clouds",
       "context": "status"
     },
     "oxygen_status_weather-showers": {
@@ -11389,7 +11216,7 @@
     },
     "oxygen_status_weather-storm-day": {
       "file": "weather-storm-day.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [48, 64, 128],
       "hints": ["weather", "storm", "day", "rain", "thunder", "sun", "cloud", "lightning"],
       "duplicate_of": "oxygen_status_weather-storm",
       "label": "Weather Storm Day",
@@ -11397,7 +11224,7 @@
     },
     "oxygen_status_weather-storm-night": {
       "file": "weather-storm-night.png",
-      "sizes": [16, 22, 32, 48, 64, 128],
+      "sizes": [48, 64, 128],
       "hints": ["weather", "storm", "night", "rain", "cloud", "thunderstorm", "moon", "dark"],
       "duplicate_of": "oxygen_status_weather-storm",
       "label": "Weather Storm Night",

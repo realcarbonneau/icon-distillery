@@ -424,34 +424,31 @@ class ThemeCatalog:
     """Manages the icon theme catalog. Entry point for all theme access.
 
     Loads ICON_THEME_CATALOG.json, expands variants into Theme objects.
-    Skipped themes (skip=True) are excluded from default iteration.
+    Skipped themes (skip=True) are excluded from theme_ids().
 
     Usage:
         catalog = ThemeCatalog()
-        theme = catalog["oxygen"]
+        theme = catalog.get_theme("oxygen")
         theme.icons_data  # lazy-loaded
-        theme.index     # lazy-loaded
+        theme.index       # lazy-loaded
 
-        for theme in catalog:
-            print(theme.theme_id, theme.dir)
-
-        catalog.raw["oxygen"]["effective_sizes"] = [16, 22, 32, 48]
-        catalog.save()
+        for theme_id in catalog.theme_ids():
+            theme = catalog.get_theme(theme_id)
     """
 
     def __init__(self):
-        self.path = str(_CANON_THEMES_PATH)
+        self._path = str(_CANON_THEMES_PATH)
 
         if not _CANON_THEMES_PATH.is_file():
             fatal_error(f"Theme catalog not found: {_CANON_THEMES_PATH}")
 
         with open(_CANON_THEMES_PATH) as f:
-            self.raw = json.load(f)
+            self._raw = json.load(f)
 
         self._themes = {}
         self._skipped = {}
 
-        for base_id, config in self.raw.items():
+        for base_id, config in self._raw.items():
             variants = config.get("variants", [])
             skip = config.get("skip", False)
 
@@ -471,47 +468,41 @@ class ThemeCatalog:
                     else:
                         self._themes[vid] = theme
 
-    def __getitem__(self, theme_id):
-        """Get Theme by id. Fatal if not found."""
+    def get_theme(self, theme_id):
+        """Look up theme by id, print header, return Theme.
+
+        Standard entry point for all scripts needing a Theme.
+        Fatal if theme_id not found.
+        """
         if theme_id in self._themes:
-            return self._themes[theme_id]
-        if theme_id in self._skipped:
-            return self._skipped[theme_id]
-        # Helpful error for base theme id when variants exist
-        if theme_id in self.raw:
-            variants = self.raw[theme_id].get("variants", [])
-            if variants:
-                ids = ", ".join(v["id"] for v in variants)
-                fatal_error(f"Theme '{theme_id}' has variants. "
-                            f"Use one of: {ids}")
-        all_ids = ", ".join(sorted(self._themes.keys()))
-        fatal_error(f"Theme '{theme_id}' not found. Available: {all_ids}")
+            theme = self._themes[theme_id]
+        elif theme_id in self._skipped:
+            theme = self._skipped[theme_id]
+        else:
+            # Helpful error for base theme id when variants exist
+            if theme_id in self._raw:
+                variants = self._raw[theme_id].get("variants", [])
+                if variants:
+                    ids = ", ".join(v["id"] for v in variants)
+                    fatal_error(f"Theme '{theme_id}' has variants. "
+                                f"Use one of: {ids}")
+            all_ids = ", ".join(sorted(self._themes.keys()))
+            fatal_error(f"Theme '{theme_id}' not found. Available: {all_ids}")
+        print(f"Theme: {theme.theme_id}")
+        print(f"Directory: {theme.dir}")
+        return theme
 
-    def __iter__(self):
-        """Iterate over non-skipped Theme objects."""
-        return iter(self._themes.values())
+    def theme_ids(self):
+        """Return sorted list of non-skipped theme ids."""
+        return sorted(self._themes.keys())
 
-    def __contains__(self, theme_id):
-        return theme_id in self._themes or theme_id in self._skipped
-
-    def __len__(self):
-        return len(self._themes)
-
-    def items(self):
-        """Non-skipped (theme_id, Theme) pairs."""
-        return self._themes.items()
-
-    def keys(self):
-        """Non-skipped theme_ids."""
-        return self._themes.keys()
-
-    def save(self):
-        """Write catalog JSON to disk."""
-        save_json_compact_arrays(self.path, self.raw)
+    def catalog_path(self):
+        """Return path to ICON_THEME_CATALOG.json."""
+        return self._path
 
     def print_available(self):
         """Print available/missing themes to stderr."""
-        for base_id in sorted(self.raw.keys()):
+        for base_id in sorted(self._raw.keys()):
             if (_PROJECT_DIR / base_id).is_dir():
                 print(f"  {base_id}: Available", file=sys.stderr)
             else:

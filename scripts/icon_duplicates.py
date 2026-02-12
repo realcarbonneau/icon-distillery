@@ -78,11 +78,8 @@ def main():
         catalog.print_available()
         fatal_error("Usage: python scripts/icon_duplicates.py <theme>")
 
-    theme = catalog[sys.argv[1]]
+    theme = catalog.get_theme(sys.argv[1])
     start_path = theme.dir
-
-    print(f"Theme: {theme.theme_id}", file=sys.stderr)
-    print(f"Scanning: {start_path}", file=sys.stderr)
 
     # Load metadata to see which icons are already marked
     data = theme.icons_data

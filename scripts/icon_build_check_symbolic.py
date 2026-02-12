@@ -69,10 +69,7 @@ def main():
         catalog.print_available()
         fatal_error("Usage: python scripts/icon_build_check_symbolic.py <theme>")
 
-    theme = catalog[sys.argv[1]]
-
-    print(f"Theme: {theme.theme_id}")
-    print(f"Directory: {theme.dir}")
+    theme = catalog.get_theme(sys.argv[1])
 
     # Pass 1: Collect symbolic files
     print(f"Scanning for symbolic icons...")
