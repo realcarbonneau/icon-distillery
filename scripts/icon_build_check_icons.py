@@ -73,8 +73,6 @@ def main():
                     entry["symbolic"] = True
             icons[icon_id] = entry
         data = {
-            "_comment": f"Auto-maintained catalog for {theme.theme_id} "
-                        f"external theme. Icons/sizes are additive only.",
             "icons": icons,
         }
         save_json_compact_arrays(json_path, data)
@@ -111,14 +109,32 @@ def main():
     else:
         print(f"  *** None ***")
 
-    print(f"\nIN JSON, NOT IN INDEXED DIRS: {len(in_json_not_disk)} icons")
+    print(f"\nIN JSON, NOT INDEXED OR SYMLINK-ONLY: {len(in_json_not_disk)} icons")
     if in_json_not_disk:
         for icon_id in in_json_not_disk:
             info = existing[icon_id]
-            print(f"  {icon_id}")
-            print(f"    file: {info.get('file', '?')}  "
-                  f"sizes: {info.get('sizes', '?')}  "
-                  f"context: {info.get('context', '?')}")
+            fn = info.get('file', '?')
+            files = []
+            for dirpath, dirnames, filenames in os.walk(theme.dir):
+                dirnames[:] = [d for d in dirnames
+                               if not os.path.islink(os.path.join(dirpath, d))]
+                if fn in filenames:
+                    full = os.path.join(dirpath, fn)
+                    rel = theme.strip_dir_base(full)
+                    is_link = os.path.islink(full)
+                    if is_link:
+                        raw_target = os.readlink(full)
+                        dir_part = os.path.dirname(rel)
+                        resolved = os.path.normpath(
+                            os.path.join(dir_part, raw_target))
+                        files.append(f"    {rel} -> {resolved}")
+                    else:
+                        files.append(f"    {rel} [REAL]")
+            has_real = any("[REAL]" in f for f in files)
+            flag = "[MIXED]" if has_real else "[100%-SYMLINKS]"
+            print(f"  {icon_id} {flag}")
+            for f in files:
+                print(f)
     else:
         print(f"  *** None ***")
 
