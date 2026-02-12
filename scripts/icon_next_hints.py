@@ -17,19 +17,31 @@ Examples:
 
 import os
 import sys
+from pathlib import Path
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+from icon_theme_processor import (
+    ThemeCatalog, _PROJECT_DIR, fatal_error, save_json_compact_arrays,
+)
 
-from icon_theme_processor import ThemeCatalog, fatal_error, save_json_compact_arrays
+# PNG magic header: first 8 bytes of any valid PNG file
+_PNG_MAGIC = b'\x89PNG\r\n\x1a\n'
 
 
 def rel_path(abs_path):
     """Convert absolute path to relative path from PROJECT_DIR."""
-    rel = os.path.relpath(abs_path, PROJECT_DIR)
+    rel = os.path.relpath(abs_path, _PROJECT_DIR)
     if not rel.startswith(".."):
         rel = "./" + rel
     return rel
+
+
+def valid_png(path):
+    """Check if file has a valid PNG magic header."""
+    try:
+        with open(path, "rb") as f:
+            return f.read(8) == _PNG_MAGIC
+    except (OSError, IOError):
+        return False
 
 
 def log_anomaly(theme, message):
@@ -47,16 +59,16 @@ def main():
         catalog.print_available()
         fatal_error("Usage: python scripts/icon_next_hints.py <theme>")
 
-    theme = catalog[sys.argv[1]]
+    theme = catalog.get_theme(sys.argv[1])
     json_path = theme.icons_path
     data = theme.icons_data
 
     icons = data.get("icons", {})
     total = len(icons)
-    done = sum(1 for v in icons.values() if "hints" in v or "inherits" in v)
+    done = sum(1 for v in icons.values() if "hints" in v)
 
     for icon_id, icon_data in icons.items():
-        if "hints" in icon_data or "inherits" in icon_data:
+        if "hints" in icon_data:
             continue
 
         # Found the next Named Icon to process
@@ -67,28 +79,44 @@ def main():
             file_errors.append(full_error)
             log_anomaly(theme, f"{icon_id}: {full_error}")
 
-        # Validate and extract context/file from icon_data
-        validated = theme.validate_icon_data(icon_id, icon_data)
-        context = validated["internal_context_id"]
-        filename = validated["file"]
+        # Get file and context directly from icon_data
+        filename = icon_data["file"]
+        context = icon_data["context"]
 
-        # FIRST PASS: Find SVGs and convert to PNG
-        initial_hits = theme.find_icon_files_in_context(context, filename)
-        svg_files = [p for p in initial_hits if p.endswith(".svg")]
+        # Find all files in this context's directories (PNGs, SVGs, SVGZs)
+        disk_files = theme.find_icon_files_in_context(context, filename)
 
-        # Step 2: For each SVG, convert to PNG
-        for svg_path in svg_files:
-            result = theme.convert_svg_to_png(svg_path)
-            if not result.endswith(".png"):
-                log_file_error(result)
+        # IMPORTANT TODO: PNG creation from SVGs should be a separate
+        # preparation script (see ICON_METADATA.md TODO #10).  This inline
+        # conversion duplicates work that other scripts will also need.
 
-        # Step 3: Verify all PNGs exist with non-zero size
-        for svg_path in svg_files:
-            png_path = svg_path[:-4] + ".png"
-            if not os.path.exists(png_path):
-                log_file_error(f"PNG missing after conversion: {png_path}")
-            elif os.path.getsize(png_path) == 0:
-                log_file_error(f"PNG has zero size: {png_path}")
+        # Build viewable PNG list from disk files.
+        # For each SVG/SVGZ, ensure a matching PNG exists (convert if needed).
+        # PNGs found directly on disk are validated and collected.
+        png_files = set()
+        for path in disk_files:
+            if path.endswith(".png"):
+                if os.path.getsize(path) == 0:
+                    log_file_error(f"PNG empty: {path}")
+                elif not valid_png(path):
+                    log_file_error(f"PNG invalid header: {path}")
+                else:
+                    png_files.add(path)
+            elif path.endswith((".svg", ".svgz")):
+                png_path = str(Path(path).with_suffix(".png"))
+                if os.path.exists(png_path) and os.path.getsize(png_path) > 0 and valid_png(png_path):
+                    png_files.add(png_path)
+                else:
+                    result = theme.convert_svg_to_png(path)
+                    if not result.endswith(".png"):
+                        log_file_error(result)
+                    elif not os.path.exists(result) or os.path.getsize(result) == 0:
+                        log_file_error(f"PNG missing or empty after conversion: {result}")
+                    elif not valid_png(result):
+                        log_file_error(f"PNG invalid header after conversion: {result}")
+                    else:
+                        png_files.add(result)
+        png_files = sorted(png_files)
 
         # If file errors, set hints and skip to next icon
         if file_errors:
@@ -96,12 +124,9 @@ def main():
             save_json_compact_arrays(json_path, data)
             continue
 
-        # Step 4: Find all PNGs
-        all_hits = [p for p in theme.find_icon_files_in_context(context, filename) if p.endswith(".png")]
-
-        # Build file info (already filtered to context)
+        # Build file info for display
         file_info = []
-        for path in all_hits:
+        for path in png_files:
             info = theme.get_file_info(path)
             file_info.append(info)
 

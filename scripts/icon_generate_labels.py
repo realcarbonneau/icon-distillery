@@ -68,7 +68,7 @@ def main():
         catalog.print_available()
         fatal_error("Usage: python scripts/icon_generate_labels.py <theme>")
 
-    theme = catalog[sys.argv[1]]
+    theme = catalog.get_theme(sys.argv[1])
     replacements = []
     i = 2
     while i < len(sys.argv):
@@ -83,7 +83,6 @@ def main():
     json_path = theme.icons_path
     data = theme.icons_data
 
-    print(f"Theme: {theme.theme_id}")
     print(f"File: {json_path}")
     if replacements:
         for pattern, repl in replacements:

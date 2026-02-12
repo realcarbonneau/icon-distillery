@@ -18,6 +18,7 @@ Usage:
     python scripts/icon_build_check_contexts.py [theme]
 """
 
+import json
 import os
 import sys
 
@@ -61,9 +62,9 @@ def main():
     had_differences = False
     base_xdg_contexts = {}
 
-    for theme in catalog:
-        if filter_theme and theme.theme_id != filter_theme:
-            continue
+    theme_ids = [filter_theme] if filter_theme else catalog.theme_ids()
+    for theme_id in theme_ids:
+        theme = catalog.get_theme(theme_id)
 
         contexts = build_contexts_from_index(theme.index)
         existing = theme.contexts
@@ -153,19 +154,22 @@ def main():
                 print(f"  {theme.theme_id}: icons.json contexts valid ({len(icons)} icons)")
 
     # Update xdg_contexts in catalog
+    catalog_path = catalog.catalog_path()
+    with open(catalog_path) as f:
+        catalog_data = json.load(f)
+
     catalog_updated = False
     for theme_base_id, xdg_set in base_xdg_contexts.items():
-        config = catalog.raw[theme_base_id]
         new_list = sorted(xdg_set)
-        old_list = config.get("xdg_contexts", [])
+        old_list = catalog_data[theme_base_id].get("xdg_contexts", [])
         if new_list != old_list:
             print(f"  {theme_base_id} xdg_contexts: {old_list} -> {new_list}")
-            config["xdg_contexts"] = new_list
+            catalog_data[theme_base_id]["xdg_contexts"] = new_list
             catalog_updated = True
 
     if catalog_updated:
-        catalog.save()
-        print(f"\nUpdated {catalog.path}")
+        save_json_compact_arrays(catalog_path, catalog_data)
+        print(f"\nUpdated {catalog_path}")
 
     if had_differences:
         print("\nDifferences found — manual intervention required.")

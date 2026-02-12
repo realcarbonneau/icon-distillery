@@ -826,7 +826,7 @@
     },
     "nuvola_apps_klipper": {
       "file": "klipper.png",
-      "sizes": [16, 32, 48, 64, 256],
+      "sizes": [16, 32, 48, 64],
       "hints": ["clipboard", "paste", "clip", "copy", "pin", "papers", "klipper"],
       "label": "Klipper",
       "context": "apps"
@@ -2178,7 +2178,7 @@
     },
     "nuvola_emblems_emblem-favorite": {
       "file": "emblem-favorite.png",
-      "sizes": [16, 22, 32, 48],
+      "sizes": [22, 32, 48],
       "hints": ["favorite", "heart", "love", "emblem", "bookmark", "liked"],
       "duplicates": ["nuvola_places_bookmarks", "nuvola_apps_package_favorite"],
       "label": "Emblem Favorite",
