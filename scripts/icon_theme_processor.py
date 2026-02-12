@@ -36,6 +36,14 @@ def fatal_error(message):
     sys.exit(1)
 
 
+def usage_error(docstring, message=None):
+    """Print help (docstring) and optional error message, then exit."""
+    print(docstring)
+    if message:
+        print(f"Error: {message}", file=sys.stderr)
+    sys.exit(1)
+
+
 def save_json_compact_arrays(filepath, data):
     """Save JSON with indent=2 but arrays on single lines."""
     text = json.dumps(data, indent=2)
@@ -329,7 +337,9 @@ class Theme:
                     "xdg_context": xdg_context, "file": filename,
                 }
             discovered[key]["sizes"].add(size)
-            discovered[key]["paths"][size] = str(f)
+            if size not in discovered[key]["paths"]:
+                discovered[key]["paths"][size] = []
+            discovered[key]["paths"][size].append(str(f))
 
         if skipped_dirs:
             print(f"  Skipped files in directories not in index.theme:")

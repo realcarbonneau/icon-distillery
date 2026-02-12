@@ -2,14 +2,16 @@
 """Generate 'label' field for icons in theme icons.json files.
 
 Usage:
-    python scripts/icon_generate_labels.py <theme> [--replace PATTERN REPLACEMENT ...]
+    python scripts/icon_generate_labels.py <theme> [--replace OLD NEW ...] [--simulate]
 
 Arguments:
     theme:   Theme directory name (nuvola, oxygen, papirus, breeze)
-    --replace PATTERN REPLACEMENT
-             Regex substitution applied to the filename stem before
+    --replace OLD NEW
+             String substitution applied to the filename stem before
              character validation. Can be specified multiple times;
              applied in order given.
+    --simulate
+             Show what would change without writing to icons.json.
 
 Generates labels from filenames:
     - Replace c++ with Cpp (hardcoded)
@@ -20,16 +22,15 @@ Generates labels from filenames:
 
 Examples:
     python scripts/icon_generate_labels.py nuvola
-    python scripts/icon_generate_labels.py oxygen --replace '\\.' ' '
-    python scripts/icon_generate_labels.py oxygen --replace '\\.' ' ' --replace '\\+' 'plus'
+    python scripts/icon_generate_labels.py oxygen --replace '.' ' '
+    python scripts/icon_generate_labels.py oxygen --simulate --replace '.' ' ' --replace '+' 'plus'
 """
 
-import json
 import os
 import re
 import sys
 
-from icon_theme_processor import ThemeCatalog, fatal_error, save_json_compact_arrays
+from icon_theme_processor import ThemeCatalog, save_json_compact_arrays, usage_error
 
 
 def generate_label(filename, replacements=None):
@@ -46,8 +47,8 @@ def generate_label(filename, replacements=None):
     stem = stem.replace('c++', 'Cpp ')
     stem = stem.replace('-', ' ').replace('_', ' ')
     if replacements:
-        for pattern, repl in replacements:
-            stem = re.sub(pattern, repl, stem)
+        for old, new in replacements:
+            stem = stem.replace(old, new)
     return stem.title()
 
 
@@ -64,34 +65,41 @@ def check_label(label):
 def main():
     catalog = ThemeCatalog()
 
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         catalog.print_available()
-        fatal_error("Usage: python scripts/icon_generate_labels.py <theme>")
+        usage_error(__doc__)
 
     theme = catalog.get_theme(sys.argv[1])
     replacements = []
+    simulate = False
     i = 2
     while i < len(sys.argv):
         if sys.argv[i] == '--replace':
             if i + 2 >= len(sys.argv):
-                fatal_error("--replace requires PATTERN and REPLACEMENT")
+                usage_error(__doc__, "--replace requires OLD and NEW arguments")
             replacements.append((sys.argv[i + 1], sys.argv[i + 2]))
             i += 3
+        elif sys.argv[i] == '--simulate':
+            simulate = True
+            i += 1
         else:
-            fatal_error(f"Unknown argument '{sys.argv[i]}'")
+            usage_error(__doc__, f"Unknown argument '{sys.argv[i]}'")
 
     json_path = theme.icons_path
     data = theme.icons_data
 
     print(f"File: {json_path}")
+    if simulate:
+        print(f"Mode: SIMULATE (no changes will be written)")
     if replacements:
-        for pattern, repl in replacements:
-            print(f"  Replace: {pattern!r} -> {repl!r}")
+        for old, new in replacements:
+            print(f"  Replace: {old!r} -> {new!r}")
 
     icons = data.get("icons", {})
     total = len(icons)
     already_have_name = 0
     names_added = 0
+    changes = []
     errors = []
 
     for icon_id, icon_data in icons.items():
@@ -111,8 +119,16 @@ def main():
             errors.append(f"{icon_id}\n    Label: \"{label}\"  ERROR: unexpected characters: {unexpected}")
             continue
 
-        icon_data["label"] = label
+        changes.append((icon_id, filename, label))
+        if not simulate:
+            icon_data["label"] = label
         names_added += 1
+
+    if changes:
+        print(f"\n--- CHANGES ({len(changes)}) ---")
+        for icon_id, filename, label in changes:
+            print(f"  {icon_id}")
+            print(f"    {filename} -> \"{label}\"")
 
     if errors:
         print(f"\n--- ERRORS ({len(errors)}) - NOT PROCESSED ---")
@@ -125,7 +141,9 @@ def main():
     print(f"Names added: {names_added}")
     print(f"Errors (skipped): {len(errors)}")
 
-    if names_added > 0:
+    if simulate:
+        print(f"\nSimulation complete. No changes written.")
+    elif names_added > 0:
         save_json_compact_arrays(json_path, data)
         print(f"\nUpdated: {json_path}")
     else:

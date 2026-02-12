@@ -214,6 +214,25 @@ Examples:
 
 All scripts live in `scripts/` and use `icon_theme_processor.py` as a shared library. Run from the project root.
 
+### Typical Processing Sequence
+
+When onboarding a new theme, run scripts in this order:
+
+| Step | Script | Purpose |
+|------|--------|---------|
+| 1 | `icon_build_check_contexts.py` | Build `contexts.json` from `index.theme` |
+| 2 | `icon_build_check_icons.py` | Build `icons.json` inventory from disk scan |
+| 3 | `icon_rebuild_catalog_sizes.py` | Rebuild `effective_sizes` in the catalog |
+| 4 | `icon_build_check_symbolic.py` | Detect and tag symbolic (monochrome) icons |
+| 5 | `icon_generate_labels.py` | Generate display labels from filenames |
+| 6 | `icon_duplicates.py` | Find duplicate icons by content hash, then manually link them in `icons.json` |
+| 7 | `icon_next_hints.py` | Add 5-8 search hints per icon (manual, one at a time) |
+| | | |
+| 2a | `icon_build_check_icons.py --update-sizes` | Maintenance: sync sizes arrays with disk |
+| 2b | `icon_build_check_icons.py --insert-missing` | Maintenance: add newly discovered icons to `icons.json` |
+
+Steps 1-3 establish the foundational metadata from `index.theme` and disk. Steps 4-5 can be run in any order. Step 6 (duplicates) should come before step 7 (hints) so that duplicate icons can share hints. Steps 2a-2b are for incremental updates after the initial build. All scripts can be re-run to verify consistency.
+
 ### icon_build_check_icons.py
 
 Verify and update the `icons.json` inventory against what's on disk. Scans the theme directory for PNG/SVG/SVGZ files in directories declared in `index.theme`, skipping symlinks (files and directories).

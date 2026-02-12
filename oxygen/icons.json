@@ -1425,16 +1425,14 @@
     "oxygen_actions_file-zoom-in": {
       "file": "file-zoom-in.png",
       "sizes": [16, 22],
-      "hints": ["file", "zoom", "in", "magnify", "enlarge", "plus", "search"],
+      "hints": ["file", "document", "page", "zoom", "magnify", "enlarge", "view"],
       "label": "File Zoom In",
-      "duplicate_of": "oxygen_actions_zoom-in",
       "context": "actions"
     },
     "oxygen_actions_file-zoom-out": {
       "file": "file-zoom-out.png",
       "sizes": [16, 22],
-      "duplicate_of": "oxygen_actions_zoom-out",
-      "hints": ["file", "zoom", "out", "minus", "magnify", "shrink", "glass"],
+      "hints": ["file", "document", "page", "zoom", "reduce", "shrink", "view"],
       "label": "File Zoom Out",
       "context": "actions"
     },
@@ -4959,7 +4957,6 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["zoom", "in", "magnify", "plus", "enlarge", "glass", "increase"],
       "label": "Zoom In",
-      "duplicates": ["oxygen_actions_file-zoom-in"],
       "context": "actions"
     },
     "oxygen_actions_zoom-next": {
@@ -4979,7 +4976,6 @@
     "oxygen_actions_zoom-out": {
       "file": "zoom-out.png",
       "sizes": [16, 22, 32, 48],
-      "duplicates": ["oxygen_actions_file-zoom-out"],
       "hints": ["zoom", "out", "magnify", "minus", "reduce", "smaller", "glass"],
       "label": "Zoom Out",
       "context": "actions"
@@ -8742,7 +8738,7 @@
       "file": "audio-ac3.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["ac3", "audio", "sound", "music", "dolby", "digital", "surround", "multimedia"],
-      "duplicates": [],
+      "duplicates": ["oxygen_mimetypes_audio-x-mpeg"],
       "label": "Audio Ac3",
       "context": "mimetypes"
     },
@@ -8775,7 +8771,7 @@
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["mpeg", "mp3", "audio", "music", "sound", "mp2", "layer3", "multimedia"],
       "label": "Audio X Mpeg",
-      "duplicates": [],
+      "duplicate_of": "oxygen_mimetypes_audio-ac3",
       "context": "mimetypes"
     },
     "oxygen_mimetypes_audio-x-speex+ogg": {
@@ -9685,25 +9681,12 @@
       "label": "User Trash",
       "context": "places"
     },
-    "oxygen_special_file-zoom-in": {
-      "file": "file-zoom-in.png",
-      "sizes": [16, 22],
-      "hints": ["file", "zoom", "in", "plus", "enlarge", "document", "bigger", "view"],
-      "label": "File Zoom In",
-      "context": "special"
-    },
-    "oxygen_special_file-zoom-out": {
-      "file": "file-zoom-out.png",
-      "sizes": [16, 22],
-      "hints": ["file", "zoom", "out", "minus", "reduce", "document", "smaller", "view"],
-      "label": "File Zoom Out",
-      "context": "special"
-    },
     "oxygen_status_audio-headphones-symbolic": {
       "file": "audio-headphones-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["headphones", "audio", "sound", "listen", "music", "earphones"],
       "label": "Audio Headphones Symbolic"
     },
     "oxygen_status_audio-headset-symbolic": {
@@ -9711,6 +9694,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["headset", "microphone", "audio", "voice", "call", "communication", "headphones"],
       "label": "Audio Headset Symbolic"
     },
     "oxygen_status_audio-off-symbolic": {
@@ -9718,6 +9702,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["audio", "mute", "off", "speaker", "silent", "disabled", "no-sound"],
       "label": "Audio Off Symbolic"
     },
     "oxygen_status_audio-volume-high": {
@@ -9740,6 +9725,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["audio", "volume", "low", "speaker", "quiet", "sound", "soft"],
       "label": "Audio Volume Low Symbolic"
     },
     "oxygen_status_audio-volume-medium": {
@@ -9754,6 +9740,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["audio", "volume", "medium", "speaker", "sound", "moderate", "level"],
       "label": "Audio Volume Medium Symbolic"
     },
     "oxygen_status_audio-volume-muted": {
@@ -9769,6 +9756,8 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "duplicate_of": "oxygen_status_battery-empty-symbolic",
+      "hints": ["battery", "empty", "depleted", "power", "charge", "zero"],
       "label": "Battery 000 Symbolic"
     },
     "oxygen_status_battery-010-charging-symbolic": {
@@ -9776,6 +9765,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "low", "power", "lightning", "plugged", "10-percent"],
       "label": "Battery 010 Charging Symbolic"
     },
     "oxygen_status_battery-010-symbolic": {
@@ -9783,6 +9773,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "low", "critical", "power", "10-percent", "depleting"],
       "label": "Battery 010 Symbolic"
     },
     "oxygen_status_battery-020-charging-symbolic": {
@@ -9790,6 +9781,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "low", "power", "lightning", "plugged", "20-percent"],
       "label": "Battery 020 Charging Symbolic"
     },
     "oxygen_status_battery-020-symbolic": {
@@ -9797,6 +9789,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "low", "power", "20-percent", "draining", "weak"],
       "label": "Battery 020 Symbolic"
     },
     "oxygen_status_battery-030-charging-symbolic": {
@@ -9804,6 +9797,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "low", "power", "lightning", "plugged", "30-percent"],
       "label": "Battery 030 Charging Symbolic"
     },
     "oxygen_status_battery-030-symbolic": {
@@ -9811,6 +9805,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "low", "power", "30-percent", "draining", "weak"],
       "label": "Battery 030 Symbolic"
     },
     "oxygen_status_battery-040": {
@@ -9825,6 +9820,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "medium", "power", "lightning", "plugged", "40-percent"],
       "label": "Battery 040 Charging Symbolic"
     },
     "oxygen_status_battery-040-symbolic": {
@@ -9832,6 +9828,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "medium", "power", "40-percent", "partial", "level"],
       "label": "Battery 040 Symbolic"
     },
     "oxygen_status_battery-050-charging-symbolic": {
@@ -9839,6 +9836,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "half", "power", "lightning", "plugged", "50-percent"],
       "label": "Battery 050 Charging Symbolic"
     },
     "oxygen_status_battery-050-symbolic": {
@@ -9846,6 +9844,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "half", "power", "50-percent", "medium", "level"],
       "label": "Battery 050 Symbolic"
     },
     "oxygen_status_battery-060": {
@@ -9860,6 +9859,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "medium", "power", "lightning", "plugged", "60-percent"],
       "label": "Battery 060 Charging Symbolic"
     },
     "oxygen_status_battery-060-symbolic": {
@@ -9867,6 +9867,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "medium", "power", "60-percent", "partial", "level"],
       "label": "Battery 060 Symbolic"
     },
     "oxygen_status_battery-070-charging-symbolic": {
@@ -9874,6 +9875,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "high", "power", "lightning", "plugged", "70-percent"],
       "label": "Battery 070 Charging Symbolic"
     },
     "oxygen_status_battery-070-symbolic": {
@@ -9881,6 +9883,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "high", "power", "70-percent", "good", "level"],
       "label": "Battery 070 Symbolic"
     },
     "oxygen_status_battery-080": {
@@ -9895,6 +9898,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "high", "power", "lightning", "plugged", "80-percent"],
       "label": "Battery 080 Charging Symbolic"
     },
     "oxygen_status_battery-080-symbolic": {
@@ -9902,6 +9906,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "high", "power", "80-percent", "good", "charged"],
       "label": "Battery 080 Symbolic"
     },
     "oxygen_status_battery-090-charging-symbolic": {
@@ -9909,6 +9914,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "charging", "full", "power", "lightning", "plugged", "90-percent"],
       "label": "Battery 090 Charging Symbolic"
     },
     "oxygen_status_battery-090-symbolic": {
@@ -9916,6 +9922,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "high", "power", "90-percent", "nearly-full", "charged"],
       "label": "Battery 090 Symbolic"
     },
     "oxygen_status_battery-100": {
@@ -9930,6 +9937,8 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "duplicate_of": "oxygen_status_battery-full-symbolic",
+      "hints": ["battery", "full", "charged", "power", "100-percent", "complete"],
       "label": "Battery 100 Symbolic"
     },
     "oxygen_status_battery-caution": {
@@ -9987,6 +9996,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "empty", "charging", "power", "lightning", "plugged", "depleted"],
       "label": "Battery Empty Charging Symbolic"
     },
     "oxygen_status_battery-empty-symbolic": {
@@ -9994,6 +10004,8 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "duplicates": ["oxygen_status_battery-000-symbolic"],
+      "hints": ["battery", "empty", "depleted", "power", "dead", "zero"],
       "label": "Battery Empty Symbolic"
     },
     "oxygen_status_battery-full-charging-symbolic": {
@@ -10001,6 +10013,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "full", "charging", "power", "lightning", "plugged", "complete"],
       "label": "Battery Full Charging Symbolic"
     },
     "oxygen_status_battery-full-symbolic": {
@@ -10008,6 +10021,8 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "duplicates": ["oxygen_status_battery-100-symbolic"],
+      "hints": ["battery", "full", "charged", "power", "complete", "100-percent"],
       "label": "Battery Full Symbolic"
     },
     "oxygen_status_battery-low": {
@@ -10029,6 +10044,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "missing", "absent", "unavailable", "no-battery", "disconnected"],
       "label": "Battery Missing Symbolic"
     },
     "oxygen_status_battery-profile-performance-symbolic": {
@@ -10036,6 +10052,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["battery", "performance", "power", "lightning", "fast", "high-performance", "profile"],
       "label": "Battery Profile Performance Symbolic"
     },
     "oxygen_status_camera-photo-symbolic": {
@@ -10043,6 +10060,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["camera", "photo", "picture", "snapshot", "photography", "lens"],
       "label": "Camera Photo Symbolic"
     },
     "oxygen_status_camera-video-symbolic": {
@@ -10050,6 +10068,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["camera", "video", "record", "camcorder", "film", "movie"],
       "label": "Camera Video Symbolic"
     },
     "oxygen_status_camera-web-symbolic": {
@@ -10057,6 +10076,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["webcam", "camera", "video-call", "conference", "streaming", "web"],
       "label": "Camera Web Symbolic"
     },
     "oxygen_status_car-symbolic": {
@@ -10064,6 +10084,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["car", "automobile", "vehicle", "drive", "transport", "sedan"],
       "label": "Car Symbolic"
     },
     "oxygen_status_computer-laptop-symbolic": {
@@ -10071,6 +10092,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["laptop", "computer", "notebook", "portable", "device", "screen"],
       "label": "Computer Laptop Symbolic"
     },
     "oxygen_status_dialog-error": {
@@ -10109,6 +10131,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["harddisk", "encrypted", "lock", "secure", "storage", "drive", "protected"],
       "label": "Drive Harddisk Encrypted Symbolic"
     },
     "oxygen_status_drive-harddisk-root-symbolic": {
@@ -10116,6 +10139,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["harddisk", "root", "system", "admin", "storage", "drive", "partition"],
       "label": "Drive Harddisk Root Symbolic"
     },
     "oxygen_status_drive-harddisk-symbolic": {
@@ -10123,6 +10147,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["harddisk", "drive", "storage", "disk", "hdd", "data"],
       "label": "Drive Harddisk Symbolic"
     },
     "oxygen_status_folder-open": {
@@ -10138,6 +10163,7 @@
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
+      "hints": ["phone", "handset", "smartphone", "mobile", "call", "device"],
       "label": "Handset Symbolic"
     },
     "oxygen_status_image-loading": {
@@ -10159,6 +10185,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["mouse", "input", "cursor", "pointer", "click", "peripheral"],
       "label": "Input Mouse Symbolic"
     },
     "oxygen_status_input-tablet-symbolic": {
@@ -10166,6 +10193,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["tablet", "stylus", "pen", "drawing", "input", "graphics", "wacom"],
       "label": "Input Tablet Symbolic"
     },
     "oxygen_status_input-touchpad-symbolic": {
@@ -10173,6 +10201,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["touchpad", "trackpad", "input", "gesture", "laptop", "cursor"],
       "label": "Input Touchpad Symbolic"
     },
     "oxygen_status_input-tvremote-symbolic": {
@@ -10180,6 +10209,7 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
+      "hints": ["remote", "tv", "television", "control", "infrared", "buttons"],
       "label": "Input Tvremote Symbolic"
     },
     "oxygen_status_kdeconnect-tray-symbolic": {
@@ -10187,14 +10217,16 @@
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Kdeconnect Tray Symbolic"
+      "label": "Kdeconnect Tray Symbolic",
+      "hints": ["kdeconnect", "phone", "device", "wireless", "sync", "connectivity", "tray"]
     },
     "oxygen_status_klipper-symbolic": {
       "file": "klipper-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Klipper Symbolic"
+      "label": "Klipper Symbolic",
+      "hints": ["clipboard", "klipper", "paste", "copy", "clipboard-manager", "text"]
     },
     "oxygen_status_mail-attachment": {
       "file": "mail-attachment.png",
@@ -10260,21 +10292,24 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Media Playback Paused Symbolic"
+      "label": "Media Playback Paused Symbolic",
+      "hints": ["pause", "media", "playback", "paused", "music", "video", "player"]
     },
     "oxygen_status_media-playback-playing-symbolic": {
       "file": "media-playback-playing-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Media Playback Playing Symbolic"
+      "label": "Media Playback Playing Symbolic",
+      "hints": ["play", "media", "playback", "playing", "music", "video", "player"]
     },
     "oxygen_status_media-playback-stopped-symbolic": {
       "file": "media-playback-stopped-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Media Playback Stopped Symbolic"
+      "label": "Media Playback Stopped Symbolic",
+      "hints": ["stop", "media", "playback", "stopped", "music", "video", "player"]
     },
     "oxygen_status_media-playlist-repeat": {
       "file": "media-playlist-repeat.png",
@@ -10337,508 +10372,636 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Mic Off Symbolic"
+      "label": "Mic Off Symbolic",
+      "hints": ["microphone", "muted", "mic-off", "audio", "recording", "disabled", "slash"]
     },
     "oxygen_status_mic-ready-symbolic": {
       "file": "mic-ready-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Mic Ready Symbolic"
+      "label": "Mic Ready Symbolic",
+      "hints": ["microphone", "ready", "audio", "recording", "active", "input"]
     },
     "oxygen_status_microphone-sensitivity-high-symbolic": {
       "file": "microphone-sensitivity-high-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Microphone Sensitivity High Symbolic"
+      "label": "Microphone Sensitivity High Symbolic",
+      "hints": ["microphone", "sensitivity", "high", "volume", "audio", "input", "loud"]
     },
     "oxygen_status_microphone-sensitivity-low-symbolic": {
       "file": "microphone-sensitivity-low-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Microphone Sensitivity Low Symbolic"
+      "label": "Microphone Sensitivity Low Symbolic",
+      "hints": ["microphone", "sensitivity", "low", "quiet", "audio", "input", "volume"]
     },
     "oxygen_status_microphone-sensitivity-medium-symbolic": {
       "file": "microphone-sensitivity-medium-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Microphone Sensitivity Medium Symbolic"
+      "label": "Microphone Sensitivity Medium Symbolic",
+      "hints": ["microphone", "sensitivity", "medium", "audio", "input", "volume", "moderate"]
     },
     "oxygen_status_microphone-sensitivity-muted-symbolic": {
       "file": "microphone-sensitivity-muted-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Microphone Sensitivity Muted Symbolic"
+      "label": "Microphone Sensitivity Muted Symbolic",
+      "hints": ["microphone", "muted", "sensitivity", "disabled", "audio", "silent", "slash"]
     },
     "oxygen_status_monitor-symbolic": {
       "file": "monitor-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Monitor Symbolic"
+      "label": "Monitor Symbolic",
+      "hints": ["monitor", "display", "screen", "computer", "desktop", "lcd"]
     },
     "oxygen_status_network-bluetooth-activated-locked-symbolic": {
       "file": "network-bluetooth-activated-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Bluetooth Activated Locked Symbolic"
+      "label": "Network Bluetooth Activated Locked Symbolic",
+      "hints": ["bluetooth", "locked", "secure", "network", "wireless", "connected", "padlock"]
     },
     "oxygen_status_network-bluetooth-activated-symbolic": {
       "file": "network-bluetooth-activated-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Bluetooth Activated Symbolic"
+      "label": "Network Bluetooth Activated Symbolic",
+      "hints": ["bluetooth", "activated", "connected", "network", "wireless", "active"]
     },
     "oxygen_status_network-bluetooth-inactive-symbolic": {
       "file": "network-bluetooth-inactive-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Bluetooth Inactive Symbolic"
+      "label": "Network Bluetooth Inactive Symbolic",
+      "hints": ["bluetooth", "inactive", "disconnected", "network", "wireless", "disabled", "off"]
     },
     "oxygen_status_network-bluetooth-symbolic": {
       "file": "network-bluetooth-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Bluetooth Symbolic"
+      "label": "Network Bluetooth Symbolic",
+      "hints": ["bluetooth", "network", "wireless", "connectivity", "pairing", "device"]
     },
     "oxygen_status_network-flightmode-on-symbolic": {
       "file": "network-flightmode-on-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Flightmode On Symbolic"
+      "label": "Network Flightmode On Symbolic",
+      "hints": ["airplane", "flight-mode", "offline", "network", "wireless-off", "travel"]
     },
     "oxygen_status_network-limited-symbolic": {
       "file": "network-limited-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Limited Symbolic"
+      "label": "Network Limited Symbolic",
+      "hints": ["network", "limited", "connection", "warning", "restricted", "internet"]
     },
     "oxygen_status_network-mobile-00-5g-locked-symbolic": {
       "file": "network-mobile-00-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 00 5G Locked Symbolic"
+      "label": "Network Mobile 00 5G Locked Symbolic",
+      "hints": ["mobile", "5g", "no-signal", "locked", "cellular", "network", "secure"]
     },
     "oxygen_status_network-mobile-00-5g.symbolic": {
       "file": "network-mobile-00-5g.symbolic.svg",
       "sizes": [22],
-      "context": "status"
+      "context": "status",
+      "symbolic": true,
+      "label": "Network Mobile 00 5G Symbolic",
+      "hints": ["mobile", "5g", "no-signal", "cellular", "network", "bars"]
     },
     "oxygen_status_network-mobile-00-symbolic": {
       "file": "network-mobile-00-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 00 Symbolic"
+      "label": "Network Mobile 00 Symbolic",
+      "hints": ["mobile", "no-signal", "cellular", "network", "bars", "empty", "disconnected"]
     },
     "oxygen_status_network-mobile-100-5g-locked-symbolic": {
       "file": "network-mobile-100-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 100 5G Locked Symbolic"
+      "label": "Network Mobile 100 5G Locked Symbolic",
+      "hints": ["mobile", "5g", "full-signal", "locked", "cellular", "network", "secure"]
     },
     "oxygen_status_network-mobile-100-5g.symbolic": {
       "file": "network-mobile-100-5g.symbolic.svg",
       "sizes": [22],
-      "context": "status"
+      "context": "status",
+      "symbolic": true,
+      "label": "Network Mobile 100 5G Symbolic",
+      "hints": ["mobile", "5g", "full-signal", "cellular", "network", "bars"]
     },
     "oxygen_status_network-mobile-100-symbolic": {
       "file": "network-mobile-100-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 100 Symbolic"
+      "label": "Network Mobile 100 Symbolic",
+      "hints": ["mobile", "full-signal", "cellular", "network", "bars", "strong", "connected"]
     },
     "oxygen_status_network-mobile-20-5g-locked-symbolic": {
       "file": "network-mobile-20-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 20 5G Locked Symbolic"
+      "label": "Network Mobile 20 5G Locked Symbolic",
+      "hints": ["mobile", "5g", "weak-signal", "locked", "cellular", "network", "secure"]
     },
     "oxygen_status_network-mobile-20-5g.symbolic": {
       "file": "network-mobile-20-5g.symbolic.svg",
       "sizes": [22],
-      "context": "status"
+      "context": "status",
+      "symbolic": true,
+      "label": "Network Mobile 20 5G Symbolic",
+      "hints": ["mobile", "5g", "weak-signal", "cellular", "network", "bars"]
     },
     "oxygen_status_network-mobile-20-symbolic": {
       "file": "network-mobile-20-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 20 Symbolic"
+      "label": "Network Mobile 20 Symbolic",
+      "hints": ["mobile", "weak-signal", "cellular", "network", "bars", "low", "one-bar"]
     },
     "oxygen_status_network-mobile-40-5g-locked-symbolic": {
       "file": "network-mobile-40-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 40 5G Locked Symbolic"
+      "label": "Network Mobile 40 5G Locked Symbolic",
+      "hints": ["mobile", "5g", "medium-signal", "locked", "cellular", "network", "secure"]
     },
     "oxygen_status_network-mobile-40-5g.symbolic": {
       "file": "network-mobile-40-5g.symbolic.svg",
       "sizes": [22],
-      "context": "status"
+      "context": "status",
+      "symbolic": true,
+      "label": "Network Mobile 40 5G Symbolic",
+      "hints": ["mobile", "5g", "medium-signal", "cellular", "network", "bars"]
     },
     "oxygen_status_network-mobile-40-symbolic": {
       "file": "network-mobile-40-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 40 Symbolic"
+      "label": "Network Mobile 40 Symbolic",
+      "hints": ["mobile", "medium-signal", "cellular", "network", "bars", "two-bars"]
     },
     "oxygen_status_network-mobile-60-5g-locked-symbolic": {
       "file": "network-mobile-60-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 60 5G Locked Symbolic"
+      "label": "Network Mobile 60 5G Locked Symbolic",
+      "hints": ["mobile", "5g", "good-signal", "locked", "cellular", "network", "secure"]
     },
     "oxygen_status_network-mobile-60-5g.symbolic": {
       "file": "network-mobile-60-5g.symbolic.svg",
       "sizes": [22],
-      "context": "status"
+      "context": "status",
+      "symbolic": true,
+      "label": "Network Mobile 60 5G Symbolic",
+      "hints": ["mobile", "5g", "good-signal", "cellular", "network", "bars"]
     },
     "oxygen_status_network-mobile-60-symbolic": {
       "file": "network-mobile-60-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 60 Symbolic"
+      "label": "Network Mobile 60 Symbolic",
+      "hints": ["mobile", "good-signal", "cellular", "network", "bars", "three-bars"]
     },
     "oxygen_status_network-mobile-80-5g-locked-symbolic": {
       "file": "network-mobile-80-5g-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 80 5G Locked Symbolic"
+      "label": "Network Mobile 80 5G Locked Symbolic",
+      "hints": ["mobile", "5g", "strong-signal", "locked", "cellular", "network", "secure"]
     },
     "oxygen_status_network-mobile-80-5g.symbolic": {
       "file": "network-mobile-80-5g.symbolic.svg",
       "sizes": [22],
-      "context": "status"
+      "context": "status",
+      "symbolic": true,
+      "label": "Network Mobile 80 5G Symbolic",
+      "hints": ["mobile", "5g", "strong-signal", "cellular", "network", "bars"]
     },
     "oxygen_status_network-mobile-80-symbolic": {
       "file": "network-mobile-80-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Mobile 80 Symbolic"
+      "label": "Network Mobile 80 Symbolic",
+      "hints": ["mobile", "strong-signal", "cellular", "network", "bars", "four-bars"]
     },
     "oxygen_status_network-unavailable-symbolic": {
       "file": "network-unavailable-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Unavailable Symbolic"
+      "duplicates": ["oxygen_status_network-wired-unavailable-symbolic"],
+      "label": "Network Unavailable Symbolic",
+      "hints": ["network", "unavailable", "ethernet", "disconnected", "cable", "offline", "error"]
     },
     "oxygen_status_network-wired-activated-locked-symbolic": {
       "file": "network-wired-activated-locked-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wired Activated Locked Symbolic"
+      "label": "Network Wired Activated Locked Symbolic",
+      "hints": ["network", "wired", "ethernet", "locked", "secure", "connected", "padlock"]
     },
     "oxygen_status_network-wired-activated-symbolic": {
       "file": "network-wired-activated-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wired Activated Symbolic"
+      "label": "Network Wired Activated Symbolic",
+      "hints": ["network", "wired", "ethernet", "connected", "active", "cable"]
     },
     "oxygen_status_network-wired-available-symbolic": {
       "file": "network-wired-available-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wired Available Symbolic"
+      "duplicate_of": "oxygen_status_network-wired-symbolic",
+      "label": "Network Wired Available Symbolic",
+      "hints": ["network", "wired", "ethernet", "available", "cable", "port"]
     },
     "oxygen_status_network-wired-symbolic": {
       "file": "network-wired-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wired Symbolic"
+      "duplicates": ["oxygen_status_network-wired-available-symbolic"],
+      "label": "Network Wired Symbolic",
+      "hints": ["network", "wired", "ethernet", "cable", "port", "connection"]
     },
     "oxygen_status_network-wired-unavailable-symbolic": {
       "file": "network-wired-unavailable-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wired Unavailable Symbolic"
+      "duplicate_of": "oxygen_status_network-unavailable-symbolic",
+      "label": "Network Wired Unavailable Symbolic",
+      "hints": ["network", "wired", "ethernet", "unavailable", "disconnected", "cable", "error"]
     },
     "oxygen_status_network-wireless-0-limited-symbolic": {
       "file": "network-wireless-0-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 0 Limited Symbolic"
+      "label": "Network Wireless 0 Limited Symbolic",
+      "hints": ["wifi", "wireless", "no-signal", "limited", "warning", "network", "restricted"]
     },
     "oxygen_status_network-wireless-0-locked": {
       "file": "network-wireless-0-locked.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 0 Locked"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-0-locked-symbolic"],
+      "label": "Network Wireless 0 Locked",
+      "hints": ["wifi", "wireless", "no-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-0-locked-symbolic": {
       "file": "network-wireless-0-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 0 Locked Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-0-locked",
+      "label": "Network Wireless 0 Locked Symbolic",
+      "hints": ["wifi", "wireless", "no-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-00": {
       "file": "network-wireless-00.svg",
       "sizes": [32],
       "context": "status",
-      "label": "Network Wireless 00"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-00-symbolic"],
+      "label": "Network Wireless 00",
+      "hints": ["wifi", "wireless", "no-signal", "disconnected", "network", "empty"]
     },
     "oxygen_status_network-wireless-00-symbolic": {
       "file": "network-wireless-00-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 00 Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-00",
+      "label": "Network Wireless 00 Symbolic",
+      "hints": ["wifi", "wireless", "no-signal", "disconnected", "network", "empty"]
     },
     "oxygen_status_network-wireless-100": {
       "file": "network-wireless-100.svg",
       "sizes": [32],
       "context": "status",
-      "label": "Network Wireless 100"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-100-symbolic"],
+      "label": "Network Wireless 100",
+      "hints": ["wifi", "wireless", "full-signal", "connected", "network", "strong"]
     },
     "oxygen_status_network-wireless-100-limited-symbolic": {
       "file": "network-wireless-100-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 100 Limited Symbolic"
+      "label": "Network Wireless 100 Limited Symbolic",
+      "hints": ["wifi", "wireless", "full-signal", "limited", "warning", "network", "restricted"]
     },
     "oxygen_status_network-wireless-100-locked": {
       "file": "network-wireless-100-locked.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 100 Locked"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-100-locked-symbolic"],
+      "label": "Network Wireless 100 Locked",
+      "hints": ["wifi", "wireless", "full-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-100-locked-symbolic": {
       "file": "network-wireless-100-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 100 Locked Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-100-locked",
+      "label": "Network Wireless 100 Locked Symbolic",
+      "hints": ["wifi", "wireless", "full-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-100-symbolic": {
       "file": "network-wireless-100-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 100 Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-100",
+      "label": "Network Wireless 100 Symbolic",
+      "hints": ["wifi", "wireless", "full-signal", "connected", "network", "strong"]
     },
     "oxygen_status_network-wireless-20": {
       "file": "network-wireless-20.svg",
       "sizes": [32],
       "context": "status",
-      "label": "Network Wireless 20"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-20-symbolic"],
+      "label": "Network Wireless 20",
+      "hints": ["wifi", "wireless", "weak-signal", "network", "one-bar", "low"]
     },
     "oxygen_status_network-wireless-20-limited-symbolic": {
       "file": "network-wireless-20-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 20 Limited Symbolic"
+      "label": "Network Wireless 20 Limited Symbolic",
+      "hints": ["wifi", "wireless", "weak-signal", "limited", "warning", "network", "restricted"]
     },
     "oxygen_status_network-wireless-20-locked": {
       "file": "network-wireless-20-locked.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 20 Locked"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-20-locked-symbolic"],
+      "label": "Network Wireless 20 Locked",
+      "hints": ["wifi", "wireless", "weak-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-20-locked-symbolic": {
       "file": "network-wireless-20-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 20 Locked Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-20-locked",
+      "label": "Network Wireless 20 Locked Symbolic",
+      "hints": ["wifi", "wireless", "weak-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-20-symbolic": {
       "file": "network-wireless-20-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 20 Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-20",
+      "label": "Network Wireless 20 Symbolic",
+      "hints": ["wifi", "wireless", "weak-signal", "network", "one-bar", "low"]
     },
     "oxygen_status_network-wireless-40": {
       "file": "network-wireless-40.svg",
       "sizes": [32],
       "context": "status",
-      "label": "Network Wireless 40"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-40-symbolic"],
+      "label": "Network Wireless 40",
+      "hints": ["wifi", "wireless", "medium-signal", "network", "two-bars", "moderate"]
     },
     "oxygen_status_network-wireless-40-limited-symbolic": {
       "file": "network-wireless-40-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 40 Limited Symbolic"
+      "label": "Network Wireless 40 Limited Symbolic",
+      "hints": ["wifi", "wireless", "medium-signal", "limited", "warning", "network", "restricted"]
     },
     "oxygen_status_network-wireless-40-locked": {
       "file": "network-wireless-40-locked.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 40 Locked"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-40-locked-symbolic"],
+      "label": "Network Wireless 40 Locked",
+      "hints": ["wifi", "wireless", "medium-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-40-locked-symbolic": {
       "file": "network-wireless-40-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 40 Locked Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-40-locked",
+      "label": "Network Wireless 40 Locked Symbolic",
+      "hints": ["wifi", "wireless", "medium-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-40-symbolic": {
       "file": "network-wireless-40-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 40 Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-40",
+      "label": "Network Wireless 40 Symbolic",
+      "hints": ["wifi", "wireless", "medium-signal", "network", "two-bars", "moderate"]
     },
     "oxygen_status_network-wireless-60": {
       "file": "network-wireless-60.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 60"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-60-symbolic"],
+      "label": "Network Wireless 60",
+      "hints": ["wifi", "wireless", "good-signal", "network", "three-bars", "connected"]
     },
     "oxygen_status_network-wireless-60-limited-symbolic": {
       "file": "network-wireless-60-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 60 Limited Symbolic"
+      "label": "Network Wireless 60 Limited Symbolic",
+      "hints": ["wifi", "wireless", "good-signal", "limited", "warning", "network", "restricted"]
     },
     "oxygen_status_network-wireless-60-locked": {
       "file": "network-wireless-60-locked.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 60 Locked"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-60-locked-symbolic"],
+      "label": "Network Wireless 60 Locked",
+      "hints": ["wifi", "wireless", "good-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-60-locked-symbolic": {
       "file": "network-wireless-60-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 60 Locked Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-60-locked",
+      "label": "Network Wireless 60 Locked Symbolic",
+      "hints": ["wifi", "wireless", "good-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-60-symbolic": {
       "file": "network-wireless-60-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 60 Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-60",
+      "label": "Network Wireless 60 Symbolic",
+      "hints": ["wifi", "wireless", "good-signal", "network", "three-bars", "connected"]
     },
     "oxygen_status_network-wireless-80": {
       "file": "network-wireless-80.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 80"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-80-symbolic"],
+      "label": "Network Wireless 80",
+      "hints": ["wifi", "wireless", "strong-signal", "network", "four-bars", "connected"]
     },
     "oxygen_status_network-wireless-80-limited-symbolic": {
       "file": "network-wireless-80-limited-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 80 Limited Symbolic"
+      "label": "Network Wireless 80 Limited Symbolic",
+      "hints": ["wifi", "wireless", "strong-signal", "limited", "warning", "network", "restricted"]
     },
     "oxygen_status_network-wireless-80-locked": {
       "file": "network-wireless-80-locked.svg",
       "sizes": [22, 32],
       "context": "status",
-      "label": "Network Wireless 80 Locked"
+      "symbolic": true,
+      "duplicates": ["oxygen_status_network-wireless-80-locked-symbolic"],
+      "label": "Network Wireless 80 Locked",
+      "hints": ["wifi", "wireless", "strong-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-80-locked-symbolic": {
       "file": "network-wireless-80-locked-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 80 Locked Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-80-locked",
+      "label": "Network Wireless 80 Locked Symbolic",
+      "hints": ["wifi", "wireless", "strong-signal", "locked", "secure", "network", "padlock"]
     },
     "oxygen_status_network-wireless-80-symbolic": {
       "file": "network-wireless-80-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless 80 Symbolic"
+      "duplicate_of": "oxygen_status_network-wireless-80",
+      "label": "Network Wireless 80 Symbolic",
+      "hints": ["wifi", "wireless", "strong-signal", "network", "four-bars", "connected"]
     },
     "oxygen_status_network-wireless-bluetooth-symbolic": {
       "file": "network-wireless-bluetooth-symbolic.svg",
       "sizes": [32],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless Bluetooth Symbolic"
+      "label": "Network Wireless Bluetooth Symbolic",
+      "hints": ["wifi", "bluetooth", "wireless", "network", "combined", "connectivity"]
     },
     "oxygen_status_network-wireless-disconnected-symbolic": {
       "file": "network-wireless-disconnected-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless Disconnected Symbolic"
+      "label": "Network Wireless Disconnected Symbolic",
+      "hints": ["wifi", "wireless", "disconnected", "offline", "network", "no-connection"]
     },
     "oxygen_status_network-wireless-off-symbolic": {
       "file": "network-wireless-off-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Network Wireless Off Symbolic"
+      "label": "Network Wireless Off Symbolic",
+      "hints": ["wifi", "wireless", "off", "disabled", "network", "slash", "turned-off"]
     },
     "oxygen_status_nm-signal-00-symbolic": {
       "file": "nm-signal-00-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Nm Signal 00 Symbolic"
+      "label": "Nm Signal 00 Symbolic",
+      "hints": ["networkmanager", "wifi", "no-signal", "wireless", "network", "empty"]
     },
     "oxygen_status_nm-signal-100-symbolic": {
       "file": "nm-signal-100-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Nm Signal 100 Symbolic"
+      "label": "Nm Signal 100 Symbolic",
+      "hints": ["networkmanager", "wifi", "full-signal", "wireless", "network", "strong"]
     },
     "oxygen_status_nm-signal-25-symbolic": {
       "file": "nm-signal-25-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Nm Signal 25 Symbolic"
+      "label": "Nm Signal 25 Symbolic",
+      "hints": ["networkmanager", "wifi", "weak-signal", "wireless", "network", "low"]
     },
     "oxygen_status_nm-signal-50-symbolic": {
       "file": "nm-signal-50-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Nm Signal 50 Symbolic"
+      "label": "Nm Signal 50 Symbolic",
+      "hints": ["networkmanager", "wifi", "medium-signal", "wireless", "network", "moderate"]
     },
     "oxygen_status_nm-signal-75-symbolic": {
       "file": "nm-signal-75-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Nm Signal 75 Symbolic"
+      "label": "Nm Signal 75 Symbolic",
+      "hints": ["networkmanager", "wifi", "good-signal", "wireless", "network", "strong"]
     },
     "oxygen_status_phone-battery-symbolic": {
       "file": "phone-battery-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Phone Battery Symbolic"
+      "label": "Phone Battery Symbolic",
+      "hints": ["phone", "battery", "mobile", "charge", "power", "device"]
     },
     "oxygen_status_printer-error": {
       "file": "printer-error.png",
@@ -10880,28 +11043,32 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Speaker Symbolic"
+      "label": "Speaker Symbolic",
+      "hints": ["speaker", "audio", "sound", "volume", "output", "playing"]
     },
     "oxygen_status_speaker-symbolic-danger-symbolic": {
       "file": "speaker-symbolic-danger-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Speaker Symbolic Danger Symbolic"
+      "label": "Speaker Symbolic Danger Symbolic",
+      "hints": ["speaker", "danger", "audio", "loud", "volume", "warning", "high"]
     },
     "oxygen_status_speaker-symbolic-warning-symbolic": {
       "file": "speaker-symbolic-warning-symbolic.svg",
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Speaker Symbolic Warning Symbolic"
+      "label": "Speaker Symbolic Warning Symbolic",
+      "hints": ["speaker", "warning", "audio", "volume", "caution", "sound", "alert"]
     },
     "oxygen_status_tablet-symbolic": {
       "file": "tablet-symbolic.svg",
       "sizes": [22, 32],
       "context": "status",
       "symbolic": true,
-      "label": "Tablet Symbolic"
+      "label": "Tablet Symbolic",
+      "hints": ["tablet", "device", "mobile", "touchscreen", "ipad", "screen"]
     },
     "oxygen_status_task-accepted": {
       "file": "task-accepted.png",
@@ -11035,7 +11202,8 @@
       "sizes": [22],
       "context": "status",
       "symbolic": true,
-      "label": "Video Television Symbolic"
+      "label": "Video Television Symbolic",
+      "hints": ["television", "tv", "video", "screen", "display", "monitor"]
     },
     "oxygen_status_wallet-closed": {
       "file": "wallet-closed.png",
@@ -11112,7 +11280,8 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "label": "Weather Many Clouds",
       "duplicates": [],
-      "context": "status"
+      "context": "status",
+      "hints": ["weather", "clouds", "overcast", "cloudy", "sky", "forecast"]
     },
     "oxygen_status_weather-mist": {
       "file": "weather-mist.png",

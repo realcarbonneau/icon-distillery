@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 from icon_theme_processor import (
-    ThemeCatalog, _PROJECT_DIR, fatal_error, save_json_compact_arrays,
+    ThemeCatalog, _PROJECT_DIR, save_json_compact_arrays, usage_error,
 )
 
 # PNG magic header: first 8 bytes of any valid PNG file
@@ -55,9 +55,9 @@ def log_anomaly(theme, message):
 def main():
     catalog = ThemeCatalog()
 
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         catalog.print_available()
-        fatal_error("Usage: python scripts/icon_next_hints.py <theme>")
+        usage_error(__doc__)
 
     theme = catalog.get_theme(sys.argv[1])
     json_path = theme.icons_path
