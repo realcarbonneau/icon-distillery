@@ -97,13 +97,20 @@ def main():
         if disk_sizes != json_sizes:
             size_mismatches.append((icon_id, json_sizes, disk_sizes))
 
-    # Check path conflicts (multiple files mapping to same icon id + size)
+    # Check path conflicts (multiple files of same extension at same icon id + size)
+    # One file per extension type is permitted (e.g. one .svg + one .png is OK).
+    from collections import Counter
+
+    def _has_type_conflict(paths):
+        exts = Counter(os.path.splitext(p)[1].lower() for p in paths)
+        return any(c > 1 for c in exts.values())
+
     path_conflicts = []
     for icon_id in sorted(discovered):
         info = discovered[icon_id]
         for size in info["sizes"]:
             paths = info["paths"][size]
-            if len(paths) > 1:
+            if len(paths) > 1 and _has_type_conflict(paths):
                 path_conflicts.append((icon_id, size, paths))
                 break
     # Build full conflict info for reporting
@@ -113,7 +120,7 @@ def main():
         size_paths = {}
         for size in info["sizes"]:
             paths = info["paths"][size]
-            if len(paths) > 1:
+            if len(paths) > 1 and _has_type_conflict(paths):
                 size_paths[size] = paths
         conflict_details.append((icon_id, size_paths))
 
