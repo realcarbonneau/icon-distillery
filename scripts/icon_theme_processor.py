@@ -394,6 +394,7 @@ class Theme:
         """Find all size variants of an icon within its context.
 
         Returns list of absolute path strings.
+        Skips directories reached through symlinks (e.g. @2x dirs).
         """
         if internal_context_id not in self.context_map:
             fatal_error(f"Context '{internal_context_id}' not found "
@@ -403,6 +404,8 @@ class Theme:
         hits = []
         for entry in self.context_map[internal_context_id]:
             dir_path = os.path.join(self.dir, entry["dir"])
+            if os.path.realpath(dir_path) != os.path.abspath(dir_path):
+                continue
             for match in Path(dir_path).glob(stem + ".*"):
                 if match.is_symlink():
                     continue

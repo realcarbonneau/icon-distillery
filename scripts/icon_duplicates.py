@@ -88,22 +88,38 @@ def main():
     discovered = theme.scan_directory()
     print(f"Found {len(discovered)} unique icons", file=sys.stderr)
 
-    # Build icon inventory with hashes: icon_id -> {size: {path, hash, file_size}}
+    # Build icon inventory with hashes: icon_id -> {size: {path, hash, file_size, files}}
     icons = defaultdict(dict)
     for icon_id, info in discovered.items():
         for size in info["sizes"]:
-            paths = info["paths"][size]
-            path = paths[0]  # use first path if multiple
+            paths = sorted(info["paths"][size],
+                           key=lambda p: os.path.splitext(p)[1].lower())
+            path = paths[0]
             try:
                 h = hash_file(path)
                 rel_path = os.path.relpath(path, start_path)
+                files = []
+                for p in paths:
+                    try:
+                        files.append((hash_file(p)[:12],
+                                      os.path.relpath(p, start_path)))
+                    except Exception:
+                        pass
                 icons[icon_id][size] = {
                     "path": rel_path,
                     "hash": h,
                     "file_size": os.path.getsize(path),
+                    "files": files,
                 }
             except Exception as e:
                 print(f"Error hashing {path}: {e}", file=sys.stderr)
+
+    # Map every file hash to the set of icons that have it (for per-file labeling)
+    file_hash_icons = defaultdict(set)
+    for icon_name, size_data in icons.items():
+        for size, d in size_data.items():
+            for fh, fp in d["files"]:
+                file_hash_icons[fh].add(icon_name)
 
     # Build hash signature for each icon (sorted tuple of (size, hash) pairs)
     # This lets us compare if two icons have identical content at all sizes
@@ -248,7 +264,8 @@ def main():
 
                 for size in sizes:
                     d = size_data[size]
-                    print(f"        {size:4d}px  {d['hash'][:12]}  {d['path']}")
+                    for fh, fp in d["files"]:
+                        print(f"        {size:4d}px  {fh}  {fp}")
 
             # Show referrers and targets summary
             if referring_icons:
@@ -445,13 +462,19 @@ def main():
                           if k != icon_name]
 
                 if others:
-                    print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (duplicate)")
+                    for fh, fp in d["files"]:
+                        lbl = "duplicate" if file_hash_icons[fh] - {icon_name} else "unique"
+                        print(f"  {size:4d}px  {fh}  {fp}  ({lbl})")
                     for other_id, other_size in sorted(others):
                         other_d = icons[other_id][other_size]
-                        print(f"  {other_size:4d}px  {d['hash'][:12]}  {other_d['path']}  (duplicate)")
+                        for fh, fp in other_d["files"]:
+                            lbl = "duplicate" if file_hash_icons[fh] - {other_id} else "unique"
+                            print(f"  {other_size:4d}px  {fh}  {fp}  ({lbl})")
                         print_dup_of(other_id, indent="          -> ")
                 else:
-                    print(f"  {size:4d}px  {d['hash'][:12]}  {d['path']}  (unique)")
+                    for fh, fp in d["files"]:
+                        lbl = "duplicate" if file_hash_icons[fh] - {icon_name} else "unique"
+                        print(f"  {size:4d}px  {fh}  {fp}  ({lbl})")
 
             print()
 

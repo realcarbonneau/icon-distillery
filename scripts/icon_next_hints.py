@@ -86,37 +86,19 @@ def main():
         # Find all files in this context's directories (PNGs, SVGs, SVGZs)
         disk_files = theme.find_icon_files_in_context(context, filename)
 
-        # IMPORTANT TODO: PNG creation from SVGs should be a separate
-        # preparation script (see ICON_METADATA.md TODO #10).  This inline
-        # conversion duplicates work that other scripts will also need.
-
-        # Build viewable PNG list from disk files.
-        # For each SVG/SVGZ, ensure a matching PNG exists (convert if needed).
-        # PNGs found directly on disk are validated and collected.
-        png_files = set()
+        # Validate PNGs, group all files by extension
+        files_by_ext = {}  # ext -> list of (file_size, rel_path)
         for path in disk_files:
-            if path.endswith(".png"):
+            ext = os.path.splitext(path)[1].lower()
+            if ext == ".png":
                 if os.path.getsize(path) == 0:
                     log_file_error(f"PNG empty: {path}")
+                    continue
                 elif not valid_png(path):
                     log_file_error(f"PNG invalid header: {path}")
-                else:
-                    png_files.add(path)
-            elif path.endswith((".svg", ".svgz")):
-                png_path = str(Path(path).with_suffix(".png"))
-                if os.path.exists(png_path) and os.path.getsize(png_path) > 0 and valid_png(png_path):
-                    png_files.add(png_path)
-                else:
-                    result = theme.convert_svg_to_png(path)
-                    if not result.endswith(".png"):
-                        log_file_error(result)
-                    elif not os.path.exists(result) or os.path.getsize(result) == 0:
-                        log_file_error(f"PNG missing or empty after conversion: {result}")
-                    elif not valid_png(result):
-                        log_file_error(f"PNG invalid header after conversion: {result}")
-                    else:
-                        png_files.add(result)
-        png_files = sorted(png_files)
+                    continue
+            size = os.path.getsize(path)
+            files_by_ext.setdefault(ext, []).append((size, rel_path(path)))
 
         # If file errors, set hints and skip to next icon
         if file_errors:
@@ -124,21 +106,16 @@ def main():
             save_json_compact_arrays(json_path, data)
             continue
 
-        # Build file info for display
-        file_info = []
-        for path in png_files:
-            info = theme.get_file_info(path)
-            file_info.append(info)
-
         print(f"CURRENT JSON ENTRY ({rel_path(json_path)})")
         print(f"  \"key\": \"{icon_id}\"")
 
-        # Sort by file size descending (largest first for worker)
-        file_info.sort(key=lambda x: x["file_size"], reverse=True)
-
+        # Display files grouped by type, each section sorted by size descending
         print("DISK_FILES:")
-        for info in file_info:
-            print(f"  {info['file_size']}b  {rel_path(info['path'])}")
+        for ext in sorted(files_by_ext.keys()):
+            label = ext.lstrip(".").upper()
+            print(f"  {label}:")
+            for size, path in sorted(files_by_ext[ext], reverse=True):
+                print(f"    {size}b  {path}")
 
         # Worker instruction blocks
         print("NEXT STEP - WORKER INSTRUCTIONS")
