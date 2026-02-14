@@ -40,10 +40,6 @@ import wx
 
 def _theme_label(theme):
     """Get display label for a theme from its catalog config."""
-    if "variants" in theme.config:
-        for v in theme.config["variants"]:
-            if v["id"] == theme.theme_id:
-                return v.get("label", theme.theme_id.title())
     return theme.config.get("label", theme.theme_id.title())
 
 

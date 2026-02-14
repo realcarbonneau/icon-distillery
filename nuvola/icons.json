@@ -1150,7 +1150,7 @@
       "file": "package_favorite.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["heart", "favorite", "love", "red", "like", "bookmark"],
-      "duplicate_of": "nuvola_emblems_emblem-favorite",
+      "duplicates": ["nuvola_emblems_emblem-favorite", "nuvola_places_bookmarks"],
       "label": "Package Favorite",
       "context": "apps"
     },
@@ -2158,7 +2158,7 @@
       "file": "bookmarks.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["bookmarks", "heart", "favorite", "love", "red", "saved"],
-      "duplicate_of": "nuvola_emblems_emblem-favorite",
+      "duplicate_of": "nuvola_apps_package_favorite",
       "label": "Bookmarks",
       "context": "places"
     },
@@ -2180,7 +2180,7 @@
       "file": "emblem-favorite.png",
       "sizes": [22, 32, 48],
       "hints": ["favorite", "heart", "love", "emblem", "bookmark", "liked"],
-      "duplicates": ["nuvola_places_bookmarks", "nuvola_apps_package_favorite"],
+      "duplicate_of": "nuvola_apps_package_favorite",
       "label": "Emblem Favorite",
       "context": "emblems"
     },

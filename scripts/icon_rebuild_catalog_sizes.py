@@ -2,8 +2,7 @@
 """Rebuild effective_sizes in ICON_THEME_CATALOG.json from index.theme files.
 
 For each theme with an index.theme, collects all effective sizes (Size x Scale)
-from the parsed index directory entries. For themes with variants, aggregates
-sizes across all variants into one list at the top-level catalog entry.
+from the parsed index directory entries and updates the theme's catalog entry.
 
 Themes without index.theme are skipped.
 
@@ -21,7 +20,7 @@ from icon_theme_processor import ThemeCatalog, save_json_compact_arrays
 def main():
     catalog = ThemeCatalog()
 
-    # Collect effective_sizes per top-level theme key (across all variants)
+    # Collect effective_sizes per theme
     theme_sizes = {}
 
     for theme_id in catalog.theme_ids():
@@ -34,11 +33,11 @@ def main():
         dir_map = theme.index
         print(f"  {len(dir_map)} index entries")
 
-        if theme.theme_base_id not in theme_sizes:
-            theme_sizes[theme.theme_base_id] = set()
+        if theme.theme_id not in theme_sizes:
+            theme_sizes[theme.theme_id] = set()
 
         for meta in dir_map.values():
-            theme_sizes[theme.theme_base_id].add(meta["effective_size"])
+            theme_sizes[theme.theme_id].add(meta["effective_size"])
 
     # Update catalog
     catalog_path = catalog.catalog_path()
@@ -46,16 +45,16 @@ def main():
         catalog_data = json.load(f)
 
     updated = False
-    for theme_base_id, sizes in theme_sizes.items():
+    for theme_id, sizes in theme_sizes.items():
         new_sizes = sorted(sizes)
-        old_sizes = catalog_data[theme_base_id].get("effective_sizes", [])
+        old_sizes = catalog_data[theme_id].get("effective_sizes", [])
 
         if new_sizes != old_sizes:
-            print(f"  {theme_base_id} effective_sizes: {old_sizes} -> {new_sizes}")
-            catalog_data[theme_base_id]["effective_sizes"] = new_sizes
+            print(f"  {theme_id} effective_sizes: {old_sizes} -> {new_sizes}")
+            catalog_data[theme_id]["effective_sizes"] = new_sizes
             updated = True
         else:
-            print(f"  {theme_base_id}: no changes")
+            print(f"  {theme_id}: no changes")
 
     if updated:
         save_json_compact_arrays(catalog_path, catalog_data)

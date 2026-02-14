@@ -100,6 +100,20 @@ def main():
             size = os.path.getsize(path)
             files_by_ext.setdefault(ext, []).append((size, rel_path(path)))
 
+        # Generate PNGs from SVGs when no PNGs exist on disk
+        if ".png" not in files_by_ext and ".svg" in files_by_ext:
+            # Sort SVGs by size descending, convert the largest first
+            svgs = sorted(files_by_ext[".svg"], reverse=True)
+            for _, svg_rel in svgs:
+                svg_abs = os.path.join(_PROJECT_DIR, svg_rel.lstrip("./"))
+                result = theme.convert_svg_to_png(svg_abs)
+                if os.path.exists(result) and valid_png(result):
+                    size = os.path.getsize(result)
+                    files_by_ext.setdefault(".png", []).append(
+                        (size, rel_path(result)))
+                else:
+                    log_file_error(f"SVG->PNG failed: {result}")
+
         # If file errors, set hints and skip to next icon
         if file_errors:
             icon_data["hints"] = file_errors

@@ -11,8 +11,7 @@ differences for manual review — does NOT auto-update.
 Also validates icons.json icons: checks that every icon has a context
 property and that every context value is a valid internal_context_id.
 
-Also updates the xdg_contexts summary list in ICON_THEME_CATALOG.json,
-aggregated across all variants per base theme.
+Also updates the xdg_contexts summary list in ICON_THEME_CATALOG.json.
 
 Usage:
     python scripts/icon_build_check_contexts.py <theme>
@@ -151,10 +150,10 @@ def main():
         catalog_data = json.load(f)
 
     new_list = sorted(xdg_set)
-    old_list = catalog_data[theme.theme_base_id].get("xdg_contexts", [])
+    old_list = catalog_data[theme.theme_id].get("xdg_contexts", [])
     if new_list != old_list:
-        print(f"  {theme.theme_base_id} xdg_contexts: {old_list} -> {new_list}")
-        catalog_data[theme.theme_base_id]["xdg_contexts"] = new_list
+        print(f"  {theme.theme_id} xdg_contexts: {old_list} -> {new_list}")
+        catalog_data[theme.theme_id]["xdg_contexts"] = new_list
         save_json_compact_arrays(catalog_path, catalog_data)
         print(f"\nUpdated {catalog_path}")
 
