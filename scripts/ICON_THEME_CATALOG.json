@@ -1,17 +1,31 @@
 {
   "papirus": {
     "label": "Papirus",
+    "siblings_theme_ids": ["papirus-dark", "papirus-light"],
     "url": "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
     "license": "GPL-3.0",
     "debian_package": "papirus-icon-theme",
     "debian_url": "https://tracker.debian.org/pkg/papirus-icon-theme",
-    "variants": [{
-        "id": "papirus", "label": "Papirus", "dir": "Papirus"
-      }, {
-        "id": "papirus-dark", "label": "Papirus-Dark", "dir": "Papirus-Dark"
-      }, {
-        "id": "papirus-light", "label": "Papirus-Light", "dir": "Papirus-Light"
-      }],
+    "effective_sizes": [8, 16, 18, 20, 22, 24, 32, 36, 40, 42, 44, 48, 64, 84, 96, 128],
+    "xdg_contexts": ["Actions", "Animations", "Applications", "Categories", "Devices", "Emblems", "Emotes", "MimeTypes", "Places", "Status"]
+  },
+  "papirus-dark": {
+    "label": "Papirus-Dark",
+    "siblings_theme_ids": ["papirus", "papirus-light"],
+    "url": "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
+    "license": "GPL-3.0",
+    "debian_package": "papirus-icon-theme",
+    "debian_url": "https://tracker.debian.org/pkg/papirus-icon-theme",
+    "effective_sizes": [8, 16, 18, 20, 22, 24, 32, 36, 40, 42, 44, 48, 64, 84, 96, 128],
+    "xdg_contexts": ["Actions", "Animations", "Applications", "Categories", "Devices", "Emblems", "Emotes", "MimeTypes", "Places", "Status"]
+  },
+  "papirus-light": {
+    "label": "Papirus-Light",
+    "siblings_theme_ids": ["papirus", "papirus-dark"],
+    "url": "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
+    "license": "GPL-3.0",
+    "debian_package": "papirus-icon-theme",
+    "debian_url": "https://tracker.debian.org/pkg/papirus-icon-theme",
     "effective_sizes": [8, 16, 18, 20, 22, 24, 32, 36, 40, 42, 44, 48, 64, 84, 96, 128],
     "xdg_contexts": ["Actions", "Animations", "Applications", "Categories", "Devices", "Emblems", "Emotes", "MimeTypes", "Places", "Status"]
   },

@@ -63,9 +63,9 @@ Located in `scripts/`. Defines theme-level metadata. Each key is a theme identif
 | Field | Description |
 |-------|-------------|
 | `label` | Display name (e.g., "Nuvola") |
+| `siblings_theme_ids` | Array of theme ids for related themes (e.g., light/dark variants of the same icon set). Informational only — not used by processing scripts. |
 | `url` | Project homepage |
 | `license` | SPDX license identifier |
-| `variants` | Array of `{"id", "label", "dir"}` variant objects. `id` is the unique variant id (e.g., "papirus-dark"), `label` is the display name, `dir` is the filesystem directory name. When `id` matches the parent theme id, that variant is the primary. Each variant is expanded into its own `Theme` object by `ThemeCatalog`. |
 | `effective_sizes` | Summary of available effective icon sizes, i.e. Size x Scale (derived from index.theme by `icon_rebuild_catalog_sizes.py`) |
 | `xdg_contexts` | Summary of XDG Context= values (derived from index.theme by `icon_build_check_contexts.py`) |
 | `path_pattern` | Path template for themes without index.theme (see [Path Patterns](#path-patterns)) |
@@ -226,6 +226,8 @@ When onboarding a new theme, run scripts in this order:
 | 4 | `icon_build_check_symbolic.py` | Detect and tag symbolic (monochrome) icons |
 | 5 | `icon_generate_labels.py` | Generate display labels from filenames |
 | 6 | `icon_duplicates.py` | Find duplicate icons by content hash, then manually link them in `icons.json` |
+| 6a | `icon_context_conflicts.py` | Report filenames appearing in multiple XDG contexts |
+| 6b | `taskcoach_compare.py` | Compare distillery theme metadata against TaskCoach consumer copy |
 | 7 | `icon_next_hints.py` | Add 5-8 search hints per icon (manual, one at a time) |
 | | | |
 | 2a | `icon_build_check_icons.py --update-sizes` | Maintenance: sync sizes arrays with disk |
@@ -283,6 +285,35 @@ python scripts/icon_duplicates.py <theme>
 - Reports icons already marked with `duplicate_of` / `duplicates` metadata
 - Used to identify candidates for duplicate linking in `icons.json`
 
+### icon_context_conflicts.py
+
+Report filenames that appear in multiple XDG contexts. Per the XDG spec, Context is organizational only and not a namespace — the same filename in different contexts creates ambiguous icon lookup.
+
+```
+python scripts/icon_context_conflicts.py <theme>
+```
+
+- Scans all indexed directories via `scan_directory()`
+- Groups files by filename, reports those in 2+ contexts
+- Output sorted by filename, context, path
+
+### taskcoach_compare.py
+
+Compare distillery theme metadata against the TaskCoach consumer copy at `../taskcoach/taskcoachlib/gui/icons/<theme>/`. Reports drift between the source of truth (distillery) and the consumer.
+
+```
+python scripts/taskcoach_compare.py <theme>
+```
+
+Report sections:
+- **Contexts comparison** — diff `contexts.json` (distillery-only, TC-only, value mismatches)
+- **Icon inventory** — icon key presence/absence, distillery-only grouped by context, TC-only (unexpected)
+- **Source_sizes comparison** — TC `source_sizes` vs distillery `sizes`, with TC local `sizes` for context
+- **Field differences** — label, hints (content diff + order-only), context, `duplicate_of`, `duplicates`
+- **ICON_MAPPING validation** — validates `ICON_MAPPING.json` entries where `source` matches the theme: checks category/file exists in distillery, compares `source_sizes`, checks duplicate sub-entries
+
+Clean sections show "All N items match" with no noise. Summary counts go to stderr.
+
 ### icon_generate_labels.py
 
 Generate `label` fields for icons from filenames.
@@ -320,7 +351,7 @@ python scripts/icon_rebuild_catalog_sizes.py
 
 - No arguments — processes all themes with `index.theme`
 - Collects effective sizes (Size x Scale) from each theme's index
-- For themes with variants, aggregates sizes across all variants
+- Updates each theme's catalog entry independently
 - Updates the catalog file if changes are detected
 
 ## icon_theme_processor.py API
@@ -329,7 +360,7 @@ The shared library `scripts/icon_theme_processor.py` provides two classes and on
 
 ### ThemeCatalog
 
-Entry point. Loads `ICON_THEME_CATALOG.json`, expands variants into `Theme` objects. Skipped themes (`skip: true`) are excluded from iteration but accessible via `catalog[theme_id]`.
+Entry point. Loads `ICON_THEME_CATALOG.json` and creates `Theme` objects. Skipped themes (`skip: true`) are excluded from iteration but accessible via `catalog[theme_id]`.
 
 ```python
 catalog = ThemeCatalog()
@@ -349,13 +380,13 @@ catalog.print_available()  # Print theme list to stderr
 
 ### Theme
 
-Represents a single theme (variant-expanded). Created by `ThemeCatalog` — callers should not construct directly. All heavy data is lazy-loaded on first access.
+Represents a single theme. Created by `ThemeCatalog` — callers should not construct directly. All heavy data is lazy-loaded on first access.
 
 **Attributes (set in constructor):**
 
 | Attribute | Description |
 |-----------|-------------|
-| `theme_id` | Expanded variant id (e.g., "papirus-dark", "oxygen") |
+| `theme_id` | Theme id (e.g., "papirus-dark", "oxygen") |
 | `theme_base_id` | Base catalog key (e.g., "papirus", "oxygen") |
 | `config` | Raw catalog config dict for the base theme |
 | `dir` | Absolute path to theme directory |
@@ -396,7 +427,7 @@ Module-level utility. Writes JSON with `indent=2` but collapses arrays onto sing
 2. ~~**Store context labels for UI display.**~~ Done — `contexts.json` stores `context_label` per context, generated by `icon_build_check_contexts.py`.
 3. ~~**Review icon id nomenclature and uniqueness.**~~ Done — icon ids use `{theme}_{internal_context_id}_{stem}` format, with `internal_context_id = lowercase(xdg_context)`. Context is immutable once set. See [Context Architecture](#context-architecture).
 4. **Coherence validation script.** Create a script that reviews index.theme and metadata JSON for coherence: verifies every icon in the JSON has matching files on disk at the declared sizes, every file on disk has an entry in the JSON, and all index.theme directories are consistent with the catalog. Other scripts (hints, labels) assume coherence and should not run until validation passes.
-5. **Review theme variant dedup (Dark/Light).** For themes with variants (e.g., Papirus, Papirus-Dark, Papirus-Light), review whether duplicates should be detected within each variant or across all variants. In theory, shared files across variants should be symlinks. Needs investigation.
+5. **Review sibling theme dedup (Dark/Light).** For sibling themes (e.g., Papirus, Papirus-Dark, Papirus-Light), review whether duplicates should be detected within each theme or across siblings. In theory, shared files across variants should be symlinks. Needs investigation.
 6. **Lowercase icon IDs.** `generate_id()` currently uses the filename stem as-is, producing mixed-case icon IDs (e.g., `oxygen_actions_Info-amarok`, `papirus_actions_SuggestionError`). Icon IDs should be fully lowercase. Affected: 12 in oxygen, 1 in nuvola, 2,056 in papirus. Fix: add `.lower()` to stem in `generate_id()`, then rekey all existing icons.json entries.
 7. ~~**Remove symlink-only icons from icons.json.**~~ Done — removed all symlink-only entries and cross-context symlink aliases from oxygen/icons.json. Run `icon_build_check_icons.py` to verify.
 8. **Update sizes to match disk.** Run `icon_build_check_icons.py <theme> --update-sizes` to sync sizes arrays in icons.json with what's actually on disk. Use `--insert-missing` to add newly discovered icons.
