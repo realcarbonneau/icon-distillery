@@ -308,8 +308,7 @@ python scripts/taskcoach_compare.py <theme>
 Report sections:
 - **Contexts comparison** — diff `contexts.json` (distillery-only, TC-only, value mismatches)
 - **Icon inventory** — icon key presence/absence, distillery-only grouped by context, TC-only (unexpected)
-- **Source_sizes comparison** — TC `source_sizes` vs distillery `sizes`, with TC local `sizes` for context
-- **Field differences** — label, hints (content diff + order-only), context, `duplicate_of`, `duplicates`
+- **Field differences** — label, hints, context, `duplicate_of`, `duplicates`
 - **ICON_MAPPING validation** — validates `ICON_MAPPING.json` entries where `source` matches the theme: checks category/file exists in distillery, compares `source_sizes`, checks duplicate sub-entries
 
 Clean sections show "All N items match" with no noise. Summary counts go to stderr.

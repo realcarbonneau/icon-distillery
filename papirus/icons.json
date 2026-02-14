@@ -10807,95 +10807,110 @@
       "file": "distribute-vertical-margin.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Distribute Vertical Margin"
+      "label": "Distribute Vertical Margin",
+      "hints": ["distribute", "vertical", "margin", "spacing", "align", "layout", "gap"]
     },
     "papirus_actions_distribute-vertical-node": {
       "file": "distribute-vertical-node.svg",
       "sizes": [24],
       "context": "actions",
-      "label": "Distribute Vertical Node"
+      "label": "Distribute Vertical Node",
+      "hints": ["distribute", "vertical", "node", "spacing", "align", "layout", "anchor"]
     },
     "papirus_actions_distribute-vertical-page": {
       "file": "distribute-vertical-page.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Distribute Vertical Page"
+      "label": "Distribute Vertical Page",
+      "hints": ["distribute", "vertical", "page", "spacing", "align", "layout", "boundary"]
     },
     "papirus_actions_distribute-vertical-top": {
       "file": "distribute-vertical-top.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Distribute Vertical Top"
+      "label": "Distribute Vertical Top",
+      "hints": ["distribute", "vertical", "top", "align", "layout", "spacing", "edge"]
     },
     "papirus_actions_distribute-vertical-y": {
       "file": "distribute-vertical-y.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Distribute Vertical Y"
+      "label": "Distribute Vertical Y",
+      "hints": ["distribute", "vertical", "center", "y-axis", "spacing", "align", "layout"]
     },
     "papirus_actions_document-edit-decrypt": {
       "file": "document-edit-decrypt.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Edit Decrypt"
+      "label": "Document Edit Decrypt",
+      "hints": ["document", "edit", "decrypt", "unlock", "padlock", "pencil", "security"]
     },
     "papirus_actions_document-edit-decrypt-verify": {
       "file": "document-edit-decrypt-verify.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Edit Decrypt Verify"
+      "label": "Document Edit Decrypt Verify",
+      "hints": ["document", "edit", "decrypt", "verify", "checkmark", "unlock", "padlock", "security"]
     },
     "papirus_actions_document-edit-encrypt": {
       "file": "document-edit-encrypt.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Edit Encrypt"
+      "label": "Document Edit Encrypt",
+      "hints": ["document", "edit", "encrypt", "lock", "padlock", "pencil", "security"]
     },
     "papirus_actions_document-edit-sign": {
       "file": "document-edit-sign.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Edit Sign"
+      "label": "Document Edit Sign",
+      "hints": ["document", "edit", "sign", "signature", "pencil", "pen", "certificate"]
     },
     "papirus_actions_document-edit-sign-encrypt": {
       "file": "document-edit-sign-encrypt.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Edit Sign Encrypt"
+      "label": "Document Edit Sign Encrypt",
+      "hints": ["document", "edit", "sign", "encrypt", "lock", "padlock", "signature", "security"]
     },
     "papirus_actions_document-export": {
       "file": "document-export.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Export"
+      "label": "Document Export",
+      "hints": ["document", "export", "arrow", "save", "output", "file", "send"]
     },
     "papirus_actions_document-import": {
       "file": "document-import.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Import"
+      "label": "Document Import",
+      "hints": ["document", "import", "arrow", "load", "input", "file", "receive"]
     },
     "papirus_actions_document-new": {
       "file": "document-new.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document New"
+      "label": "Document New",
+      "hints": ["document", "new", "create", "plus", "add", "file", "blank"]
     },
     "papirus_actions_document-new-from-template": {
       "file": "document-new-from-template.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document New From Template"
+      "label": "Document New From Template",
+      "hints": ["document", "new", "template", "create", "plus", "file", "copy"]
     },
     "papirus_actions_document-open": {
       "file": "document-open.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Open"
+      "label": "Document Open",
+      "hints": ["document", "open", "folder", "file", "browse", "load", "read"]
     },
     "papirus_actions_document-open-folder": {
       "file": "document-open-folder.svg",
@@ -10903,6 +10918,7 @@
       "context": "actions",
       "symbolic": true,
       "label": "Document Open Folder",
+      "hints": ["folder", "open", "directory", "browse", "file manager", "navigate"],
       "duplicate_of": "papirus_places_folder-symbolic"
     },
     "papirus_actions_document-open-recent": {
@@ -10910,512 +10926,594 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Open Recent"
+      "label": "Document Open Recent",
+      "hints": ["document", "recent", "clock", "time", "history", "open", "last"]
     },
     "papirus_actions_document-page-setup": {
       "file": "document-page-setup.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Page Setup"
+      "label": "Document Page Setup",
+      "hints": ["document", "page", "setup", "configure", "settings", "layout", "wrench"]
     },
     "papirus_actions_document-preview": {
       "file": "document-preview.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Preview"
+      "label": "Document Preview",
+      "hints": ["document", "preview", "eye", "view", "look", "read", "inspect"]
     },
     "papirus_actions_document-print": {
       "file": "document-print.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Print"
+      "label": "Document Print",
+      "hints": ["document", "print", "printer", "paper", "output", "hardcopy"]
     },
     "papirus_actions_document-print-preview": {
       "file": "document-print-preview.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Print Preview"
+      "label": "Document Print Preview",
+      "hints": ["document", "print", "preview", "printer", "magnify", "view", "inspect"]
     },
     "papirus_actions_document-replace": {
       "file": "document-replace.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Replace"
+      "label": "Document Replace",
+      "hints": ["document", "replace", "swap", "overwrite", "substitute", "file", "arrow"]
     },
     "papirus_actions_document-revert": {
       "file": "document-revert.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Revert"
+      "label": "Document Revert",
+      "hints": ["document", "revert", "undo", "restore", "refresh", "arrow", "rollback"]
     },
     "papirus_actions_document-revert-rtl": {
       "file": "document-revert-rtl.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Revert Rtl"
+      "label": "Document Revert Rtl",
+      "hints": ["document", "revert", "undo", "restore", "rtl", "right-to-left", "rollback"]
     },
     "papirus_actions_document-save": {
       "file": "document-save.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Save"
+      "label": "Document Save",
+      "hints": ["document", "save", "floppy", "disk", "store", "file", "write"]
     },
     "papirus_actions_document-save-all": {
       "file": "document-save-all.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Save All"
+      "label": "Document Save All",
+      "hints": ["document", "save", "all", "floppy", "disk", "multiple", "batch"]
     },
     "papirus_actions_document-save-as": {
       "file": "document-save-as.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Save As"
+      "label": "Document Save As",
+      "hints": ["document", "save", "as", "floppy", "pencil", "rename", "copy"]
     },
     "papirus_actions_document-share": {
       "file": "document-share.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Document Share"
+      "label": "Document Share",
+      "hints": ["document", "share", "network", "nodes", "send", "collaborate", "connect"]
     },
     "papirus_actions_document-swap": {
       "file": "document-swap.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Document Swap"
+      "label": "Document Swap",
+      "hints": ["document", "swap", "exchange", "arrows", "switch", "transfer", "trade"]
     },
     "papirus_actions_documentation": {
       "file": "documentation.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Documentation"
+      "label": "Documentation",
+      "hints": ["documentation", "document", "text", "help", "manual", "guide", "reference"]
     },
     "papirus_actions_donate": {
       "file": "donate.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Donate"
+      "label": "Donate",
+      "hints": ["donate", "heart", "love", "support", "charity", "give", "contribute"]
     },
     "papirus_actions_double-page": {
       "file": "double-page.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Double Page"
+      "label": "Double Page",
+      "hints": ["double", "page", "spread", "two-up", "layout", "view", "book"]
     },
     "papirus_actions_downloading": {
       "file": "downloading.svg",
       "sizes": [16],
       "context": "actions",
-      "label": "Downloading"
+      "label": "Downloading",
+      "hints": ["downloading", "download", "chevron", "down", "arrow", "transfer", "receive"]
     },
     "papirus_actions_draw-arrow": {
       "file": "draw-arrow.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Arrow"
+      "label": "Draw Arrow",
+      "hints": ["draw", "arrow", "pointer", "direction", "line", "vector", "tool"]
     },
     "papirus_actions_draw-bezier-curves": {
       "file": "draw-bezier-curves.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Bezier Curves"
+      "label": "Draw Bezier Curves",
+      "hints": ["draw", "bezier", "curve", "path", "spline", "vector", "handle"]
     },
     "papirus_actions_draw-booleans": {
       "file": "draw-booleans.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Booleans"
+      "label": "Draw Booleans",
+      "hints": ["draw", "boolean", "shapes", "union", "intersect", "subtract", "combine"]
     },
     "papirus_actions_draw-brush": {
       "file": "draw-brush.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Draw Brush"
+      "label": "Draw Brush",
+      "hints": ["draw", "brush", "paint", "stroke", "art", "tool", "freehand"]
     },
     "papirus_actions_draw-calligraphic": {
       "file": "draw-calligraphic.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Calligraphic"
+      "label": "Draw Calligraphic",
+      "hints": ["draw", "calligraphy", "pen", "nib", "writing", "ink", "lettering"]
     },
     "papirus_actions_draw-circle": {
       "file": "draw-circle.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Circle"
+      "label": "Draw Circle",
+      "hints": ["draw", "circle", "ellipse", "oval", "shape", "round", "tool"]
     },
     "papirus_actions_draw-connector": {
       "file": "draw-connector.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Connector"
+      "label": "Draw Connector",
+      "hints": ["draw", "connector", "link", "line", "diagram", "flowchart", "join"]
     },
     "papirus_actions_draw-cross": {
       "file": "draw-cross.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Cross"
+      "label": "Draw Cross",
+      "hints": ["draw", "cross", "plus", "shape", "symbol", "tool", "intersection"]
     },
     "papirus_actions_draw-cuboid": {
       "file": "draw-cuboid.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Draw Cuboid"
+      "label": "Draw Cuboid",
+      "hints": ["draw", "cuboid", "cube", "3d", "box", "wireframe", "perspective"]
     },
     "papirus_actions_draw-donut": {
       "file": "draw-donut.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Donut"
+      "label": "Draw Donut",
+      "hints": ["draw", "donut", "ring", "annulus", "circle", "hole", "shape"]
     },
     "papirus_actions_draw-ellipse": {
       "file": "draw-ellipse.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Ellipse"
+      "label": "Draw Ellipse",
+      "hints": ["draw", "ellipse", "oval", "circle", "shape", "round", "tool"]
     },
     "papirus_actions_draw-ellipse-arc": {
       "file": "draw-ellipse-arc.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Ellipse Arc"
+      "label": "Draw Ellipse Arc",
+      "hints": ["draw", "ellipse", "arc", "curve", "partial", "segment", "shape"]
     },
     "papirus_actions_draw-ellipse-chord": {
       "file": "draw-ellipse-chord.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Ellipse Chord"
+      "label": "Draw Ellipse Chord",
+      "hints": ["draw", "ellipse", "chord", "segment", "slice", "shape", "closed"]
     },
     "papirus_actions_draw-ellipse-segment": {
       "file": "draw-ellipse-segment.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Ellipse Segment"
+      "label": "Draw Ellipse Segment",
+      "hints": ["draw", "ellipse", "segment", "pie", "wedge", "sector", "shape"]
     },
     "papirus_actions_draw-ellipse-whole": {
       "file": "draw-ellipse-whole.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Ellipse Whole"
+      "label": "Draw Ellipse Whole",
+      "hints": ["draw", "ellipse", "whole", "filled", "circle", "solid", "shape"]
     },
     "papirus_actions_draw-eraser": {
       "file": "draw-eraser.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Eraser"
+      "label": "Draw Eraser",
+      "hints": ["draw", "eraser", "erase", "delete", "remove", "clear", "rubber"]
     },
     "papirus_actions_draw-eraser-delete-objects": {
       "file": "draw-eraser-delete-objects.svg",
       "sizes": [18],
       "context": "actions",
-      "label": "Draw Eraser Delete Objects"
+      "label": "Draw Eraser Delete Objects",
+      "hints": ["draw", "eraser", "delete", "objects", "remove", "clear", "destroy"]
     },
     "papirus_actions_draw-freehand": {
       "file": "draw-freehand.svg",
       "sizes": [18],
       "context": "actions",
-      "label": "Draw Freehand"
+      "label": "Draw Freehand",
+      "hints": ["draw", "freehand", "pencil", "sketch", "scribble", "pen", "handwrite"]
     },
     "papirus_actions_draw-geometry": {
       "file": "draw-geometry.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Geometry"
+      "label": "Draw Geometry",
+      "hints": ["draw", "geometry", "triangle", "compass", "shape", "math", "tool"]
     },
     "papirus_actions_draw-geometry-angle-bisector": {
       "file": "draw-geometry-angle-bisector.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Angle Bisector"
+      "label": "Draw Geometry Angle Bisector",
+      "hints": ["draw", "geometry", "angle", "bisector", "divide", "lines", "math"]
     },
     "papirus_actions_draw-geometry-circle-from-radius": {
       "file": "draw-geometry-circle-from-radius.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Circle From Radius"
+      "label": "Draw Geometry Circle From Radius",
+      "hints": ["draw", "geometry", "circle", "radius", "center", "point", "math"]
     },
     "papirus_actions_draw-geometry-circle-from-three-points": {
       "file": "draw-geometry-circle-from-three-points.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Circle From Three Points"
+      "label": "Draw Geometry Circle From Three Points",
+      "hints": ["draw", "geometry", "circle", "three", "points", "circumscribe", "math"]
     },
     "papirus_actions_draw-geometry-inactive": {
       "file": "draw-geometry-inactive.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
       "label": "Draw Geometry Inactive",
+      "hints": ["geometry", "inactive", "disabled", "none", "close", "cancel", "x"],
       "duplicates": ["papirus_actions_paint-none"]
     },
     "papirus_actions_draw-geometry-line-parallel": {
       "file": "draw-geometry-line-parallel.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Line Parallel"
+      "label": "Draw Geometry Line Parallel",
+      "hints": ["draw", "geometry", "line", "parallel", "equal", "distance", "math"]
     },
     "papirus_actions_draw-geometry-line-perpendicular": {
       "file": "draw-geometry-line-perpendicular.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Line Perpendicular"
+      "label": "Draw Geometry Line Perpendicular",
+      "hints": ["draw", "geometry", "line", "perpendicular", "right angle", "orthogonal", "math"]
     },
     "papirus_actions_draw-geometry-line-segment": {
       "file": "draw-geometry-line-segment.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Line Segment"
+      "label": "Draw Geometry Line Segment",
+      "hints": ["draw", "geometry", "line", "segment", "endpoints", "straight", "math"]
     },
     "papirus_actions_draw-geometry-mirror": {
       "file": "draw-geometry-mirror.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Mirror"
+      "label": "Draw Geometry Mirror",
+      "hints": ["draw", "geometry", "mirror", "reflect", "flip", "symmetry", "axis"]
     },
     "papirus_actions_draw-geometry-set-bounding-box": {
       "file": "draw-geometry-set-bounding-box.svg",
       "sizes": [16, 24],
       "context": "actions",
-      "label": "Draw Geometry Set Bounding Box"
+      "label": "Draw Geometry Set Bounding Box",
+      "hints": ["geometry", "bounding box", "rectangle", "bounds", "selection", "crop", "frame"]
     },
     "papirus_actions_draw-geometry-show-measuring-info": {
       "file": "draw-geometry-show-measuring-info.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Draw Geometry Show Measuring Info"
+      "label": "Draw Geometry Show Measuring Info",
+      "hints": ["geometry", "measure", "info", "dimension", "ruler", "distance", "size"]
     },
     "papirus_actions_draw-halfcircle1": {
       "file": "draw-halfcircle1.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Halfcircle1"
+      "label": "Draw Halfcircle1",
+      "hints": ["draw", "half", "circle", "semicircle", "shape", "arc", "left"]
     },
     "papirus_actions_draw-halfcircle2": {
       "file": "draw-halfcircle2.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Halfcircle2"
+      "label": "Draw Halfcircle2",
+      "hints": ["draw", "half", "circle", "semicircle", "shape", "arc", "right"]
     },
     "papirus_actions_draw-halfcircle3": {
       "file": "draw-halfcircle3.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Halfcircle3"
+      "label": "Draw Halfcircle3",
+      "hints": ["draw", "half", "circle", "semicircle", "shape", "arc", "top"]
     },
     "papirus_actions_draw-halfcircle4": {
       "file": "draw-halfcircle4.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Halfcircle4"
+      "label": "Draw Halfcircle4",
+      "hints": ["draw", "half", "circle", "semicircle", "shape", "arc", "bottom"]
     },
     "papirus_actions_draw-highlight": {
       "file": "draw-highlight.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Highlight"
+      "label": "Draw Highlight",
+      "hints": ["draw", "highlight", "marker", "pen", "annotate", "emphasize", "color"]
     },
     "papirus_actions_draw-line": {
       "file": "draw-line.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Line"
+      "label": "Draw Line",
+      "hints": ["draw", "line", "straight", "segment", "stroke", "vector", "tool"]
     },
     "papirus_actions_draw-number": {
       "file": "draw-number.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Number"
+      "label": "Draw Number",
+      "hints": ["draw", "number", "digit", "numeral", "count", "list", "ordered"]
     },
     "papirus_actions_draw-path": {
       "file": "draw-path.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Path"
+      "label": "Draw Path",
+      "hints": ["draw", "path", "pen", "node", "vector", "bezier", "tool"]
     },
     "papirus_actions_draw-polygon": {
       "file": "draw-polygon.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Polygon"
+      "label": "Draw Polygon",
+      "hints": ["draw", "polygon", "pentagon", "shape", "sides", "vertices", "tool"]
     },
     "papirus_actions_draw-polygon-star": {
       "file": "draw-polygon-star.svg",
       "sizes": [18],
       "context": "actions",
-      "label": "Draw Polygon Star"
+      "label": "Draw Polygon Star",
+      "hints": ["draw", "polygon", "star", "shape", "five-pointed", "favorite", "tool"]
     },
     "papirus_actions_draw-polyline": {
       "file": "draw-polyline.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Polyline"
+      "label": "Draw Polyline",
+      "hints": ["draw", "polyline", "segments", "connected", "lines", "open", "tool"]
     },
     "papirus_actions_draw-rectangle": {
       "file": "draw-rectangle.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Rectangle"
+      "label": "Draw Rectangle",
+      "hints": ["draw", "rectangle", "square", "box", "shape", "outline", "tool"]
     },
     "papirus_actions_draw-spiral": {
       "file": "draw-spiral.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Spiral"
+      "label": "Draw Spiral",
+      "hints": ["draw", "spiral", "coil", "curve", "swirl", "helix", "tool"]
     },
     "papirus_actions_draw-square-inverted-corners": {
       "file": "draw-square-inverted-corners.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Square Inverted Corners"
+      "label": "Draw Square Inverted Corners",
+      "hints": ["draw", "square", "inverted", "corners", "concave", "shape", "tool"]
     },
     "papirus_actions_draw-star": {
       "file": "draw-star.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Draw Star"
+      "label": "Draw Star",
+      "hints": ["draw", "star", "five-pointed", "shape", "favorite", "rating", "tool"]
     },
     "papirus_actions_draw-text": {
       "file": "draw-text.svg",
       "sizes": [18],
       "context": "actions",
-      "label": "Draw Text"
+      "label": "Draw Text",
+      "hints": ["draw", "text", "letter", "type", "font", "A", "annotation", "tool"]
     },
     "papirus_actions_draw-trace-background": {
       "file": "draw-trace-background.svg",
       "sizes": [16, 24],
       "context": "actions",
-      "label": "Draw Trace Background"
+      "label": "Draw Trace Background",
+      "hints": ["draw", "trace", "background", "bitmap", "vectorize", "contrast", "tool"]
     },
     "papirus_actions_draw-triangle": {
       "file": "draw-triangle.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Triangle"
+      "label": "Draw Triangle",
+      "hints": ["draw", "triangle", "shape", "polygon", "three-sided", "geometry", "tool"]
     },
     "papirus_actions_draw-use-pressure": {
       "file": "draw-use-pressure.svg",
       "sizes": [16, 24],
       "context": "actions",
-      "label": "Draw Use Pressure"
+      "label": "Draw Use Pressure",
+      "hints": ["draw", "pressure", "stylus", "pen", "tablet", "sensitivity", "tool"]
     },
     "papirus_actions_draw-use-tilt": {
       "file": "draw-use-tilt.svg",
       "sizes": [16, 24],
       "context": "actions",
-      "label": "Draw Use Tilt"
+      "label": "Draw Use Tilt",
+      "hints": ["draw", "tilt", "stylus", "pen", "tablet", "angle", "tool"]
     },
     "papirus_actions_draw-watercolor": {
       "file": "draw-watercolor.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Draw Watercolor"
+      "label": "Draw Watercolor",
+      "hints": ["draw", "watercolor", "brush", "paint", "artistic", "stroke", "tool"]
     },
     "papirus_actions_earthquake": {
       "file": "earthquake.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Earthquake"
+      "label": "Earthquake",
+      "hints": ["earthquake", "seismic", "crack", "disaster", "tremor", "zigzag", "hazard"]
     },
     "papirus_actions_edit": {
       "file": "edit.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit"
+      "label": "Edit",
+      "hints": ["edit", "pencil", "modify", "write", "change", "compose", "tool"]
     },
     "papirus_actions_edit-bomb": {
       "file": "edit-bomb.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Bomb"
+      "label": "Edit Bomb",
+      "hints": ["bomb", "explosive", "destroy", "delete", "fuse", "danger", "warning"]
     },
     "papirus_actions_edit-clear": {
       "file": "edit-clear.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Clear"
+      "label": "Edit Clear",
+      "hints": ["edit", "clear", "eraser", "erase", "remove", "delete", "clean"]
     },
     "papirus_actions_edit-clear-history": {
       "file": "edit-clear-history.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Clear History"
+      "label": "Edit Clear History",
+      "hints": ["edit", "clear", "history", "clock", "delete", "reset", "remove"]
     },
     "papirus_actions_edit-clear-list": {
       "file": "edit-clear-list.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Clear List"
+      "label": "Edit Clear List",
+      "hints": ["edit", "clear", "list", "remove", "delete", "close", "cancel"]
     },
     "papirus_actions_edit-clear-rtl": {
       "file": "edit-clear-rtl.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Clear Rtl"
+      "label": "Edit Clear Rtl",
+      "hints": ["edit", "clear", "eraser", "erase", "rtl", "right-to-left", "remove"]
     },
     "papirus_actions_edit-clone": {
       "file": "edit-clone.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Edit Clone"
+      "label": "Edit Clone",
+      "hints": ["edit", "clone", "duplicate", "copy", "overlap", "rectangles", "tool"]
     },
     "papirus_actions_edit-clone-unlink": {
       "file": "edit-clone-unlink.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Edit Clone Unlink"
+      "label": "Edit Clone Unlink",
+      "hints": ["edit", "clone", "unlink", "disconnect", "separate", "detach", "independent"]
     },
     "papirus_actions_edit-copy": {
       "file": "edit-copy.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Copy"
+      "label": "Edit Copy",
+      "hints": ["edit", "copy", "duplicate", "clipboard", "pages", "documents", "tool"]
     },
     "papirus_actions_edit-cut": {
       "file": "edit-cut.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Cut"
+      "label": "Edit Cut",
+      "hints": ["edit", "cut", "scissors", "clip", "trim", "clipboard", "tool"]
     },
     "papirus_actions_edit-delete-remove": {
       "file": "edit-delete-remove.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Delete Remove"
+      "label": "Edit Delete Remove",
+      "hints": ["edit", "delete", "remove", "cross", "cancel", "discard", "trash"]
     },
     "papirus_actions_edit-delete-shred": {
       "file": "edit-delete-shred.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Delete Shred"
+      "label": "Edit Delete Shred",
+      "hints": ["edit", "delete", "shred", "destroy", "permanent", "shredder", "secure"]
     },
     "papirus_actions_edit-download": {
       "file": "edit-download.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Download"
+      "label": "Edit Download",
+      "hints": ["edit", "download", "arrow", "down", "save", "fetch", "receive"]
     },
     "papirus_actions_edit-duplicate": {
       "file": "edit-duplicate.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Edit Duplicate"
+      "label": "Edit Duplicate",
+      "hints": ["edit", "duplicate", "copy", "clone", "squares", "overlap", "tool"]
     },
     "papirus_actions_edit-find": {
       "file": "edit-find.svg",
@@ -11423,6 +11521,7 @@
       "context": "actions",
       "symbolic": true,
       "label": "Edit Find",
+      "hints": ["edit", "find", "search", "magnifying glass", "look", "query", "discover"],
       "duplicates": ["papirus_apps_preferences-system-search"]
     },
     "papirus_actions_edit-find-replace": {
@@ -11430,212 +11529,246 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Find Replace"
+      "label": "Edit Find Replace",
+      "hints": ["edit", "find", "replace", "search", "swap", "magnifying glass", "substitute"]
     },
     "papirus_actions_edit-guides": {
       "file": "edit-guides.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Guides"
+      "label": "Edit Guides",
+      "hints": ["edit", "guides", "alignment", "ruler", "grid", "snap", "layout"]
     },
     "papirus_actions_edit-image-face-add": {
       "file": "edit-image-face-add.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Image Face Add"
+      "label": "Edit Image Face Add",
+      "hints": ["edit", "image", "face", "add", "person", "tag", "recognition"]
     },
     "papirus_actions_edit-image-face-recognize": {
       "file": "edit-image-face-recognize.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Image Face Recognize"
+      "label": "Edit Image Face Recognize",
+      "hints": ["edit", "image", "face", "recognize", "detect", "person", "identify"]
     },
     "papirus_actions_edit-link": {
       "file": "edit-link.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Link"
+      "label": "Edit Link",
+      "hints": ["edit", "link", "chain", "hyperlink", "url", "connect", "anchor"]
     },
     "papirus_actions_edit-move": {
       "file": "edit-move.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Move"
+      "label": "Edit Move",
+      "hints": ["edit", "move", "relocate", "drag", "position", "object", "tool"]
     },
     "papirus_actions_edit-node": {
       "file": "edit-node.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Node"
+      "label": "Edit Node",
+      "hints": ["edit", "node", "point", "vector", "handle", "bezier", "path"]
     },
     "papirus_actions_edit-opacity": {
       "file": "edit-opacity.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Opacity"
+      "label": "Edit Opacity",
+      "hints": ["edit", "opacity", "transparency", "alpha", "contrast", "half", "circle"]
     },
     "papirus_actions_edit-paste": {
       "file": "edit-paste.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Paste"
+      "label": "Edit Paste",
+      "hints": ["edit", "paste", "clipboard", "insert", "board", "clip", "tool"]
     },
     "papirus_actions_edit-paste-in-place": {
       "file": "edit-paste-in-place.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Paste In Place"
+      "label": "Edit Paste In Place",
+      "hints": ["edit", "paste", "place", "pin", "location", "position", "exact"]
     },
     "papirus_actions_edit-paste-style": {
       "file": "edit-paste-style.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Paste Style"
+      "label": "Edit Paste Style",
+      "hints": ["edit", "paste", "style", "clipboard", "format", "apply", "tool"]
     },
     "papirus_actions_edit-redo": {
       "file": "edit-redo.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Redo"
+      "label": "Edit Redo",
+      "hints": ["edit", "redo", "arrow", "forward", "repeat", "restore", "again"]
     },
     "papirus_actions_edit-select": {
       "file": "edit-select.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Select"
+      "label": "Edit Select",
+      "hints": ["edit", "select", "cursor", "pointer", "arrow", "pick", "tool"]
     },
     "papirus_actions_edit-select-all": {
       "file": "edit-select-all.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Select All"
+      "label": "Edit Select All",
+      "hints": ["edit", "select", "all", "dashed", "rectangle", "marquee", "selection"]
     },
     "papirus_actions_edit-select-all-layers": {
       "file": "edit-select-all-layers.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Edit Select All Layers"
+      "label": "Edit Select All Layers",
+      "hints": ["edit", "select", "all", "layers", "stacked", "dashed", "marquee"]
     },
     "papirus_actions_edit-select-invert": {
       "file": "edit-select-invert.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Select Invert"
+      "label": "Edit Select Invert",
+      "hints": ["edit", "select", "invert", "reverse", "opposite", "toggle", "selection"]
     },
     "papirus_actions_edit-select-lasso": {
       "file": "edit-select-lasso.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Select Lasso"
+      "label": "Edit Select Lasso",
+      "hints": ["edit", "select", "lasso", "freehand", "loop", "dashed", "tool"]
     },
     "papirus_actions_edit-select-none": {
       "file": "edit-select-none.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Edit Select None"
+      "label": "Edit Select None",
+      "hints": ["edit", "select", "none", "deselect", "clear", "dashed", "empty"]
     },
     "papirus_actions_edit-select-none-symbolic": {
       "file": "edit-select-none-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Select None Symbolic"
+      "label": "Edit Select None Symbolic",
+      "hints": ["edit", "select", "none", "deselect", "clear", "symbolic", "empty"]
     },
     "papirus_actions_edit-select-original": {
       "file": "edit-select-original.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Select Original"
+      "label": "Edit Select Original",
+      "hints": ["edit", "select", "original", "source", "object", "clone", "parent"]
     },
     "papirus_actions_edit-select-text": {
       "file": "edit-select-text.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Select Text"
+      "label": "Edit Select Text",
+      "hints": ["edit", "select", "text", "cursor", "caret", "type", "font"]
     },
     "papirus_actions_edit-table-cell-merge": {
       "file": "edit-table-cell-merge.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Cell Merge"
+      "label": "Edit Table Cell Merge",
+      "hints": ["edit", "table", "cell", "merge", "combine", "grid", "join"]
     },
     "papirus_actions_edit-table-cell-split": {
       "file": "edit-table-cell-split.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Cell Split"
+      "label": "Edit Table Cell Split",
+      "hints": ["edit", "table", "cell", "split", "divide", "grid", "separate"]
     },
     "papirus_actions_edit-table-delete-column": {
       "file": "edit-table-delete-column.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Delete Column"
+      "label": "Edit Table Delete Column",
+      "hints": ["edit", "table", "delete", "column", "remove", "grid", "vertical"]
     },
     "papirus_actions_edit-table-delete-row": {
       "file": "edit-table-delete-row.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Delete Row"
+      "label": "Edit Table Delete Row",
+      "hints": ["edit", "table", "delete", "row", "remove", "grid", "horizontal"]
     },
     "papirus_actions_edit-table-insert-column-left": {
       "file": "edit-table-insert-column-left.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Insert Column Left"
+      "label": "Edit Table Insert Column Left",
+      "hints": ["edit", "table", "insert", "column", "left", "add", "grid"]
     },
     "papirus_actions_edit-table-insert-column-right": {
       "file": "edit-table-insert-column-right.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Insert Column Right"
+      "label": "Edit Table Insert Column Right",
+      "hints": ["edit", "table", "insert", "column", "right", "add", "grid"]
     },
     "papirus_actions_edit-table-insert-row-above": {
       "file": "edit-table-insert-row-above.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Insert Row Above"
+      "label": "Edit Table Insert Row Above",
+      "hints": ["edit", "table", "insert", "row", "above", "add", "grid"]
     },
     "papirus_actions_edit-table-insert-row-below": {
       "file": "edit-table-insert-row-below.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Insert Row Below"
+      "label": "Edit Table Insert Row Below",
+      "hints": ["edit", "table", "insert", "row", "below", "add", "grid"]
     },
     "papirus_actions_edit-table-insert-row-under": {
       "file": "edit-table-insert-row-under.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Table Insert Row Under"
+      "label": "Edit Table Insert Row Under",
+      "hints": ["edit", "table", "insert", "row", "under", "add", "grid"]
     },
     "papirus_actions_edit-text-frame-update": {
       "file": "edit-text-frame-update.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Text Frame Update"
+      "label": "Edit Text Frame Update",
+      "hints": ["edit", "text", "frame", "update", "refresh", "reflow", "box"]
     },
     "papirus_actions_edit-undo": {
       "file": "edit-undo.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Edit Undo"
+      "label": "Edit Undo",
+      "hints": ["edit", "undo", "arrow", "back", "revert", "reverse", "previous"]
     },
     "papirus_actions_edit-undo-history": {
       "file": "edit-undo-history.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Edit Undo History"
+      "label": "Edit Undo History",
+      "hints": ["edit", "undo", "history", "clock", "timeline", "revert", "log"]
     },
     "papirus_actions_embosstool": {
       "file": "embosstool.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Embosstool"
+      "label": "Embosstool",
+      "hints": ["emboss", "relief", "raised", "3d", "effect", "texture", "tool"]
     },
     "papirus_actions_entry-delete": {
       "file": "entry-delete.svg",
@@ -11643,174 +11776,202 @@
       "context": "actions",
       "symbolic": true,
       "label": "Entry Delete",
+      "hints": ["entry", "delete", "trash", "bin", "remove", "discard", "garbage"],
       "duplicate_of": "papirus_places_user-trash"
     },
     "papirus_actions_entry-new": {
       "file": "entry-new.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Entry New"
+      "label": "Entry New",
+      "hints": ["entry", "new", "add", "plus", "create", "insert", "action"]
     },
     "papirus_actions_ephy-reader-mode-symbolic": {
       "file": "ephy-reader-mode-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Ephy Reader Mode Symbolic"
+      "label": "Ephy Reader Mode Symbolic",
+      "hints": ["reader", "mode", "document", "text", "reading", "clean", "browser"]
     },
     "papirus_actions_error-correct-symbolic": {
       "file": "error-correct-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Error Correct Symbolic"
+      "label": "Error Correct Symbolic",
+      "hints": ["error", "correct", "fix", "pencil", "repair", "amend", "tool"]
     },
     "papirus_actions_escape-direction-all": {
       "file": "escape-direction-all.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Escape Direction All"
+      "label": "Escape Direction All",
+      "hints": ["escape", "direction", "all", "move", "four-way", "cross", "navigation"]
     },
     "papirus_actions_escape-direction-down": {
       "file": "escape-direction-down.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Escape Direction Down"
+      "label": "Escape Direction Down",
+      "hints": ["escape", "direction", "down", "move", "bottom", "arrow", "navigation"]
     },
     "papirus_actions_escape-direction-horizontal": {
       "file": "escape-direction-horizontal.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Escape Direction Horizontal"
+      "label": "Escape Direction Horizontal",
+      "hints": ["escape", "direction", "horizontal", "move", "left-right", "axis", "navigation"]
     },
     "papirus_actions_escape-direction-left": {
       "file": "escape-direction-left.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Escape Direction Left"
+      "label": "Escape Direction Left",
+      "hints": ["escape", "direction", "left", "move", "arrow", "west", "navigation"]
     },
     "papirus_actions_escape-direction-right": {
       "file": "escape-direction-right.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Escape Direction Right"
+      "label": "Escape Direction Right",
+      "hints": ["escape", "direction", "right", "move", "arrow", "east", "navigation"]
     },
     "papirus_actions_escape-direction-up": {
       "file": "escape-direction-up.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Escape Direction Up"
+      "label": "Escape Direction Up",
+      "hints": ["escape", "direction", "up", "move", "arrow", "top", "navigation"]
     },
     "papirus_actions_escape-direction-vertical": {
       "file": "escape-direction-vertical.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Escape Direction Vertical"
+      "label": "Escape Direction Vertical",
+      "hints": ["escape", "direction", "vertical", "move", "up-down", "axis", "navigation"]
     },
     "papirus_actions_exchange-positions": {
       "file": "exchange-positions.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Exchange Positions"
+      "label": "Exchange Positions",
+      "hints": ["exchange", "positions", "swap", "switch", "rearrange", "bidirectional", "arrows"]
     },
     "papirus_actions_exchange-positions-clockwise": {
       "file": "exchange-positions-clockwise.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Exchange Positions Clockwise"
+      "label": "Exchange Positions Clockwise",
+      "hints": ["exchange", "positions", "clockwise", "rotate", "swap", "cycle", "circular"]
     },
     "papirus_actions_exchange-positions-zorder": {
       "file": "exchange-positions-zorder.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Exchange Positions Zorder"
+      "label": "Exchange Positions Zorder",
+      "hints": ["exchange", "positions", "z-order", "depth", "stacking", "layer", "swap"]
     },
     "papirus_actions_favorite-favorited": {
       "file": "favorite-favorited.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Favorite Favorited"
+      "label": "Favorite Favorited",
+      "hints": ["favorite", "star", "filled", "bookmarked", "liked", "rating", "marked"]
     },
     "papirus_actions_favorite-genres-amarok": {
       "file": "favorite-genres-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Favorite Genres Amarok"
+      "label": "Favorite Genres Amarok",
+      "hints": ["favorite", "genres", "heart", "music", "shield", "amarok", "love"]
     },
     "papirus_actions_fcitx-anthy": {
       "file": "fcitx-anthy.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Anthy"
+      "label": "Fcitx Anthy",
+      "hints": ["fcitx", "anthy", "japanese", "input", "method", "kanji", "IME"]
     },
     "papirus_actions_fcitx-cangjie": {
       "file": "fcitx-cangjie.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Cangjie"
+      "label": "Fcitx Cangjie",
+      "hints": ["fcitx", "cangjie", "chinese", "input", "method", "character", "IME"]
     },
     "papirus_actions_fcitx-chewing": {
       "file": "fcitx-chewing.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Chewing"
+      "label": "Fcitx Chewing",
+      "hints": ["fcitx", "chewing", "zhuyin", "chinese", "input", "method", "IME"]
     },
     "papirus_actions_fcitx-chn": {
       "file": "fcitx-chn.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Chn"
+      "label": "Fcitx Chn",
+      "hints": ["fcitx", "chinese", "input", "method", "language", "character", "IME"]
     },
     "papirus_actions_fcitx-chttrans-active": {
       "file": "fcitx-chttrans-active.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Chttrans Active"
+      "label": "Fcitx Chttrans Active",
+      "hints": ["fcitx", "traditional", "chinese", "translation", "active", "convert", "IME"]
     },
     "papirus_actions_fcitx-chttrans-inactive": {
       "file": "fcitx-chttrans-inactive.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Chttrans Inactive"
+      "label": "Fcitx Chttrans Inactive",
+      "hints": ["fcitx", "traditional", "chinese", "translation", "inactive", "simplified", "IME"]
     },
     "papirus_actions_fcitx-erbi": {
       "file": "fcitx-erbi.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Erbi"
+      "label": "Fcitx Erbi",
+      "hints": ["fcitx", "erbi", "chinese", "input", "method", "stroke", "IME"]
     },
     "papirus_actions_fcitx-fullwidth-active": {
       "file": "fcitx-fullwidth-active.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Fcitx Fullwidth Active"
+      "label": "Fcitx Fullwidth Active",
+      "hints": ["fcitx", "fullwidth", "active", "circle", "wide", "character", "IME"]
     },
     "papirus_actions_fcitx-fullwidth-inactive": {
       "file": "fcitx-fullwidth-inactive.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Fcitx Fullwidth Inactive"
+      "label": "Fcitx Fullwidth Inactive",
+      "hints": ["fcitx", "fullwidth", "inactive", "circle", "halfwidth", "character", "IME"]
     },
     "papirus_actions_fcitx-googlepinyin": {
       "file": "fcitx-googlepinyin.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Googlepinyin"
+      "label": "Fcitx Googlepinyin",
+      "hints": ["fcitx", "google", "pinyin", "chinese", "input", "method", "IME"]
     },
     "papirus_actions_fcitx-handwriting-active": {
       "file": "fcitx-handwriting-active.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Handwriting Active"
+      "label": "Fcitx Handwriting Active",
+      "hints": ["fcitx", "handwriting", "active", "pen", "stylus", "write", "IME"]
     },
     "papirus_actions_fcitx-handwriting-inactive": {
       "file": "fcitx-handwriting-inactive.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Handwriting Inactive"
+      "label": "Fcitx Handwriting Inactive",
+      "hints": ["fcitx", "handwriting", "inactive", "pen", "stylus", "disabled", "IME"]
     },
     "papirus_actions_fcitx-hangul": {
       "file": "fcitx-hangul.svg",
