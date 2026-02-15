@@ -13519,12 +13519,14 @@
       "file": "indicator-notification-close-deselect.svg",
       "sizes": [16],
       "context": "actions",
+      "hints": ["close", "dismiss", "notification", "x", "cancel", "deselect", "clear"],
       "label": "Indicator Notification Close Deselect"
     },
     "papirus_actions_insert-button": {
       "file": "insert-button.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["button", "insert", "form", "ui", "rectangle", "widget", "input"],
       "label": "Insert Button"
     },
     "papirus_actions_insert-emoticon": {
@@ -13532,18 +13534,21 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["emoticon", "smiley", "face", "emoji", "happy", "insert", "expression"],
       "label": "Insert Emoticon"
     },
     "papirus_actions_insert-endnote": {
       "file": "insert-endnote.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["endnote", "insert", "document", "note", "reference", "text", "footnote"],
       "label": "Insert Endnote"
     },
     "papirus_actions_insert-footnote": {
       "file": "insert-footnote.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["footnote", "insert", "document", "note", "reference", "text", "bottom"],
       "label": "Insert Footnote"
     },
     "papirus_actions_insert-image": {
@@ -13551,6 +13556,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["image", "insert", "picture", "photo", "landscape", "mountain", "media"],
       "label": "Insert Image"
     },
     "papirus_actions_insert-link": {
@@ -13558,18 +13564,21 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["link", "chain", "insert", "url", "hyperlink", "connection", "web"],
       "label": "Insert Link"
     },
     "papirus_actions_insert-math-expression": {
       "file": "insert-math-expression.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["math", "formula", "function", "expression", "equation", "insert", "fx"],
       "label": "Insert Math Expression"
     },
     "papirus_actions_insert-more-mark": {
       "file": "insert-more-mark.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["more", "mark", "insert", "break", "separator", "document", "line"],
       "label": "Insert More Mark"
     },
     "papirus_actions_insert-object": {
@@ -13577,18 +13586,21 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["object", "insert", "pin", "marker", "embed", "circle", "add"],
       "label": "Insert Object"
     },
     "papirus_actions_insert-page-break": {
       "file": "insert-page-break.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["page", "break", "insert", "split", "document", "separator", "divide"],
       "label": "Insert Page Break"
     },
     "papirus_actions_insert-table": {
       "file": "insert-table.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["table", "insert", "grid", "cells", "spreadsheet", "rows", "columns"],
       "label": "Insert Table"
     },
     "papirus_actions_insert-text": {
@@ -13596,18 +13608,21 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["text", "insert", "font", "type", "letter", "character", "Aa"],
       "label": "Insert Text"
     },
     "papirus_actions_insert-text-frame": {
       "file": "insert-text-frame.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["text", "frame", "insert", "box", "border", "textbox", "container"],
       "label": "Insert Text Frame"
     },
     "papirus_actions_institution": {
       "file": "institution.svg",
       "sizes": [22, 32, 48],
       "context": "actions",
+      "hints": ["institution", "bank", "building", "columns", "government", "finance", "classical"],
       "label": "Institution",
       "duplicates": ["papirus_actions_bank", "papirus_apps_com.github.lainsce.aesop"]
     },
@@ -13615,24 +13630,28 @@
       "file": "institution-add.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["institution", "add", "bank", "building", "plus", "new", "create"],
       "label": "Institution Add"
     },
     "papirus_actions_institution-delete": {
       "file": "institution-delete.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["institution", "delete", "bank", "building", "remove", "minus", "close"],
       "label": "Institution Delete"
     },
     "papirus_actions_institution-edit": {
       "file": "institution-edit.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["institution", "edit", "bank", "building", "pencil", "modify", "change"],
       "label": "Institution Edit"
     },
     "papirus_actions_interactive_simplify": {
       "file": "interactive_simplify.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["simplify", "path", "curve", "nodes", "reduce", "smooth", "vector"],
       "label": "Interactive Simplify"
     },
     "papirus_actions_interface-symbolic": {
@@ -13640,12 +13659,14 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["interface", "layout", "panel", "sidebar", "window", "ui", "design"],
       "label": "Interface Symbolic"
     },
     "papirus_actions_investment": {
       "file": "investment.svg",
       "sizes": [22, 32],
       "context": "actions",
+      "hints": ["investment", "chart", "growth", "finance", "stock", "trend", "green", "upward"],
       "label": "Investment",
       "duplicates": ["papirus_actions_account-types-investments"]
     },
@@ -13653,126 +13674,147 @@
       "file": "investment-add.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["investment", "add", "chart", "finance", "plus", "new", "growth"],
       "label": "Investment Add"
     },
     "papirus_actions_investment-delete": {
       "file": "investment-delete.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["investment", "delete", "chart", "finance", "minus", "remove", "growth"],
       "label": "Investment Delete"
     },
     "papirus_actions_investment-update-online": {
       "file": "investment-update-online.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["investment", "update", "online", "sync", "refresh", "chart", "finance"],
       "label": "Investment Update Online"
     },
     "papirus_actions_investment-update-online-all": {
       "file": "investment-update-online-all.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["investment", "update", "online", "all", "sync", "refresh", "finance"],
       "label": "Investment Update Online All"
     },
     "papirus_actions_irc-channel-inactive": {
       "file": "irc-channel-inactive.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["irc", "channel", "inactive", "hash", "chat", "disabled", "pound"],
       "label": "Irc Channel Inactive"
     },
     "papirus_actions_irc-remove-operator": {
       "file": "irc-remove-operator.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["irc", "remove", "operator", "red", "cross", "demote", "admin"],
       "label": "Irc Remove Operator"
     },
     "papirus_actions_journal-new": {
       "file": "journal-new.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["journal", "new", "text", "lines", "entry", "document", "write"],
       "label": "Journal New"
     },
     "papirus_actions_kdenlive-align-hor": {
       "file": "kdenlive-align-hor.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["align", "horizontal", "center", "arrows", "kdenlive", "video", "snap"],
       "label": "Kdenlive Align Hor"
     },
     "papirus_actions_kdenlive-align-left": {
       "file": "kdenlive-align-left.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["align", "left", "arrow", "snap", "kdenlive", "video", "start"],
       "label": "Kdenlive Align Left"
     },
     "papirus_actions_kdenlive-align-right": {
       "file": "kdenlive-align-right.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["align", "right", "arrow", "snap", "kdenlive", "video", "end"],
       "label": "Kdenlive Align Right"
     },
     "papirus_actions_kdenlive-align-vert": {
       "file": "kdenlive-align-vert.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["align", "vertical", "center", "arrows", "kdenlive", "video", "snap"],
       "label": "Kdenlive Align Vert"
     },
     "papirus_actions_kdenlive-composite": {
       "file": "kdenlive-composite.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["composite", "layer", "overlap", "blend", "kdenlive", "video", "squares"],
       "label": "Kdenlive Composite"
     },
     "papirus_actions_kdenlive-custom-effect": {
       "file": "kdenlive-custom-effect.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["effect", "custom", "star", "sparkle", "kdenlive", "video", "filter"],
       "label": "Kdenlive Custom Effect"
     },
     "papirus_actions_kdenlive-hide-audio": {
       "file": "kdenlive-hide-audio.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["audio", "hide", "speaker", "sound", "mute", "kdenlive", "volume"],
       "label": "Kdenlive Hide Audio"
     },
     "papirus_actions_kdenlive-hide-video": {
       "file": "kdenlive-hide-video.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["video", "hide", "camera", "film", "disable", "kdenlive", "clip"],
       "label": "Kdenlive Hide Video"
     },
     "papirus_actions_kdenlive-insert-edit": {
       "file": "kdenlive-insert-edit.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["insert", "edit", "splice", "clip", "kdenlive", "video", "timeline"],
       "label": "Kdenlive Insert Edit"
     },
     "papirus_actions_kdenlive-normal-edit": {
       "file": "kdenlive-normal-edit.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["normal", "edit", "overwrite", "clip", "kdenlive", "video", "block"],
       "label": "Kdenlive Normal Edit"
     },
     "papirus_actions_kdenlive-object-height": {
       "file": "kdenlive-object-height.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["height", "object", "vertical", "resize", "arrow", "kdenlive", "size"],
       "label": "Kdenlive Object Height"
     },
     "papirus_actions_kdenlive-object-width": {
       "file": "kdenlive-object-width.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["width", "object", "horizontal", "resize", "arrow", "kdenlive", "size"],
       "label": "Kdenlive Object Width"
     },
     "papirus_actions_kdenlive-select-all": {
       "file": "kdenlive-select-all.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["select", "all", "marquee", "selection", "corners", "kdenlive", "highlight"],
       "label": "Kdenlive Select All"
     },
     "papirus_actions_kdenlive-select-images": {
       "file": "kdenlive-select-images.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["select", "images", "photo", "picture", "kdenlive", "filter", "media"],
       "label": "Kdenlive Select Images"
     },
     "papirus_actions_kdenlive-select-rects": {
@@ -13780,24 +13822,28 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "duplicate_of": "papirus_actions_view-fullscreen",
+      "hints": ["select", "rectangles", "title", "marquee", "kdenlive", "shape", "region"],
       "label": "Kdenlive Select Rects"
     },
     "papirus_actions_kdenlive-select-texts": {
       "file": "kdenlive-select-texts.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["select", "text", "title", "caption", "kdenlive", "filter", "subtitle"],
       "label": "Kdenlive Select Texts"
     },
     "papirus_actions_kdenlive-select-tool": {
       "file": "kdenlive-select-tool.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["select", "tool", "cursor", "pointer", "arrow", "mouse", "kdenlive"],
       "label": "Kdenlive Select Tool"
     },
     "papirus_actions_kdenlive-show-audio": {
       "file": "kdenlive-show-audio.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["audio", "show", "speaker", "sound", "volume", "kdenlive", "unmute"],
       "label": "Kdenlive Show Audio",
       "duplicate_of": "papirus_actions_audio-volume-high"
     },
@@ -13805,12 +13851,14 @@
       "file": "kdenlive-show-audiothumb.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["audio", "waveform", "thumbnail", "sound", "kdenlive", "wave", "display"],
       "label": "Kdenlive Show Audiothumb"
     },
     "papirus_actions_kdenlive-show-markers": {
       "file": "kdenlive-show-markers.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["markers", "show", "flag", "bookmark", "kdenlive", "timeline", "label"],
       "label": "Kdenlive Show Markers"
     },
     "papirus_actions_kdenlive-show-video": {
@@ -13818,48 +13866,56 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "duplicate_of": "papirus_actions_view-list-video",
+      "hints": ["video", "show", "camera", "film", "clip", "kdenlive", "display"],
       "label": "Kdenlive Show Video"
     },
     "papirus_actions_kdenlive-slide": {
       "file": "kdenlive-slide.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["slide", "edit", "ripple", "trim", "kdenlive", "arrows", "timeline"],
       "label": "Kdenlive Slide"
     },
     "papirus_actions_kdenlive-slip": {
       "file": "kdenlive-slip.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["slip", "edit", "trim", "clip", "kdenlive", "arrows", "content"],
       "label": "Kdenlive Slip"
     },
     "papirus_actions_kdenlive-spacer-tool": {
       "file": "kdenlive-spacer-tool.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["spacer", "tool", "move", "gap", "kdenlive", "shift", "timeline"],
       "label": "Kdenlive Spacer Tool"
     },
     "papirus_actions_kdenlive-split-audio": {
       "file": "kdenlive-split-audio.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["split", "audio", "separate", "detach", "kdenlive", "sound", "extract"],
       "label": "Kdenlive Split Audio"
     },
     "papirus_actions_kdenlive-zindex-down": {
       "file": "kdenlive-zindex-down.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["zindex", "down", "backward", "layer", "lower", "kdenlive", "order"],
       "label": "Kdenlive Zindex Down"
     },
     "papirus_actions_kdenlive-zindex-top": {
       "file": "kdenlive-zindex-top.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["zindex", "top", "forward", "layer", "raise", "kdenlive", "order"],
       "label": "Kdenlive Zindex Top"
     },
     "papirus_actions_kdenlive-zoom-large": {
       "file": "kdenlive-zoom-large.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["zoom", "large", "fit", "expand", "fullscreen", "kdenlive", "frame"],
       "label": "Kdenlive Zoom Large",
       "duplicate_of": "papirus_actions_image-resize-symbolic"
     },
@@ -13867,12 +13923,14 @@
       "file": "kdenlive-zoom-small.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["zoom", "small", "shrink", "minimize", "reduce", "kdenlive", "frame"],
       "label": "Kdenlive Zoom Small"
     },
     "papirus_actions_key-enter": {
       "file": "key-enter.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["enter", "return", "key", "keyboard", "submit", "confirm", "arrow"],
       "label": "Key Enter"
     },
     "papirus_actions_keyboard-caps-lock-filled-symbolic": {
@@ -13880,6 +13938,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["caps", "lock", "keyboard", "uppercase", "shift", "active", "arrow"],
       "label": "Keyboard Caps Lock Filled Symbolic"
     },
     "papirus_actions_keyboard-enter-symbolic": {
@@ -13887,6 +13946,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["enter", "return", "keyboard", "key", "submit", "newline", "arrow"],
       "label": "Keyboard Enter Symbolic"
     },
     "papirus_actions_keyboard-hide-symbolic": {
@@ -13894,6 +13954,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["keyboard", "hide", "dismiss", "down", "chevron", "close", "collapse"],
       "label": "Keyboard Hide Symbolic"
     },
     "papirus_actions_keyboard-layout-filled-symbolic": {
@@ -13901,6 +13962,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["keyboard", "layout", "globe", "world", "language", "international", "input"],
       "label": "Keyboard Layout Filled Symbolic",
       "duplicates": ["papirus_actions_globe-symbolic"]
     },
@@ -13909,566 +13971,657 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["shift", "keyboard", "uppercase", "key", "arrow", "active", "filled"],
       "label": "Keyboard Shift Filled Symbolic"
     },
     "papirus_actions_keyframe": {
       "file": "keyframe.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "animation", "diamond", "marker", "timeline", "key", "frame"],
       "label": "Keyframe"
     },
     "papirus_actions_keyframe-add": {
       "file": "keyframe-add.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "add", "plus", "animation", "new", "timeline", "insert"],
       "label": "Keyframe Add"
     },
     "papirus_actions_keyframe-disable": {
       "file": "keyframe-disable.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "disable", "off", "strikethrough", "animation", "inactive", "mute"],
       "label": "Keyframe Disable"
     },
     "papirus_actions_keyframe-duplicate": {
       "file": "keyframe-duplicate.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "duplicate", "copy", "clone", "animation", "double", "repeat"],
       "label": "Keyframe Duplicate"
     },
     "papirus_actions_keyframe-next": {
       "file": "keyframe-next.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "next", "forward", "arrow", "animation", "right", "navigate"],
       "label": "Keyframe Next"
     },
     "papirus_actions_keyframe-previous": {
       "file": "keyframe-previous.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "previous", "back", "arrow", "animation", "left", "navigate"],
       "label": "Keyframe Previous"
     },
     "papirus_actions_keyframe-record": {
       "file": "keyframe-record.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "record", "capture", "red", "dot", "animation", "autokey"],
       "label": "Keyframe Record"
     },
     "papirus_actions_keyframe-remove": {
       "file": "keyframe-remove.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["keyframe", "remove", "delete", "minus", "animation", "timeline", "clear"],
       "label": "Keyframe Remove"
     },
     "papirus_actions_kittens": {
       "file": "kittens.svg",
       "sizes": [16],
       "context": "actions",
+      "hints": ["kittens", "paw", "pet", "cat", "animal", "print", "footprint"],
       "label": "Kittens"
     },
     "papirus_actions_kmouth-phrase-new": {
       "file": "kmouth-phrase-new.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["phrase", "new", "speech", "bubble", "add", "text", "accessibility"],
       "label": "Kmouth Phrase New"
     },
     "papirus_actions_kmouth-phresebook-new": {
       "file": "kmouth-phresebook-new.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kmouth Phresebook New"
+      "label": "Kmouth Phresebook New",
+      "hints": ["phrasebook", "new", "add", "speech", "book", "plus", "kmouth", "accessibility"]
     },
     "papirus_actions_kr_combine": {
       "file": "kr_combine.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kr Combine"
+      "label": "Kr Combine",
+      "hints": ["combine", "merge", "join", "arrows", "krusader", "files", "concatenate"]
     },
     "papirus_actions_kr_comparedirs": {
       "file": "kr_comparedirs.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kr Comparedirs"
+      "label": "Kr Comparedirs",
+      "hints": ["compare", "directories", "folders", "diff", "krusader", "side-by-side", "sync"]
     },
     "papirus_actions_kr_diskusage": {
       "file": "kr_diskusage.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Kr Diskusage"
+      "label": "Kr Diskusage",
+      "hints": ["disk", "usage", "storage", "space", "floppy", "krusader", "capacity", "drive"]
     },
     "papirus_actions_kr_syncbrowse_off": {
       "file": "kr_syncbrowse_off.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kr Syncbrowse Off"
+      "label": "Kr Syncbrowse Off",
+      "hints": ["sync", "browse", "off", "disabled", "folder", "krusader", "disconnect", "unlinked"]
     },
     "papirus_actions_kr_unselect": {
       "file": "kr_unselect.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kr Unselect"
+      "label": "Kr Unselect",
+      "hints": ["unselect", "deselect", "cursor", "pointer", "remove selection", "krusader", "clear"]
     },
     "papirus_actions_kstars_cbound": {
       "file": "kstars_cbound.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Cbound"
+      "label": "Kstars Cbound",
+      "hints": ["constellation", "boundary", "stars", "astronomy", "kstars", "sky", "outline", "dotted"]
     },
     "papirus_actions_kstars_clines": {
       "file": "kstars_clines.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Clines"
+      "label": "Kstars Clines",
+      "hints": ["constellation", "lines", "stars", "astronomy", "kstars", "connect", "sky map"]
     },
     "papirus_actions_kstars_cnames": {
       "file": "kstars_cnames.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Cnames"
+      "label": "Kstars Cnames",
+      "hints": ["constellation", "names", "labels", "text", "astronomy", "kstars", "Ori", "identifier"]
     },
     "papirus_actions_kstars_deepsky": {
       "file": "kstars_deepsky.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Deepsky"
+      "label": "Kstars Deepsky",
+      "hints": ["deep sky", "object", "circle", "dotted", "astronomy", "kstars", "nebula", "galaxy"]
     },
     "papirus_actions_kstars_ekos": {
       "file": "kstars_ekos.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Ekos"
+      "label": "Kstars Ekos",
+      "hints": ["ekos", "telescope", "observatory", "dome", "astronomy", "kstars", "astrophotography", "control"]
     },
     "papirus_actions_kstars_fitsviewer": {
       "file": "kstars_fitsviewer.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Fitsviewer"
+      "label": "Kstars Fitsviewer",
+      "hints": ["FITS", "viewer", "image", "spiral", "galaxy", "astronomy", "kstars", "astrophoto"]
     },
     "papirus_actions_kstars_grid": {
       "file": "kstars_grid.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Grid"
+      "label": "Kstars Grid",
+      "hints": ["grid", "coordinate", "sphere", "globe", "astronomy", "kstars", "celestial", "lines"]
     },
     "papirus_actions_kstars_hgrid": {
       "file": "kstars_hgrid.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Hgrid"
+      "label": "Kstars Hgrid",
+      "hints": ["horizontal", "grid", "coordinate", "sphere", "astronomy", "kstars", "azimuthal", "globe"]
     },
     "papirus_actions_kstars_horizon": {
       "file": "kstars_horizon.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Horizon"
+      "label": "Kstars Horizon",
+      "hints": ["horizon", "circle", "ring", "astronomy", "kstars", "sky", "boundary", "ground"]
     },
     "papirus_actions_kstars_indi": {
       "file": "kstars_indi.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Indi"
+      "label": "Kstars Indi",
+      "hints": ["INDI", "telescope", "device", "control", "astronomy", "kstars", "instrument", "hardware"]
     },
     "papirus_actions_kstars_mw": {
       "file": "kstars_mw.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Mw"
+      "label": "Kstars Mw",
+      "hints": ["milky way", "galaxy", "band", "astronomy", "kstars", "sky", "nebula", "curve"]
     },
     "papirus_actions_kstars_planets": {
       "file": "kstars_planets.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Planets"
+      "label": "Kstars Planets",
+      "hints": ["planet", "saturn", "ring", "orbit", "astronomy", "kstars", "solar system", "celestial"]
     },
     "papirus_actions_kstars_satellites": {
       "file": "kstars_satellites.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Satellites"
+      "label": "Kstars Satellites",
+      "hints": ["satellite", "space", "orbit", "antenna", "panel", "astronomy", "kstars", "spacecraft"]
     },
     "papirus_actions_kstars_solarsystem": {
       "file": "kstars_solarsystem.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Solarsystem"
+      "label": "Kstars Solarsystem",
+      "hints": ["solar system", "sun", "orbit", "planet", "astronomy", "kstars", "circle", "ellipse"]
     },
     "papirus_actions_kstars_supernovae": {
       "file": "kstars_supernovae.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kstars Supernovae"
+      "label": "Kstars Supernovae",
+      "hints": ["supernova", "explosion", "star", "burst", "astronomy", "kstars", "nova", "bright"]
     },
     "papirus_actions_kt-add-filters": {
       "file": "kt-add-filters.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kt Add Filters"
+      "label": "Kt Add Filters",
+      "hints": ["filter", "add", "plus", "funnel", "ktorrent", "torrent", "new", "create"]
     },
     "papirus_actions_kt-magnet": {
       "file": "kt-magnet.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kt Magnet"
+      "label": "Kt Magnet",
+      "hints": ["magnet", "link", "horseshoe", "torrent", "ktorrent", "download", "attract", "magnetic"]
     },
     "papirus_actions_kt-remove-filters": {
       "file": "kt-remove-filters.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kt Remove Filters"
+      "label": "Kt Remove Filters",
+      "hints": ["filter", "remove", "minus", "funnel", "ktorrent", "torrent", "delete", "clear"]
     },
     "papirus_actions_kt-speed-limits": {
       "file": "kt-speed-limits.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Kt Speed Limits"
+      "label": "Kt Speed Limits",
+      "hints": ["speed", "limit", "speedometer", "gauge", "bandwidth", "ktorrent", "throttle", "dial"]
     },
     "papirus_actions_kt-stop-all": {
       "file": "kt-stop-all.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kt Stop All"
+      "label": "Kt Stop All",
+      "hints": ["stop", "all", "squares", "pause", "halt", "ktorrent", "torrent", "cancel"]
     },
     "papirus_actions_kt-upnp": {
       "file": "kt-upnp.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Kt Upnp"
+      "label": "Kt Upnp",
+      "hints": ["UPnP", "network", "arrows", "plug and play", "ktorrent", "port", "forward", "connection"]
     },
     "papirus_actions_labplot-TeX-logo": {
       "file": "labplot-TeX-logo.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Tex Logo"
+      "label": "Labplot Tex Logo",
+      "hints": ["TeX", "LaTeX", "logo", "typesetting", "labplot", "math", "formula", "text"]
     },
     "papirus_actions_labplot-axis-horizontal": {
       "file": "labplot-axis-horizontal.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Axis Horizontal"
+      "label": "Labplot Axis Horizontal",
+      "hints": ["axis", "horizontal", "x-axis", "chart", "graph", "labplot", "plot", "coordinate"]
     },
     "papirus_actions_labplot-axis-vertical": {
       "file": "labplot-axis-vertical.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Axis Vertical"
+      "label": "Labplot Axis Vertical",
+      "hints": ["axis", "vertical", "y-axis", "chart", "graph", "labplot", "plot", "coordinate"]
     },
     "papirus_actions_labplot-shift-down-y": {
       "file": "labplot-shift-down-y.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Shift Down Y"
+      "label": "Labplot Shift Down Y",
+      "hints": ["shift", "down", "arrow", "y-axis", "move", "labplot", "translate", "vertical"]
     },
     "papirus_actions_labplot-shift-left-x": {
       "file": "labplot-shift-left-x.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Shift Left X"
+      "label": "Labplot Shift Left X",
+      "hints": ["shift", "left", "arrow", "x-axis", "move", "labplot", "translate", "horizontal"]
     },
     "papirus_actions_labplot-shift-right-x": {
       "file": "labplot-shift-right-x.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Shift Right X"
+      "label": "Labplot Shift Right X",
+      "hints": ["shift", "right", "arrow", "x-axis", "move", "labplot", "translate", "horizontal"]
     },
     "papirus_actions_labplot-shift-up-y": {
       "file": "labplot-shift-up-y.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Shift Up Y"
+      "label": "Labplot Shift Up Y",
+      "hints": ["shift", "up", "arrow", "y-axis", "move", "labplot", "translate", "vertical"]
     },
     "papirus_actions_labplot-xy-curve": {
       "file": "labplot-xy-curve.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Xy Curve"
+      "label": "Labplot Xy Curve",
+      "hints": ["curve", "xy", "plot", "graph", "chart", "labplot", "data", "line"]
     },
     "papirus_actions_labplot-xy-equation-curve": {
       "file": "labplot-xy-equation-curve.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Xy Equation Curve"
+      "label": "Labplot Xy Equation Curve",
+      "hints": ["equation", "curve", "function", "math", "plot", "labplot", "formula", "graph"]
     },
     "papirus_actions_labplot-xy-fit-curve": {
       "file": "labplot-xy-fit-curve.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Xy Fit Curve"
+      "label": "Labplot Xy Fit Curve",
+      "hints": ["fit", "curve", "regression", "data points", "plot", "labplot", "statistics", "trend"]
     },
     "papirus_actions_labplot-xy-plot-four-axes": {
       "file": "labplot-xy-plot-four-axes.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Xy Plot Four Axes"
+      "label": "Labplot Xy Plot Four Axes",
+      "hints": ["plot", "four axes", "chart", "graph", "box", "labplot", "cartesian", "frame"]
     },
     "papirus_actions_labplot-xy-plot-two-axes": {
       "file": "labplot-xy-plot-two-axes.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Xy Plot Two Axes"
+      "label": "Labplot Xy Plot Two Axes",
+      "hints": ["plot", "two axes", "chart", "graph", "xy", "labplot", "cartesian", "L-shape"]
     },
     "papirus_actions_labplot-xy-plot-two-axes-centered": {
       "file": "labplot-xy-plot-two-axes-centered.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Xy Plot Two Axes Centered"
+      "label": "Labplot Xy Plot Two Axes Centered",
+      "hints": ["plot", "centered", "axes", "cross", "origin", "labplot", "cartesian", "graph"]
     },
     "papirus_actions_labplot-xy-plot-two-axes-centered-origin": {
       "file": "labplot-xy-plot-two-axes-centered-origin.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Labplot Xy Plot Two Axes Centered Origin"
+      "label": "Labplot Xy Plot Two Axes Centered Origin",
+      "hints": ["plot", "origin", "centered", "axes", "cross", "labplot", "cartesian", "tick marks"]
     },
     "papirus_actions_layer-bottom": {
       "file": "layer-bottom.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Bottom"
+      "label": "Layer Bottom",
+      "hints": ["layer", "bottom", "move", "down", "arrow", "stack", "lower", "z-order"]
     },
     "papirus_actions_layer-delete": {
       "file": "layer-delete.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Delete"
+      "label": "Layer Delete",
+      "hints": ["layer", "delete", "remove", "minus", "stack", "subtract", "lines", "strikethrough"]
     },
     "papirus_actions_layer-duplicate": {
       "file": "layer-duplicate.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Duplicate"
+      "label": "Layer Duplicate",
+      "hints": ["layer", "duplicate", "copy", "clone", "stack", "two", "lines", "parallel"]
     },
     "papirus_actions_layer-lower": {
       "file": "layer-lower.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Lower"
+      "label": "Layer Lower",
+      "hints": ["layer", "lower", "down", "arrow", "stack", "move", "z-order", "back"]
     },
     "papirus_actions_layer-new": {
       "file": "layer-new.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer New"
+      "label": "Layer New",
+      "hints": ["layer", "new", "add", "plus", "create", "stack", "lines", "insert"]
     },
     "papirus_actions_layer-next": {
       "file": "layer-next.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Next"
+      "label": "Layer Next",
+      "hints": ["layer", "next", "select", "highlight", "stack", "active", "switch", "forward"]
     },
     "papirus_actions_layer-previous": {
       "file": "layer-previous.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Previous"
+      "label": "Layer Previous",
+      "hints": ["layer", "previous", "select", "highlight", "stack", "active", "switch", "back"]
     },
     "papirus_actions_layer-raise": {
       "file": "layer-raise.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Raise"
+      "label": "Layer Raise",
+      "hints": ["layer", "raise", "up", "arrow", "stack", "move", "z-order", "front"]
     },
     "papirus_actions_layer-top": {
       "file": "layer-top.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Top"
+      "label": "Layer Top",
+      "hints": ["layer", "top", "move", "up", "arrow", "stack", "front", "z-order"]
     },
     "papirus_actions_layer-visible-off": {
       "file": "layer-visible-off.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Visible Off"
+      "label": "Layer Visible Off",
+      "hints": ["layer", "visible", "off", "hidden", "invisible", "hide", "strikethrough", "disabled"]
     },
     "papirus_actions_layer-visible-on": {
       "file": "layer-visible-on.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Layer Visible On"
+      "label": "Layer Visible On",
+      "hints": ["layer", "visible", "on", "show", "eye", "display", "lines", "enabled"]
     },
     "papirus_actions_ledger": {
       "file": "ledger.svg",
       "sizes": [22, 32],
       "context": "actions",
-      "label": "Ledger"
+      "label": "Ledger",
+      "hints": ["ledger", "document", "page", "pencil", "edit", "paper", "write", "finance"]
     },
     "papirus_actions_lensautofix": {
       "file": "lensautofix.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Lensautofix"
+      "label": "Lensautofix",
+      "hints": ["lens", "auto", "fix", "correction", "camera", "circle", "optics", "distortion"]
     },
     "papirus_actions_lensdistortion": {
       "file": "lensdistortion.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Lensdistortion"
+      "label": "Lensdistortion",
+      "hints": ["lens", "distortion", "barrel", "warp", "curved", "grid", "optics", "photography"]
     },
     "papirus_actions_library-music-symbolic": {
       "file": "library-music-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Library Music Symbolic"
+      "label": "Library Music Symbolic",
+      "hints": ["music", "library", "note", "collection", "audio", "album", "playlist", "media"]
     },
     "papirus_actions_library-symbolic": {
       "file": "library-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Library Symbolic"
+      "label": "Library Symbolic",
+      "hints": ["library", "books", "shelf", "collection", "reading", "bookcase", "vertical", "spines"]
     },
     "papirus_actions_license": {
       "file": "license.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "License"
+      "label": "License",
+      "hints": ["license", "copyright", "circle", "c", "legal", "rights", "symbol", "intellectual property"]
     },
     "papirus_actions_lighttable": {
       "file": "lighttable.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Lighttable"
+      "label": "Lighttable",
+      "hints": ["lighttable", "view", "circle", "half", "contrast", "brightness", "photography", "darktable"]
     },
     "papirus_actions_lines-connector": {
       "file": "lines-connector.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Lines Connector"
+      "label": "Lines Connector",
+      "hints": ["connector", "line", "link", "join", "right angle", "path", "diagram", "flowchart"]
     },
     "papirus_actions_link": {
       "file": "link.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Link"
+      "label": "Link",
+      "hints": ["link", "chain", "url", "hyperlink", "connect", "reference", "anchor", "web"]
     },
     "papirus_actions_list-add": {
       "file": "list-add.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "List Add"
+      "label": "List Add",
+      "hints": ["add", "plus", "new", "create", "insert", "list", "append", "cross"]
     },
     "papirus_actions_list-add-font": {
       "file": "list-add-font.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "List Add Font"
+      "label": "List Add Font",
+      "hints": ["font", "add", "plus", "typeface", "letter", "F", "typography", "install"]
     },
     "papirus_actions_list-drag-handle-symbolic": {
       "file": "list-drag-handle-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "List Drag Handle Symbolic"
+      "label": "List Drag Handle Symbolic",
+      "hints": ["drag", "handle", "grip", "dots", "reorder", "move", "sort", "six dots"]
     },
     "papirus_actions_list-remove": {
       "file": "list-remove.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "List Remove"
+      "label": "List Remove",
+      "hints": ["remove", "minus", "delete", "subtract", "list", "dash", "line", "horizontal"]
     },
     "papirus_actions_list-remove-all": {
       "file": "list-remove-all.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "List Remove All"
+      "label": "List Remove All",
+      "hints": ["remove", "all", "clear", "delete", "list", "minus", "lines", "red"]
     },
     "papirus_actions_list-remove-user": {
       "file": "list-remove-user.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "List Remove User"
+      "label": "List Remove User",
+      "hints": ["user", "remove", "delete", "person", "minus", "red", "square", "account"]
     },
     "papirus_actions_location": {
       "file": "location.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Location"
+      "label": "Location",
+      "hints": ["location", "crosshair", "target", "GPS", "position", "navigate", "map", "pin"]
     },
     "papirus_actions_love": {
       "file": "love.svg",
       "sizes": [16],
       "context": "actions",
-      "label": "Love"
+      "label": "Love",
+      "hints": ["love", "heart", "favorite", "like", "romance", "red", "valentine", "emotion"]
     },
     "papirus_actions_love-amarok": {
       "file": "love-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Love Amarok"
+      "label": "Love Amarok",
+      "hints": ["love", "heart", "favorite", "like", "amarok", "music", "dark", "solid"]
     },
     "papirus_actions_lucide-arrow-right-left-symbolic": {
       "file": "lucide-arrow-right-left-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Arrow Right Left Symbolic"
+      "label": "Lucide Arrow Right Left Symbolic",
+      "hints": ["arrow", "swap", "exchange", "transfer", "bidirectional", "horizontal", "switch", "reverse"]
     },
     "papirus_actions_lucide-bot-symbolic": {
       "file": "lucide-bot-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Bot Symbolic"
+      "label": "Lucide Bot Symbolic",
+      "hints": ["bot", "robot", "AI", "automation", "face", "machine", "assistant", "chat"]
     },
     "papirus_actions_lucide-calendar-search-symbolic": {
       "file": "lucide-calendar-search-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Calendar Search Symbolic"
+      "label": "Lucide Calendar Search Symbolic",
+      "hints": ["calendar", "search", "find", "date", "magnifier", "schedule", "event", "lookup"]
     },
     "papirus_actions_lucide-chevron-left-symbolic": {
       "file": "lucide-chevron-left-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Chevron Left Symbolic"
+      "label": "Lucide Chevron Left Symbolic",
+      "hints": ["chevron", "left", "back", "previous", "arrow", "navigate", "angle", "caret"]
     },
     "papirus_actions_lucide-chevron-right-symbolic": {
       "file": "lucide-chevron-right-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Chevron Right Symbolic"
+      "label": "Lucide Chevron Right Symbolic",
+      "hints": ["chevron", "right", "forward", "next", "arrow", "navigate", "angle", "caret"]
     },
     "papirus_actions_lucide-circle-question-mark-symbolic": {
       "file": "lucide-circle-question-mark-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Circle Question Mark Symbolic"
+      "label": "Lucide Circle Question Mark Symbolic",
+      "hints": ["question", "help", "circle", "info", "support", "unknown", "ask", "FAQ"]
     },
     "papirus_actions_lucide-file-down-symbolic": {
       "file": "lucide-file-down-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide File Down Symbolic"
+      "label": "Lucide File Down Symbolic",
+      "hints": ["file", "download", "arrow", "down", "document", "save", "export", "page"]
     },
     "papirus_actions_lucide-file-up-symbolic": {
       "file": "lucide-file-up-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide File Up Symbolic"
+      "label": "Lucide File Up Symbolic",
+      "hints": ["file", "upload", "arrow", "up", "document", "send", "import", "page"]
     },
     "papirus_actions_lucide-languages-symbolic": {
       "file": "lucide-languages-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Languages Symbolic"
+      "label": "Lucide Languages Symbolic",
+      "hints": ["languages", "translate", "internationalization", "i18n", "locale", "text", "A", "characters"]
     },
     "papirus_actions_lucide-megaphone-off-symbolic": {
       "file": "lucide-megaphone-off-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Megaphone Off Symbolic"
+      "label": "Lucide Megaphone Off Symbolic",
+      "hints": ["megaphone", "off", "mute", "silent", "announce", "disabled", "strikethrough", "notification"]
     },
     "papirus_actions_lucide-megaphone-symbolic": {
       "file": "lucide-megaphone-symbolic.svg",
@@ -14476,46 +14629,53 @@
       "context": "actions",
       "symbolic": true,
       "duplicate_of": "papirus_actions_reannounce",
-      "label": "Lucide Megaphone Symbolic"
+      "label": "Lucide Megaphone Symbolic",
+      "hints": ["megaphone", "announce", "broadcast", "speaker", "horn", "loudspeaker", "notification", "alert"]
     },
     "papirus_actions_lucide-notebook-tabs-symbolic": {
       "file": "lucide-notebook-tabs-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Notebook Tabs Symbolic"
+      "label": "Lucide Notebook Tabs Symbolic",
+      "hints": ["notebook", "tabs", "notes", "journal", "bookmarks", "pages", "organizer", "sections"]
     },
     "papirus_actions_lucide-package-plus-symbolic": {
       "file": "lucide-package-plus-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Package Plus Symbolic"
+      "label": "Lucide Package Plus Symbolic",
+      "hints": ["package", "add", "plus", "box", "install", "cube", "dependency", "new"]
     },
     "papirus_actions_lucide-package-symbolic": {
       "file": "lucide-package-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Package Symbolic"
+      "label": "Lucide Package Symbolic",
+      "hints": ["package", "box", "cube", "hexagon", "module", "library", "dependency", "archive"]
     },
     "papirus_actions_lucide-smile-plus-symbolic": {
       "file": "lucide-smile-plus-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide Smile Plus Symbolic"
+      "label": "Lucide Smile Plus Symbolic",
+      "hints": ["smile", "add", "emoji", "face", "happy", "plus", "emoticon", "reaction"]
     },
     "papirus_actions_lucide-user-cog-symbolic": {
       "file": "lucide-user-cog-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Lucide User Cog Symbolic"
+      "label": "Lucide User Cog Symbolic",
+      "hints": ["user", "settings", "cog", "gear", "account", "preferences", "person", "configure"]
     },
     "papirus_actions_lucide-wrench-symbolic": {
       "file": "lucide-wrench-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["wrench", "spanner", "tool", "repair", "fix", "settings", "maintenance"],
       "context": "actions",
       "symbolic": true,
       "label": "Lucide Wrench Symbolic"
@@ -14523,6 +14683,7 @@
     "papirus_actions_lucide-x-symbolic": {
       "file": "lucide-x-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["close", "x", "cancel", "delete", "remove", "dismiss", "cross"],
       "context": "actions",
       "symbolic": true,
       "label": "Lucide X Symbolic"
@@ -14530,6 +14691,7 @@
     "papirus_actions_lyrics-off-symbolic": {
       "file": "lyrics-off-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["lyrics", "off", "disabled", "music", "text", "karaoke", "strikethrough", "muted"],
       "context": "actions",
       "symbolic": true,
       "label": "Lyrics Off Symbolic"
@@ -14537,6 +14699,7 @@
     "papirus_actions_lyrics-on-symbolic": {
       "file": "lyrics-on-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["lyrics", "on", "enabled", "music", "text", "karaoke", "lines", "active"],
       "context": "actions",
       "symbolic": true,
       "label": "Lyrics On Symbolic"
@@ -14544,6 +14707,7 @@
     "papirus_actions_mail-attachment": {
       "file": "mail-attachment.svg",
       "sizes": [16, 22, 24],
+      "hints": ["paperclip", "attachment", "attach", "mail", "clip", "email", "file"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Attachment"
@@ -14551,12 +14715,14 @@
     "papirus_actions_mail-encrypted-full": {
       "file": "mail-encrypted-full.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "encrypted", "lock", "envelope", "secure", "email", "privacy"],
       "context": "actions",
       "label": "Mail Encrypted Full"
     },
     "papirus_actions_mail-flag": {
       "file": "mail-flag.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "flag", "envelope", "flagged", "important", "email", "mark"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Flag"
@@ -14564,12 +14730,14 @@
     "papirus_actions_mail-folder-sent": {
       "file": "mail-folder-sent.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "sent", "envelope", "checkmark", "delivered", "email", "outbox"],
       "context": "actions",
       "label": "Mail Folder Sent"
     },
     "papirus_actions_mail-forward": {
       "file": "mail-forward.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "forward", "arrow", "right", "send", "email", "redirect"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Forward"
@@ -14577,12 +14745,14 @@
     "papirus_actions_mail-invitation": {
       "file": "mail-invitation.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "invitation", "envelope", "star", "invite", "email", "event"],
       "context": "actions",
       "label": "Mail Invitation"
     },
     "papirus_actions_mail-mark-junk": {
       "file": "mail-mark-junk.svg",
       "sizes": [16, 22, 24],
+      "hints": ["junk", "spam", "exclamation", "warning", "circle", "mail", "block"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Mark Junk"
@@ -14590,6 +14760,7 @@
     "papirus_actions_mail-mark-notjunk": {
       "file": "mail-mark-notjunk.svg",
       "sizes": [16, 22, 24],
+      "hints": ["notjunk", "safe", "checkmark", "circle", "approved", "mail", "ham"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Mark Notjunk"
@@ -14597,6 +14768,7 @@
     "papirus_actions_mail-mark-read": {
       "file": "mail-mark-read.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "read", "envelope", "open", "checkmark", "email", "seen"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Mark Read"
@@ -14604,6 +14776,7 @@
     "papirus_actions_mail-mark-unread": {
       "file": "mail-mark-unread.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "unread", "envelope", "closed", "new", "email", "unseen"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Mark Unread"
@@ -14611,18 +14784,21 @@
     "papirus_actions_mail-mark-unread-new": {
       "file": "mail-mark-unread-new.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "unread", "new", "envelope", "badge", "notification", "email"],
       "context": "actions",
       "label": "Mail Mark Unread New"
     },
     "papirus_actions_mail-meeting-request-reply": {
       "file": "mail-meeting-request-reply.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "meeting", "reply", "envelope", "arrow", "calendar", "rsvp"],
       "context": "actions",
       "label": "Mail Meeting Request Reply"
     },
     "papirus_actions_mail-message-new": {
       "file": "mail-message-new.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "new", "compose", "envelope", "plus", "create", "email", "write"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Message New"
@@ -14630,36 +14806,42 @@
     "papirus_actions_mail-message-new-list": {
       "file": "mail-message-new-list.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "list", "mailing", "envelope", "new", "email", "group"],
       "context": "actions",
       "label": "Mail Message New List"
     },
     "papirus_actions_mail-move": {
       "file": "mail-move.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "move", "envelope", "arrow", "transfer", "email", "relocate"],
       "context": "actions",
       "label": "Mail Move"
     },
     "papirus_actions_mail-open-multiple": {
       "file": "mail-open-multiple.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "open", "multiple", "envelopes", "stacked", "email", "batch"],
       "context": "actions",
       "label": "Mail Open Multiple"
     },
     "papirus_actions_mail-read": {
       "file": "mail-read.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "read", "open", "envelope", "email", "opened", "viewed"],
       "context": "actions",
       "label": "Mail Read"
     },
     "papirus_actions_mail-receive": {
       "file": "mail-receive.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "receive", "envelope", "download", "arrow", "inbox", "email"],
       "context": "actions",
       "label": "Mail Receive"
     },
     "papirus_actions_mail-send": {
       "file": "mail-send.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "send", "paper airplane", "arrow", "email", "submit", "deliver"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Send"
@@ -14667,6 +14849,7 @@
     "papirus_actions_mail-send-receive": {
       "file": "mail-send-receive.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "sync", "send", "receive", "arrows", "exchange", "email", "refresh"],
       "context": "actions",
       "symbolic": true,
       "label": "Mail Send Receive"
@@ -14674,48 +14857,56 @@
     "papirus_actions_mail-signed-full": {
       "file": "mail-signed-full.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "signed", "signature", "envelope", "verified", "email", "pen"],
       "context": "actions",
       "label": "Mail Signed Full"
     },
     "papirus_actions_mail-tagged": {
       "file": "mail-tagged.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "tagged", "label", "envelope", "tag", "email", "categorize"],
       "context": "actions",
       "label": "Mail Tagged"
     },
     "papirus_actions_mail-thread-ignored": {
       "file": "mail-thread-ignored.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "ignored", "thread", "minus", "circle", "mute", "dismiss"],
       "context": "actions",
       "label": "Mail Thread Ignored"
     },
     "papirus_actions_mail-thread-watch": {
       "file": "mail-thread-watch.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "watch", "thread", "eyes", "monitor", "follow", "observe"],
       "context": "actions",
       "label": "Mail Thread Watch"
     },
     "papirus_actions_mail-unread-multiple": {
       "file": "mail-unread-multiple.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mail", "unread", "multiple", "envelopes", "stacked", "email", "batch"],
       "context": "actions",
       "label": "Mail Unread Multiple"
     },
     "papirus_actions_manga": {
       "file": "manga.svg",
       "sizes": [16, 22, 24],
+      "hints": ["manga", "comic", "speech bubble", "balloon", "japanese", "read", "book"],
       "context": "actions",
       "label": "Manga"
     },
     "papirus_actions_map-flat": {
       "file": "map-flat.svg",
       "sizes": [16, 22, 24],
+      "hints": ["map", "flat", "grid", "projection", "cartography", "tiles", "view"],
       "context": "actions",
       "label": "Map Flat"
     },
     "papirus_actions_map-globe": {
       "file": "map-globe.svg",
       "sizes": [16, 22, 24],
+      "hints": ["map", "globe", "earth", "world", "sphere", "planet", "geography"],
       "context": "actions",
       "symbolic": true,
       "label": "Map Globe"
@@ -14723,18 +14914,21 @@
     "papirus_actions_map-gnomonic": {
       "file": "map-gnomonic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["map", "gnomonic", "projection", "grid", "curved", "cartography", "navigation"],
       "context": "actions",
       "label": "Map Gnomonic"
     },
     "papirus_actions_map-mercator": {
       "file": "map-mercator.svg",
       "sizes": [16, 22, 24],
+      "hints": ["map", "mercator", "projection", "grid", "rectangular", "cartography", "navigation"],
       "context": "actions",
       "label": "Map Mercator"
     },
     "papirus_actions_mark-location": {
       "file": "mark-location.svg",
       "sizes": [16, 22, 24],
+      "hints": ["location", "pin", "marker", "map", "place", "gps", "navigation"],
       "context": "actions",
       "symbolic": true,
       "label": "Mark Location"
@@ -14742,30 +14936,35 @@
     "papirus_actions_measure": {
       "file": "measure.svg",
       "sizes": [16, 22, 24],
+      "hints": ["measure", "ruler", "distance", "length", "scale", "dimension", "tool"],
       "context": "actions",
       "label": "Measure"
     },
     "papirus_actions_media-album-cover": {
       "file": "media-album-cover.svg",
       "sizes": [48],
+      "hints": ["album", "cover", "vinyl", "record", "disc", "music", "media"],
       "context": "actions",
       "label": "Media Album Cover"
     },
     "papirus_actions_media-album-cover-manager-amarok": {
       "file": "media-album-cover-manager-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["album", "cover", "manager", "amarok", "music", "frame", "square"],
       "context": "actions",
       "label": "Media Album Cover Manager Amarok"
     },
     "papirus_actions_media-album-track": {
       "file": "media-album-track.svg",
       "sizes": [16, 22, 24],
+      "hints": ["album", "track", "music", "note", "song", "audio", "media"],
       "context": "actions",
       "label": "Media Album Track"
     },
     "papirus_actions_media-eject": {
       "file": "media-eject.svg",
       "sizes": [16, 22, 24],
+      "hints": ["eject", "media", "triangle", "disc", "remove", "unmount", "cd"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Eject"
@@ -14773,6 +14972,7 @@
     "papirus_actions_media-mount-symbolic": {
       "file": "media-mount-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mount", "media", "insert", "triangle", "down", "disc", "attach"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Mount Symbolic"
@@ -14780,6 +14980,7 @@
     "papirus_actions_media-playback-pause": {
       "file": "media-playback-pause.svg",
       "sizes": [16, 22, 24],
+      "hints": ["pause", "playback", "media", "bars", "stop", "player", "control"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playback Pause"
@@ -14787,6 +14988,7 @@
     "papirus_actions_media-playback-paused": {
       "file": "media-playback-paused.svg",
       "sizes": [16, 22, 24],
+      "hints": ["paused", "playback", "media", "bars", "halt", "player", "status"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playback Paused"
@@ -14794,6 +14996,7 @@
     "papirus_actions_media-playback-playing": {
       "file": "media-playback-playing.svg",
       "sizes": [16, 22, 24],
+      "hints": ["playing", "playback", "media", "triangle", "play", "player", "active"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playback Playing"
@@ -14801,6 +15004,7 @@
     "papirus_actions_media-playback-start": {
       "file": "media-playback-start.svg",
       "sizes": [16, 22, 24],
+      "hints": ["play", "start", "media", "triangle", "playback", "player", "begin"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playback Start"
@@ -14808,6 +15012,7 @@
     "papirus_actions_media-playback-start-rtl": {
       "file": "media-playback-start-rtl.svg",
       "sizes": [16, 22, 24],
+      "hints": ["play", "start", "rtl", "triangle", "left", "media", "reverse"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playback Start Rtl"
@@ -14815,6 +15020,7 @@
     "papirus_actions_media-playback-stop": {
       "file": "media-playback-stop.svg",
       "sizes": [16, 22, 24],
+      "hints": ["stop", "playback", "media", "square", "halt", "player", "end"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playback Stop"
@@ -14822,6 +15028,7 @@
     "papirus_actions_media-playback-stopped": {
       "file": "media-playback-stopped.svg",
       "sizes": [16, 22, 24],
+      "hints": ["stopped", "playback", "media", "square", "idle", "player", "status"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playback Stopped"
@@ -14829,12 +15036,14 @@
     "papirus_actions_media-playlist-normal": {
       "file": "media-playlist-normal.svg",
       "sizes": [16, 22, 24],
+      "hints": ["playlist", "normal", "sequential", "lines", "order", "media", "list"],
       "context": "actions",
       "label": "Media Playlist Normal"
     },
     "papirus_actions_media-playlist-play": {
       "file": "media-playlist-play.svg",
       "sizes": [16, 22, 24],
+      "hints": ["playlist", "play", "lines", "triangle", "queue", "media", "list"],
       "context": "actions",
       "label": "Media Playlist Play",
       "duplicate_of": "papirus_actions_format-indent-more"
@@ -14842,6 +15051,7 @@
     "papirus_actions_media-playlist-repeat": {
       "file": "media-playlist-repeat.svg",
       "sizes": [16, 22, 24],
+      "hints": ["repeat", "loop", "playlist", "arrows", "cycle", "media", "replay"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playlist Repeat"
@@ -14849,6 +15059,7 @@
     "papirus_actions_media-playlist-shuffle": {
       "file": "media-playlist-shuffle.svg",
       "sizes": [16, 22, 24],
+      "hints": ["shuffle", "random", "playlist", "crossed", "arrows", "media", "mix"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Playlist Shuffle"
@@ -14856,18 +15067,21 @@
     "papirus_actions_media-random-albums-amarok": {
       "file": "media-random-albums-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["random", "albums", "shuffle", "amarok", "crossed", "arrows", "music"],
       "context": "actions",
       "label": "Media Random Albums Amarok"
     },
     "papirus_actions_media-random-tracks-amarok": {
       "file": "media-random-tracks-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["random", "tracks", "shuffle", "amarok", "crossed", "arrows", "songs"],
       "context": "actions",
       "label": "Media Random Tracks Amarok"
     },
     "papirus_actions_media-record": {
       "file": "media-record.svg",
       "sizes": [16, 22, 24],
+      "hints": ["record", "recording", "circle", "red", "capture", "media", "audio"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Record"
@@ -14875,24 +15089,28 @@
     "papirus_actions_media-repeat-album-amarok": {
       "file": "media-repeat-album-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["repeat", "album", "loop", "amarok", "arrows", "cycle", "music"],
       "context": "actions",
       "label": "Media Repeat Album Amarok"
     },
     "papirus_actions_media-repeat-none": {
       "file": "media-repeat-none.svg",
       "sizes": [16, 22, 24],
+      "hints": ["repeat", "none", "off", "disabled", "arrows", "x", "no-loop"],
       "context": "actions",
       "label": "Media Repeat None"
     },
     "papirus_actions_media-repeat-playlist-amarok": {
       "file": "media-repeat-playlist-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["repeat", "playlist", "loop", "amarok", "arrows", "cycle", "music"],
       "context": "actions",
       "label": "Media Repeat Playlist Amarok"
     },
     "papirus_actions_media-repeat-track-amarok": {
       "file": "media-repeat-track-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["repeat", "track", "one", "loop", "amarok", "arrows", "single"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Repeat Track Amarok"
@@ -14900,6 +15118,7 @@
     "papirus_actions_media-seek-backward": {
       "file": "media-seek-backward.svg",
       "sizes": [16, 22, 24],
+      "hints": ["seek", "backward", "rewind", "triangles", "left", "media", "previous"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Seek Backward"
@@ -14907,6 +15126,7 @@
     "papirus_actions_media-seek-forward": {
       "file": "media-seek-forward.svg",
       "sizes": [16, 22, 24],
+      "hints": ["seek", "forward", "fast-forward", "triangles", "right", "media", "next"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Seek Forward"
@@ -14914,12 +15134,14 @@
     "papirus_actions_media-show-active-track-amarok": {
       "file": "media-show-active-track-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["active", "track", "current", "playing", "amarok", "music", "now"],
       "context": "actions",
       "label": "Media Show Active Track Amarok"
     },
     "papirus_actions_media-skip-backward": {
       "file": "media-skip-backward.svg",
       "sizes": [16, 22, 24],
+      "hints": ["skip", "backward", "previous", "triangles", "bar", "media", "track"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Skip Backward"
@@ -14927,6 +15149,7 @@
     "papirus_actions_media-skip-forward": {
       "file": "media-skip-forward.svg",
       "sizes": [16, 22, 24],
+      "hints": ["skip", "forward", "next", "triangles", "bar", "media", "track"],
       "context": "actions",
       "symbolic": true,
       "label": "Media Skip Forward"
@@ -14934,12 +15157,14 @@
     "papirus_actions_media-track-queue-amarok": {
       "file": "media-track-queue-amarok.svg",
       "sizes": [16, 22, 24],
+      "hints": ["queue", "track", "playlist", "amarok", "play", "add", "music"],
       "context": "actions",
       "label": "Media Track Queue Amarok"
     },
     "papirus_actions_media-view-subtitles": {
       "file": "media-view-subtitles.svg",
       "sizes": [16, 22, 24],
+      "hints": ["subtitles", "captions", "text", "video", "closed-captions", "media", "cc"],
       "context": "actions",
       "symbolic": true,
       "label": "Media View Subtitles"
@@ -14947,36 +15172,42 @@
     "papirus_actions_meeting-participant-no-response": {
       "file": "meeting-participant-no-response.svg",
       "sizes": [16, 22, 24],
+      "hints": ["meeting", "participant", "no-response", "person", "question", "pending", "user"],
       "context": "actions",
       "label": "Meeting Participant No Response"
     },
     "papirus_actions_meeting-participant-request-response": {
       "file": "meeting-participant-request-response.svg",
       "sizes": [16, 22, 24],
+      "hints": ["meeting", "participant", "request", "response", "person", "rsvp", "invite"],
       "context": "actions",
       "label": "Meeting Participant Request Response"
     },
     "papirus_actions_merge": {
       "file": "merge.svg",
       "sizes": [16, 22, 24],
+      "hints": ["merge", "combine", "join", "converge", "git", "branch", "union"],
       "context": "actions",
       "label": "Merge"
     },
     "papirus_actions_mesh-gradient": {
       "file": "mesh-gradient.svg",
       "sizes": [16, 18, 22, 24],
+      "hints": ["mesh", "gradient", "grid", "nodes", "color", "fill", "inkscape"],
       "context": "actions",
       "label": "Mesh Gradient"
     },
     "papirus_actions_mesh-gradient-fit": {
       "file": "mesh-gradient-fit.svg",
       "sizes": [16, 18, 24],
+      "hints": ["mesh", "gradient", "fit", "grid", "bounds", "resize", "inkscape"],
       "context": "actions",
       "label": "Mesh Gradient Fit"
     },
     "papirus_actions_mixramp-off-symbolic": {
       "file": "mixramp-off-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mixramp", "off", "disabled", "crossfade", "audio", "ramp", "transition"],
       "context": "actions",
       "symbolic": true,
       "label": "Mixramp Off Symbolic"
@@ -14984,6 +15215,7 @@
     "papirus_actions_mixramp-symbolic": {
       "file": "mixramp-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["mixramp", "crossfade", "audio", "ramp", "transition", "blend", "music"],
       "context": "actions",
       "symbolic": true,
       "label": "Mixramp Symbolic"
@@ -14991,6 +15223,7 @@
     "papirus_actions_music-note-single-symbolic": {
       "file": "music-note-single-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["music", "note", "single", "eighth", "audio", "song", "melody"],
       "context": "actions",
       "symbolic": true,
       "label": "Music Note Single Symbolic"
@@ -14998,6 +15231,7 @@
     "papirus_actions_nautilus-file-chooser-options-symbolic": {
       "file": "nautilus-file-chooser-options-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["options", "menu", "dots", "ellipsis", "more", "nautilus", "settings"],
       "context": "actions",
       "symbolic": true,
       "label": "Nautilus File Chooser Options Symbolic"

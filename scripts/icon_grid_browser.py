@@ -783,6 +783,7 @@ class IconDetailPopup(wx.Frame):
         panel = wx.Panel(border)
         panel.SetBackgroundColour(wx.Colour(255, 255, 245))
         sizer = wx.BoxSizer(wx.VERTICAL)
+        text_ctrls = []  # collect single-line TextCtrls for auto-width
 
         # --- Header ---
         header_font = wx.Font(10, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL,
@@ -791,6 +792,7 @@ class IconDetailPopup(wx.Frame):
                                   style=wx.TE_READONLY | wx.BORDER_NONE)
         name_label.SetBackgroundColour(panel.GetBackgroundColour())
         name_label.SetFont(header_font)
+        text_ctrls.append(name_label)
         sizer.Add(name_label, 0, wx.EXPAND | wx.ALL, 5)
 
         # --- Info line ---
@@ -802,6 +804,7 @@ class IconDetailPopup(wx.Frame):
         info_label.SetBackgroundColour(panel.GetBackgroundColour())
         info_label.SetFont(wx.Font(8, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL,
                                    wx.FONTWEIGHT_NORMAL))
+        text_ctrls.append(info_label)
         sizer.Add(info_label, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 5)
 
         # --- File / sizes ---
@@ -814,6 +817,7 @@ class IconDetailPopup(wx.Frame):
         file_label.SetBackgroundColour(panel.GetBackgroundColour())
         file_label.SetFont(wx.Font(8, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL,
                                    wx.FONTWEIGHT_NORMAL))
+        text_ctrls.append(file_label)
         sizer.Add(file_label, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 5)
 
         # --- Duplicate info ---
@@ -824,6 +828,7 @@ class IconDetailPopup(wx.Frame):
             dup_label.SetFont(wx.Font(8, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL,
                                       wx.FONTWEIGHT_NORMAL))
             dup_label.SetForegroundColour(wx.Colour(150, 80, 80))
+            text_ctrls.append(dup_label)
             sizer.Add(dup_label, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 5)
 
         if entry.duplicates:
@@ -833,6 +838,7 @@ class IconDetailPopup(wx.Frame):
             dups_label.SetBackgroundColour(panel.GetBackgroundColour())
             dups_label.SetFont(wx.Font(8, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL,
                                        wx.FONTWEIGHT_NORMAL))
+            text_ctrls.append(dups_label)
             sizer.Add(dups_label, 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 5)
 
         # --- Hints ---
@@ -844,7 +850,17 @@ class IconDetailPopup(wx.Frame):
             hints_label.SetFont(wx.Font(8, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL,
                                         wx.FONTWEIGHT_NORMAL))
             hints_label.SetForegroundColour(wx.Colour(40, 120, 40))
+            text_ctrls.append(hints_label)
             sizer.Add(hints_label, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 5)
+
+        # --- Auto-size popup width to fit longest text line ---
+        max_tw = 0
+        for ctrl in text_ctrls:
+            tw, _ = ctrl.GetTextExtent(ctrl.GetValue())
+            max_tw = max(max_tw, tw)
+        min_width = max_tw + 30  # padding for margins
+        for ctrl in text_ctrls:
+            ctrl.SetMinSize((min_width, -1))
 
         # --- Size previews ---
         if entry.paths:
