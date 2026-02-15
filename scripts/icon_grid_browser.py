@@ -50,7 +50,7 @@ class IconEntry:
     hints: list = field(default_factory=list)
     source: str = ""               # theme_id
     category: str = ""             # context (actions, places, etc.)
-    status: str = "external"       # hinted, duplicate, external
+    status: str = "pending"       # hinted, duplicate, pending
     paths: dict = field(default_factory=dict)   # size -> path_str
     duplicates: list = field(default_factory=list)
     duplicate_of: str = ""
@@ -145,7 +145,7 @@ class IconDataModel:
             elif info.get("hints"):
                 status = "hinted"
             else:
-                status = "external"
+                status = "pending"
 
             # Paths from disk scan (take first path per size)
             paths = {}
@@ -194,7 +194,7 @@ class IconDataModel:
                 continue
             if entry.status == "duplicate" and not show_duplicates:
                 continue
-            if entry.status == "external" and not show_unhinted:
+            if entry.status == "pending" and not show_unhinted:
                 continue
 
             # Search filter
@@ -466,7 +466,7 @@ class IconGridPanel(wx.ScrolledWindow):
         status_pens = {
             "hinted": res["pen_hinted"],
             "duplicate": res["pen_dup"],
-            "external": res["pen_ext"],
+            "pending": res["pen_ext"],
         }
 
         mdc.SetFont(res["font_name"])
@@ -479,7 +479,7 @@ class IconGridPanel(wx.ScrolledWindow):
             ry = row * ch
 
             status = entry.status
-            if status == "external":
+            if status == "pending":
                 mdc.SetPen(pen_ext_dim)
             else:
                 mdc.SetPen(status_pens.get(status, res["pen_ext"]))
@@ -566,7 +566,7 @@ class IconGridPanel(wx.ScrolledWindow):
         status_pens = {
             "hinted": res["pen_hinted"],
             "duplicate": res["pen_dup"],
-            "external": res["pen_ext"],
+            "pending": res["pen_ext"],
         }
 
         # Set name font once, get max_tw
@@ -592,7 +592,7 @@ class IconGridPanel(wx.ScrolledWindow):
                 dc.DrawRoundedRectangle(rx + 1, ry + 1, cw - 2, ch - 2, 5)
 
             status = entry.status
-            if status == "external" and not is_highlighted:
+            if status == "pending" and not is_highlighted:
                 dc.SetPen(pen_ext_dim)
             else:
                 dc.SetPen(status_pens.get(status, res["pen_ext"]))

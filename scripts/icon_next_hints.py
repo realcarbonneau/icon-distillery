@@ -81,7 +81,7 @@ def main():
 
         # Get file and context directly from icon_data
         filename = icon_data["file"]
-        context = icon_data["context"]
+        context = icon_data.get("context", "")
 
         # Find all files in this context's directories (PNGs, SVGs, SVGZs)
         disk_files = theme.find_icon_files_in_context(context, filename)

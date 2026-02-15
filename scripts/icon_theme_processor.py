@@ -199,8 +199,9 @@ class Theme:
         for dir_path, meta in self.index.items():
             xdg_context = meta["xdg_context"]
             if xdg_context is None:
-                continue
-            internal_context_id = self._get_internal_context_id(xdg_context)
+                internal_context_id = ""
+            else:
+                internal_context_id = self._get_internal_context_id(xdg_context)
             entry = dict(meta)
             entry["dir"] = dir_path
             if internal_context_id not in context_map:
