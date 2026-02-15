@@ -49,6 +49,7 @@
       "file": "media-floppy.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["floppy", "disk", "save", "storage", "media", "blue", "removable", "backup"],
+      "duplicates": ["nuvola_actions_document-save"],
       "label": "Media Floppy",
       "context": "devices"
     },
@@ -93,6 +94,7 @@
       "file": "printer1.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["printer", "print", "inkjet", "paper", "output", "hardware", "white", "document"],
+      "duplicate_of": "nuvola_devices_printer",
       "label": "Printer1",
       "context": "devices"
     },
@@ -255,7 +257,7 @@
       "file": "printer.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["printer", "print", "inkjet", "paper", "output", "hardware", "white", "blue"],
-      "duplicates": ["nuvola_apps_kjobviewer", "nuvola_apps_klpq", "nuvola_apps_preferences-desktop-printer", "nuvola_actions_printmgr"],
+      "duplicates": ["nuvola_apps_kjobviewer", "nuvola_apps_klpq", "nuvola_apps_preferences-desktop-printer", "nuvola_actions_printmgr", "nuvola_actions_document-print", "nuvola_actions_kjobviewer", "nuvola_actions_klpq", "nuvola_devices_printer1"],
       "label": "Printer",
       "context": "devices"
     },
@@ -528,6 +530,7 @@
       "file": "reload.png",
       "sizes": [16, 22],
       "hints": ["reload", "refresh", "arrows", "circular", "green", "repeat", "sync", "update"],
+      "duplicate_of": "nuvola_actions_view-refresh",
       "label": "Reload",
       "context": "apps"
     },
@@ -827,8 +830,9 @@
     },
     "nuvola_apps_klipper": {
       "file": "klipper.png",
-      "sizes": [16, 32, 48, 64],
+      "sizes": [16, 22, 32, 48, 64],
       "hints": ["clipboard", "paste", "clip", "copy", "pin", "papers", "klipper"],
+      "duplicates": ["nuvola_actions_klipper"],
       "label": "Klipper",
       "context": "apps"
     },
@@ -1401,8 +1405,9 @@
     },
     "nuvola_apps_package": {
       "file": "package.png",
-      "sizes": [16, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["box", "package", "cardboard", "open", "delivery", "container"],
+      "duplicates": ["nuvola_mimetypes_application-x-zip", "nuvola_mimetypes_application-x-rar", "nuvola_mimetypes_application-x-tar"],
       "label": "Package",
       "context": "apps"
     },
@@ -1647,7 +1652,7 @@
     },
     "nuvola_apps_preferences-system-session-services": {
       "file": "preferences-system-session-services.png",
-      "sizes": [16, 32, 48, 64, 128],
+      "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["gear", "cog", "services", "session", "system", "settings"],
       "duplicates": ["nuvola_actions_misc"],
       "label": "Preferences System Session Services",
@@ -1665,6 +1670,7 @@
       "file": "clock.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["clock", "time", "watch", "hours", "minutes", "blue"],
+      "duplicates": ["nuvola_actions_view-history"],
       "label": "Clock",
       "context": "apps"
     },
@@ -1829,6 +1835,7 @@
       "file": "xmag.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["magnifier", "magnifying", "glass", "zoom", "search", "enlarge"],
+      "duplicates": ["nuvola_actions_zoom"],
       "label": "Xmag",
       "context": "apps"
     },
@@ -2235,6 +2242,7 @@
       "file": "dialog-error.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["error", "cross", "close", "red", "cancel", "delete", "stop", "fail"],
+      "duplicates": ["nuvola_actions_cancel", "nuvola_actions_dialog-cancel"],
       "label": "Dialog Error",
       "context": "status"
     },
@@ -2582,7 +2590,7 @@
       "file": "application-x-tar.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["tar", "archive", "box", "package", "compressed", "bundle", "container"],
-      "duplicate_of": "nuvola_mimetypes_application-x-zip",
+      "duplicate_of": "nuvola_apps_package",
       "label": "Application X Tar",
       "context": "mimetypes"
     },
@@ -2761,7 +2769,7 @@
       "file": "inode-directory.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["directory", "folder", "blue", "inode", "container", "files", "open"],
-      "duplicates": ["nuvola_places_folder", "nuvola_places_folder-blue"],
+      "duplicates": ["nuvola_places_folder", "nuvola_places_folder-blue", "nuvola_actions_folder", "nuvola_actions_tool_uselastdir"],
       "label": "Inode Directory",
       "context": "mimetypes"
     },
@@ -2934,7 +2942,7 @@
       "file": "application-x-zip.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["zip", "archive", "compressed", "package", "box", "container"],
-      "duplicates": ["nuvola_mimetypes_application-x-rar", "nuvola_mimetypes_application-x-tar"],
+      "duplicate_of": "nuvola_apps_package",
       "label": "Application X Zip",
       "context": "mimetypes"
     },
@@ -3265,7 +3273,7 @@
       "file": "application-x-rar.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["rar", "archive", "compressed", "package", "box", "container"],
-      "duplicate_of": "nuvola_mimetypes_application-x-zip",
+      "duplicate_of": "nuvola_apps_package",
       "label": "Application X Rar",
       "context": "mimetypes"
     },
@@ -3467,7 +3475,7 @@
       "file": "applications-internet.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["internet", "globe", "earth", "world", "web", "online"],
-      "duplicates": ["nuvola_apps_browser"],
+      "duplicates": ["nuvola_apps_browser", "nuvola_actions_homepage"],
       "label": "Applications Internet",
       "context": "categories"
     },
@@ -3511,6 +3519,7 @@
       "file": "document-print.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["printer", "print", "paper", "document", "output", "inkjet", "blue", "hardware"],
+      "duplicate_of": "nuvola_devices_printer",
       "label": "Document Print",
       "context": "actions"
     },
@@ -3741,6 +3750,7 @@
       "file": "zoom.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["zoom", "magnify", "search", "lens", "glass", "find", "inspect"],
+      "duplicate_of": "nuvola_apps_xmag",
       "label": "Zoom",
       "context": "actions"
     },
@@ -3799,6 +3809,7 @@
       "file": "document-save.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["save", "floppy", "disk", "document", "store", "write", "backup"],
+      "duplicate_of": "nuvola_devices_media-floppy",
       "label": "Document Save",
       "context": "actions"
     },
@@ -3958,6 +3969,7 @@
       "file": "noatunloopsong.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["loop", "repeat", "song", "cycle", "refresh", "arrows", "recycle"],
+      "duplicate_of": "nuvola_actions_kaboodleloop",
       "label": "Noatunloopsong",
       "context": "actions"
     },
@@ -4220,6 +4232,7 @@
       "file": "view-history.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["history", "clock", "time", "recent", "past", "watch", "schedule"],
+      "duplicate_of": "nuvola_apps_clock",
       "label": "View History",
       "context": "actions"
     },
@@ -4227,6 +4240,7 @@
       "file": "kaboodleloop.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["loop", "repeat", "refresh", "sync", "arrows", "cycle", "reload"],
+      "duplicates": ["nuvola_actions_noatunloopsong"],
       "label": "Kaboodleloop",
       "context": "actions"
     },
@@ -4241,7 +4255,7 @@
       "file": "cancel.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["cancel", "close", "stop", "abort", "x", "red", "cross", "reject"],
-      "duplicates": ["nuvola_actions_dialog-cancel"],
+      "duplicate_of": "nuvola_status_dialog-error",
       "label": "Cancel",
       "context": "actions"
     },
@@ -4355,8 +4369,9 @@
     },
     "nuvola_actions_klipper_dock": {
       "file": "klipper_dock.png",
-      "sizes": [16, 32, 48],
+      "sizes": [16, 22, 32, 48],
       "hints": ["clipboard", "paste", "klipper", "dock", "clip", "board", "copy", "note"],
+      "duplicates": ["nuvola_actions_tool_clipboard"],
       "label": "Klipper Dock",
       "context": "actions"
     },
@@ -4509,7 +4524,8 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "red", "light", "indicator", "status", "glow", "sphere", "circle"],
       "label": "Ledred",
-      "context": "actions"
+      "context": "actions",
+      "duplicates": ["nuvola_actions_mix_record"]
     },
     "nuvola_actions_artsenvironment": {
       "file": "artsenvironment.png",
@@ -4529,6 +4545,7 @@
       "file": "view-refresh.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["refresh", "reload", "sync", "arrows", "circular", "green", "update", "repeat"],
+      "duplicates": ["nuvola_actions_tool_restart", "nuvola_apps_reload"],
       "label": "View Refresh",
       "context": "actions"
     },
@@ -4573,7 +4590,7 @@
       "file": "dialog-cancel.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["cancel", "close", "x", "reject", "no", "red", "delete", "stop"],
-      "duplicate_of": "nuvola_actions_cancel",
+      "duplicate_of": "nuvola_status_dialog-error",
       "label": "Dialog Cancel",
       "context": "actions"
     },
@@ -5110,6 +5127,7 @@
       "file": "homepage.png",
       "sizes": [32],
       "hints": ["homepage", "home", "globe", "world", "web", "browser", "earth", "internet"],
+      "duplicate_of": "nuvola_categories_applications-internet",
       "label": "Homepage",
       "context": "actions"
     },
@@ -5215,6 +5233,7 @@
       "file": "tool_restart.png",
       "sizes": [22],
       "hints": ["restart", "refresh", "reload", "cycle", "arrow", "green", "repeat"],
+      "duplicate_of": "nuvola_actions_view-refresh",
       "label": "Tool Restart",
       "context": "actions"
     },
@@ -5222,7 +5241,7 @@
       "file": "klpq.png",
       "sizes": [22],
       "hints": ["printer", "print", "paper", "output", "document", "queue", "hardware"],
-      "duplicate_of": "nuvola_actions_kjobviewer",
+      "duplicate_of": "nuvola_devices_printer",
       "label": "Klpq",
       "context": "actions"
     },
@@ -5230,7 +5249,7 @@
       "file": "tool_uselastdir.png",
       "sizes": [22],
       "hints": ["folder", "directory", "recent", "last", "path", "blue", "open"],
-      "duplicate_of": "nuvola_actions_folder",
+      "duplicate_of": "nuvola_mimetypes_inode-directory",
       "label": "Tool Uselastdir",
       "context": "actions"
     },
@@ -5238,6 +5257,7 @@
       "file": "klipper.png",
       "sizes": [22],
       "hints": ["klipper", "clipboard", "paste", "copy", "pin", "document", "history"],
+      "duplicate_of": "nuvola_apps_klipper",
       "label": "Klipper",
       "context": "actions"
     },
@@ -5300,7 +5320,8 @@
       "sizes": [22],
       "hints": ["record", "recording", "red", "circle", "audio", "media", "capture"],
       "label": "Mix Record",
-      "context": "actions"
+      "context": "actions",
+      "duplicate_of": "nuvola_actions_ledred"
     },
     "nuvola_actions_kmail": {
       "file": "kmail.png",
@@ -5350,7 +5371,7 @@
       "file": "kjobviewer.png",
       "sizes": [22],
       "hints": ["printer", "print", "job", "queue", "paper", "viewer", "hardware"],
-      "duplicates": ["nuvola_actions_klpq"],
+      "duplicate_of": "nuvola_devices_printer",
       "label": "Kjobviewer",
       "context": "actions"
     },
@@ -5365,7 +5386,7 @@
       "file": "folder.png",
       "sizes": [22],
       "hints": ["folder", "directory", "blue", "open", "files", "storage", "browse"],
-      "duplicates": ["nuvola_actions_tool_uselastdir"],
+      "duplicate_of": "nuvola_mimetypes_inode-directory",
       "label": "Folder",
       "context": "actions"
     },
@@ -5380,6 +5401,7 @@
       "file": "tool_clipboard.png",
       "sizes": [22],
       "hints": ["clipboard", "paste", "copy", "note", "paper", "board", "document"],
+      "duplicate_of": "nuvola_actions_klipper_dock",
       "label": "Tool Clipboard",
       "context": "actions"
     },

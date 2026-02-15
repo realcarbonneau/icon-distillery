@@ -137,6 +137,8 @@ def main():
         print("  based on what you SEE in the image + filename context. Then, edit the JSON to")
         print("  add \"hints\": [...] array for this icon's key. Format: \"hints\" must be a")
         print("  SINGLE LINE array, e.g.: \"hints\": [\"keyword1\", \"keyword2\", ...]")
+        print("- CRITICAL: ONLY edit the JSON file manually (using the Edit tool)! NEVER use")
+        print("  scripts, json.dump, or any programmatic method to write the JSON file!")
         print("- If stuck (unreadable, missing, ambiguous): add \"hints\": [\"FATAL-ERROR\"] to the JSON,")
         print("  log the issue to the anomaly file, then run the script again to continue.")
         anomaly_path = rel_path(os.path.join(theme.dir, f"{theme.theme_id}_anomalies.txt"))
