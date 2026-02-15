@@ -70,11 +70,11 @@
     "license": "CC-BY-SA-4.0"
   },
   "taskcoach": {
-    "skip": true,
     "label": "TaskCoach",
     "url": "https://github.com/taskcoach/taskcoach",
     "license": "GPL-3.0",
-    "notes": "New custom TaskCoach icons following XDG structure. Must build index.theme before processing."
+    "effective_sizes": [16, 22, 32, 48, 64, 128],
+    "xdg_contexts": ["Actions"]
   },
   "legacy": {
     "skip": true,

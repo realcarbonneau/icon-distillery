@@ -1670,7 +1670,7 @@
       "file": "clock.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["clock", "time", "watch", "hours", "minutes", "blue"],
-      "duplicates": ["nuvola_actions_view-history"],
+      "duplicates": ["nuvola_actions_view-history", "nuvola_actions_tool_timer"],
       "label": "Clock",
       "context": "apps"
     },
@@ -2337,6 +2337,7 @@
       "file": "mime_empty.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["empty", "blank", "file", "document", "white", "generic", "placeholder"],
+      "duplicate_of": "nuvola_mimetypes_unknown",
       "label": "Mime Empty",
       "context": "mimetypes"
     },
@@ -2417,6 +2418,7 @@
       "file": "mime_temp.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["temporary", "blank", "empty", "white", "placeholder", "generic", "file"],
+      "duplicate_of": "nuvola_mimetypes_unknown",
       "label": "Mime Temp",
       "context": "mimetypes"
     },
@@ -2538,7 +2540,7 @@
       "file": "unknown.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["unknown", "blank", "empty", "generic", "file", "unrecognized", "white"],
-      "duplicates": ["nuvola_mimetypes_application-x-zerosize", "nuvola_mimetypes_krec_fileempty", "nuvola_mimetypes_mime", "nuvola_mimetypes_misc_doc"],
+      "duplicates": ["nuvola_mimetypes_application-x-zerosize", "nuvola_mimetypes_krec_fileempty", "nuvola_mimetypes_mime", "nuvola_mimetypes_mime_empty", "nuvola_mimetypes_mime_temp", "nuvola_mimetypes_misc_doc"],
       "label": "Unknown",
       "context": "mimetypes"
     },
@@ -3504,7 +3506,7 @@
       "file": "arrow-left.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["arrow", "left", "back", "previous", "navigate", "return", "blue", "chevron"],
-      "duplicates": ["nuvola_actions_go-previous-document"],
+      "duplicate_of": "nuvola_actions_go-previous-document",
       "label": "Arrow Left",
       "context": "actions"
     },
@@ -3868,7 +3870,7 @@
       "file": "button_accept.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["accept", "check", "ok", "confirm", "approve", "yes", "done"],
-      "duplicate_of": "nuvola_actions_dialog-ok",
+      "duplicate_of": "nuvola_actions_ok",
       "label": "Button Accept",
       "context": "actions"
     },
@@ -4181,7 +4183,7 @@
       "file": "ok.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["ok", "check", "yes", "confirm", "accept", "done", "approve"],
-      "duplicate_of": "nuvola_actions_dialog-ok",
+      "duplicates": ["nuvola_actions_dialog-ok", "nuvola_actions_camera_test", "nuvola_actions_games-endturn", "nuvola_actions_button_accept"],
       "label": "Ok",
       "context": "actions"
     },
@@ -4356,7 +4358,7 @@
       "file": "games-endturn.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["checkmark", "check", "done", "complete", "yes", "ok", "accept", "green", "tick", "confirm"],
-      "duplicate_of": "nuvola_actions_dialog-ok",
+      "duplicate_of": "nuvola_actions_ok",
       "label": "Games Endturn",
       "context": "actions"
     },
@@ -4436,7 +4438,7 @@
       "file": "go-previous-document.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["previous", "document", "back", "left", "arrow", "chevron", "navigate", "page"],
-      "duplicate_of": "nuvola_actions_arrow-left",
+      "duplicates": ["nuvola_actions_arrow-left"],
       "label": "Go Previous Document",
       "context": "actions"
     },
@@ -4582,7 +4584,7 @@
       "file": "dialog-ok.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["ok", "checkmark", "confirm", "accept", "yes", "green", "done", "success"],
-      "duplicates": ["nuvola_actions_camera_test", "nuvola_actions_games-endturn", "nuvola_actions_ok", "nuvola_actions_button_accept"],
+      "duplicate_of": "nuvola_actions_ok",
       "label": "Dialog Ok",
       "context": "actions"
     },
@@ -4633,7 +4635,7 @@
       "file": "camera_test.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["camera", "test", "checkmark", "pass", "ok", "green", "verify", "success"],
-      "duplicate_of": "nuvola_actions_dialog-ok",
+      "duplicate_of": "nuvola_actions_ok",
       "label": "Camera Test",
       "context": "actions"
     },
@@ -5379,6 +5381,7 @@
       "file": "tool_timer.png",
       "sizes": [22],
       "hints": ["timer", "clock", "time", "watch", "schedule", "blue", "countdown"],
+      "duplicate_of": "nuvola_apps_clock",
       "label": "Tool Timer",
       "context": "actions"
     },
