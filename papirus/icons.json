@@ -11977,540 +11977,626 @@
       "file": "fcitx-hangul.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Hangul"
+      "label": "Fcitx Hangul",
+      "hints": ["fcitx", "hangul", "korean", "input", "method", "character", "IME"]
     },
     "papirus_actions_fcitx-kbd": {
       "file": "fcitx-kbd.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Fcitx Kbd"
+      "label": "Fcitx Kbd",
+      "hints": ["keyboard", "input", "fcitx", "typing", "keys", "hardware"]
     },
     "papirus_actions_fcitx-kkc": {
       "file": "fcitx-kkc.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Kkc"
+      "label": "Fcitx Kkc",
+      "hints": ["japanese", "input", "fcitx", "kana", "kanji", "kkc", "text"]
     },
     "papirus_actions_fcitx-pinyin": {
       "file": "fcitx-pinyin.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Pinyin"
+      "label": "Fcitx Pinyin",
+      "hints": ["chinese", "input", "fcitx", "pinyin", "characters", "language", "typing"]
     },
     "papirus_actions_fcitx-punc-active": {
       "file": "fcitx-punc-active.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Fcitx Punc Active"
+      "label": "Fcitx Punc Active",
+      "hints": ["punctuation", "input", "fcitx", "active", "period", "comma", "symbols"]
     },
     "papirus_actions_fcitx-punc-inactive": {
       "file": "fcitx-punc-inactive.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Fcitx Punc Inactive"
+      "label": "Fcitx Punc Inactive",
+      "hints": ["punctuation", "input", "fcitx", "inactive", "disabled", "period", "comma"]
     },
     "papirus_actions_fcitx-remind-active": {
       "file": "fcitx-remind-active.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Remind Active"
+      "label": "Fcitx Remind Active",
+      "hints": ["reminder", "pin", "fcitx", "active", "notification", "thumbtack"]
     },
     "papirus_actions_fcitx-remind-inactive": {
       "file": "fcitx-remind-inactive.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Remind Inactive"
+      "label": "Fcitx Remind Inactive",
+      "hints": ["reminder", "pin", "fcitx", "inactive", "disabled", "thumbtack"]
     },
     "papirus_actions_fcitx-rime": {
       "file": "fcitx-rime.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Rime"
+      "label": "Fcitx Rime",
+      "hints": ["chinese", "input", "fcitx", "rime", "character", "language", "typing"]
     },
     "papirus_actions_fcitx-rime-deploy": {
       "file": "fcitx-rime-deploy.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Rime Deploy"
+      "label": "Fcitx Rime Deploy",
+      "hints": ["deploy", "checkmark", "fcitx", "rime", "confirm", "apply", "circle"]
     },
     "papirus_actions_fcitx-rime-sync": {
       "file": "fcitx-rime-sync.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Rime Sync"
+      "label": "Fcitx Rime Sync",
+      "hints": ["cloud", "sync", "fcitx", "rime", "upload", "backup", "synchronize"]
     },
     "papirus_actions_fcitx-sayura": {
       "file": "fcitx-sayura.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Sayura"
+      "label": "Fcitx Sayura",
+      "hints": ["sinhala", "input", "fcitx", "sayura", "language", "script", "typing"]
     },
     "papirus_actions_fcitx-shuangpin": {
       "file": "fcitx-shuangpin.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Shuangpin"
+      "label": "Fcitx Shuangpin",
+      "hints": ["chinese", "input", "fcitx", "shuangpin", "pinyin", "language", "typing"]
     },
     "papirus_actions_fcitx-skk": {
       "file": "fcitx-skk.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Skk"
+      "label": "Fcitx Skk",
+      "hints": ["japanese", "input", "fcitx", "skk", "kana", "kanji", "typing"]
     },
     "papirus_actions_fcitx-sunpinyin": {
       "file": "fcitx-sunpinyin.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Sunpinyin"
+      "label": "Fcitx Sunpinyin",
+      "hints": ["chinese", "input", "fcitx", "sunpinyin", "globe", "language", "international"]
     },
     "papirus_actions_fcitx-unikey": {
       "file": "fcitx-unikey.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Unikey"
+      "label": "Fcitx Unikey",
+      "hints": ["vietnamese", "input", "fcitx", "unikey", "language", "typing", "text"]
     },
     "papirus_actions_fcitx-vk-inactive": {
       "file": "fcitx-vk-inactive.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Fcitx Vk Inactive"
+      "label": "Fcitx Vk Inactive",
+      "hints": ["keyboard", "virtual", "fcitx", "inactive", "disabled", "input", "keys"]
     },
     "papirus_actions_fcitx-wubi": {
       "file": "fcitx-wubi.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Wubi"
+      "label": "Fcitx Wubi",
+      "hints": ["chinese", "input", "fcitx", "wubi", "character", "language", "typing"]
     },
     "papirus_actions_fcitx-ziranma": {
       "file": "fcitx-ziranma.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fcitx Ziranma"
+      "label": "Fcitx Ziranma",
+      "hints": ["chinese", "input", "fcitx", "ziranma", "phonetic", "language", "typing"]
     },
     "papirus_actions_feather-camera-off-symbolic": {
       "file": "feather-camera-off-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Camera Off Symbolic"
+      "label": "Feather Camera Off Symbolic",
+      "hints": ["camera", "off", "disabled", "photo", "video", "crossed", "no-camera"]
     },
     "papirus_actions_feather-log-in-symbolic": {
       "file": "feather-log-in-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Log In Symbolic"
+      "label": "Feather Log In Symbolic",
+      "hints": ["login", "signin", "arrow", "enter", "authenticate", "access"]
     },
     "papirus_actions_feather-minimize-2-symbolic": {
       "file": "feather-minimize-2-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Minimize 2 Symbolic"
+      "label": "Feather Minimize 2 Symbolic",
+      "hints": ["minimize", "shrink", "arrows", "inward", "collapse", "reduce", "window"]
     },
     "papirus_actions_feather-minus-circle-symbolic": {
       "file": "feather-minus-circle-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Minus Circle Symbolic"
+      "label": "Feather Minus Circle Symbolic",
+      "hints": ["minus", "remove", "subtract", "circle", "delete", "decrease"]
     },
     "papirus_actions_feather-plus-circle-symbolic": {
       "file": "feather-plus-circle-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Plus Circle Symbolic"
+      "label": "Feather Plus Circle Symbolic",
+      "hints": ["plus", "add", "create", "circle", "new", "increase"]
     },
     "papirus_actions_feather-shield-off-symbolic": {
       "file": "feather-shield-off-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Shield Off Symbolic"
+      "label": "Feather Shield Off Symbolic",
+      "hints": ["shield", "off", "security", "disabled", "unprotected", "crossed"]
     },
     "papirus_actions_feather-shield-symbolic": {
       "file": "feather-shield-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Shield Symbolic"
+      "label": "Feather Shield Symbolic",
+      "hints": ["shield", "security", "protection", "safety", "defense", "guard"]
     },
     "papirus_actions_feather-user-plus-symbolic": {
       "file": "feather-user-plus-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather User Plus Symbolic"
+      "label": "Feather User Plus Symbolic",
+      "hints": ["user", "add", "person", "plus", "account", "new-user", "register"]
     },
     "papirus_actions_feather-zap-symbolic": {
       "file": "feather-zap-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Feather Zap Symbolic"
+      "label": "Feather Zap Symbolic",
+      "hints": ["lightning", "bolt", "zap", "energy", "power", "flash", "electric"]
     },
     "papirus_actions_filename-and-amarok": {
       "file": "filename-and-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename And Amarok"
+      "label": "Filename And Amarok",
+      "hints": ["ampersand", "and", "filename", "amarok", "music", "pattern", "symbol"]
     },
     "papirus_actions_filename-discnumber-amarok": {
       "file": "filename-discnumber-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Filename Discnumber Amarok"
+      "label": "Filename Discnumber Amarok",
+      "hints": ["hash", "number", "disc", "amarok", "music", "filename", "pattern"]
     },
     "papirus_actions_filename-divider": {
       "file": "filename-divider.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename Divider"
+      "label": "Filename Divider",
+      "hints": ["divider", "separator", "vertical", "bar", "line", "filename"]
     },
     "papirus_actions_filename-dot-amarok": {
       "file": "filename-dot-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Filename Dot Amarok"
+      "label": "Filename Dot Amarok",
+      "hints": ["dot", "period", "separator", "amarok", "music", "filename", "pattern"]
     },
     "papirus_actions_filename-initial-amarok": {
       "file": "filename-initial-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename Initial Amarok"
+      "label": "Filename Initial Amarok",
+      "hints": ["initial", "capitalize", "text", "amarok", "music", "filename", "case"]
     },
     "papirus_actions_filename-moodbar": {
       "file": "filename-moodbar.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename Moodbar"
+      "label": "Filename Moodbar",
+      "hints": ["moodbar", "spectrum", "colors", "music", "visualization", "rainbow", "bars"]
     },
     "papirus_actions_filename-slash-amarok": {
       "file": "filename-slash-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename Slash Amarok"
+      "label": "Filename Slash Amarok",
+      "hints": ["slash", "separator", "path", "amarok", "music", "filename", "divider"]
     },
     "papirus_actions_filename-space-amarok": {
       "file": "filename-space-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename Space Amarok"
+      "label": "Filename Space Amarok",
+      "hints": ["space", "underscore", "separator", "amarok", "music", "filename", "gap"]
     },
     "papirus_actions_filename-title-amarok": {
       "file": "filename-title-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename Title Amarok"
+      "label": "Filename Title Amarok",
+      "hints": ["title", "tag", "label", "amarok", "music", "filename", "metadata"]
     },
     "papirus_actions_filename-underscore-amarok": {
       "file": "filename-underscore-amarok.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filename Underscore Amarok"
+      "label": "Filename Underscore Amarok",
+      "hints": ["underscore", "separator", "amarok", "music", "filename", "pattern", "character"]
     },
     "papirus_actions_fill-rule-even-odd": {
       "file": "fill-rule-even-odd.svg",
       "sizes": [16, 22],
       "context": "actions",
-      "label": "Fill Rule Even Odd"
+      "label": "Fill Rule Even Odd",
+      "hints": ["fill", "even-odd", "overlap", "vector", "shapes", "graphics", "rule"]
     },
     "papirus_actions_fill-rule-nonzero": {
       "file": "fill-rule-nonzero.svg",
       "sizes": [16, 22],
       "context": "actions",
-      "label": "Fill Rule Nonzero"
+      "label": "Fill Rule Nonzero",
+      "hints": ["fill", "nonzero", "solid", "overlap", "vector", "shapes", "graphics"]
     },
     "papirus_actions_filmgrain": {
       "file": "filmgrain.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Filmgrain"
+      "label": "Filmgrain",
+      "hints": ["film", "grain", "noise", "texture", "effect", "photo", "editing"]
     },
     "papirus_actions_filter-active": {
       "file": "filter-active.svg",
       "sizes": [16],
       "context": "actions",
-      "label": "Filter Active"
+      "label": "Filter Active",
+      "hints": ["filter", "active", "sliders", "controls", "adjust", "settings"]
     },
     "papirus_actions_filter-inactive": {
       "file": "filter-inactive.svg",
       "sizes": [16],
       "context": "actions",
-      "label": "Filter Inactive"
+      "label": "Filter Inactive",
+      "hints": ["filter", "inactive", "disabled", "sliders", "controls", "grayed"]
     },
     "papirus_actions_filter-stalled": {
       "file": "filter-stalled.svg",
       "sizes": [16],
       "context": "actions",
-      "label": "Filter Stalled"
+      "label": "Filter Stalled",
+      "hints": ["filter", "stalled", "paused", "sliders", "controls", "stopped"]
     },
     "papirus_actions_financial-account": {
       "file": "financial-account.svg",
       "sizes": [48],
       "context": "actions",
-      "label": "Financial Account"
+      "label": "Financial Account",
+      "hints": ["credit-card", "financial", "payment", "bank", "money", "account", "card"]
     },
     "papirus_actions_financial-categories": {
       "file": "financial-categories.svg",
       "sizes": [48],
       "context": "actions",
-      "label": "Financial Categories"
+      "label": "Financial Categories",
+      "hints": ["categories", "grid", "colors", "classify", "organize", "financial", "groups"]
     },
     "papirus_actions_financial-forecast": {
       "file": "financial-forecast.svg",
       "sizes": [48],
       "context": "actions",
-      "label": "Financial Forecast"
+      "label": "Financial Forecast",
+      "hints": ["forecast", "crystal-ball", "prediction", "financial", "stars", "future", "planning"]
     },
     "papirus_actions_financial-investments": {
       "file": "financial-investments.svg",
       "sizes": [48],
       "context": "actions",
-      "label": "Financial Investments"
+      "label": "Financial Investments",
+      "hints": ["investments", "growth", "arrow", "upward", "financial", "chart", "green"]
     },
     "papirus_actions_financial-list": {
       "file": "financial-list.svg",
       "sizes": [48],
       "context": "actions",
-      "label": "Financial List"
+      "label": "Financial List",
+      "hints": ["list", "spreadsheet", "ledger", "financial", "table", "transactions", "rows"]
     },
     "papirus_actions_financial-payees": {
       "file": "financial-payees.svg",
       "sizes": [48],
       "context": "actions",
-      "label": "Financial Payees"
+      "label": "Financial Payees",
+      "hints": ["payees", "people", "contacts", "financial", "group", "users", "purple"]
     },
     "papirus_actions_financial-report": {
       "file": "financial-report.svg",
       "sizes": [48],
       "context": "actions",
-      "label": "Financial Report"
+      "label": "Financial Report",
+      "hints": ["report", "pie-chart", "analytics", "financial", "chart", "statistics", "data"]
     },
     "papirus_actions_financial-schedule": {
       "file": "financial-schedule.svg",
       "sizes": [48],
       "context": "actions",
       "label": "Financial Schedule",
-      "duplicate_of": "papirus_apps_korganizer"
+      "duplicate_of": "papirus_apps_korganizer",
+      "hints": ["schedule", "calendar", "document", "clock", "financial", "timeline", "planner"]
     },
     "papirus_actions_find-location": {
       "file": "find-location.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Find Location"
+      "label": "Find Location",
+      "hints": ["location", "crosshair", "target", "find", "gps", "map", "position"]
     },
     "papirus_actions_firewalled": {
       "file": "firewalled.svg",
       "sizes": [16],
       "context": "actions",
-      "label": "Firewalled"
+      "label": "Firewalled",
+      "hints": ["firewall", "flame", "fire", "security", "network", "blocked", "protection"]
     },
     "papirus_actions_fitbest": {
       "file": "fitbest.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fitbest"
+      "label": "Fitbest",
+      "hints": ["fit", "expand", "arrows", "zoom", "resize", "fullscreen", "optimal"]
     },
     "papirus_actions_fitheight": {
       "file": "fitheight.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fitheight"
+      "label": "Fitheight",
+      "hints": ["fit", "height", "vertical", "arrow", "resize", "stretch", "scale"]
     },
     "papirus_actions_fitsize": {
       "file": "fitsize.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fitsize"
+      "label": "Fitsize",
+      "hints": ["fit", "size", "pixels", "dimensions", "resize", "scale", "measure"]
     },
     "papirus_actions_fitwidth": {
       "file": "fitwidth.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fitwidth"
+      "label": "Fitwidth",
+      "hints": ["fit", "width", "horizontal", "arrow", "resize", "stretch", "scale"]
     },
     "papirus_actions_flag": {
       "file": "flag.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Flag"
+      "label": "Flag",
+      "hints": ["flag", "mark", "bookmark", "tag", "indicator", "banner"]
     },
     "papirus_actions_flag-black": {
       "file": "flag-black.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Flag Black"
+      "label": "Flag Black",
+      "hints": ["flag", "black", "mark", "dark", "indicator", "banner"]
     },
     "papirus_actions_flag-blue": {
       "file": "flag-blue.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Flag Blue"
+      "label": "Flag Blue",
+      "hints": ["flag", "blue", "mark", "indicator", "banner", "color"]
     },
     "papirus_actions_flag-green": {
       "file": "flag-green.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Flag Green"
+      "label": "Flag Green",
+      "hints": ["flag", "green", "mark", "indicator", "banner", "color"]
     },
     "papirus_actions_flag-red": {
       "file": "flag-red.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Flag Red"
+      "label": "Flag Red",
+      "hints": ["flag", "red", "mark", "warning", "indicator", "banner", "color"]
     },
     "papirus_actions_flag-yellow": {
       "file": "flag-yellow.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Flag Yellow"
+      "label": "Flag Yellow",
+      "hints": ["flag", "yellow", "mark", "caution", "indicator", "banner", "color"]
     },
     "papirus_actions_flatten_simplify": {
       "file": "flatten_simplify.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
-      "label": "Flatten Simplify"
+      "label": "Flatten Simplify",
+      "hints": ["flatten", "simplify", "path", "nodes", "vector", "curves", "reduce"]
     },
     "papirus_actions_focus-legacy-systray": {
       "file": "focus-legacy-systray.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Focus Legacy Systray"
+      "label": "Focus Legacy Systray",
+      "hints": ["systray", "focus", "tray", "panel", "legacy", "taskbar"]
     },
     "papirus_actions_focus-top-bar": {
       "file": "focus-top-bar.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Focus Top Bar"
+      "label": "Focus Top Bar",
+      "hints": ["topbar", "focus", "panel", "menubar", "toolbar", "bar"]
     },
     "papirus_actions_focus-windows": {
       "file": "focus-windows.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Focus Windows"
+      "label": "Focus Windows",
+      "hints": ["windows", "focus", "switch", "desktop", "overlapping", "manager"]
     },
     "papirus_actions_folder-copy": {
       "file": "folder-copy.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Folder Copy"
+      "label": "Folder Copy",
+      "hints": ["folder", "copy", "duplicate", "directory", "files", "clipboard"]
     },
     "papirus_actions_folder-move": {
       "file": "folder-move.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Folder Move"
+      "label": "Folder Move",
+      "hints": ["folder", "move", "transfer", "arrow", "directory", "relocate"]
     },
     "papirus_actions_folder-new": {
       "file": "folder-new.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Folder New"
+      "label": "Folder New",
+      "hints": ["folder", "new", "create", "plus", "directory", "add"]
     },
     "papirus_actions_folder-open-recent": {
       "file": "folder-open-recent.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Folder Open Recent"
+      "label": "Folder Open Recent",
+      "hints": ["folder", "recent", "clock", "history", "open", "directory", "time"]
     },
     "papirus_actions_folder-sync": {
       "file": "folder-sync.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Folder Sync"
+      "label": "Folder Sync",
+      "hints": ["folder", "sync", "refresh", "synchronize", "directory", "update"]
     },
     "papirus_actions_font-select": {
       "file": "font-select.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Font Select"
+      "label": "Font Select",
+      "hints": ["font", "select", "text", "typography", "cursor", "choose", "typeface"]
     },
     "papirus_actions_footsteps": {
       "file": "footsteps.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Footsteps"
+      "label": "Footsteps",
+      "hints": ["footsteps", "footprints", "walking", "steps", "tracking", "shoes", "trail"]
     },
     "papirus_actions_forecast": {
       "file": "forecast.svg",
       "sizes": [22, 32],
       "context": "actions",
-      "label": "Forecast"
+      "label": "Forecast",
+      "hints": ["forecast", "crystal-ball", "prediction", "stars", "future", "weather"]
     },
     "papirus_actions_fork": {
       "file": "fork.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Fork"
+      "label": "Fork",
+      "hints": ["fork", "branch", "split", "diverge", "git", "version-control"]
     },
     "papirus_actions_format-add-node": {
       "file": "format-add-node.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Add Node"
+      "label": "Format Add Node",
+      "hints": ["node", "add", "path", "vector", "point", "plus", "bezier"]
     },
     "papirus_actions_format-align-vertical-center": {
       "file": "format-align-vertical-center.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Align Vertical Center"
+      "label": "Format Align Vertical Center",
+      "hints": ["align", "vertical", "center", "middle", "format", "layout"]
     },
     "papirus_actions_format-break-node": {
       "file": "format-break-node.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Break Node"
+      "label": "Format Break Node",
+      "hints": ["node", "break", "path", "vector", "disconnect", "split", "point"]
     },
     "papirus_actions_format-connect-node": {
       "file": "format-connect-node.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Connect Node"
+      "label": "Format Connect Node",
+      "hints": ["node", "connect", "join", "path", "vector", "link", "point"]
     },
     "papirus_actions_format-convert-to-path": {
       "file": "format-convert-to-path.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Convert To Path"
+      "label": "Format Convert To Path",
+      "hints": ["convert", "path", "object", "vector", "outline", "nodes", "transform"]
     },
     "papirus_actions_format-currency": {
       "file": "format-currency.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Currency"
+      "label": "Format Currency",
+      "hints": ["currency", "dollar", "money", "format", "financial", "symbol", "price"]
     },
     "papirus_actions_format-font-size-less": {
       "file": "format-font-size-less.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Font Size Less"
+      "label": "Format Font Size Less",
+      "hints": ["font", "size", "decrease", "smaller", "text", "reduce", "typography"]
     },
     "papirus_actions_format-font-size-more": {
       "file": "format-font-size-more.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Font Size More"
+      "label": "Format Font Size More",
+      "hints": ["font", "size", "increase", "larger", "text", "bigger", "typography"]
     },
     "papirus_actions_format-indent-less": {
       "file": "format-indent-less.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Indent Less"
+      "label": "Format Indent Less",
+      "hints": ["indent", "decrease", "outdent", "left", "text", "format", "paragraph"]
     },
     "papirus_actions_format-indent-more": {
       "file": "format-indent-more.svg",
@@ -12518,26 +12604,30 @@
       "context": "actions",
       "symbolic": true,
       "label": "Format Indent More",
-      "duplicates": ["papirus_actions_media-playlist-play"]
+      "duplicates": ["papirus_actions_media-playlist-play"],
+      "hints": ["indent", "increase", "right", "text", "format", "paragraph", "tab"]
     },
     "papirus_actions_format-insert-node": {
       "file": "format-insert-node.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Insert Node"
+      "label": "Format Insert Node",
+      "hints": ["node", "insert", "add", "path", "vector", "point", "plus"]
     },
     "papirus_actions_format-join-node": {
       "file": "format-join-node.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Join Node"
+      "label": "Format Join Node",
+      "hints": ["node", "join", "merge", "path", "vector", "connect", "combine"]
     },
     "papirus_actions_format-justify-center": {
       "file": "format-justify-center.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Justify Center"
+      "label": "Format Justify Center",
+      "hints": ["center", "align", "text", "justify", "format", "paragraph", "middle"]
     },
     "papirus_actions_format-justify-fill": {
       "file": "format-justify-fill.svg",
@@ -12545,295 +12635,342 @@
       "context": "actions",
       "symbolic": true,
       "duplicates": ["papirus_actions_view-media-playlist", "papirus_actions_view-financial-list"],
-      "label": "Format Justify Fill"
+      "label": "Format Justify Fill",
+      "hints": ["justify", "text alignment", "full justify", "paragraph", "horizontal lines", "format"]
     },
     "papirus_actions_format-justify-left": {
       "file": "format-justify-left.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Justify Left"
+      "label": "Format Justify Left",
+      "hints": ["left align", "text alignment", "align left", "paragraph", "horizontal lines", "format"]
     },
     "papirus_actions_format-justify-right": {
       "file": "format-justify-right.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Justify Right"
+      "label": "Format Justify Right",
+      "hints": ["right align", "text alignment", "align right", "paragraph", "horizontal lines", "format"]
     },
     "papirus_actions_format-line-spacing-double": {
       "file": "format-line-spacing-double.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Line Spacing Double"
+      "label": "Format Line Spacing Double",
+      "hints": ["line spacing", "double space", "paragraph spacing", "vertical arrow", "text format", "leading"]
     },
     "papirus_actions_format-line-spacing-normal": {
       "file": "format-line-spacing-normal.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Line Spacing Normal"
+      "label": "Format Line Spacing Normal",
+      "hints": ["line spacing", "single space", "normal spacing", "vertical arrow", "text format", "leading"]
     },
     "papirus_actions_format-line-spacing-triple": {
       "file": "format-line-spacing-triple.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Line Spacing Triple"
+      "label": "Format Line Spacing Triple",
+      "hints": ["line spacing", "triple space", "wide spacing", "vertical arrow", "text format", "leading"]
     },
     "papirus_actions_format-list-unordered": {
       "file": "format-list-unordered.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format List Unordered"
+      "label": "Format List Unordered",
+      "hints": ["bullet list", "unordered list", "bullets", "list items", "text format", "dot list"]
     },
     "papirus_actions_format-node-corner": {
       "file": "format-node-corner.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Node Corner"
+      "label": "Format Node Corner",
+      "hints": ["node", "corner", "sharp angle", "vector path", "right angle", "bezier node"]
     },
     "papirus_actions_format-node-curve": {
       "file": "format-node-curve.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Node Curve"
+      "label": "Format Node Curve",
+      "hints": ["node", "curve", "smooth", "vector path", "bezier", "rounded"]
     },
     "papirus_actions_format-node-line": {
       "file": "format-node-line.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Node Line"
+      "label": "Format Node Line",
+      "hints": ["node", "line segment", "straight line", "vector path", "diagonal", "endpoints"]
     },
     "papirus_actions_format-node-smooth": {
       "file": "format-node-smooth.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Node Smooth"
+      "label": "Format Node Smooth",
+      "hints": ["node", "smooth", "tangent handles", "vector path", "bezier", "control points"]
     },
     "papirus_actions_format-node-symmetric": {
       "file": "format-node-symmetric.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Node Symmetric"
+      "label": "Format Node Symmetric",
+      "hints": ["node", "symmetric", "equal handles", "vector path", "bezier", "control points"]
     },
     "papirus_actions_format-number-percent": {
       "file": "format-number-percent.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Number Percent"
+      "label": "Format Number Percent",
+      "hints": ["percent", "percentage", "% symbol", "number format", "ratio", "proportion"]
     },
     "papirus_actions_format-precision-less": {
       "file": "format-precision-less.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Precision Less"
+      "label": "Format Precision Less",
+      "hints": ["decimal", "precision", "fewer digits", "number format", "decrease", "decimal places"]
     },
     "papirus_actions_format-precision-more": {
       "file": "format-precision-more.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Precision More"
+      "label": "Format Precision More",
+      "hints": ["decimal", "precision", "more digits", "number format", "increase", "decimal places"]
     },
     "papirus_actions_format-remove-node": {
       "file": "format-remove-node.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Remove Node"
+      "label": "Format Remove Node",
+      "hints": ["remove node", "delete node", "minus", "vector path", "bezier", "node editing"]
     },
     "papirus_actions_format-segment-curve": {
       "file": "format-segment-curve.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Segment Curve"
+      "label": "Format Segment Curve",
+      "hints": ["segment", "curve", "arc", "vector path", "bezier", "curved line"]
     },
     "papirus_actions_format-segment-line": {
       "file": "format-segment-line.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Segment Line"
+      "label": "Format Segment Line",
+      "hints": ["segment", "line", "straight", "vector path", "diagonal", "line segment"]
     },
     "papirus_actions_format-text-blockquote": {
       "file": "format-text-blockquote.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Text Blockquote"
+      "label": "Format Text Blockquote",
+      "hints": ["blockquote", "quotation marks", "quote", "text format", "citation", "double quotes"]
     },
     "papirus_actions_format-text-bold": {
       "file": "format-text-bold.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Bold"
+      "label": "Format Text Bold",
+      "hints": ["bold", "text format", "heavy weight", "letter a", "font style", "strong"]
     },
     "papirus_actions_format-text-capitalize": {
       "file": "format-text-capitalize.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Text Capitalize"
+      "label": "Format Text Capitalize",
+      "hints": ["capitalize", "title case", "uppercase", "text format", "Ab", "letter case"]
     },
     "papirus_actions_format-text-direction-horizontal": {
       "file": "format-text-direction-horizontal.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Format Text Direction Horizontal"
+      "label": "Format Text Direction Horizontal",
+      "hints": ["horizontal text", "text direction", "right arrow", "letter A", "writing direction", "layout"]
     },
     "papirus_actions_format-text-direction-ltr": {
       "file": "format-text-direction-ltr.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Direction Ltr"
+      "label": "Format Text Direction Ltr",
+      "hints": ["left to right", "text direction", "LTR", "right arrow", "writing direction", "format"]
     },
     "papirus_actions_format-text-direction-r2l": {
       "file": "format-text-direction-r2l.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Format Text Direction R2L"
+      "label": "Format Text Direction R2L",
+      "hints": ["right to left", "text direction", "RTL", "left arrow", "writing direction", "format"]
     },
     "papirus_actions_format-text-direction-rtl": {
       "file": "format-text-direction-rtl.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Direction Rtl"
+      "label": "Format Text Direction Rtl",
+      "hints": ["right to left", "text direction", "RTL", "left arrow", "writing direction", "format"]
     },
     "papirus_actions_format-text-direction-vertical": {
       "file": "format-text-direction-vertical.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Format Text Direction Vertical"
+      "label": "Format Text Direction Vertical",
+      "hints": ["vertical text", "text direction", "down arrow", "letter A", "writing direction", "layout"]
     },
     "papirus_actions_format-text-direction-vertical-lr": {
       "file": "format-text-direction-vertical-lr.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
-      "label": "Format Text Direction Vertical Lr"
+      "label": "Format Text Direction Vertical Lr",
+      "hints": ["vertical text", "left to right", "text direction", "column layout", "writing direction", "format"]
     },
     "papirus_actions_format-text-italic": {
       "file": "format-text-italic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Italic"
+      "label": "Format Text Italic",
+      "hints": ["italic", "text format", "slanted", "letter a", "font style", "emphasis"]
     },
     "papirus_actions_format-text-larger": {
       "file": "format-text-larger.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Larger"
+      "label": "Format Text Larger",
+      "hints": ["larger text", "increase size", "font size", "big A", "text format", "zoom in"]
     },
     "papirus_actions_format-text-lowercase": {
       "file": "format-text-lowercase.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Text Lowercase"
+      "label": "Format Text Lowercase",
+      "hints": ["lowercase", "text case", "small letters", "ab", "text format", "letter case"]
     },
     "papirus_actions_format-text-remove-formatting": {
       "file": "format-text-remove-formatting.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Remove Formatting"
+      "label": "Format Text Remove Formatting",
+      "hints": ["remove formatting", "clear format", "strikethrough", "eraser", "plain text", "reset style"]
     },
     "papirus_actions_format-text-smaller": {
       "file": "format-text-smaller.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Smaller"
+      "label": "Format Text Smaller",
+      "hints": ["smaller text", "decrease size", "font size", "small A", "text format", "zoom out"]
     },
     "papirus_actions_format-text-strikethrough": {
       "file": "format-text-strikethrough.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Strikethrough"
+      "label": "Format Text Strikethrough",
+      "hints": ["strikethrough", "text format", "line through", "crossed out", "delete text", "font style"]
     },
     "papirus_actions_format-text-subscript": {
       "file": "format-text-subscript.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Text Subscript"
+      "label": "Format Text Subscript",
+      "hints": ["subscript", "text format", "below baseline", "small text", "chemical formula", "font style"]
     },
     "papirus_actions_format-text-superscript": {
       "file": "format-text-superscript.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Text Superscript"
+      "label": "Format Text Superscript",
+      "hints": ["superscript", "text format", "above baseline", "exponent", "power", "font style"]
     },
     "papirus_actions_format-text-symbol": {
       "file": "format-text-symbol.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Text Symbol"
+      "label": "Format Text Symbol",
+      "hints": ["symbol", "pi", "special character", "greek letter", "insert symbol", "math"]
     },
     "papirus_actions_format-text-underline": {
       "file": "format-text-underline.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Format Text Underline"
+      "label": "Format Text Underline",
+      "hints": ["underline", "text format", "line below", "letter a", "font style", "emphasis"]
     },
     "papirus_actions_format-text-uppercase": {
       "file": "format-text-uppercase.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Format Text Uppercase"
+      "label": "Format Text Uppercase",
+      "hints": ["uppercase", "text case", "capital letters", "AB", "text format", "all caps"]
     },
     "papirus_actions_formula": {
       "file": "formula.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Formula"
+      "label": "Formula",
+      "hints": ["formula", "square root", "math", "equation", "radical", "calculation"]
     },
     "papirus_actions_games-achievements": {
       "file": "games-achievements.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Games Achievements"
+      "label": "Games Achievements",
+      "hints": ["achievement", "medal", "ribbon", "award", "trophy", "gaming", "badge"]
     },
     "papirus_actions_games-config-board": {
       "file": "games-config-board.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Games Config Board"
+      "label": "Games Config Board",
+      "hints": ["game board", "grid", "checkerboard", "board game", "squares", "configuration"]
     },
     "papirus_actions_games-config-tiles": {
       "file": "games-config-tiles.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Games Config Tiles"
+      "label": "Games Config Tiles",
+      "hints": ["tiles", "game tiles", "square", "configuration", "puzzle", "board game"]
     },
     "papirus_actions_games-difficult": {
       "file": "games-difficult.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Games Difficult"
+      "label": "Games Difficult",
+      "hints": ["difficulty", "hard", "level bars", "bar chart", "increasing", "challenge"]
     },
     "papirus_actions_games-hint": {
       "file": "games-hint.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Games Hint"
+      "label": "Games Hint",
+      "hints": ["hint", "lightbulb", "idea", "tip", "help", "game hint", "suggestion"]
     },
     "papirus_actions_gcr-gnupg": {
       "file": "gcr-gnupg.svg",
       "sizes": [16],
       "context": "actions",
-      "label": "Gcr Gnupg"
+      "label": "Gcr Gnupg",
+      "hints": ["lock", "padlock", "encryption", "GnuPG", "GPG", "security", "key"]
     },
     "papirus_actions_get-hot-new-stuff": {
       "file": "get-hot-new-stuff.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Get Hot New Stuff"
+      "label": "Get Hot New Stuff",
+      "hints": ["star", "featured", "new content", "download", "KDE", "hot", "popular"]
     },
     "papirus_actions_giggle-branch": {
       "file": "giggle-branch.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Giggle Branch"
+      "label": "Giggle Branch",
+      "hints": ["branch", "git", "version control", "fork", "split", "merge", "repository"]
     },
     "papirus_actions_globe-symbolic": {
       "file": "globe-symbolic.svg",
@@ -12841,185 +12978,214 @@
       "context": "actions",
       "symbolic": true,
       "label": "Globe Symbolic",
-      "duplicate_of": "papirus_actions_keyboard-layout-filled-symbolic"
+      "duplicate_of": "papirus_actions_keyboard-layout-filled-symbolic",
+      "hints": ["globe", "world", "internet", "earth", "global", "web", "network"]
     },
     "papirus_actions_go-bottom": {
       "file": "go-bottom.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Bottom"
+      "label": "Go Bottom",
+      "hints": ["bottom", "down arrow", "scroll end", "go to bottom", "navigate", "end"]
     },
     "papirus_actions_go-down": {
       "file": "go-down.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Down"
+      "label": "Go Down",
+      "hints": ["down", "arrow down", "navigate", "downward", "scroll", "move down"]
     },
     "papirus_actions_go-first": {
       "file": "go-first.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go First"
+      "label": "Go First",
+      "hints": ["first", "left arrow", "beginning", "start", "navigate", "skip back"]
     },
     "papirus_actions_go-home": {
       "file": "go-home.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Home"
+      "label": "Go Home",
+      "hints": ["home", "house", "navigate home", "home page", "main", "start"]
     },
     "papirus_actions_go-jump": {
       "file": "go-jump.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Jump"
+      "label": "Go Jump",
+      "hints": ["jump", "go to", "curved arrow", "navigate", "leap", "redirect"]
     },
     "papirus_actions_go-jump-declaration": {
       "file": "go-jump-declaration.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Go Jump Declaration"
+      "label": "Go Jump Declaration",
+      "hints": ["declaration", "go to", "document arrow", "jump", "code navigation", "definition"]
     },
     "papirus_actions_go-jump-definition": {
       "file": "go-jump-definition.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Go Jump Definition"
+      "label": "Go Jump Definition",
+      "hints": ["definition", "go to", "curly braces", "code", "jump", "source navigation"]
     },
     "papirus_actions_go-jump-rtl": {
       "file": "go-jump-rtl.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Jump Rtl"
+      "label": "Go Jump Rtl",
+      "hints": ["jump", "go to", "curved arrow", "RTL", "right to left", "navigate"]
     },
     "papirus_actions_go-last": {
       "file": "go-last.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Last"
+      "label": "Go Last",
+      "hints": ["last", "right arrow", "end", "finish", "navigate", "skip forward"]
     },
     "papirus_actions_go-next": {
       "file": "go-next.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Next"
+      "label": "Go Next",
+      "hints": ["next", "right arrow", "forward", "navigate", "advance", "move right"]
     },
     "papirus_actions_go-next-context": {
       "file": "go-next-context.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Go Next Context"
+      "label": "Go Next Context",
+      "hints": ["next context", "document arrow", "navigate", "forward", "next match", "search"]
     },
     "papirus_actions_go-next-use": {
       "file": "go-next-use.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Go Next Use"
+      "label": "Go Next Use",
+      "hints": ["next use", "forward", "right arrow", "occurrence", "navigate", "code reference"]
     },
     "papirus_actions_go-parent-folder": {
       "file": "go-parent-folder.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Go Parent Folder"
+      "label": "Go Parent Folder",
+      "hints": ["parent folder", "up directory", "folder", "navigate up", "back", "file manager"]
     },
     "papirus_actions_go-previous": {
       "file": "go-previous.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Previous"
+      "label": "Go Previous",
+      "hints": ["previous", "left arrow", "back", "navigate", "backward", "move left"]
     },
     "papirus_actions_go-previous-context": {
       "file": "go-previous-context.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Go Previous Context"
+      "label": "Go Previous Context",
+      "hints": ["previous context", "document arrow", "navigate", "backward", "previous match", "search"]
     },
     "papirus_actions_go-previous-use": {
       "file": "go-previous-use.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
-      "label": "Go Previous Use"
+      "label": "Go Previous Use",
+      "hints": ["previous use", "backward", "left arrow", "occurrence", "navigate", "code reference"]
     },
     "papirus_actions_go-top": {
       "file": "go-top.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Top"
+      "label": "Go Top",
+      "hints": ["top", "up arrow", "scroll start", "go to top", "navigate", "beginning"]
     },
     "papirus_actions_go-up": {
       "file": "go-up.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
-      "label": "Go Up"
+      "label": "Go Up",
+      "hints": ["up", "arrow up", "navigate", "upward", "scroll", "move up"]
     },
     "papirus_actions_grid-axonometric": {
       "file": "grid-axonometric.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["grid", "axonometric", "isometric", "diamond", "lines", "perspective"],
       "label": "Grid Axonometric"
     },
     "papirus_actions_grid-rectangular": {
       "file": "grid-rectangular.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
+      "hints": ["grid", "rectangular", "square", "lines", "table", "cells", "layout"],
       "label": "Grid Rectangular"
     },
     "papirus_actions_group-delete": {
       "file": "group-delete.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["group", "delete", "remove", "objects", "ungroup", "layer", "minus"],
       "label": "Group Delete"
     },
     "papirus_actions_group-edit": {
       "file": "group-edit.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["group", "edit", "modify", "objects", "layer", "pencil", "change"],
       "label": "Group Edit"
     },
     "papirus_actions_group-new": {
       "file": "group-new.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["group", "new", "create", "add", "objects", "layer", "plus"],
       "label": "Group New"
     },
     "papirus_actions_gtk-convert": {
       "file": "gtk-convert.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["convert", "refresh", "sync", "arrows", "circular", "rotate", "cycle"],
       "label": "Gtk Convert"
     },
     "papirus_actions_gtk-preferences": {
       "file": "gtk-preferences.svg",
       "sizes": [18],
       "context": "actions",
+      "hints": ["preferences", "settings", "gears", "cog", "configure", "options"],
       "label": "Gtk Preferences"
     },
     "papirus_actions_gtk-select-font": {
       "file": "gtk-select-font.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["font", "select", "text", "letter", "typography", "typeface", "A"],
       "label": "Gtk Select Font"
     },
     "papirus_actions_guides": {
       "file": "guides.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
+      "hints": ["guides", "vertical", "lines", "alignment", "ruler", "snap", "layout"],
       "label": "Guides"
     },
     "papirus_actions_handle-sort": {
       "file": "handle-sort.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["sort", "handle", "drag", "reorder", "arrows", "up", "down", "diamond"],
       "label": "Handle Sort"
     },
     "papirus_actions_help-about": {
@@ -13027,54 +13193,63 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["help", "about", "info", "information", "circle", "i"],
       "label": "Help About"
     },
     "papirus_actions_help-contents": {
       "file": "help-contents.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["help", "contents", "question", "mark", "support", "faq", "manual"],
       "label": "Help Contents"
     },
     "papirus_actions_hide-categories": {
       "file": "hide-categories.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["hide", "categories", "tiles", "grid", "faded", "collapse", "squares"],
       "label": "Hide Categories"
     },
     "papirus_actions_hide-reconciled": {
       "file": "hide-reconciled.svg",
       "sizes": [22],
       "context": "actions",
+      "hints": ["hide", "reconciled", "balance", "scale", "finance", "ledger", "accounting"],
       "label": "Hide Reconciled"
     },
     "papirus_actions_hint": {
       "file": "hint.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["hint", "eye", "visibility", "view", "show", "reveal", "peek"],
       "label": "Hint"
     },
     "papirus_actions_home": {
       "file": "home.svg",
       "sizes": [32, 48],
       "context": "actions",
+      "hints": ["home", "house", "building", "roof", "door", "window", "chimney"],
       "label": "Home"
     },
     "papirus_actions_homerun": {
       "file": "homerun.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["homerun", "launcher", "grid", "menu", "squares", "dashboard", "apps"],
       "label": "Homerun"
     },
     "papirus_actions_horizontal": {
       "file": "horizontal.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["horizontal", "landscape", "rectangle", "wide", "orientation", "layout"],
       "label": "Horizontal"
     },
     "papirus_actions_hotpixels": {
       "file": "hotpixels.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["hotpixels", "pixel", "square", "dot", "sensor", "defect", "image"],
       "label": "Hotpixels"
     },
     "papirus_actions_hourglass-symbolic": {
@@ -13082,126 +13257,147 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["hourglass", "timer", "wait", "loading", "sand", "time", "pending"],
       "label": "Hourglass Symbolic"
     },
     "papirus_actions_hypnotoad": {
       "file": "hypnotoad.svg",
       "sizes": [16],
       "context": "actions",
+      "hints": ["hypnotoad", "toad", "frog", "futurama", "meme", "animal"],
       "label": "Hypnotoad"
     },
     "papirus_actions_icon_console": {
       "file": "icon_console.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["console", "terminal", "monitor", "screen", "display", "command", "prompt"],
       "label": "Icon Console"
     },
     "papirus_actions_icon_radio": {
       "file": "icon_radio.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["radio", "receiver", "antenna", "broadcast", "speaker", "dial", "tuner"],
       "label": "Icon Radio"
     },
     "papirus_actions_icon_user": {
       "file": "icon_user.svg",
       "sizes": [16],
       "context": "actions",
+      "hints": ["user", "person", "avatar", "profile", "account", "silhouette"],
       "label": "Icon User"
     },
     "papirus_actions_im-ban-user": {
       "file": "im-ban-user.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["ban", "user", "block", "person", "remove", "forbidden", "red", "circle"],
       "label": "Im Ban User"
     },
     "papirus_actions_im-facebook": {
       "file": "im-facebook.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["facebook", "social", "messenger", "chat", "f", "logo", "meta"],
       "label": "Im Facebook"
     },
     "papirus_actions_im-gadugadu": {
       "file": "im-gadugadu.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["gadugadu", "gadu", "messenger", "chat", "star", "sun", "spiky"],
       "label": "Im Gadugadu"
     },
     "papirus_actions_im-google": {
       "file": "im-google.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["google", "hangouts", "chat", "messenger", "g", "logo", "social"],
       "label": "Im Google"
     },
     "papirus_actions_im-google-talk": {
       "file": "im-google-talk.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["google", "talk", "chat", "speech", "bubble", "messenger", "quotes"],
       "label": "Im Google Talk"
     },
     "papirus_actions_im-groupwise": {
       "file": "im-groupwise.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["groupwise", "novell", "messenger", "chat", "N", "logo", "corporate"],
       "label": "Im Groupwise"
     },
     "papirus_actions_im-icq": {
       "file": "im-icq.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["icq", "messenger", "chat", "flower", "daisy", "logo", "instant"],
       "label": "Im Icq"
     },
     "papirus_actions_im-identi.ca": {
       "file": "im-identi.ca.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["identica", "microblog", "social", "speech", "bubble", "arrow", "chat"],
       "label": "Im Identi Ca"
     },
     "papirus_actions_im-invisible-user": {
       "file": "im-invisible-user.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["invisible", "user", "hidden", "person", "ghost", "offline", "stealth"],
       "label": "Im Invisible User"
     },
     "papirus_actions_im-irc": {
       "file": "im-irc.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["irc", "chat", "terminal", "console", "text", "messenger", "channel"],
       "label": "Im Irc"
     },
     "papirus_actions_im-jabber": {
       "file": "im-jabber.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["jabber", "xmpp", "chat", "messenger", "bubble", "speech", "protocol"],
       "label": "Im Jabber"
     },
     "papirus_actions_im-kick-user": {
       "file": "im-kick-user.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["kick", "user", "remove", "person", "red", "eject", "ban"],
       "label": "Im Kick User"
     },
     "papirus_actions_im-msn": {
       "file": "im-msn.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["msn", "microsoft", "messenger", "chat", "windows", "squares", "logo"],
       "label": "Im Msn"
     },
     "papirus_actions_im-qq": {
       "file": "im-qq.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["qq", "tencent", "penguin", "chat", "messenger", "chinese", "bird"],
       "label": "Im Qq"
     },
     "papirus_actions_im-skype": {
       "file": "im-skype.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["skype", "video", "call", "chat", "microsoft", "S", "logo", "circle"],
       "label": "Im Skype"
     },
     "papirus_actions_im-twitter": {
       "file": "im-twitter.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["twitter", "bird", "social", "tweet", "logo", "microblog"],
       "label": "Im Twitter"
     },
     "papirus_actions_im-user": {
@@ -13209,24 +13405,28 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["user", "person", "contact", "avatar", "profile", "silhouette", "online"],
       "label": "Im User"
     },
     "papirus_actions_im-user-away": {
       "file": "im-user-away.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["user", "away", "person", "clock", "idle", "status", "absent"],
       "label": "Im User Away"
     },
     "papirus_actions_im-user-busy": {
       "file": "im-user-busy.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["user", "busy", "person", "minus", "status", "unavailable", "do-not-disturb"],
       "label": "Im User Busy"
     },
     "papirus_actions_im-user-offline": {
       "file": "im-user-offline.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["user", "offline", "person", "gray", "disconnected", "status", "faded"],
       "label": "Im User Offline"
     },
     "papirus_actions_im-user-online": {
@@ -13234,18 +13434,21 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["user", "online", "person", "green", "available", "status", "connected"],
       "label": "Im User Online"
     },
     "papirus_actions_im-yahoo": {
       "file": "im-yahoo.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["yahoo", "messenger", "chat", "Y", "logo", "exclamation", "social"],
       "label": "Im Yahoo"
     },
     "papirus_actions_im-youtube": {
       "file": "im-youtube.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["youtube", "video", "play", "rectangle", "streaming", "logo", "media"],
       "label": "Im Youtube"
     },
     "papirus_actions_image-crop": {
@@ -13253,6 +13456,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["crop", "image", "trim", "cut", "resize", "frame", "selection"],
       "label": "Image Crop"
     },
     "papirus_actions_image-denoise": {
@@ -13260,6 +13464,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["denoise", "image", "noise", "dots", "pixels", "filter", "clean", "scatter"],
       "label": "Image Denoise"
     },
     "papirus_actions_image-filter": {
@@ -13267,6 +13472,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["filter", "image", "funnel", "curve", "levels", "adjust", "tone"],
       "label": "Image Filter"
     },
     "papirus_actions_image-red-eye": {
@@ -13274,6 +13480,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["red-eye", "eye", "remove", "photo", "fix", "correction", "flash"],
       "label": "Image Red Eye"
     },
     "papirus_actions_image-resize-symbolic": {
@@ -13281,6 +13488,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["resize", "image", "scale", "corners", "expand", "dimensions", "transform"],
       "label": "Image Resize Symbolic",
       "duplicates": ["papirus_actions_kdenlive-zoom-large"]
     },
@@ -13289,6 +13497,7 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["sharpen", "image", "triangle", "enhance", "clarity", "focus", "detail"],
       "label": "Image Sharpen"
     },
     "papirus_actions_image-straighten": {
@@ -13296,12 +13505,14 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "symbolic": true,
+      "hints": ["straighten", "image", "rotate", "angle", "level", "horizon", "tilt"],
       "label": "Image Straighten"
     },
     "papirus_actions_inbox": {
       "file": "inbox.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["inbox", "download", "receive", "tray", "arrow", "down", "mail"],
       "label": "Inbox"
     },
     "papirus_actions_indicator-notification-close-deselect": {

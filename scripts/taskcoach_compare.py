@@ -143,89 +143,50 @@ def compare_inventory(source_icons, target_icons, source_path, target_path):
     return shared
 
 
+def _json_fragment(field, value):
+    """Format a field/value pair as a JSON fragment."""
+    return json.dumps({field: value}, ensure_ascii=False, separators=(", ", ": "))[1:-1]
+
+
 def compare_fields(source_icons, target_icons, shared_keys, source_path, target_path):
-    """Section 4: Compare field values for shared icons."""
+    """Section 4: Compare field values for shared icons.
+
+    Groups by icon_id; for each differing property, shows the full
+    JSON key: value fragment from both source and target.
+    """
     _section_header("FIELD DIFFERENCES")
     print(f"  source: {source_path}")
     print(f"  target: {target_path}")
 
-    label_diffs = []
-    hint_diffs = []
-    context_diffs = []
-    dup_of_diffs = []
-    duplicates_diffs = []
+    icons_with_diffs = []
 
     for key in shared_keys:
         s = source_icons[key]
         t = target_icons[key]
 
-        # Label
-        s_label = s.get("label")
-        t_label = t.get("label")
-        if s_label != t_label:
-            label_diffs.append((key, s_label, t_label))
+        compare_fields = ("label", "hints", "context", "duplicate_of",
+                          "duplicates")
+        field_diffs = []
+        for field in compare_fields:
+            s_val = s.get(field)
+            t_val = t.get(field)
+            if s_val != t_val:
+                field_diffs.append((field, s_val, t_val))
 
-        # Hints
-        s_hints = s.get("hints", [])
-        t_hints = t.get("hints", [])
-        if s_hints != t_hints:
-            hint_diffs.append((key, s_hints, t_hints))
+        if field_diffs:
+            icons_with_diffs.append((key, field_diffs))
 
-        # Context
-        s_ctx = s.get("context")
-        t_ctx = t.get("context")
-        if s_ctx != t_ctx:
-            context_diffs.append((key, s_ctx, t_ctx))
-
-        # duplicate_of
-        s_dup_of = s.get("duplicate_of")
-        t_dup_of = t.get("duplicate_of")
-        if s_dup_of != t_dup_of:
-            dup_of_diffs.append((key, s_dup_of, t_dup_of))
-
-        # duplicates
-        s_dups = s.get("duplicates", [])
-        t_dups = t.get("duplicates", [])
-        if s_dups != t_dups:
-            duplicates_diffs.append((key, s_dups, t_dups))
-
-    total = (len(label_diffs) + len(hint_diffs) + len(context_diffs)
-             + len(dup_of_diffs) + len(duplicates_diffs))
-
-    if total == 0:
+    if not icons_with_diffs:
         print(f"\nAll {len(shared_keys)} shared icons have matching fields.")
         return
 
-    if label_diffs:
-        print(f"\nLabel differences ({len(label_diffs)}):")
-        for key, s_val, t_val in label_diffs:
-            print(f"  {key}")
-            print(f"    source: {s_val}")
-            print(f"    target: {t_val}")
-
-    if hint_diffs:
-        print(f"\nHint differences ({len(hint_diffs)}):")
-        for key, s_val, t_val in hint_diffs:
-            print(f"  {key}")
-            print(f"    source: {s_val}")
-            print(f"    target: {t_val}")
-
-    if context_diffs:
-        print(f"\nContext differences ({len(context_diffs)}):")
-        for key, s_val, t_val in context_diffs:
-            print(f"  {key}: source={s_val}  target={t_val}")
-
-    if dup_of_diffs:
-        print(f"\nduplicate_of differences ({len(dup_of_diffs)}):")
-        for key, s_val, t_val in dup_of_diffs:
-            print(f"  {key}: source={s_val}  target={t_val}")
-
-    if duplicates_diffs:
-        print(f"\nduplicates differences ({len(duplicates_diffs)}):")
-        for key, s_val, t_val in duplicates_diffs:
-            print(f"  {key}")
-            print(f"    source: {s_val}")
-            print(f"    target: {t_val}")
+    print(f"\n{len(icons_with_diffs)} icons with field differences:\n")
+    for key, field_diffs in icons_with_diffs:
+        print(f"  {key}")
+        for field, s_val, t_val in field_diffs:
+            print(f"    source: {_json_fragment(field, s_val)}")
+            print(f"    target: {_json_fragment(field, t_val)}")
+        print()
 
 
 def validate_icon_mapping(theme_name, source_icons, source_icons_path):
