@@ -15239,6 +15239,7 @@
     "papirus_actions_nautilus-folder-search-symbolic": {
       "file": "nautilus-folder-search-symbolic.svg",
       "sizes": [16, 22, 24],
+      "hints": ["folder", "search", "find", "magnifier", "nautilus", "browse", "directory"],
       "context": "actions",
       "symbolic": true,
       "label": "Nautilus Folder Search Symbolic"
@@ -15246,6 +15247,7 @@
     "papirus_actions_network-connect": {
       "file": "network-connect.svg",
       "sizes": [16, 22, 24],
+      "hints": ["network", "connect", "power", "circle", "on", "join", "ethernet"],
       "context": "actions",
       "symbolic": true,
       "label": "Network Connect"
@@ -15253,12 +15255,14 @@
     "papirus_actions_network-disconnect": {
       "file": "network-disconnect.svg",
       "sizes": [16, 22, 24],
+      "hints": ["network", "disconnect", "power", "circle", "off", "leave", "grey"],
       "context": "actions",
       "label": "Network Disconnect"
     },
     "papirus_actions_network-server-vmware": {
       "file": "network-server-vmware.svg",
       "sizes": [16, 22, 24],
+      "hints": ["server", "rack", "network", "vmware", "virtual", "machine", "host"],
       "context": "actions",
       "symbolic": true,
       "duplicate_of": "papirus_devices_network-server-symbolic",
@@ -15268,120 +15272,140 @@
       "file": "new-24h-appointment.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["24h", "appointment", "schedule", "calendar", "day", "clock", "time"],
       "label": "New 24H Appointment"
     },
     "papirus_actions_news-unsubscribe": {
       "file": "news-unsubscribe.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["newspaper", "unsubscribe", "remove", "minus", "news", "feed", "cancel"],
       "label": "News Unsubscribe"
     },
     "papirus_actions_no": {
       "file": "no.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["no", "deny", "reject", "cancel", "close", "x", "circle"],
       "label": "No"
     },
     "papirus_actions_no-marker": {
       "file": "no-marker.svg",
       "sizes": [18],
       "context": "actions",
+      "hints": ["marker", "none", "line", "bar", "dash", "empty"],
       "label": "No Marker"
     },
     "papirus_actions_node-add": {
       "file": "node-add.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "add", "plus", "point", "create", "new", "dot"],
       "label": "Node Add"
     },
     "papirus_actions_node-break": {
       "file": "node-break.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "break", "disconnect", "split", "separate", "path", "line"],
       "label": "Node Break"
     },
     "papirus_actions_node-delete": {
       "file": "node-delete.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "delete", "remove", "minus", "point", "dot"],
       "label": "Node Delete"
     },
     "papirus_actions_node-delete-segment": {
       "file": "node-delete-segment.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "delete", "segment", "remove", "path", "line", "minus"],
       "label": "Node Delete Segment"
     },
     "papirus_actions_node-join": {
       "file": "node-join.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "join", "connect", "merge", "link", "path", "line"],
       "label": "Node Join"
     },
     "papirus_actions_node-join-segment": {
       "file": "node-join-segment.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "join", "segment", "connect", "add", "path", "plus"],
       "label": "Node Join Segment"
     },
     "papirus_actions_node-segment-curve": {
       "file": "node-segment-curve.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "segment", "curve", "bezier", "arc", "path", "bend"],
       "label": "Node Segment Curve"
     },
     "papirus_actions_node-segment-line": {
       "file": "node-segment-line.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "segment", "line", "straight", "path", "connect", "edge"],
       "label": "Node Segment Line"
     },
     "papirus_actions_node-transform": {
       "file": "node-transform.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "transform", "resize", "scale", "bounding", "box", "corners"],
       "label": "Node Transform"
     },
     "papirus_actions_node-type-auto-smooth": {
       "file": "node-type-auto-smooth.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "smooth", "auto", "curve", "bezier", "handle", "vector"],
       "label": "Node Type Auto Smooth"
     },
     "papirus_actions_node-type-cusp": {
       "file": "node-type-cusp.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "cusp", "sharp", "corner", "point", "angle", "vector"],
       "label": "Node Type Cusp"
     },
     "papirus_actions_node-type-smooth": {
       "file": "node-type-smooth.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "smooth", "curve", "handle", "bezier", "vector", "round"],
       "label": "Node Type Smooth"
     },
     "papirus_actions_node-type-symmetric": {
       "file": "node-type-symmetric.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["node", "symmetric", "equal", "balanced", "handles", "curve", "vector"],
       "label": "Node Type Symmetric"
     },
     "papirus_actions_object-columns": {
       "file": "object-columns.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["columns", "vertical", "bars", "layout", "arrange", "grid"],
       "label": "Object Columns"
     },
     "papirus_actions_object-fill": {
       "file": "object-fill.svg",
       "sizes": [16, 18, 24],
       "context": "actions",
+      "hints": ["fill", "solid", "square", "color", "paint", "shape"],
       "label": "Object Fill"
     },
     "papirus_actions_object-flip-horizontal": {
       "file": "object-flip-horizontal.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
+      "hints": ["flip", "horizontal", "mirror", "reflect", "arrows", "left", "right"],
       "symbolic": true,
       "label": "Object Flip Horizontal"
     },
@@ -15389,6 +15413,7 @@
       "file": "object-flip-vertical.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
+      "hints": ["flip", "vertical", "mirror", "reflect", "arrows", "up", "down"],
       "symbolic": true,
       "label": "Object Flip Vertical"
     },
@@ -15396,18 +15421,21 @@
       "file": "object-group.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
+      "hints": ["group", "objects", "combine", "merge", "rectangles", "overlap", "layer"],
       "label": "Object Group"
     },
     "papirus_actions_object-hidden": {
       "file": "object-hidden.svg",
       "sizes": [18],
       "context": "actions",
+      "hints": ["hidden", "invisible", "eye", "closed", "hide", "visibility", "off"],
       "label": "Object Hidden"
     },
     "papirus_actions_object-locked": {
       "file": "object-locked.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["lock", "locked", "padlock", "secure", "protect", "closed"],
       "symbolic": true,
       "label": "Object Locked"
     },
@@ -15415,6 +15443,7 @@
       "file": "object-merge-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["merge", "combine", "join", "converge", "arrows", "unite"],
       "symbolic": true,
       "label": "Object Merge Symbolic"
     },
@@ -15422,6 +15451,7 @@
       "file": "object-move-symbolic.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["move", "drag", "arrows", "four", "direction", "position", "relocate"],
       "symbolic": true,
       "label": "Object Move Symbolic"
     },
@@ -15429,6 +15459,7 @@
       "file": "object-rotate-left.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
+      "hints": ["rotate", "left", "counterclockwise", "turn", "spin", "arrow", "ccw"],
       "symbolic": true,
       "label": "Object Rotate Left"
     },
@@ -15436,6 +15467,7 @@
       "file": "object-rotate-right.svg",
       "sizes": [16, 18, 22, 24],
       "context": "actions",
+      "hints": ["rotate", "right", "clockwise", "turn", "spin", "arrow", "cw"],
       "symbolic": true,
       "label": "Object Rotate Right"
     },
@@ -15443,12 +15475,14 @@
       "file": "object-rows.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["rows", "horizontal", "bars", "lines", "layout", "list"],
       "label": "Object Rows"
     },
     "papirus_actions_object-select": {
       "file": "object-select.svg",
       "sizes": [16, 22, 24],
       "context": "actions",
+      "hints": ["select", "check", "checkmark", "tick", "confirm", "approve"],
       "symbolic": true,
       "label": "Object Select"
     },

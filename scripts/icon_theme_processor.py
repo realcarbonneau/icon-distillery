@@ -74,7 +74,7 @@ class Theme:
 
         Args:
             theme_id:      Expanded variant id (e.g., "papirus-dark", "oxygen")
-            theme_base_id: Base catalog key (e.g., "papirus", "oxygen")
+            theme_base_id: Base catalog id (e.g., "papirus", "oxygen")
             theme_dir:     Relative path from project root (e.g., "papirus/Papirus-Dark")
             config:        Raw catalog config dict for the base theme
         """

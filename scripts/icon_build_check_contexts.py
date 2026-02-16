@@ -75,15 +75,15 @@ def main():
         print(f"  {theme.theme_id}: created contexts.json ({len(contexts)} contexts: {keys})")
     else:
         # Compare existing with generated from index
-        existing_keys = set(existing.keys())
-        contexts_keys = set(contexts.keys())
+        existing_context_ids = set(existing.keys())
+        generated_context_ids = set(contexts.keys())
 
-        in_json_not_theme_index = existing_keys - contexts_keys
-        in_theme_index_not_json = contexts_keys - existing_keys
+        in_json_not_theme_index = existing_context_ids - generated_context_ids
+        in_theme_index_not_json = generated_context_ids - existing_context_ids
 
         # Check for xdg_context value changes on shared context_ids
         xdg_changed = []
-        for context_id in sorted(existing_keys & contexts_keys):
+        for context_id in sorted(existing_context_ids & generated_context_ids):
             old_xdg = existing[context_id].get("xdg_context")
             new_xdg = contexts[context_id].get("xdg_context")
             if old_xdg != new_xdg:
@@ -113,7 +113,7 @@ def main():
 
         # Validate icons.json icon contexts
         if os.path.isfile(theme.icons_path):
-            valid_contexts = existing_keys
+            valid_contexts = existing_context_ids
             metadata = theme.icons_data
             icons = metadata.get("icons", {})
             missing_context = []

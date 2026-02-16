@@ -121,7 +121,7 @@ def main():
             continue
 
         print(f"CURRENT JSON ENTRY ({rel_path(json_path)})")
-        print(f"  \"key\": \"{icon_id}\"")
+        print(f"  \"icon_id\": \"{icon_id}\"")
 
         # Display files grouped by type, each section sorted by size descending
         print("DISK_FILES:")
@@ -135,7 +135,7 @@ def main():
         print("NEXT STEP - WORKER INSTRUCTIONS")
         print("- View the largest PNG file (the first PNG in the list). Then, generate 5-8 \"hints\"")
         print("  based on what you SEE in the image + filename context. Then, edit the JSON to")
-        print("  add \"hints\": [...] array for this icon's key. Format: \"hints\" must be a")
+        print("  add \"hints\": [...] array for this icon's entry. Format: \"hints\" must be a")
         print("  SINGLE LINE array, e.g.: \"hints\": [\"keyword1\", \"keyword2\", ...]")
         print("- CRITICAL: ONLY edit the JSON file manually (using the Edit tool)! NEVER use")
         print("  scripts, json.dump, or any programmatic method to write the JSON file!")

@@ -58,12 +58,12 @@ def compare_contexts(source_contexts, target_contexts,
     print(f"  source: {source_path}")
     print(f"  target: {target_path}")
 
-    source_keys = set(source_contexts.keys())
-    target_keys = set(target_contexts.keys())
+    source_context_ids = set(source_contexts.keys())
+    target_context_ids = set(target_contexts.keys())
 
-    source_only = sorted(source_keys - target_keys)
-    target_only = sorted(target_keys - source_keys)
-    shared = sorted(source_keys & target_keys)
+    source_only = sorted(source_context_ids - target_context_ids)
+    target_only = sorted(target_context_ids - source_context_ids)
+    shared = sorted(source_context_ids & target_context_ids)
 
     diffs = []
     for context_id in shared:
@@ -148,11 +148,11 @@ def _json_fragment(field, value):
     return json.dumps({field: value}, ensure_ascii=False, separators=(", ", ": "))[1:-1]
 
 
-def compare_fields(source_icons, target_icons, shared_keys, source_path, target_path):
+def compare_fields(source_icons, target_icons, shared_icon_ids, source_path, target_path):
     """Section 4: Compare field values for shared icons.
 
     Groups by icon_id; for each differing property, shows the full
-    JSON key: value fragment from both source and target.
+    JSON field: value fragment from both source and target.
     """
     _section_header("FIELD DIFFERENCES")
     print(f"  source: {source_path}")
@@ -160,7 +160,7 @@ def compare_fields(source_icons, target_icons, shared_keys, source_path, target_
 
     icons_with_diffs = []
 
-    for icon_id in shared_keys:
+    for icon_id in shared_icon_ids:
         s = source_icons[icon_id]
         t = target_icons[icon_id]
 
@@ -177,7 +177,7 @@ def compare_fields(source_icons, target_icons, shared_keys, source_path, target_
             icons_with_diffs.append((icon_id, field_diffs))
 
     if not icons_with_diffs:
-        print(f"\nAll {len(shared_keys)} shared icons have matching fields.")
+        print(f"\nAll {len(shared_icon_ids)} shared icons have matching fields.")
         return
 
     print(f"\n{len(icons_with_diffs)} icons with field differences:\n")
@@ -314,12 +314,12 @@ def main():
         print(f"\nSource contexts.json not found: {theme.contexts_path}")
 
     # Section 2: Icon inventory
-    shared_keys = compare_inventory(source_icons, target_icons,
+    shared_icon_ids = compare_inventory(source_icons, target_icons,
                                     theme.icons_path, target_icons_path)
 
-    if shared_keys:
+    if shared_icon_ids:
         # Section 3: Field differences
-        compare_fields(source_icons, target_icons, shared_keys,
+        compare_fields(source_icons, target_icons, shared_icon_ids,
                        theme.icons_path, target_icons_path)
 
     # Section 4: ICON_MAPPING validation
@@ -328,7 +328,7 @@ def main():
     # Summary
     print(file=sys.stderr)
     print(f"Summary: {len(source_icons)} source, {len(target_icons)} target, "
-          f"{len(shared_keys)} shared", file=sys.stderr)
+          f"{len(shared_icon_ids)} shared", file=sys.stderr)
 
 
 if __name__ == "__main__":
