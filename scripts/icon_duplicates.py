@@ -187,9 +187,9 @@ def main():
         print("  1. Read every icon name in the group")
         print("  2. Pick the best primary icon for the group")
         print("  3. On the primary entry in icons.json, add a \"duplicates\" array")
-        print("     listing all the other keys")
+        print("     listing all the other icon_ids")
         print("  4. On each copy entry in icons.json, add \"duplicate_of\" pointing")
-        print("     to the primary key")
+        print("     to the primary icon_id")
         print()
         print("Example (from nuvola — 1 primary + 2 copies):")
         print("  PRIMARY — gets \"duplicates\" array:")
@@ -242,8 +242,8 @@ def main():
             if not all_marked:
                 print("    WORKER INSTRUCTIONS:")
                 print(f"      DUPLICATES: {len(group)} identical icon files found.")
-                print(f"        Pick one as primary, add \"duplicates\" array with the other keys.")
-                print(f"        For each copy, add \"duplicate_of\" pointing to the primary key.")
+                print(f"        Pick one as primary, add \"duplicates\" array with the other icon_ids.")
+                print(f"        For each copy, add \"duplicate_of\" pointing to the primary icon_id.")
                 print("      ALL SIZES MATCH: Every file of every icon in this group is identical.")
                 if referring_icons:
                     print("      DUPLICATE_OF REFERRERS:")
@@ -428,8 +428,8 @@ def main():
             if all_matches:
                 print("    WORKER INSTRUCTIONS:")
                 print(f"      DUPLICATES: {len(all_matches)} duplicate icon files found.")
-                print(f"        If primary, add \"duplicates\" array with duplicate keys.")
-                print(f"        If copy, add \"duplicate_of\" pointing to the primary key.")
+                print(f"        If primary, add \"duplicates\" array with duplicate icon_ids.")
+                print(f"        If copy, add \"duplicate_of\" pointing to the primary icon_id.")
                 if all_sizes_match:
                     print("      ALL SIZES MATCH: Every size of this icon matches another icon.")
                     print("      This icon is likely duplicate_of that icon.")
