@@ -81,13 +81,13 @@ def main():
         in_json_not_theme_index = existing_keys - contexts_keys
         in_theme_index_not_json = contexts_keys - existing_keys
 
-        # Check for xdg_context value changes on shared keys
+        # Check for xdg_context value changes on shared context_ids
         xdg_changed = []
-        for key in sorted(existing_keys & contexts_keys):
-            old_xdg = existing[key].get("xdg_context")
-            new_xdg = contexts[key].get("xdg_context")
+        for context_id in sorted(existing_keys & contexts_keys):
+            old_xdg = existing[context_id].get("xdg_context")
+            new_xdg = contexts[context_id].get("xdg_context")
             if old_xdg != new_xdg:
-                xdg_changed.append((key, old_xdg, new_xdg))
+                xdg_changed.append((context_id, old_xdg, new_xdg))
 
         if not in_json_not_theme_index and not in_theme_index_not_json and not xdg_changed:
             print(f"  {theme.theme_id}: contexts.json up to date ({len(existing)} contexts)")
@@ -96,18 +96,18 @@ def main():
             print(f"  {theme.theme_id}: DIFFERENCES FOUND")
 
             if in_theme_index_not_json:
-                for key in sorted(in_theme_index_not_json):
-                    xdg = contexts[key]["xdg_context"]
-                    print(f"    IN THEME-INDEX, NOT IN JSON: {key} (xdg_context={xdg})")
+                for context_id in sorted(in_theme_index_not_json):
+                    xdg = contexts[context_id]["xdg_context"]
+                    print(f"    IN THEME-INDEX, NOT IN JSON: {context_id} (xdg_context={xdg})")
 
             if in_json_not_theme_index:
-                for key in sorted(in_json_not_theme_index):
-                    xdg = existing[key].get("xdg_context", "?")
-                    print(f"    IN JSON, NOT IN THEME-INDEX: {key} (xdg_context={xdg})")
+                for context_id in sorted(in_json_not_theme_index):
+                    xdg = existing[context_id].get("xdg_context", "?")
+                    print(f"    IN JSON, NOT IN THEME-INDEX: {context_id} (xdg_context={xdg})")
 
             if xdg_changed:
-                for key, old_xdg, new_xdg in xdg_changed:
-                    print(f"    XDG_CONTEXT CHANGED: {key}: {old_xdg} -> {new_xdg}")
+                for context_id, old_xdg, new_xdg in xdg_changed:
+                    print(f"    XDG_CONTEXT CHANGED: {context_id}: {old_xdg} -> {new_xdg}")
 
             print(f"    Manual review required. Edit {contexts_path}")
 

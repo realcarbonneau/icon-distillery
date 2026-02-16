@@ -30,27 +30,27 @@ def load_catalog_marked(data):
         data: Parsed icons.json dict.
 
     Returns:
-        (has_duplicates, has_duplicate_of, refers_to_map, catalog_by_name)
+        (has_duplicates, has_duplicate_of, refers_to_map, catalog_by_id)
     """
     icons = data.get("icons", {})
     has_duplicates = set()  # icons with "duplicates" array (primary icons)
     has_duplicate_of = set()  # icons with "duplicate_of" field
-    refers_to_map = {}  # target_id -> list of referrer keys
-    catalog_by_name = {}  # icon key -> icon info dict
+    refers_to_map = {}  # target_id -> list of referrer icon_ids
+    catalog_by_id = {}  # icon_id -> icon info dict
 
-    for key, info in icons.items():
-        catalog_by_name[key] = info
+    for icon_id, info in icons.items():
+        catalog_by_id[icon_id] = info
 
         if "duplicates" in info:
-            has_duplicates.add(key)
+            has_duplicates.add(icon_id)
         if "duplicate_of" in info:
-            has_duplicate_of.add(key)
+            has_duplicate_of.add(icon_id)
             target = info["duplicate_of"]
             if target not in refers_to_map:
                 refers_to_map[target] = []
-            refers_to_map[target].append(key)
+            refers_to_map[target].append(icon_id)
 
-    return has_duplicates, has_duplicate_of, refers_to_map, catalog_by_name
+    return has_duplicates, has_duplicate_of, refers_to_map, catalog_by_id
 
 
 def hash_file(path):
@@ -71,11 +71,11 @@ def main():
 
     # Load metadata to see which icons are already marked
     data = theme.icons_data
-    has_duplicates, has_duplicate_of, refers_to_map, catalog_by_name = load_catalog_marked(data)
+    has_duplicates, has_duplicate_of, refers_to_map, catalog_by_id = load_catalog_marked(data)
 
     def get_dup_of(icon_id):
         """Get duplicate_of value for icon, or None."""
-        return catalog_by_name.get(icon_id, {}).get("duplicate_of")
+        return catalog_by_id.get(icon_id, {}).get("duplicate_of")
 
     def print_dup_of(icon_id, indent="    "):
         """Print HAS duplicate_of line if icon has one. Returns the value."""
@@ -116,51 +116,51 @@ def main():
 
     # Map every file hash to the set of icons that have it (for per-file labeling)
     file_hash_icons = defaultdict(set)
-    for icon_name, size_data in icons.items():
+    for icon_id, size_data in icons.items():
         for size, d in size_data.items():
             for fh, fp in d["files"]:
-                file_hash_icons[fh].add(icon_name)
+                file_hash_icons[fh].add(icon_id)
 
     # Build hash signature for each icon (sorted tuple of (size, hash) pairs)
     # This lets us compare if two icons have identical content at all sizes
-    icon_signatures = {}  # icon_name -> signature (frozenset of hashes)
-    for icon_name, size_data in icons.items():
+    icon_signatures = {}  # icon_id -> signature (frozenset of hashes)
+    for icon_id, size_data in icons.items():
         # Signature is just the set of hashes (size-independent)
         hashes = frozenset(d["hash"] for d in size_data.values())
-        icon_signatures[icon_name] = hashes
+        icon_signatures[icon_id] = hashes
 
     # Group icons by their hash sets to find full duplicates
     # Full duplicate = icons that have the exact same set of hashes
     sig_to_icons = defaultdict(list)
-    for icon_name, sig in icon_signatures.items():
-        sig_to_icons[sig].append(icon_name)
+    for icon_id, sig in icon_signatures.items():
+        sig_to_icons[sig].append(icon_id)
 
     # Find groups where all sizes match between icons
-    full_dup_groups = []  # [(icon_names, sizes_info)]
+    full_dup_groups = []  # [(icon_ids, sizes_info)]
     partial_dup_groups = []  # icons with some but not all sizes matching
 
     # Track which icons are already in full duplicate groups
     in_full_dup = set()
 
     # First pass: find icons with identical hash signatures
-    for sig, icon_names in sig_to_icons.items():
-        if len(icon_names) > 1:
+    for sig, icon_ids in sig_to_icons.items():
+        if len(icon_ids) > 1:
             # These icons have the same set of hashes - full duplicates
-            full_dup_groups.append(icon_names)
-            in_full_dup.update(icon_names)
+            full_dup_groups.append(icon_ids)
+            in_full_dup.update(icon_ids)
 
     # Second pass: find partial duplicates (same hash at individual sizes)
-    # Build hash -> [(icon_name, size)] mapping
+    # Build hash -> [(icon_id, size)] mapping
     hash_to_occurrences = defaultdict(list)
-    for icon_name, size_data in icons.items():
+    for icon_id, size_data in icons.items():
         for size, d in size_data.items():
-            hash_to_occurrences[d["hash"]].append((icon_name, size, d["path"]))
+            hash_to_occurrences[d["hash"]].append((icon_id, size, d["path"]))
 
     # Find hashes that appear in multiple icons (partial dups)
-    partial_dups = defaultdict(list)  # hash -> [(icon_name, size, path)]
+    partial_dups = defaultdict(list)  # hash -> [(icon_id, size, path)]
     for h, occurrences in hash_to_occurrences.items():
         # Get unique icon names for this hash
-        unique_icons = set(icon_name for icon_name, size, path in occurrences)
+        unique_icons = set(icon_id for icon_id, size, path in occurrences)
         if len(unique_icons) > 1:
             # This hash appears in multiple different icons
             partial_dups[h] = occurrences
@@ -249,18 +249,18 @@ def main():
                     print("      DUPLICATE_OF REFERRERS:")
                     for ref_id in sorted(referring_icons):
                         print(f"        {ref_id}")
-            for icon_name in sorted(group):
-                size_data = icons[icon_name]
+            for icon_id in sorted(group):
+                size_data = icons[icon_id]
                 sizes = sorted(size_data.keys())
 
                 # Show marked status for each icon
-                if icon_name in has_duplicates:
+                if icon_id in has_duplicates:
                     status = " [PRIMARY]"
                 else:
                     status = ""
 
-                print(f"    {icon_name}{status}")
-                print_dup_of(icon_name, indent="        ")
+                print(f"    {icon_id}{status}")
+                print_dup_of(icon_id, indent="        ")
 
                 for size in sizes:
                     d = size_data[size]
@@ -273,7 +273,7 @@ def main():
 
             targets_outside = set()
             for icon_id in group:
-                icon_info = catalog_by_name.get(icon_id, {})
+                icon_info = catalog_by_id.get(icon_id, {})
                 dup_of = icon_info.get("duplicate_of")
                 if dup_of and dup_of not in group:
                     targets_outside.add(dup_of)
@@ -286,7 +286,7 @@ def main():
     # Find icons that have at least one size with a duplicate (excluding full dups)
     icons_with_partial_dups = set()
     for h, occurrences in partial_dups.items():
-        unique_icons = set(icon_name for icon_name, size, path in occurrences)
+        unique_icons = set(icon_id for icon_id, size, path in occurrences)
         # Only consider icons not already in full duplicate groups
         non_full_dup_icons = unique_icons - in_full_dup
         if len(non_full_dup_icons) >= 1 and len(unique_icons) > 1:
@@ -298,32 +298,32 @@ def main():
         print("=" * 70)
         print()
 
-        # Build reverse lookup: hash -> list of (icon_name, size) for duplicates
+        # Build reverse lookup: hash -> list of (icon_id, size) for duplicates
         hash_to_other_icons = defaultdict(list)
         for h, occurrences in partial_dups.items():
-            for icon_name, size, path in occurrences:
-                hash_to_other_icons[h].append((icon_name, size))
+            for icon_id, size, path in occurrences:
+                hash_to_other_icons[h].append((icon_id, size))
 
         # Sort icons by number of duplicate matches, then by name
-        def count_dup_matches(icon_name):
+        def count_dup_matches(icon_id):
             count = 0
-            for size, d in icons[icon_name].items():
-                others = [n for n, s in hash_to_other_icons.get(d["hash"], []) if n != icon_name]
+            for size, d in icons[icon_id].items():
+                others = [n for n, s in hash_to_other_icons.get(d["hash"], []) if n != icon_id]
                 count += len(others)
             return count
 
         sorted_icons = sorted(icons_with_partial_dups,
                               key=lambda n: (-count_dup_matches(n), n))
 
-        for icon_name in sorted_icons:
-            size_data = icons[icon_name]
+        for icon_id in sorted_icons:
+            size_data = icons[icon_id]
             sizes = sorted(size_data.keys())
 
             # Collect ALL matching icons - track OTHER icon's matched sizes
             all_matches = {}  # other_name -> set of OTHER's sizes that matched
             for size, d in size_data.items():
                 for other_name, other_size in hash_to_other_icons.get(d["hash"], []):
-                    if other_name != icon_name:
+                    if other_name != icon_id:
                         if other_name not in all_matches:
                             all_matches[other_name] = set()
                         all_matches[other_name].add(other_size)  # Track THEIR size
@@ -370,7 +370,7 @@ def main():
             for other_id in full_dup_matches:
                 if other_id in refers_to_map:
                     for ref_id in refers_to_map[other_id]:
-                        if ref_id != icon_name:  # Don't include self
+                        if ref_id != icon_id:  # Don't include self
                             referrer_info.append(ref_id)
             has_referrers = len(referrer_info) > 0
 
@@ -387,8 +387,8 @@ def main():
             if has_referrers:
                 flags.append("[DUPLICATE_OF REFERRERS]")
             # Check catalog for duplicate_of and duplicates
-            icon_info = catalog_by_name.get(icon_name, {})
-            icon_dup_of = get_dup_of(icon_name)
+            icon_info = catalog_by_id.get(icon_id, {})
+            icon_dup_of = get_dup_of(icon_id)
             if icon_dup_of:
                 flags.append("[DONE-DUPLICATE-OF]")
 
@@ -406,7 +406,7 @@ def main():
                         expected_dups.add(other_id)
 
                 # Check 1: All listed duplicates have duplicate_of pointing to us
-                all_point_back = all(get_dup_of(d) == icon_name for d in icon_dups)
+                all_point_back = all(get_dup_of(d) == icon_id for d in icon_dups)
 
                 # Check 2: All expected duplicates are in the list
                 all_listed = expected_dups <= set(icon_dups)
@@ -417,8 +417,8 @@ def main():
 
             flag_str = " " + " ".join(flags) if flags else ""
 
-            print(f"# {icon_name} ({len(sizes)} sizes){flag_str}")
-            print_dup_of(icon_name)
+            print(f"# {icon_id} ({len(sizes)} sizes){flag_str}")
+            print_dup_of(icon_id)
             if icon_dups:
                 print(f"    JSON DUPLICATES LIST:")
                 for dup_id in icon_dups:
@@ -459,11 +459,11 @@ def main():
                 d = size_data[size]
                 # Find other icons with same hash at this size
                 others = [(k, s) for k, s in hash_to_other_icons.get(d["hash"], [])
-                          if k != icon_name]
+                          if k != icon_id]
 
                 if others:
                     for fh, fp in d["files"]:
-                        lbl = "duplicate" if file_hash_icons[fh] - {icon_name} else "unique"
+                        lbl = "duplicate" if file_hash_icons[fh] - {icon_id} else "unique"
                         print(f"  {size:4d}px  {fh}  {fp}  ({lbl})")
                     for other_id, other_size in sorted(others):
                         other_d = icons[other_id][other_size]
@@ -473,7 +473,7 @@ def main():
                         print_dup_of(other_id, indent="          -> ")
                 else:
                     for fh, fp in d["files"]:
-                        lbl = "duplicate" if file_hash_icons[fh] - {icon_name} else "unique"
+                        lbl = "duplicate" if file_hash_icons[fh] - {icon_id} else "unique"
                         print(f"  {size:4d}px  {fh}  {fp}  ({lbl})")
 
             print()

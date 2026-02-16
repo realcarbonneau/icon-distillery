@@ -331,16 +331,16 @@ class Theme:
             xdg_context = meta["xdg_context"]
             internal_context_id = (self._get_internal_context_id(xdg_context)
                                    if xdg_context else None)
-            key = self.generate_id(internal_context_id, filename)
-            if key not in discovered:
-                discovered[key] = {
+            icon_id = self.generate_id(internal_context_id, filename)
+            if icon_id not in discovered:
+                discovered[icon_id] = {
                     "sizes": set(), "paths": {},
                     "xdg_context": xdg_context, "file": filename,
                 }
-            discovered[key]["sizes"].add(size)
-            if size not in discovered[key]["paths"]:
-                discovered[key]["paths"][size] = []
-            discovered[key]["paths"][size].append(str(f))
+            discovered[icon_id]["sizes"].add(size)
+            if size not in discovered[icon_id]["paths"]:
+                discovered[icon_id]["paths"][size] = []
+            discovered[icon_id]["paths"][size].append(str(f))
 
         if skipped_dirs:
             print(f"  Skipped files in directories not in index.theme:")
