@@ -794,6 +794,7 @@
     "oxygen_actions_document-print": {
       "file": "document-print.png",
       "sizes": [16, 22, 32, 48],
+      "duplicate_of": "oxygen_apps_preferences-desktop-printer",
       "hints": ["print", "printer", "document", "paper", "output", "hardcopy", "page", "publish"],
       "label": "Document Print",
       "context": "actions"
@@ -2798,7 +2799,7 @@
     },
     "oxygen_actions_merge": {
       "file": "merge.png",
-      "sizes": [32, 48],
+      "sizes": [16, 22, 32, 48],
       "hints": ["merge", "combine", "join", "arrows", "converge", "unite", "action"],
       "label": "Merge",
       "context": "actions"
@@ -6213,6 +6214,7 @@
     "oxygen_apps_preferences-desktop-printer": {
       "file": "preferences-desktop-printer.png",
       "sizes": [16, 22, 32, 48, 64, 128],
+      "duplicates": ["oxygen_actions_document-print"],
       "hints": ["printer", "print", "paper", "document", "output", "desktop", "preferences"],
       "label": "Preferences Desktop Printer",
       "context": "apps"
@@ -8943,7 +8945,7 @@
     },
     "oxygen_mimetypes_text-plain": {
       "file": "text-plain.png",
-      "sizes": [22, 32, 48, 64, 128, 256],
+      "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["txt", "text", "plain", "ascii", "document", "notepad", "file", "simple"],
       "duplicates": [],
       "label": "Text Plain",

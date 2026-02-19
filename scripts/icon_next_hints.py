@@ -120,6 +120,15 @@ def main():
             save_json_compact_arrays(json_path, data)
             continue
 
+        # HALT if no PNGs available (only SVGs)
+        if ".png" not in files_by_ext:
+            print("!!! STOP - NO PNG FILES AVAILABLE !!!")
+            print(f"  icon_id: {icon_id}")
+            print("  Only SVG/SVGZ files found and SVG-to-PNG conversion failed or unavailable.")
+            print("  DO NOT attempt to read or interpret SVG/SVGZ files.")
+            print("  STOP WORKING and report this to the user immediately.")
+            return
+
         print(f"CURRENT JSON ENTRY ({rel_path(json_path)})")
         print(f"  \"icon_id\": \"{icon_id}\"")
 
@@ -139,6 +148,8 @@ def main():
         print("  SINGLE LINE array, e.g.: \"hints\": [\"keyword1\", \"keyword2\", ...]")
         print("- CRITICAL: ONLY edit the JSON file manually (using the Edit tool)! NEVER use")
         print("  scripts, json.dump, or any programmatic method to write the JSON file!")
+        print("- !!! NEVER read, open, or interpret SVG/SVGZ/SVGX files! Only view PNG images! !!!")
+        print("  If the PNG fails to display or looks corrupted, STOP WORKING and report to user.")
         print("- If stuck (unreadable, missing, ambiguous): add \"hints\": [\"FATAL-ERROR\"] to the JSON,")
         print("  log the issue to the anomaly file, then run the script again to continue.")
         anomaly_path = rel_path(os.path.join(theme.dir, f"{theme.theme_id}_anomalies.txt"))

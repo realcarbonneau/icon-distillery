@@ -12,7 +12,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["ipod", "apple", "music", "player", "multimedia", "portable", "clickwheel", "white"],
       "duplicate_of": "nuvola_devices_multimedia-player",
-      "label": "Multimedia Player Apple Ipod",
+      "label": "Multimedia Player Apple iPod",
       "context": "devices"
     },
     "nuvola_devices_samba_unmount": {
@@ -27,7 +27,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["usb", "flash", "drive", "removable", "storage", "thumbdrive", "portable", "blue"],
       "duplicates": ["nuvola_devices_drive-removable-media-usb-pendrive"],
-      "label": "Drive Removable Media Usb",
+      "label": "Drive Removable Media USB",
       "context": "devices"
     },
     "nuvola_devices_memory": {
@@ -57,7 +57,7 @@
       "file": "raid.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["raid", "disk", "array", "storage", "server", "stacked", "drives", "hardware"],
-      "label": "Raid",
+      "label": "RAID",
       "context": "devices"
     },
     "nuvola_devices_drive-removable-media-usb-pendrive": {
@@ -65,21 +65,21 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["usb", "pendrive", "flash", "drive", "removable", "storage", "portable", "blue"],
       "duplicate_of": "nuvola_devices_drive-removable-media-usb",
-      "label": "Drive Removable Media Usb Pendrive",
+      "label": "Drive Removable Media USB Pendrive",
       "context": "devices"
     },
     "nuvola_devices_media-optical-dvd": {
       "file": "media-optical-dvd.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["dvd", "disc", "optical", "media", "video", "blue", "silver", "cdrom"],
-      "label": "Media Optical Dvd",
+      "label": "Media Optical DVD",
       "context": "devices"
     },
     "nuvola_devices_cpu": {
       "file": "cpu.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["cpu", "processor", "chip", "microchip", "hardware", "gold", "pins", "integrated"],
-      "label": "Cpu",
+      "label": "CPU",
       "context": "devices"
     },
     "nuvola_devices_drive-harddisk": {
@@ -87,7 +87,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["harddisk", "drive", "hdd", "storage", "disk", "internal", "white", "hardware"],
       "duplicates": ["nuvola_apps_kcmdevice"],
-      "label": "Drive Harddisk",
+      "label": "Drive Hard Disk",
       "context": "devices"
     },
     "nuvola_devices_printer1": {
@@ -95,7 +95,7 @@
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["printer", "print", "inkjet", "paper", "output", "hardware", "white", "document"],
       "duplicate_of": "nuvola_devices_printer",
-      "label": "Printer1",
+      "label": "Printer",
       "context": "devices"
     },
     "nuvola_devices_zip_unmount": {
@@ -109,14 +109,14 @@
       "file": "pda.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pda", "handheld", "palm", "touchscreen", "mobile", "device", "portable", "grey"],
-      "label": "Pda",
+      "label": "PDA",
       "context": "devices"
     },
     "nuvola_devices_pda_blue": {
       "file": "pda_blue.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pda", "handheld", "palm", "touchscreen", "mobile", "device", "blue", "green"],
-      "label": "Pda Blue",
+      "label": "PDA Blue",
       "context": "devices"
     },
     "nuvola_devices_modem": {
@@ -138,7 +138,7 @@
       "file": "nfs_unmount.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["nfs", "network", "drive", "unmount", "server", "disconnect", "filesystem", "grey"],
-      "label": "Nfs Unmount",
+      "label": "NFS Unmount",
       "context": "devices"
     },
     "nuvola_devices_camera-photo": {
@@ -153,14 +153,14 @@
       "file": "pda_black.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pda", "handheld", "palm", "touchscreen", "mobile", "device", "black", "green"],
-      "label": "Pda Black",
+      "label": "PDA Black",
       "context": "devices"
     },
     "nuvola_devices_5floppy_unmount": {
       "file": "5floppy_unmount.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["floppy", "5inch", "disk", "unmount", "eject", "storage", "grey", "removable"],
-      "label": "5Floppy Unmount",
+      "label": "5 Floppy Unmount",
       "context": "devices"
     },
     "nuvola_devices_media-optical-recordable": {
@@ -198,7 +198,7 @@
       "file": "mo_unmount.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["magneto", "optical", "mo", "disc", "cartridge", "unmount", "green", "storage"],
-      "label": "Mo Unmount",
+      "label": "MO Unmount",
       "context": "devices"
     },
     "nuvola_devices_input-tablet": {
@@ -265,21 +265,21 @@
       "file": "keditbookmarks.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["heart", "bookmark", "edit", "pencil", "favorite", "love", "red", "write"],
-      "label": "Keditbookmarks",
+      "label": "KEditBookmarks",
       "context": "apps"
     },
     "nuvola_apps_khotkeys": {
       "file": "khotkeys.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["keyboard", "key", "hotkey", "shortcut", "keybinding", "letter", "red", "input"],
-      "label": "Khotkeys",
+      "label": "KHotKeys",
       "context": "apps"
     },
     "nuvola_apps_digikam": {
       "file": "digikam.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["camera", "photo", "digikam", "picture", "skyline", "silver", "gallery", "image"],
-      "label": "Digikam",
+      "label": "digiKam",
       "context": "apps"
     },
     "nuvola_apps_opera": {
@@ -293,7 +293,7 @@
       "file": "indeximg.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["photos", "gallery", "index", "image", "polaroid", "stack", "skyline", "viewer"],
-      "label": "Indeximg",
+      "label": "Index Image",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-font": {
@@ -321,7 +321,7 @@
       "file": "ktimer.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["stopwatch", "timer", "clock", "time", "countdown", "blue", "watch", "chronometer"],
-      "label": "Ktimer",
+      "label": "KTimer",
       "context": "apps"
     },
     "nuvola_apps_kopete": {
@@ -335,7 +335,7 @@
       "file": "laptop_pcmcia.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["laptop", "notebook", "computer", "portable", "pcmcia", "screen", "hardware", "blue"],
-      "label": "Laptop Pcmcia",
+      "label": "Laptop PCMCIA",
       "context": "apps"
     },
     "nuvola_apps_kaddressbook": {
@@ -343,7 +343,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["addressbook", "contacts", "notebook", "green", "book", "directory", "tabs", "organizer"],
       "duplicates": ["nuvola_actions_toggle_log"],
-      "label": "Kaddressbook",
+      "label": "KAddressBook",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-color": {
@@ -357,7 +357,7 @@
       "file": "kmplot.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["graph", "plot", "chart", "sine", "wave", "math", "function", "axis"],
-      "label": "Kmplot",
+      "label": "KmPlot",
       "context": "apps"
     },
     "nuvola_apps_accessories-dictionary": {
@@ -372,7 +372,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["keyboard", "key", "layout", "input", "language", "keycap", "letter", "switch"],
       "duplicate_of": "nuvola_apps_preferences-desktop-keyboard",
-      "label": "Kxkb",
+      "label": "KXkb",
       "context": "apps"
     },
     "nuvola_apps_preferences-web-browser-stylesheets": {
@@ -393,35 +393,35 @@
       "file": "kappfinder.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["search", "find", "magnifier", "application", "discover", "lookup", "lens", "locate"],
-      "label": "Kappfinder",
+      "label": "KAppFinder",
       "context": "apps"
     },
     "nuvola_apps_kcmpci": {
       "file": "kcmpci.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pci", "card", "circuit", "hardware", "expansion", "board", "component", "device"],
-      "label": "Kcmpci",
+      "label": "KCM PCI",
       "context": "apps"
     },
     "nuvola_apps_kcmprocessor": {
       "file": "kcmprocessor.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["processor", "cpu", "chip", "microchip", "hardware", "computer", "silicon", "component"],
-      "label": "Kcmprocessor",
+      "label": "KCM Processor",
       "context": "apps"
     },
     "nuvola_apps_knode": {
       "file": "knode.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["newspaper", "news", "usenet", "reader", "article", "press", "headline", "paper"],
-      "label": "Knode",
+      "label": "KNode",
       "context": "apps"
     },
     "nuvola_apps_kmenuedit": {
       "file": "kmenuedit.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["menu", "edit", "list", "panel", "organize", "layout", "items", "configure"],
-      "label": "Kmenuedit",
+      "label": "KMenuEdit",
       "context": "apps"
     },
     "nuvola_apps_kmenu": {
@@ -429,7 +429,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["kde", "menu", "start", "gear", "logo", "launcher", "desktop", "kmenu"],
       "duplicate_of": "nuvola_places_start-here",
-      "label": "Kmenu",
+      "label": "KMenu",
       "context": "apps"
     },
     "nuvola_apps_kcoloredit": {
@@ -437,14 +437,14 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["palette", "paint", "color", "art", "drawing", "brush", "colorful", "editor"],
       "duplicates": ["nuvola_actions_colorize"],
-      "label": "Kcoloredit",
+      "label": "KColorEdit",
       "context": "apps"
     },
     "nuvola_apps_xfmail": {
       "file": "xfmail.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["mail", "email", "envelope", "purple", "letter", "message", "client", "xfce"],
-      "label": "Xfmail",
+      "label": "XFMail",
       "context": "apps"
     },
     "nuvola_apps_kooka": {
@@ -459,21 +459,21 @@
       "file": "ktouch.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["keyboard", "typing", "tutor", "keys", "learn", "practice", "arrow", "touch"],
-      "label": "Ktouch",
+      "label": "KTouch",
       "context": "apps"
     },
     "nuvola_apps_ksplash": {
       "file": "ksplash.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["splash", "screen", "monitor", "startup", "boot", "kde", "display", "welcome"],
-      "label": "Ksplash",
+      "label": "KSplash",
       "context": "apps"
     },
     "nuvola_apps_hwinfo": {
       "file": "hwinfo.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["hardware", "info", "information", "system", "ruler", "diagnostics", "device", "blue"],
-      "label": "Hwinfo",
+      "label": "HWInfo",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-screensaver": {
@@ -501,7 +501,7 @@
       "file": "kchart.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["chart", "graph", "pie", "bar", "statistics", "data", "spreadsheet", "colorful"],
-      "label": "Kchart",
+      "label": "KChart",
       "context": "apps"
     },
     "nuvola_apps_irkick": {
@@ -509,7 +509,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["infrared", "remote", "wireless", "signal", "receiver", "antenna", "red", "wave"],
       "duplicate_of": "nuvola_apps_remote",
-      "label": "Irkick",
+      "label": "IRKick",
       "context": "apps"
     },
     "nuvola_apps_kate": {
@@ -523,7 +523,7 @@
       "file": "kruler.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["ruler", "measure", "millimeter", "pixel", "yellow", "scale", "length", "tool"],
-      "label": "Kruler",
+      "label": "KRuler",
       "context": "apps"
     },
     "nuvola_apps_reload": {
@@ -539,21 +539,21 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["application", "generic", "purple", "x11", "program", "default", "letter", "xorg"],
       "duplicate_of": "nuvola_apps_x",
-      "label": "Xapp",
+      "label": "XApp",
       "context": "apps"
     },
     "nuvola_apps_kmix": {
       "file": "kmix.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["speaker", "volume", "audio", "sound", "mixer", "loud", "megaphone", "wave"],
-      "label": "Kmix",
+      "label": "KMix",
       "context": "apps"
     },
     "nuvola_apps_kcmpartitions": {
       "file": "kcmpartitions.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["partition", "disk", "pie", "chart", "storage", "segments", "drive", "space"],
-      "label": "Kcmpartitions",
+      "label": "KCM Partitions",
       "context": "apps"
     },
     "nuvola_apps_kolf": {
@@ -568,21 +568,22 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["todo", "task", "checklist", "clipboard", "checkmark", "organizer", "list"],
       "duplicate_of": "nuvola_apps_korganizer",
-      "label": "Korganizer Todo",
+      "label": "KOrganizer Todo",
       "context": "apps"
     },
     "nuvola_apps_khangman": {
       "file": "khangman.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cactus", "desert", "plant", "word", "game", "hangman", "green"],
-      "label": "Khangman",
+      "label": "KHangMan",
       "context": "apps"
     },
     "nuvola_apps_kfig": {
       "file": "kfig.png",
       "sizes": [16, 22, 32, 48, 64, 128],
+      "duplicates": ["nuvola_apps_kig"],
       "hints": ["drawing", "vector", "shapes", "geometry", "triangle", "circle", "square", "figure"],
-      "label": "Kfig",
+      "label": "KFig",
       "context": "apps"
     },
     "nuvola_apps_parley": {
@@ -603,7 +604,7 @@
       "file": "kmoon.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["moon", "crescent", "night", "lunar", "phase", "sky", "blue"],
-      "label": "Kmoon",
+      "label": "KMoon",
       "context": "apps"
     },
     "nuvola_apps_designer": {
@@ -633,7 +634,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["harddrive", "disk", "storage", "device", "hardware", "drive"],
       "duplicate_of": "nuvola_devices_drive-harddisk",
-      "label": "Kcmdevice",
+      "label": "KCM Device",
       "context": "apps"
     },
     "nuvola_apps_bookcase": {
@@ -647,7 +648,7 @@
       "file": "kppp.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["modem", "dialup", "internet", "connection", "network", "ppp", "lightning"],
-      "label": "Kppp",
+      "label": "KPPP",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-keyboard-layout": {
@@ -684,7 +685,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["piano", "midi", "keyboard", "music", "keys", "instrument", "synthesizer"],
       "duplicates": ["nuvola_apps_kmid"],
-      "label": "Kcmmidi",
+      "label": "KCM MIDI",
       "context": "apps"
     },
     "nuvola_apps_aktion": {
@@ -699,7 +700,7 @@
       "file": "artsbuilder.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["speaker", "sound", "audio", "hammer", "build", "configure", "megaphone"],
-      "label": "Artsbuilder",
+      "label": "aRts Builder",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-wallpaper": {
@@ -721,7 +722,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["mouse", "click", "pointer", "accessibility", "cursor", "input", "hardware"],
       "duplicate_of": "nuvola_devices_input-mouse",
-      "label": "Kmousetool",
+      "label": "KMouseTool",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-printer": {
@@ -736,7 +737,7 @@
       "file": "kjots.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["notes", "notebook", "clipboard", "jotter", "memo", "write", "tabs"],
-      "label": "Kjots",
+      "label": "KJots",
       "context": "apps"
     },
     "nuvola_apps_xconfig": {
@@ -744,7 +745,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["xorg", "xwindow", "configure", "display", "server", "purple", "settings"],
       "duplicate_of": "nuvola_apps_x",
-      "label": "Xconfig",
+      "label": "XConfig",
       "context": "apps"
     },
     "nuvola_apps_licq": {
@@ -759,7 +760,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["piano", "midi", "player", "music", "keys", "keyboard", "audio"],
       "duplicate_of": "nuvola_apps_kcmmidi",
-      "label": "Kmid",
+      "label": "KMid",
       "context": "apps"
     },
     "nuvola_apps_krfb": {
@@ -780,14 +781,14 @@
       "file": "kuser.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["users", "people", "group", "accounts", "management", "admin", "person"],
-      "label": "Kuser",
+      "label": "KUser",
       "context": "apps"
     },
     "nuvola_apps_kfind": {
       "file": "kfind.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["search", "find", "magnifier", "lookup", "locate", "file", "document"],
-      "label": "Kfind",
+      "label": "KFind",
       "context": "apps"
     },
     "nuvola_apps_korganizer": {
@@ -795,7 +796,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["organizer", "planner", "clipboard", "checklist", "checkmark", "schedule", "pim"],
       "duplicates": ["nuvola_apps_korganizer_todo", "nuvola_actions_korgac"],
-      "label": "Korganizer",
+      "label": "KOrganizer",
       "context": "apps"
     },
     "nuvola_apps_klpq": {
@@ -803,7 +804,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["printer", "print", "queue", "paper", "jobs", "spooler", "output"],
       "duplicate_of": "nuvola_devices_printer",
-      "label": "Klpq",
+      "label": "KLpq",
       "context": "apps"
     },
     "nuvola_apps_clanbomber": {
@@ -818,14 +819,14 @@
       "file": "kcmx.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["xorg", "xserver", "xwindow", "configure", "display", "purple", "settings"],
-      "label": "Kcmx",
+      "label": "KCM X",
       "context": "apps"
     },
     "nuvola_apps_usb": {
       "file": "usb.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["usb", "connector", "port", "plug", "device", "hardware", "green"],
-      "label": "Usb",
+      "label": "USB",
       "context": "apps"
     },
     "nuvola_apps_klipper": {
@@ -848,21 +849,21 @@
       "file": "fsview.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["filesystem", "treemap", "blocks", "disk", "usage", "visualizer", "grid"],
-      "label": "Fsview",
+      "label": "FSView",
       "context": "apps"
     },
     "nuvola_apps_gnome_apps": {
       "file": "gnome_apps.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["gnome", "foot", "applications", "desktop", "linux", "logo", "blue"],
-      "label": "Gnome Apps",
+      "label": "GNOME Apps",
       "context": "apps"
     },
     "nuvola_apps_kworldclock": {
       "file": "kworldclock.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["world", "clock", "timezone", "globe", "map", "time", "international"],
-      "label": "Kworldclock",
+      "label": "KWorldClock",
       "context": "apps"
     },
     "nuvola_apps_kfm_home": {
@@ -870,7 +871,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["home", "house", "directory", "folder", "residence", "building", "red"],
       "duplicate_of": "nuvola_places_user-home",
-      "label": "Kfm Home",
+      "label": "KFM Home",
       "context": "apps"
     },
     "nuvola_apps_evolution": {
@@ -884,14 +885,14 @@
       "file": "kpresenter.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["presentation", "slides", "slideshow", "easel", "projector", "talk", "office"],
-      "label": "Kpresenter",
+      "label": "KPresenter",
       "context": "apps"
     },
     "nuvola_apps_kcmscsi": {
       "file": "kcmscsi.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["scsi", "connector", "device", "hardware", "interface", "storage", "metallic"],
-      "label": "Kcmscsi",
+      "label": "KCM SCSI",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-filetype-association": {
@@ -919,7 +920,7 @@
       "file": "kbackgammon_engine.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["backgammon", "board", "game", "wrench", "engine", "settings", "configure"],
-      "label": "Kbackgammon Engine",
+      "label": "KBackgammon Engine",
       "context": "apps"
     },
     "nuvola_apps_kwikdisk": {
@@ -927,14 +928,14 @@
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["cubes", "blocks", "3d", "geometric", "red", "green", "orange", "shapes"],
       "duplicate_of": "nuvola_apps_kdf",
-      "label": "Kwikdisk",
+      "label": "KwikDisk",
       "context": "apps"
     },
     "nuvola_apps_kpercentage": {
       "file": "kpercentage.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["percentage", "percent", "math", "symbol", "calculation", "statistics"],
-      "label": "Kpercentage",
+      "label": "KPercentage",
       "context": "apps"
     },
     "nuvola_apps_utilities-terminal": {
@@ -948,7 +949,7 @@
       "file": "preferences-desktop-display-randr.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["monitor", "display", "screen", "desktop", "resolution", "settings"],
-      "label": "Preferences Desktop Display Randr",
+      "label": "Preferences Desktop Display RandR",
       "context": "apps"
     },
     "nuvola_apps_preferences-system-windows": {
@@ -962,7 +963,7 @@
       "file": "kblackbox.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cube", "black", "box", "3d", "dark", "puzzle", "game"],
-      "label": "Kblackbox",
+      "label": "KBlackBox",
       "context": "apps"
     },
     "nuvola_apps_kmahjong": {
@@ -970,7 +971,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["mahjong", "chinese", "character", "tile", "game", "red"],
       "duplicates": ["nuvola_apps_kshisen"],
-      "label": "Kmahjong",
+      "label": "KMahjongg",
       "context": "apps"
     },
     "nuvola_apps_konqsidebar_mediaplayer": {
@@ -978,12 +979,13 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["clapperboard", "movie", "film", "video", "media", "cinema"],
       "duplicates": ["nuvola_apps_aktion"],
-      "label": "Konqsidebar Mediaplayer",
+      "label": "Konqueror Sidebar Media Player",
       "context": "apps"
     },
     "nuvola_apps_kig": {
       "file": "kig.png",
       "sizes": [16, 32, 48, 64, 128],
+      "duplicate_of": "nuvola_apps_kfig",
       "hints": ["geometry", "drawing", "triangle", "circle", "pencil", "math", "shapes"],
       "label": "Kig",
       "context": "apps"
@@ -992,7 +994,7 @@
       "file": "knotify.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["notification", "sound", "music", "note", "alert", "speech", "bubble"],
-      "label": "Knotify",
+      "label": "KNotify",
       "context": "apps"
     },
     "nuvola_apps_chat": {
@@ -1006,7 +1008,7 @@
       "file": "kcolorchooser.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["eyedropper", "color", "picker", "dropper", "sample", "pipette"],
-      "label": "Kcolorchooser",
+      "label": "KColorChooser",
       "context": "apps"
     },
     "nuvola_apps_krita": {
@@ -1020,14 +1022,14 @@
       "file": "kcontrol.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["wrench", "screwdriver", "tools", "settings", "repair", "configure"],
-      "label": "Kcontrol",
+      "label": "KControl",
       "context": "apps"
     },
     "nuvola_apps_korn": {
       "file": "korn.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["mailbox", "mail", "envelope", "letter", "inbox", "postal"],
-      "label": "Korn",
+      "label": "KOrn",
       "context": "apps"
     },
     "nuvola_apps_konqueror": {
@@ -1055,14 +1057,14 @@
       "file": "kghostview.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["magnify", "document", "search", "viewer", "page", "preview"],
-      "label": "Kghostview",
+      "label": "KGhostView",
       "context": "apps"
     },
     "nuvola_apps_kmag": {
       "file": "kmag.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["magnifier", "zoom", "plus", "enlarge", "accessibility", "search"],
-      "label": "Kmag",
+      "label": "KMag",
       "context": "apps"
     },
     "nuvola_apps_gaim": {
@@ -1091,7 +1093,7 @@
       "file": "kpager.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pages", "screens", "virtual", "desktop", "pager", "workspace"],
-      "label": "Kpager",
+      "label": "KPager",
       "context": "apps"
     },
     "nuvola_apps_internet-mail": {
@@ -1106,14 +1108,14 @@
       "file": "knotes.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["sticky", "note", "yellow", "pushpin", "memo", "reminder", "post-it"],
-      "label": "Knotes",
+      "label": "KNotes",
       "context": "apps"
     },
     "nuvola_apps_gnome_apps2": {
       "file": "gnome_apps2.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["gnome", "foot", "footprint", "logo", "linux", "desktop"],
-      "label": "Gnome Apps2",
+      "label": "GNOME Apps 2",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-accessibility": {
@@ -1134,7 +1136,7 @@
       "file": "kdisknav.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["folder", "lightning", "fast", "quick", "access", "directory"],
-      "label": "Kdisknav",
+      "label": "KDiskNav",
       "context": "apps"
     },
     "nuvola_apps_help_index": {
@@ -1148,7 +1150,7 @@
       "file": "kview.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["image", "viewer", "magnify", "photos", "pictures", "preview"],
-      "label": "Kview",
+      "label": "KView",
       "context": "apps"
     },
     "nuvola_apps_package_favorite": {
@@ -1170,21 +1172,21 @@
       "file": "ksim.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["circuit", "hardware", "ram", "cpu", "chip", "motherboard", "system"],
-      "label": "Ksim",
+      "label": "KSim",
       "context": "apps"
     },
     "nuvola_apps_kfloppy": {
       "file": "kfloppy.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["floppy", "disk", "screwdriver", "format", "save", "storage"],
-      "label": "Kfloppy",
+      "label": "KFloppy",
       "context": "apps"
     },
     "nuvola_apps_ooo_gulls": {
       "file": "ooo_gulls.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["seagulls", "birds", "openoffice", "office", "blue", "flying"],
-      "label": "Ooo Gulls",
+      "label": "OOo Gulls",
       "context": "apps"
     },
     "nuvola_apps_email": {
@@ -1198,7 +1200,7 @@
       "file": "acroread.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pdf", "acrobat", "adobe", "reader", "document", "red"],
-      "label": "Acroread",
+      "label": "AcroRead",
       "context": "apps"
     },
     "nuvola_apps_mozilla": {
@@ -1212,7 +1214,7 @@
       "file": "kbackgammon.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["backgammon", "board", "game", "checkers", "dice", "strategy"],
-      "label": "Kbackgammon",
+      "label": "KBackgammon",
       "context": "apps"
     },
     "nuvola_apps_keybindings": {
@@ -1241,14 +1243,14 @@
       "file": "krec.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["record", "red", "circle", "button", "recording", "audio"],
-      "label": "Krec",
+      "label": "KRec",
       "context": "apps"
     },
     "nuvola_apps_kpdf": {
       "file": "kpdf.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["book", "magnify", "reader", "pdf", "document", "search", "open"],
-      "label": "Kpdf",
+      "label": "KPDF",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-user-password": {
@@ -1263,14 +1265,14 @@
       "file": "klettres.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["flag", "french", "france", "language", "tricolor", "learning"],
-      "label": "Klettres",
+      "label": "KLettres",
       "context": "apps"
     },
     "nuvola_apps_kbounce": {
       "file": "kbounce.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["ball", "red", "sphere", "bounce", "game", "orb"],
-      "label": "Kbounce",
+      "label": "KBounce",
       "context": "apps"
     },
     "nuvola_apps_package_editors": {
@@ -1285,14 +1287,14 @@
       "file": "kcmdevices.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["harddrive", "disk", "drive", "storage", "device", "hardware"],
-      "label": "Kcmdevices",
+      "label": "KCM Devices",
       "context": "apps"
     },
     "nuvola_apps_kaudiocreator": {
       "file": "kaudiocreator.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cd", "disc", "music", "audio", "rip", "note", "extract"],
-      "label": "Kaudiocreator",
+      "label": "KAudioCreator",
       "context": "apps"
     },
     "nuvola_apps_amor": {
@@ -1313,7 +1315,7 @@
       "file": "kmines.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["flag", "minesweeper", "mine", "game", "grid", "tiles"],
-      "label": "Kmines",
+      "label": "KMines",
       "context": "apps"
     },
     "nuvola_apps_kcmmemory": {
@@ -1321,49 +1323,49 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["ram", "memory", "module", "stick", "circuit", "hardware"],
       "duplicate_of": "nuvola_devices_memory",
-      "label": "Kcmmemory",
+      "label": "KCM Memory",
       "context": "apps"
     },
     "nuvola_apps_kreversi": {
       "file": "kreversi.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["reversi", "othello", "marbles", "spheres", "board", "game"],
-      "label": "Kreversi",
+      "label": "KReversi",
       "context": "apps"
     },
     "nuvola_apps_kteatime": {
       "file": "kteatime.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["tea", "cup", "coffee", "mug", "hot", "beverage", "steam"],
-      "label": "Kteatime",
+      "label": "KTeaTime",
       "context": "apps"
     },
     "nuvola_apps_kwin4": {
       "file": "kwin4.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["four", "number", "connect", "game", "yellow", "digit"],
-      "label": "Kwin4",
+      "label": "KWin4",
       "context": "apps"
     },
     "nuvola_apps_knewsticker": {
       "file": "knewsticker.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["newspaper", "news", "headlines", "press", "article", "media"],
-      "label": "Knewsticker",
+      "label": "KNewsTicker",
       "context": "apps"
     },
     "nuvola_apps_kscd": {
       "file": "kscd.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cd", "disc", "music", "note", "player", "audio"],
-      "label": "Kscd",
+      "label": "KsCD",
       "context": "apps"
     },
     "nuvola_apps_kweather": {
       "file": "kweather.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["sun", "clouds", "weather", "forecast", "sky", "sunny"],
-      "label": "Kweather",
+      "label": "KWeather",
       "context": "apps"
     },
     "nuvola_apps_krdc": {
@@ -1371,7 +1373,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["monitor", "screen", "remote", "desktop", "display", "computer"],
       "duplicate_of": "nuvola_apps_preferences-desktop-display",
-      "label": "Krdc",
+      "label": "KRDC",
       "context": "apps"
     },
     "nuvola_apps_kdf": {
@@ -1379,7 +1381,7 @@
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["cubes", "blocks", "3d", "disk", "usage", "space", "colored"],
       "duplicates": ["nuvola_apps_kwikdisk", "nuvola_apps_kcmdf", "nuvola_mimetypes_inode-blockdevice"],
-      "label": "Kdf",
+      "label": "KDiskFree",
       "context": "apps"
     },
     "nuvola_apps_key_bindings": {
@@ -1393,14 +1395,14 @@
       "file": "kcmdrkonqi.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cross", "plus", "red", "error", "crash", "medical", "emergency"],
-      "label": "Kcmdrkonqi",
+      "label": "KCM DrKonqi",
       "context": "apps"
     },
     "nuvola_apps_kuickshow": {
       "file": "kuickshow.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["flower", "purple", "blossom", "plant", "image", "viewer"],
-      "label": "Kuickshow",
+      "label": "KuickShow",
       "context": "apps"
     },
     "nuvola_apps_package": {
@@ -1415,7 +1417,7 @@
       "file": "kverbos.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["flag", "spanish", "spain", "language", "verbs", "learning"],
-      "label": "Kverbos",
+      "label": "KVerbos",
       "context": "apps"
     },
     "nuvola_apps_mozilla-firebird": {
@@ -1429,7 +1431,7 @@
       "file": "juk.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["speaker", "music", "note", "jukebox", "audio", "player"],
-      "label": "Juk",
+      "label": "JuK",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-sound": {
@@ -1443,7 +1445,7 @@
       "file": "ksysv.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["traffic", "light", "signal", "services", "init", "system"],
-      "label": "Ksysv",
+      "label": "KSysV",
       "context": "apps"
     },
     "nuvola_apps_terminal": {
@@ -1457,7 +1459,7 @@
       "file": "xcalc.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["calculator", "math", "buttons", "compute", "numbers", "arithmetic"],
-      "label": "Xcalc",
+      "label": "XCalc",
       "context": "apps"
     },
     "nuvola_apps_window_list": {
@@ -1486,14 +1488,14 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["alarm", "clock", "bells", "timer", "reminder", "wake", "yellow"],
       "duplicates": ["nuvola_actions_kalarm"],
-      "label": "Kalarm",
+      "label": "KAlarm",
       "context": "apps"
     },
     "nuvola_apps_ksnapshot": {
       "file": "ksnapshot.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["camera", "screenshot", "capture", "monitor", "photo", "screen"],
-      "label": "Ksnapshot",
+      "label": "KSnapshot",
       "context": "apps"
     },
     "nuvola_apps_kcmdf": {
@@ -1501,7 +1503,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cubes", "blocks", "3d", "colored", "fonts", "disk", "manager"],
       "duplicate_of": "nuvola_apps_kdf",
-      "label": "Kcmdf",
+      "label": "KCM DiskFree",
       "context": "apps"
     },
     "nuvola_apps_download_manager": {
@@ -1516,7 +1518,7 @@
       "file": "kasteroids.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["spaceship", "asteroid", "space", "rocket", "game", "shoot"],
-      "label": "Kasteroids",
+      "label": "KAsteroids",
       "context": "apps"
     },
     "nuvola_apps_emacs": {
@@ -1530,7 +1532,7 @@
       "file": "ksirc.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["chat", "irc", "speech", "bubbles", "smiley", "conversation"],
-      "label": "Ksirc",
+      "label": "KSirc",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-keyboard": {
@@ -1545,7 +1547,7 @@
       "file": "kpackage.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["box", "package", "software", "install", "open", "purple"],
-      "label": "Kpackage",
+      "label": "KPackage",
       "context": "apps"
     },
     "nuvola_apps_amarok": {
@@ -1567,21 +1569,21 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["ladybug", "bug", "beetle", "insect", "red", "tracker"],
       "duplicates": ["nuvola_actions_tools-report-bug"],
-      "label": "Kbugbuster",
+      "label": "KBugBuster",
       "context": "apps"
     },
     "nuvola_apps_kword": {
       "file": "kword.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["pen", "fountain", "writing", "word", "processor", "document"],
-      "label": "Kword",
+      "label": "KWord",
       "context": "apps"
     },
     "nuvola_apps_ooo_setup": {
       "file": "ooo_setup.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["floppy", "cd", "setup", "install", "openoffice", "seagulls"],
-      "label": "Ooo Setup",
+      "label": "OOo Setup",
       "context": "apps"
     },
     "nuvola_apps_kshisen": {
@@ -1589,14 +1591,14 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["chinese", "character", "tile", "matching", "game", "red"],
       "duplicate_of": "nuvola_apps_kmahjong",
-      "label": "Kshisen",
+      "label": "KShisen",
       "context": "apps"
     },
     "nuvola_apps_kpilot": {
       "file": "kpilot.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pda", "palm", "handheld", "sync", "device", "mobile"],
-      "label": "Kpilot",
+      "label": "KPilot",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-user": {
@@ -1617,7 +1619,7 @@
       "file": "kwrite.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["notepad", "pencil", "editor", "text", "write", "red"],
-      "label": "Kwrite",
+      "label": "KWrite",
       "context": "apps"
     },
     "nuvola_apps_kugar": {
@@ -1663,7 +1665,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["clapperboard", "movie", "video", "media", "player", "film"],
       "duplicates": ["nuvola_actions_mix_video"],
-      "label": "Mplayer",
+      "label": "MPlayer",
       "context": "apps"
     },
     "nuvola_apps_clock": {
@@ -1679,36 +1681,36 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["printer", "print", "paper", "output", "jobs", "queue"],
       "duplicate_of": "nuvola_devices_printer",
-      "label": "Kjobviewer",
+      "label": "KJobViewer",
       "context": "apps"
     },
     "nuvola_apps_katomic": {
       "file": "katomic.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["atoms", "spheres", "molecule", "red", "blue", "science", "game"],
-      "label": "Katomic",
+      "label": "KAtomic",
       "context": "apps"
     },
     "nuvola_apps_artscontrol": {
       "file": "artscontrol.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["speaker", "screwdriver", "audio", "sound", "control", "settings"],
-      "label": "Artscontrol",
+      "label": "aRts Control",
       "context": "apps"
     },
     "nuvola_apps_realplayer": {
       "file": "realplayer.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["speech", "bubble", "speaker", "media", "player", "audio"],
-      "label": "Realplayer",
+      "label": "RealPlayer",
       "context": "apps"
     },
     "nuvola_apps_kolourpaint": {
       "file": "kolourpaint.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["paintbrush", "canvas", "landscape", "painting", "art", "draw"],
-      "duplicates": ["nuvola_apps_kpaint"],
-      "label": "Kolourpaint",
+      "duplicate_of": "nuvola_apps_kpaint",
+      "label": "KolourPaint",
       "context": "apps"
     },
     "nuvola_apps_kontact": {
@@ -1729,21 +1731,21 @@
       "file": "ksig.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pen", "fountain", "nib", "signature", "writing", "ink"],
-      "label": "Ksig",
+      "label": "KSig",
       "context": "apps"
     },
     "nuvola_apps_kpovmodeler": {
       "file": "kpovmodeler.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cylinder", "cone", "3d", "modeling", "shapes", "render"],
-      "label": "Kpovmodeler",
+      "label": "KPovModeler",
       "context": "apps"
     },
     "nuvola_apps_gimp2": {
       "file": "gimp2.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["gimp", "dog", "mascot", "image", "editor", "photo"],
-      "label": "Gimp2",
+      "label": "GIMP 2",
       "context": "apps"
     },
     "nuvola_apps_accessories-calculator": {
@@ -1757,22 +1759,22 @@
       "file": "gimp.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["gimp", "dog", "mascot", "image", "editor", "photo", "purple"],
-      "label": "Gimp",
+      "label": "GIMP",
       "context": "apps"
     },
     "nuvola_apps_kpaint": {
       "file": "kpaint.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["paintbrush", "landscape", "painting", "canvas", "art", "draw"],
-      "duplicate_of": "nuvola_apps_kolourpaint",
-      "label": "Kpaint",
+      "duplicates": ["nuvola_apps_kolourpaint"],
+      "label": "KPaint",
       "context": "apps"
     },
     "nuvola_apps_kthememgr": {
       "file": "kthememgr.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["box", "plus", "add", "theme", "install", "package", "orange"],
-      "label": "Kthememgr",
+      "label": "KThemeMgr",
       "context": "apps"
     },
     "nuvola_apps_kivio": {
@@ -1786,7 +1788,7 @@
       "file": "artsmidimanager.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["piano", "keyboard", "speaker", "midi", "music", "audio"],
-      "label": "Artsmidimanager",
+      "label": "aRts MIDI Manager",
       "context": "apps"
     },
     "nuvola_apps_kanagram": {
@@ -1800,28 +1802,28 @@
       "file": "iconthemes.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["checklist", "wand", "magic", "star", "theme", "icons", "selector"],
-      "label": "Iconthemes",
+      "label": "Icon Themes",
       "context": "apps"
     },
     "nuvola_apps_kgpg": {
       "file": "kgpg.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["key", "person", "encryption", "gpg", "security", "golden"],
-      "label": "Kgpg",
+      "label": "KGPG",
       "context": "apps"
     },
     "nuvola_apps_kcmsystem": {
       "file": "kcmsystem.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["gears", "cogs", "system", "settings", "configure", "silver"],
-      "label": "Kcmsystem",
+      "label": "KCM System",
       "context": "apps"
     },
     "nuvola_apps_ktimetracker": {
       "file": "ktimetracker.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["clock", "calendar", "time", "tracker", "schedule", "hours"],
-      "label": "Ktimetracker",
+      "label": "KTimeTracker",
       "context": "apps"
     },
     "nuvola_apps_laptop_battery": {
@@ -1836,35 +1838,35 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["magnifier", "magnifying", "glass", "zoom", "search", "enlarge"],
       "duplicates": ["nuvola_actions_zoom"],
-      "label": "Xmag",
+      "label": "XMag",
       "context": "apps"
     },
     "nuvola_apps_xemacs": {
       "file": "xemacs.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["gnu", "wildebeest", "xemacs", "editor", "text", "x"],
-      "label": "Xemacs",
+      "label": "XEmacs",
       "context": "apps"
     },
     "nuvola_apps_xclock": {
       "file": "xclock.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["clock", "time", "analog", "watch", "hours", "x"],
-      "label": "Xclock",
+      "label": "XClock",
       "context": "apps"
     },
     "nuvola_apps_spellcheck": {
       "file": "spellcheck.png",
       "sizes": [16],
       "hints": ["checkmark", "spell", "check", "red", "abc", "grammar"],
-      "label": "Spellcheck",
+      "label": "Spell Check",
       "context": "apps"
     },
     "nuvola_apps_kedit": {
       "file": "kedit.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pen", "ballpoint", "orange", "editor", "text", "write"],
-      "label": "Kedit",
+      "label": "KEdit",
       "context": "apps"
     },
     "nuvola_apps_kget": {
@@ -1872,21 +1874,21 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["arrow", "down", "download", "blue", "transfer", "get"],
       "duplicate_of": "nuvola_apps_download_manager",
-      "label": "Kget",
+      "label": "KGet",
       "context": "apps"
     },
     "nuvola_apps_ktip": {
       "file": "ktip.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["lightbulb", "tip", "idea", "yellow", "bright", "hint"],
-      "label": "Ktip",
+      "label": "KTip",
       "context": "apps"
     },
     "nuvola_apps_kbrunch": {
       "file": "kbrunch.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["fraction", "math", "formula", "division", "equation", "xy"],
-      "label": "Kbrunch",
+      "label": "KBruch",
       "context": "apps"
     },
     "nuvola_apps_konquest": {
@@ -1930,7 +1932,7 @@
       "file": "kwin.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["window", "K", "manager", "kde", "titlebar", "desktop"],
-      "label": "Kwin",
+      "label": "KWin",
       "context": "apps"
     },
     "nuvola_apps_preferences-desktop-notification-bell": {
@@ -1944,7 +1946,7 @@
       "file": "folder-txt.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["folder", "pencil", "text", "txt", "files", "blue"],
-      "label": "Folder Txt",
+      "label": "Folder TXT",
       "context": "places"
     },
     "nuvola_places_folder-downloads": {
@@ -1993,7 +1995,7 @@
       "file": "folder-midi.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["folder", "piano", "keyboard", "midi", "music", "audio"],
-      "label": "Folder Midi",
+      "label": "Folder MIDI",
       "context": "places"
     },
     "nuvola_places_user-home": {
@@ -2022,7 +2024,7 @@
       "file": "folder-html.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["folder", "globe", "html", "web", "internet", "world"],
-      "label": "Folder Html",
+      "label": "Folder HTML",
       "context": "places"
     },
     "nuvola_places_start-here": {
@@ -2161,7 +2163,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["kde", "start", "menu", "gear", "logo", "desktop", "launcher"],
       "duplicate_of": "nuvola_places_start-here",
-      "label": "Start Here Kde",
+      "label": "Start Here KDE",
       "context": "places"
     },
     "nuvola_places_bookmarks": {
@@ -2322,7 +2324,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["email", "message", "mail", "at-sign", "rfc822", "document", "green"],
       "duplicate_of": "nuvola_mimetypes_message",
-      "label": "Message Rfc822",
+      "label": "Message RFC822",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-midi": {
@@ -2330,7 +2332,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["midi", "audio", "music", "piano", "keyboard", "keys", "instrument"],
       "duplicates": ["nuvola_mimetypes_audio-prs.sid"],
-      "label": "Audio Midi",
+      "label": "Audio MIDI",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_mime_empty": {
@@ -2338,14 +2340,14 @@
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["empty", "blank", "file", "document", "white", "generic", "placeholder"],
       "duplicate_of": "nuvola_mimetypes_unknown",
-      "label": "Mime Empty",
+      "label": "MIME Empty",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-kspread": {
       "file": "application-x-kspread.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["spreadsheet", "calculator", "table", "grid", "kspread", "cells", "data"],
-      "label": "Application X Kspread",
+      "label": "Application X KSpread",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_file_temporary": {
@@ -2374,7 +2376,7 @@
       "file": "kget_list.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["download", "arrow", "blue", "save", "transfer", "kget", "file"],
-      "label": "Kget List",
+      "label": "KGet List",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-vnd.oasis.opendocument.spreadsheet": {
@@ -2382,7 +2384,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["spreadsheet", "chart", "table", "data", "pie-chart", "opendocument", "cells"],
       "duplicate_of": "nuvola_mimetypes_x-office-spreadsheet",
-      "label": "Application Vnd Oasis Opendocument Spreadsheet",
+      "label": "Application VND OASIS OpenDocument Spreadsheet",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_source_l": {
@@ -2396,14 +2398,14 @@
       "file": "text-x-tex.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["tex", "latex", "typesetting", "document", "text", "academic", "publishing"],
-      "label": "Text X Tex",
+      "label": "Text X TeX",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_gf": {
       "file": "gf.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["gf", "font", "cat", "emoji", "cute", "face", "character"],
-      "label": "Gf",
+      "label": "GF",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_file_locked": {
@@ -2419,21 +2421,21 @@
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["temporary", "blank", "empty", "white", "placeholder", "generic", "file"],
       "duplicate_of": "nuvola_mimetypes_unknown",
-      "label": "Mime Temp",
+      "label": "MIME Temp",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-css": {
       "file": "text-css.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["css", "stylesheet", "web", "design", "style", "checkmark", "document"],
-      "label": "Text Css",
+      "label": "Text CSS",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-kword": {
       "file": "application-x-kword.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["kword", "document", "pen", "writing", "word-processor", "text", "edit"],
-      "label": "Application X Kword",
+      "label": "Application X KWord",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_mozilla_doc": {
@@ -2454,21 +2456,21 @@
       "file": "cdtrack.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cd", "track", "music", "audio", "disc", "note", "media"],
-      "label": "Cdtrack",
+      "label": "CD Track",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-lyx": {
       "file": "application-x-lyx.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["lyx", "document", "editor", "latex", "typesetting", "text", "academic"],
-      "label": "Application X Lyx",
+      "label": "Application X LyX",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_txt": {
       "file": "txt.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["text", "txt", "notepad", "lined", "paper", "plain", "document", "note"],
-      "label": "Txt",
+      "label": "TXT",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-vnd.rn-realvideo": {
@@ -2476,7 +2478,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["audio", "realvideo", "speaker", "sound", "media", "speech", "blue"],
       "duplicate_of": "nuvola_mimetypes_application-vnd.rn-realmedia",
-      "label": "Audio Vnd Rn Realvideo",
+      "label": "Audio VND RN RealVideo",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-font-type1": {
@@ -2490,7 +2492,7 @@
       "file": "ooo_impress.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["impress", "presentation", "slides", "openoffice", "projector", "screen", "slideshow"],
-      "label": "Ooo Impress",
+      "label": "OOo Impress",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_font": {
@@ -2512,7 +2514,7 @@
       "file": "application-x-dvi.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["dvi", "document", "tex", "typeset", "page", "book", "paradiso"],
-      "label": "Application X Dvi",
+      "label": "Application X DVI",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-x-python": {
@@ -2533,7 +2535,7 @@
       "file": "krec_fileplay.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["audio", "speaker", "sound", "play", "recording", "blue", "media"],
-      "label": "Krec Fileplay",
+      "label": "KRec Fileplay",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_unknown": {
@@ -2563,7 +2565,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["spreadsheet", "template", "opendocument", "chart", "table", "data", "cells"],
       "duplicate_of": "nuvola_mimetypes_x-office-spreadsheet",
-      "label": "Application Vnd Oasis Opendocument Spreadsheet Template",
+      "label": "Application VND OASIS OpenDocument Spreadsheet Template",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-vnd.ms-excel": {
@@ -2571,14 +2573,14 @@
       "hints": ["excel", "spreadsheet", "chart", "table", "data", "microsoft", "cells"],
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicate_of": "nuvola_mimetypes_x-office-spreadsheet",
-      "label": "Application Vnd Ms Excel",
+      "label": "Application VND MS Excel",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-php": {
       "file": "application-x-php.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["php", "web", "programming", "script", "globe", "server", "language"],
-      "label": "Application X Php",
+      "label": "Application X PHP",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_inode-socket": {
@@ -2608,7 +2610,7 @@
       "file": "ooo_writer.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["writer", "document", "openoffice", "text", "word-processor", "book", "page"],
-      "label": "Ooo Writer",
+      "label": "OOo Writer",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_misc_doc": {
@@ -2624,7 +2626,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["ebuild", "gentoo", "package", "build", "script", "purple", "linux"],
       "duplicate_of": "nuvola_mimetypes_ebuild",
-      "label": "Mime Ebuild",
+      "label": "MIME Ebuild",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_source_s": {
@@ -2639,14 +2641,14 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["svg", "vector", "image", "compressed", "graphic", "bezier", "red"],
       "duplicate_of": "nuvola_mimetypes_image-svg+xml",
-      "label": "Image Svg Xml Compressed",
+      "label": "Image SVG XML Compressed",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_mime_koffice": {
       "file": "mime_koffice.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["koffice", "kde", "office", "gear", "K", "document", "suite"],
-      "label": "Mime Koffice",
+      "label": "MIME KOffice",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_exec_wine": {
@@ -2660,7 +2662,7 @@
       "file": "image-x-xcf.png",
       "sizes": [16, 22, 32, 64, 128],
       "hints": ["xcf", "gimp", "image", "edit", "paintbrush", "photo", "graphic"],
-      "label": "Image X Xcf",
+      "label": "Image X XCF",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_image-x-eps": {
@@ -2668,7 +2670,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["eps", "vector", "image", "postscript", "graphic", "bezier", "red"],
       "duplicate_of": "nuvola_mimetypes_image-svg+xml",
-      "label": "Image X Eps",
+      "label": "Image X EPS",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_image-x-generic": {
@@ -2691,7 +2693,7 @@
       "sizes": [16, 22, 32, 48, 64, 128, 256],
       "hints": ["html", "web", "globe", "world", "internet", "webpage", "browser"],
       "duplicates": ["nuvola_mimetypes_application-xhtml+xml"],
-      "label": "Text Html",
+      "label": "Text HTML",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-kcsrc": {
@@ -2699,7 +2701,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["kcsrc", "colorscheme", "umbrella", "rainbow", "colors", "theme", "palette"],
       "duplicates": ["nuvola_mimetypes_colorset"],
-      "label": "Application X Kcsrc",
+      "label": "Application X KCSRC",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_video-x-mng": {
@@ -2707,7 +2709,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["video", "mng", "animation", "image", "photo", "cityscape", "frame"],
       "duplicate_of": "nuvola_mimetypes_image-x-generic",
-      "label": "Video X Mng",
+      "label": "Video X MNG",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-x-log": {
@@ -2721,7 +2723,7 @@
       "file": "inode-chardevice.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["chardevice", "terminal", "console", "device", "plug", "inode", "hardware"],
-      "label": "Inode Chardevice",
+      "label": "Inode CharDevice",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_file_locked-[Converted]": {
@@ -2736,14 +2738,14 @@
       "file": "cdbo_list.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cd", "disc", "list", "catalog", "title", "media", "optical"],
-      "label": "Cdbo List",
+      "label": "CDBO List",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-postscript": {
       "file": "application-postscript.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["postscript", "print", "printer", "document", "PS", "output", "paper"],
-      "label": "Application Postscript",
+      "label": "Application PostScript",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_source_j": {
@@ -2764,7 +2766,7 @@
       "file": "text-x-vcard.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["vcard", "contact", "person", "address", "business-card", "profile", "identity"],
-      "label": "Text X Vcard",
+      "label": "Text X vCard",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_inode-directory": {
@@ -2786,7 +2788,7 @@
       "file": "application-x-kformula.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["formula", "math", "equation", "square-root", "kformula", "fraction", "algebra"],
-      "label": "Application X Kformula",
+      "label": "Application X KFormula",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-octet-stream": {
@@ -2801,14 +2803,14 @@
       "file": "ooo_calc.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["calc", "spreadsheet", "openoffice", "chart", "pie-chart", "data", "table"],
-      "label": "Ooo Calc",
+      "label": "OOo Calc",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_wordprocessing": {
       "file": "wordprocessing.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["wordprocessing", "document", "text", "writing", "page", "article", "paper"],
-      "label": "Wordprocessing",
+      "label": "Word Processing",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_message": {
@@ -2824,42 +2826,42 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["quicktime", "video", "movie", "media", "apple", "player", "multimedia"],
       "duplicates": ["nuvola_mimetypes_quicktime"],
-      "label": "Video Quicktime",
+      "label": "Video QuickTime",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-pdf": {
       "file": "application-pdf.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["pdf", "acrobat", "adobe", "document", "portable", "reader"],
-      "label": "Application Pdf",
+      "label": "Application PDF",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_kpovmodeler_doc": {
       "file": "kpovmodeler_doc.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["3d", "modeling", "povray", "shapes", "cylinder", "cone", "render"],
-      "label": "Kpovmodeler Doc",
+      "label": "KPovModeler Doc",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_cdr": {
       "file": "cdr.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["coreldraw", "cdr", "vector", "graphics", "drawing", "design"],
-      "label": "Cdr",
+      "label": "CDR",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-font-ttf": {
       "file": "application-x-font-ttf.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["font", "truetype", "ttf", "typography", "typeface", "text"],
-      "label": "Application X Font Ttf",
+      "label": "Application X Font TTF",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-shellscript": {
       "file": "application-x-shellscript.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["shell", "script", "terminal", "console", "command", "bash", "prompt"],
-      "label": "Application X Shellscript",
+      "label": "Application X Shell Script",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-compressed-tar": {
@@ -2873,7 +2875,7 @@
       "file": "text-x-moc.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["moc", "module", "blocks", "cubes", "components", "3d", "building"],
-      "label": "Text X Moc",
+      "label": "Text X MOC",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-abiword": {
@@ -2908,7 +2910,7 @@
       "file": "application-x-kchart.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["kchart", "chart", "graph", "pie", "bar", "statistics", "data"],
-      "label": "Application X Kchart",
+      "label": "Application X KChart",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_mime": {
@@ -2916,7 +2918,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["mime", "document", "blank", "empty", "generic", "file", "unknown"],
       "duplicate_of": "nuvola_mimetypes_unknown",
-      "label": "Mime",
+      "label": "MIME",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-krita": {
@@ -2937,7 +2939,7 @@
       "file": "gnome_app_info.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["gnome", "application", "info", "foot", "desktop", "linux"],
-      "label": "Gnome App Info",
+      "label": "GNOME App Info",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-zip": {
@@ -3010,7 +3012,7 @@
       "file": "application-x-cd-image.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["cd", "disc", "image", "iso", "burn", "optical", "mount"],
-      "label": "Application X Cd Image",
+      "label": "Application X CD Image",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-vnd.rn-realaudio": {
@@ -3018,7 +3020,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["realaudio", "audio", "speaker", "sound", "streaming", "real", "media"],
       "duplicate_of": "nuvola_mimetypes_application-vnd.rn-realmedia",
-      "label": "Audio Vnd Rn Realaudio",
+      "label": "Audio VND RN RealAudio",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-object": {
@@ -3047,21 +3049,21 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["sid", "audio", "piano", "keyboard", "music", "commodore", "chiptune"],
       "duplicate_of": "nuvola_mimetypes_audio-midi",
-      "label": "Audio Prs Sid",
+      "label": "Audio PRS SID",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_ooo_draw_tpl": {
       "file": "ooo_draw_tpl.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["openoffice", "draw", "template", "vector", "illustration", "ruler", "pencil"],
-      "label": "Ooo Draw Tpl",
+      "label": "OOo Draw Tpl",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_krec_filerec": {
       "file": "krec_filerec.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["recording", "record", "red", "button", "audio", "capture", "krec"],
-      "label": "Krec Filerec",
+      "label": "KRec FileRec",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-x-makefile": {
@@ -3076,14 +3078,14 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["realaudio", "plugin", "audio", "speaker", "sound", "streaming", "media"],
       "duplicate_of": "nuvola_mimetypes_application-vnd.rn-realmedia",
-      "label": "Audio X Pn Realaudio Plugin",
+      "label": "Audio X PN RealAudio Plugin",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_ooo_setup": {
       "file": "ooo_setup.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["openoffice", "setup", "install", "floppy", "disc", "save", "installer"],
-      "label": "Ooo Setup",
+      "label": "OOo Setup",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_image-svg+xml": {
@@ -3091,7 +3093,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["svg", "vector", "scalable", "bezier", "curve", "graphic", "drawing"],
       "duplicates": ["nuvola_mimetypes_image-svg+xml-compressed", "nuvola_mimetypes_image-x-eps"],
-      "label": "Image Svg Xml",
+      "label": "Image SVG XML",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-vnd.rn-realmedia": {
@@ -3099,7 +3101,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["realmedia", "real", "audio", "speaker", "sound", "streaming", "media"],
       "duplicates": ["nuvola_mimetypes_audio-vnd.rn-realaudio", "nuvola_mimetypes_audio-vnd.rn-realvideo", "nuvola_mimetypes_audio-x-pn-realaudio-plugin", "nuvola_mimetypes_real_doc"],
-      "label": "Application Vnd Rn Realmedia",
+      "label": "Application VND RN RealMedia",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_colorset": {
@@ -3114,28 +3116,28 @@
       "file": "koffice.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["koffice", "kde", "office", "gear", "suite", "productivity"],
-      "label": "Koffice",
+      "label": "KOffice",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_inode-fifo": {
       "file": "inode-fifo.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["fifo", "pipe", "inode", "queue", "connector", "socket"],
-      "label": "Inode Fifo",
+      "label": "Inode FIFO",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_ooo_impress_tpl": {
       "file": "ooo_impress_tpl.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["openoffice", "impress", "template", "presentation", "slides", "screen"],
-      "label": "Ooo Impress Tpl",
+      "label": "OOo Impress Tpl",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-x-csrc": {
       "file": "text-x-csrc.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["c", "source", "code", "programming", "development", "csrc"],
-      "label": "Text X Csrc",
+      "label": "Text X C Src",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_applix": {
@@ -3150,7 +3152,7 @@
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["block", "device", "inode", "cubes", "storage", "hardware"],
       "duplicate_of": "nuvola_apps_kdf",
-      "label": "Inode Blockdevice",
+      "label": "Inode BlockDevice",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-perl": {
@@ -3188,7 +3190,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["xhtml", "xml", "html", "web", "globe", "internet", "webpage"],
       "duplicate_of": "nuvola_mimetypes_text-html",
-      "label": "Application Xhtml Xml",
+      "label": "Application XHTML XML",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_metafont": {
@@ -3202,14 +3204,14 @@
       "file": "application-x-kpresenter.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["kpresenter", "presentation", "slides", "slideshow", "screen", "koffice"],
-      "label": "Application X Kpresenter",
+      "label": "Application X KPresenter",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-vcalendar": {
       "file": "text-vcalendar.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["calendar", "vcalendar", "date", "schedule", "march", "day", "event"],
-      "label": "Text Vcalendar",
+      "label": "Text vCalendar",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-designer": {
@@ -3230,7 +3232,7 @@
       "file": "ooo_draw.png",
       "sizes": [16, 32, 48, 64, 128],
       "hints": ["openoffice", "draw", "vector", "illustration", "ruler", "pencil"],
-      "label": "Ooo Draw",
+      "label": "OOo Draw",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-x-java": {
@@ -3260,7 +3262,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["quicktime", "video", "movie", "apple", "media", "player", "q"],
       "duplicate_of": "nuvola_mimetypes_video-quicktime",
-      "label": "Quicktime",
+      "label": "QuickTime",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_krec_fileempty": {
@@ -3268,7 +3270,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["krec", "empty", "blank", "recording", "file", "new"],
       "duplicate_of": "nuvola_mimetypes_unknown",
-      "label": "Krec Fileempty",
+      "label": "KRec FileEmpty",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-rar": {
@@ -3276,7 +3278,7 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["rar", "archive", "compressed", "package", "box", "container"],
       "duplicate_of": "nuvola_apps_package",
-      "label": "Application X Rar",
+      "label": "Application X RAR",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_font_bitmap": {
@@ -3290,21 +3292,21 @@
       "file": "text-x-chdr.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["header", "c", "h", "source", "code", "programming", "include"],
-      "label": "Text X Chdr",
+      "label": "Text X C Hdr",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_ooo_calc_tpl": {
       "file": "ooo_calc_tpl.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["openoffice", "calc", "template", "spreadsheet", "chart", "pie"],
-      "label": "Ooo Calc Tpl",
+      "label": "OOo Calc Tpl",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_kugardata": {
       "file": "kugardata.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["kugar", "data", "paw", "report", "footprint", "koffice"],
-      "label": "Kugardata",
+      "label": "Kugar Data",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_application-x-kugar": {
@@ -3319,14 +3321,14 @@
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["sharedlib", "library", "binary", "shared", "so", "dll", "object"],
       "duplicate_of": "nuvola_mimetypes_application-octet-stream",
-      "label": "Application X Sharedlib",
+      "label": "Application X Shared Lib",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_ooo_writer_tpl": {
       "file": "ooo_writer_tpl.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["openoffice", "writer", "template", "document", "text", "book"],
-      "label": "Ooo Writer Tpl",
+      "label": "OOo Writer Tpl",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_text-x-fortran": {
@@ -3340,7 +3342,7 @@
       "file": "application-x-rpm.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "hints": ["rpm", "package", "redhat", "linux", "installer", "box", "archive"],
-      "label": "Application X Rpm",
+      "label": "Application X RPM",
       "context": "mimetypes"
     },
     "nuvola_categories_applications-games-strategy": {
@@ -3492,7 +3494,7 @@
       "file": "ledpurple.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["purple", "led", "light", "indicator", "status", "orb", "sphere", "glossy"],
-      "label": "Ledpurple",
+      "label": "LED Purple",
       "context": "actions"
     },
     "nuvola_actions_configure": {
@@ -3573,7 +3575,7 @@
       "file": "kmixdocked_error.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["volume", "speaker", "error", "mute", "audio", "sound", "cross"],
-      "label": "Kmixdocked Error",
+      "label": "KMixDocked Error",
       "context": "actions"
     },
     "nuvola_actions_view-split-left-right": {
@@ -3646,14 +3648,14 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["screwdriver", "edit", "tool", "configure", "fix", "repair", "settings"],
       "duplicates": ["nuvola_actions_ark_options"],
-      "label": "Kgpg Edit",
+      "label": "KGPG Edit",
       "context": "actions"
     },
     "nuvola_actions_openterm": {
       "file": "openterm.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["terminal", "console", "shell", "command", "prompt", "cli", "bash"],
-      "label": "Openterm",
+      "label": "Open Term",
       "context": "actions"
     },
     "nuvola_actions_document-export-key": {
@@ -3710,7 +3712,7 @@
       "file": "kgpg_term.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["key", "terminal", "gpg", "encrypt", "security", "console", "crypto"],
-      "label": "Kgpg Term",
+      "label": "KGPG Term",
       "context": "actions"
     },
     "nuvola_actions_tools-wizard": {
@@ -3724,7 +3726,7 @@
       "file": "irkick.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["infrared", "remote", "wireless", "signal", "antenna", "broadcast", "ir"],
-      "label": "Irkick",
+      "label": "IRKick",
       "context": "actions"
     },
     "nuvola_actions_view-list-tree": {
@@ -3745,7 +3747,7 @@
       "file": "ledyellow.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "yellow", "light", "indicator", "status", "circle", "orb"],
-      "label": "Ledyellow",
+      "label": "LED Yellow",
       "context": "actions"
     },
     "nuvola_actions_zoom": {
@@ -3863,7 +3865,7 @@
       "file": "kmixdocked_mute.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["mute", "speaker", "volume", "silent", "audio", "sound", "quiet"],
-      "label": "Kmixdocked Mute",
+      "label": "KMixDocked Mute",
       "context": "actions"
     },
     "nuvola_actions_button_accept": {
@@ -3901,7 +3903,7 @@
       "file": "ledblue.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "blue", "light", "indicator", "status", "circle", "orb"],
-      "label": "Ledblue",
+      "label": "LED Blue",
       "context": "actions"
     },
     "nuvola_actions_view-list-details": {
@@ -3936,7 +3938,7 @@
       "file": "ledgreen.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "green", "light", "indicator", "status", "circle", "orb"],
-      "label": "Ledgreen",
+      "label": "LED Green",
       "context": "actions"
     },
     "nuvola_actions_edit-clear-history": {
@@ -3964,7 +3966,7 @@
       "file": "ledorange.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "orange", "light", "indicator", "status", "circle", "orb"],
-      "label": "Ledorange",
+      "label": "LED Orange",
       "context": "actions"
     },
     "nuvola_actions_noatunloopsong": {
@@ -3972,7 +3974,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["loop", "repeat", "song", "cycle", "refresh", "arrows", "recycle"],
       "duplicate_of": "nuvola_actions_kaboodleloop",
-      "label": "Noatunloopsong",
+      "label": "Noatun Loop Song",
       "context": "actions"
     },
     "nuvola_actions_mail_post_to": {
@@ -4009,14 +4011,14 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["trash", "delete", "bin", "recycle", "garbage", "remove", "discard"],
       "duplicate_of": "nuvola_places_user-trash",
-      "label": "Edittrash",
+      "label": "Edit Trash",
       "context": "actions"
     },
     "nuvola_actions_kalarm_disabled": {
       "file": "kalarm_disabled.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["alarm", "disabled", "clock", "cancel", "off", "timer", "inactive"],
-      "label": "Kalarm Disabled",
+      "label": "KAlarm Disabled",
       "context": "actions"
     },
     "nuvola_actions_media-playback-stop": {
@@ -4031,7 +4033,7 @@
       "file": "artsmediatypes.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["audio", "speaker", "sound", "media", "volume", "music", "arts"],
-      "label": "Artsmediatypes",
+      "label": "aRts Media Types",
       "context": "actions"
     },
     "nuvola_actions_arrow-down": {
@@ -4046,14 +4048,14 @@
       "file": "ledlightblue.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "lightblue", "light", "indicator", "status", "circle", "orb"],
-      "label": "Ledlightblue",
+      "label": "LED Light Blue",
       "context": "actions"
     },
     "nuvola_actions_artsaudiomanager": {
       "file": "artsaudiomanager.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["megaphone", "audio", "announce", "loudspeaker", "horn", "sound", "manager"],
-      "label": "Artsaudiomanager",
+      "label": "aRts Audio Manager",
       "context": "actions"
     },
     "nuvola_actions_document-properties-key": {
@@ -4075,7 +4077,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["identity", "key", "user", "person", "gpg", "authenticate", "account"],
       "duplicates": ["nuvola_actions_kgpg", "nuvola_apps_kgpg_docked", "nuvola_actions_kgpg_docked"],
-      "label": "Kgpg Identity",
+      "label": "KGPG Identity",
       "context": "actions"
     },
     "nuvola_actions_color-gradient": {
@@ -4118,7 +4120,7 @@
       "file": "colorpicker.png",
       "sizes": [16, 22],
       "hints": ["colorpicker", "eyedropper", "pipette", "sample", "pick", "color", "dropper"],
-      "label": "Colorpicker",
+      "label": "Color Picker",
       "context": "actions"
     },
     "nuvola_actions_document-new": {
@@ -4184,7 +4186,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["ok", "check", "yes", "confirm", "accept", "done", "approve"],
       "duplicates": ["nuvola_actions_dialog-ok", "nuvola_actions_camera_test", "nuvola_actions_games-endturn", "nuvola_actions_button_accept"],
-      "label": "Ok",
+      "label": "OK",
       "context": "actions"
     },
     "nuvola_actions_view-list-icons": {
@@ -4220,14 +4222,14 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["down", "check", "checkmark", "tick", "blue", "arrow", "complete"],
       "duplicate_of": "nuvola_actions_arrow-down",
-      "label": "Kdevelop Down",
+      "label": "KDevelop Down",
       "context": "actions"
     },
     "nuvola_actions_kgpg_photo": {
       "file": "kgpg_photo.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["photo", "id", "portrait", "picture", "identity", "badge", "profile"],
-      "label": "Kgpg Photo",
+      "label": "KGPG Photo",
       "context": "actions"
     },
     "nuvola_actions_view-history": {
@@ -4243,7 +4245,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["loop", "repeat", "refresh", "sync", "arrows", "cycle", "reload"],
       "duplicates": ["nuvola_actions_noatunloopsong"],
-      "label": "Kaboodleloop",
+      "label": "Kaboodle Loop",
       "context": "actions"
     },
     "nuvola_actions_mail_delete": {
@@ -4301,7 +4303,7 @@
       "file": "kmixdocked.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["volume", "speaker", "sound", "audio", "mixer", "mute", "unmute", "tray"],
-      "label": "Kmixdocked",
+      "label": "KMixDocked",
       "context": "actions"
     },
     "nuvola_actions_draw-freehand": {
@@ -4316,7 +4318,7 @@
       "file": "kgpg_sign.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["key", "sign", "signature", "gpg", "pgp", "encrypt", "security", "certificate", "pen"],
-      "label": "Kgpg Sign",
+      "label": "KGPG Sign",
       "context": "actions"
     },
     "nuvola_actions_media-record": {
@@ -4359,7 +4361,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["checkmark", "check", "done", "complete", "yes", "ok", "accept", "green", "tick", "confirm"],
       "duplicate_of": "nuvola_actions_ok",
-      "label": "Games Endturn",
+      "label": "Games End Turn",
       "context": "actions"
     },
     "nuvola_actions_help-about": {
@@ -4424,7 +4426,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["kde", "about", "logo", "k", "gear", "desktop", "environment", "info"],
       "duplicate_of": "nuvola_places_start-here",
-      "label": "About Kde",
+      "label": "About KDE",
       "context": "actions"
     },
     "nuvola_actions_go-bottom": {
@@ -4454,7 +4456,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["alarm", "clock", "timer", "reminder", "bell", "time", "alert", "orange", "schedule"],
       "duplicate_of": "nuvola_apps_kalarm",
-      "label": "Kalarm",
+      "label": "KAlarm",
       "context": "actions"
     },
     "nuvola_actions_object-rotate-left": {
@@ -4511,7 +4513,7 @@
       "file": "irkickflash.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["infrared", "remote", "wireless", "signal", "transmit", "red", "waves", "control"],
-      "label": "Irkickflash",
+      "label": "IRKick Flash",
       "context": "actions"
     },
     "nuvola_actions_arrow-up": {
@@ -4525,7 +4527,7 @@
       "file": "ledred.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "red", "light", "indicator", "status", "glow", "sphere", "circle"],
-      "label": "Ledred",
+      "label": "LED Red",
       "context": "actions",
       "duplicates": ["nuvola_actions_mix_record"]
     },
@@ -4533,7 +4535,7 @@
       "file": "artsenvironment.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["speaker", "audio", "sound", "megaphone", "blue", "volume", "arts", "output"],
-      "label": "Artsenvironment",
+      "label": "aRts Environment",
       "context": "actions"
     },
     "nuvola_actions_list-add": {
@@ -4556,7 +4558,8 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["fill", "color", "paint", "bucket", "red", "pour", "flood", "tool"],
       "label": "Fill Color",
-      "context": "actions"
+      "context": "actions",
+      "duplicates": ["nuvola_actions_format-fill-color"]
     },
     "nuvola_actions_document-import-key": {
       "file": "document-import-key.png",
@@ -4577,7 +4580,7 @@
       "file": "ledlightgreen.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["led", "light", "green", "indicator", "status", "glow", "sphere", "on"],
-      "label": "Ledlightgreen",
+      "label": "LED Light Green",
       "context": "actions"
     },
     "nuvola_actions_dialog-ok": {
@@ -4585,7 +4588,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["ok", "checkmark", "confirm", "accept", "yes", "green", "done", "success"],
       "duplicate_of": "nuvola_actions_ok",
-      "label": "Dialog Ok",
+      "label": "Dialog OK",
       "context": "actions"
     },
     "nuvola_actions_dialog-cancel": {
@@ -4600,7 +4603,7 @@
       "file": "irkickoff.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["infrared", "remote", "off", "disabled", "red", "transmitter", "ir", "control"],
-      "label": "Irkickoff",
+      "label": "IRKick Off",
       "context": "actions"
     },
     "nuvola_actions_tab-close": {
@@ -4644,7 +4647,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["cd", "disc", "compact", "optical", "media", "dvd", "music", "silver"],
       "duplicate_of": "nuvola_devices_media-optical",
-      "label": "Cd",
+      "label": "CD",
       "context": "actions"
     },
     "nuvola_actions_view-file-columns": {
@@ -4672,7 +4675,7 @@
       "file": "artsmidimanager.png",
       "sizes": [16, 22, 32, 48],
       "hints": ["midi", "audio", "music", "piano", "keys", "speaker", "sound", "arts"],
-      "label": "Artsmidimanager",
+      "label": "aRts MIDI Manager",
       "context": "actions"
     },
     "nuvola_actions_edit-delete-shred": {
@@ -4695,7 +4698,7 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["midi", "piano", "keyboard", "keys", "music", "mix", "audio", "instrument"],
       "duplicate_of": "nuvola_actions_piano",
-      "label": "Mix Midi",
+      "label": "Mix MIDI",
       "context": "actions"
     },
     "nuvola_actions_arrow-right-double": {
@@ -4710,7 +4713,7 @@
       "sizes": [16, 22],
       "hints": ["gpg", "key", "lock", "encrypt", "security", "pgp", "crypto", "padlock"],
       "duplicate_of": "nuvola_actions_kgpg_identity",
-      "label": "Kgpg",
+      "label": "KGPG",
       "context": "actions"
     },
     "nuvola_actions_system-run": {
@@ -4781,7 +4784,7 @@
       "file": "playsound.png",
       "sizes": [16, 22],
       "hints": ["play", "sound", "music", "note", "green", "audio", "melody", "tone"],
-      "label": "Playsound",
+      "label": "Play Sound",
       "context": "actions"
     },
     "nuvola_actions_mail-receive": {
@@ -4810,7 +4813,8 @@
       "sizes": [16, 22, 32, 48],
       "hints": ["fill", "color", "paint", "bucket", "format", "background", "pour", "red"],
       "label": "Format Fill Color",
-      "context": "actions"
+      "context": "actions",
+      "duplicate_of": "nuvola_actions_fill-color"
     },
     "nuvola_actions_news-subscribe": {
       "file": "news-subscribe.png",
@@ -4866,7 +4870,7 @@
       "file": "knewsletter.png",
       "sizes": [64, 128],
       "hints": ["newsletter", "news", "newspaper", "folded", "article", "press", "reading", "paper"],
-      "label": "Knewsletter",
+      "label": "KNewsletter",
       "context": "apps"
     },
     "nuvola_places_folder-man": {
@@ -4888,7 +4892,7 @@
       "hints": ["audio", "asx", "music", "note", "file", "document", "playlist", "microsoft"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Ms Asx",
+      "label": "Audio X MS ASX",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-matroska": {
@@ -4904,7 +4908,7 @@
       "hints": ["audio", "wma", "music", "note", "file", "document", "microsoft", "windows"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Ms Wma",
+      "label": "Audio X MS WMA",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-basic": {
@@ -4920,7 +4924,7 @@
       "hints": ["audio", "mpeg", "mp3", "music", "note", "file", "document", "sound"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio Mpeg",
+      "label": "Audio MPEG",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-ac3": {
@@ -4928,7 +4932,7 @@
       "hints": ["audio", "ac3", "music", "note", "file", "document", "dolby", "surround"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio Ac3",
+      "label": "Audio AC3",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-wav": {
@@ -4936,7 +4940,7 @@
       "hints": ["audio", "wav", "wave", "music", "note", "file", "document", "sound"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Wav",
+      "label": "Audio X WAV",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-mp2": {
@@ -4944,7 +4948,7 @@
       "hints": ["audio", "mp2", "music", "note", "file", "document", "mpeg", "sound"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Mp2",
+      "label": "Audio X MP2",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-musepack": {
@@ -4960,7 +4964,7 @@
       "hints": ["audio", "scpls", "pls", "playlist", "music", "note", "file", "stream"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Scpls",
+      "label": "Audio X SCPLS",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-flac+ogg": {
@@ -4968,7 +4972,7 @@
       "hints": ["audio", "flac", "ogg", "music", "note", "file", "lossless", "container"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Flac Ogg",
+      "label": "Audio X FLAC Ogg",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-vorbis+ogg": {
@@ -4984,7 +4988,7 @@
       "hints": ["audio", "aac", "music", "note", "file", "document", "apple", "lossy"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio Aac",
+      "label": "Audio AAC",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-adpcm": {
@@ -4992,14 +4996,14 @@
       "hints": ["audio", "adpcm", "music", "note", "file", "document", "codec", "sound"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Adpcm",
+      "label": "Audio X ADPCM",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_image_gimp": {
       "file": "image_gimp.png",
       "sizes": [48],
       "hints": ["image", "gimp", "xcf", "photo", "edit", "pencil", "graphic", "artwork"],
-      "label": "Image Gimp",
+      "label": "Image GIMP",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-monkey": {
@@ -5015,7 +5019,7 @@
       "hints": ["audio", "mpegurl", "m3u", "playlist", "music", "note", "file", "url"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Mpegurl",
+      "label": "Audio X MPEG URL",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-aiff": {
@@ -5023,7 +5027,7 @@
       "hints": ["audio", "aiff", "apple", "music", "note", "file", "lossless", "mac"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Aiff",
+      "label": "Audio X AIFF",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-mp4": {
@@ -5031,7 +5035,7 @@
       "hints": ["audio", "mp4", "m4a", "music", "note", "file", "aac", "container"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio Mp4",
+      "label": "Audio MP4",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-mod": {
@@ -5039,7 +5043,7 @@
       "hints": ["audio", "mod", "tracker", "music", "note", "file", "module", "chiptune"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Mod",
+      "label": "Audio X MOD",
       "context": "mimetypes"
     },
     "nuvola_mimetypes_audio-x-flac": {
@@ -5047,14 +5051,14 @@
       "hints": ["audio", "flac", "lossless", "music", "note", "file", "hifi", "compression"],
       "sizes": [48],
       "duplicate_of": "nuvola_mimetypes_audio-x-generic",
-      "label": "Audio X Flac",
+      "label": "Audio X FLAC",
       "context": "mimetypes"
     },
     "nuvola_apps_gnome": {
       "file": "gnome.png",
       "sizes": [32],
       "hints": ["gnome", "desktop", "footprint", "linux", "logo", "blue", "foot", "gtk"],
-      "label": "Gnome",
+      "label": "GNOME",
       "context": "apps"
     },
     "nuvola_places_mail-message": {
@@ -5077,21 +5081,21 @@
       "sizes": [22, 32],
       "hints": ["play", "noatun", "media", "triangle", "blue", "player", "start", "audio"],
       "duplicate_of": "nuvola_actions_media-playback-start",
-      "label": "Noatunplay",
+      "label": "Noatun Play",
       "context": "actions"
     },
     "nuvola_actions_kcmpci": {
       "file": "kcmpci.png",
       "sizes": [32],
       "hints": ["pci", "hardware", "card", "config", "layout", "document", "system", "board"],
-      "label": "Kcmpci",
+      "label": "KCM PCI",
       "context": "actions"
     },
     "nuvola_actions_hwinfo": {
       "file": "hwinfo.png",
       "sizes": [32],
       "hints": ["hardware", "info", "information", "computer", "system", "device", "specs", "details"],
-      "label": "Hwinfo",
+      "label": "HWInfo",
       "context": "actions"
     },
     "nuvola_actions_noatunforward": {
@@ -5099,7 +5103,7 @@
       "sizes": [22, 32],
       "hints": ["forward", "skip", "next", "noatun", "media", "blue", "arrow", "player"],
       "duplicate_of": "nuvola_actions_media-skip-forward",
-      "label": "Noatunforward",
+      "label": "Noatun Forward",
       "context": "actions"
     },
     "nuvola_actions_noatunpause": {
@@ -5107,7 +5111,7 @@
       "sizes": [22, 32],
       "hints": ["pause", "noatun", "media", "bars", "blue", "stop", "player", "control"],
       "duplicate_of": "nuvola_actions_media-playback-pause",
-      "label": "Noatunpause",
+      "label": "Noatun Pause",
       "context": "actions"
     },
     "nuvola_actions_noatunback": {
@@ -5115,7 +5119,7 @@
       "sizes": [22, 32],
       "hints": ["back", "rewind", "previous", "noatun", "media", "blue", "arrow", "player"],
       "duplicate_of": "nuvola_actions_media-skip-backward",
-      "label": "Noatunback",
+      "label": "Noatun Back",
       "context": "actions"
     },
     "nuvola_actions_help-contents": {
@@ -5138,7 +5142,7 @@
       "sizes": [22, 32],
       "hints": ["stop", "noatun", "media", "square", "red", "halt", "player", "control"],
       "duplicate_of": "nuvola_actions_media-playback-stop",
-      "label": "Noatunstop",
+      "label": "Noatun Stop",
       "context": "actions"
     },
     "nuvola_actions_noatunplaylist": {
@@ -5146,7 +5150,7 @@
       "sizes": [22, 32],
       "hints": ["playlist", "noatun", "list", "stack", "queue", "blue", "media", "songs"],
       "duplicate_of": "nuvola_actions_media-eject",
-      "label": "Noatunplaylist",
+      "label": "Noatun Playlist",
       "context": "actions"
     },
     "nuvola_apps_kgpg_docked": {
@@ -5154,7 +5158,7 @@
       "sizes": [22],
       "hints": ["kgpg", "docked", "key", "lock", "encrypt", "tray", "gpg", "security"],
       "duplicate_of": "nuvola_actions_kgpg_identity",
-      "label": "Kgpg Docked",
+      "label": "KGPG Docked",
       "context": "apps"
     },
     "nuvola_apps_kopete_offline": {
@@ -5183,7 +5187,7 @@
       "sizes": [22],
       "hints": ["kmail", "mail", "email", "envelope", "letter", "message", "inbox"],
       "duplicates": ["nuvola_actions_kmaillight"],
-      "label": "Kmaillight",
+      "label": "KMail Light",
       "context": "apps"
     },
     "nuvola_apps_kopete_all_away": {
@@ -5198,7 +5202,7 @@
       "sizes": [22],
       "hints": ["kgpg", "key", "keys", "encryption", "gpg", "security", "lock", "tray"],
       "duplicate_of": "nuvola_actions_kgpg_identity",
-      "label": "Kgpg Docked",
+      "label": "KGPG Docked",
       "context": "actions"
     },
     "nuvola_actions_kopete": {
@@ -5244,7 +5248,7 @@
       "sizes": [22],
       "hints": ["printer", "print", "paper", "output", "document", "queue", "hardware"],
       "duplicate_of": "nuvola_devices_printer",
-      "label": "Klpq",
+      "label": "KLpq",
       "context": "actions"
     },
     "nuvola_actions_tool_uselastdir": {
@@ -5252,7 +5256,7 @@
       "sizes": [22],
       "hints": ["folder", "directory", "recent", "last", "path", "blue", "open"],
       "duplicate_of": "nuvola_mimetypes_inode-directory",
-      "label": "Tool Uselastdir",
+      "label": "Tool Use Last Dir",
       "context": "actions"
     },
     "nuvola_actions_klipper": {
@@ -5306,7 +5310,7 @@
       "sizes": [22],
       "hints": ["kmail", "mail", "email", "envelope", "letter", "message", "inbox"],
       "duplicate_of": "nuvola_apps_kmaillight",
-      "label": "Kmaillight",
+      "label": "KMail Light",
       "context": "actions"
     },
     "nuvola_actions_printmgr": {
@@ -5314,7 +5318,7 @@
       "sizes": [22],
       "hints": ["printer", "print", "manager", "paper", "output", "queue", "hardware"],
       "duplicate_of": "nuvola_devices_printer",
-      "label": "Printmgr",
+      "label": "Print Mgr",
       "context": "actions"
     },
     "nuvola_actions_mix_record": {
@@ -5329,7 +5333,7 @@
       "file": "kmail.png",
       "sizes": [22],
       "hints": ["kmail", "mail", "email", "envelope", "letter", "message", "inbox"],
-      "label": "Kmail",
+      "label": "KMail",
       "context": "actions"
     },
     "nuvola_actions_juk_dock": {
@@ -5351,7 +5355,7 @@
       "sizes": [22],
       "hints": ["korganizer", "calendar", "alarm", "reminder", "schedule", "check", "event"],
       "duplicate_of": "nuvola_apps_korganizer",
-      "label": "Korgac",
+      "label": "KOrgAC",
       "context": "actions"
     },
     "nuvola_actions_amarok": {
@@ -5374,7 +5378,7 @@
       "sizes": [22],
       "hints": ["printer", "print", "job", "queue", "paper", "viewer", "hardware"],
       "duplicate_of": "nuvola_devices_printer",
-      "label": "Kjobviewer",
+      "label": "KJobViewer",
       "context": "actions"
     },
     "nuvola_actions_tool_timer": {
@@ -5421,7 +5425,7 @@
       "sizes": [22],
       "hints": ["cd", "disc", "dvd", "burn", "media", "music", "optical"],
       "duplicate_of": "nuvola_devices_media-optical",
-      "label": "Mix Cd",
+      "label": "Mix CD",
       "context": "actions"
     }
   }
