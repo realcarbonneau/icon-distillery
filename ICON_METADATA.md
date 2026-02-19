@@ -97,8 +97,9 @@ The key is the `internal_context_id`, used throughout the system for icon ids, f
 |-------|-------------|
 | `xdg_context` | The canonical XDG `Context=` value from index.theme (e.g., "Actions", "Applications") |
 | `context_label` | Display label for UI. Defaults to `xdg_context`, can be manually overridden (e.g., "Applications" → "Apps") |
+| `emoji_group` | Emoji packs only. Exact group name string from `emoji-test.txt` `# group:` lines (e.g., "Smileys & Emotion"). Used by the parser to match codepoints to contexts. See [Unicode Emoji Standard (UTS #51)](https://unicode.org/reports/tr51/). |
 
-Example:
+Example (icon theme):
 ```json
 {
   "actions": {
@@ -116,6 +117,22 @@ Example:
   "mimetypes": {
     "xdg_context": "MimeTypes",
     "context_label": "MimeTypes"
+  }
+}
+```
+
+Example (emoji pack):
+```json
+{
+  "smileys-emotion": {
+    "xdg_context": "SmileysEmotion",
+    "context_label": "Smileys & Emotion",
+    "emoji_group": "Smileys & Emotion"
+  },
+  "animals-nature": {
+    "xdg_context": "AnimalsNature",
+    "context_label": "Animals & Nature",
+    "emoji_group": "Animals & Nature"
   }
 }
 ```

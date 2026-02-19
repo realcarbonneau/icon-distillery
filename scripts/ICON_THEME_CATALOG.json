@@ -57,6 +57,14 @@
     "effective_sizes": [16, 22, 32, 48, 64, 128, 256],
     "xdg_contexts": ["Actions", "Applications", "Categories", "Devices", "Emblems", "FileSystems", "MimeTypes", "Places", "Status"]
   },
+  "noto-emoji": {
+    "label": "Noto Color Emoji",
+    "url": "https://github.com/googlefonts/noto-emoji",
+    "license": "Apache-2.0",
+    "notes": "Filtered to base emoji only (no skin tone, gender sign, or direction variants). Country/subdivision flags from third_party/region-flags.",
+    "effective_sizes": [16, 32, 128],
+    "xdg_contexts": ["Activities", "AnimalsNature", "Flags", "FoodDrink", "Objects", "PeopleBody", "SmileysEmotion", "Symbols", "TravelPlaces"]
+  },
   "twemoji": {
     "skip": true,
     "label": "Twemoji",
