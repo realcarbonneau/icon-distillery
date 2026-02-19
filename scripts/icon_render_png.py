@@ -26,7 +26,10 @@ See RENDERING.md for detailed flow documentation.
 """
 
 import os
+import subprocess
 import sys
+
+from PIL import Image
 
 from icon_theme_processor import (
     ThemeCatalog, save_json_compact_arrays, fatal_error, usage_error,
@@ -81,11 +84,11 @@ def main():
     if not icons:
         fatal_error(f"icons.json missing or empty for theme '{theme.theme_id}'")
 
-    # --- Import cairosvg ---
+    # --- Check for Inkscape ---
     try:
-        import cairosvg
-    except ImportError:
-        fatal_error("cairosvg not installed. Install with: pip install cairosvg")
+        subprocess.run(["inkscape", "--version"], capture_output=True, check=True)
+    except FileNotFoundError:
+        fatal_error("inkscape not found. Install with: apt install inkscape")
 
     # --- Render from icons.json ---
     size_prefix = f"{target_size}x{target_size}"
@@ -129,15 +132,40 @@ def main():
         # Create destination directory
         os.makedirs(png_dir, exist_ok=True)
 
-        # Render
+        # Render via Inkscape (constrain by width first)
         try:
-            cairosvg.svg2png(
-                url=str(svg_path),
-                write_to=png_path,
-                output_width=target_size,
-                output_height=target_size,
+            result = subprocess.run(
+                [
+                    "inkscape", svg_path,
+                    "--export-type=png",
+                    f"--export-filename={png_path}",
+                    f"--export-width={target_size}",
+                ],
+                capture_output=True, timeout=30,
             )
-            if valid_png(png_path):
+            # If portrait SVG, height exceeds target — re-render constrained by height
+            if result.returncode == 0 and valid_png(png_path):
+                img = Image.open(png_path)
+                if img.height > target_size:
+                    result = subprocess.run(
+                        [
+                            "inkscape", svg_path,
+                            "--export-type=png",
+                            f"--export-filename={png_path}",
+                            f"--export-height={target_size}",
+                        ],
+                        capture_output=True, timeout=30,
+                    )
+            if result.returncode == 0 and valid_png(png_path):
+                # Fit onto square transparent canvas if not already square
+                img = Image.open(png_path)
+                if img.size != (target_size, target_size):
+                    canvas = Image.new("RGBA", (target_size, target_size), (0, 0, 0, 0))
+                    x = (target_size - img.width) // 2
+                    y = (target_size - img.height) // 2
+                    canvas.paste(img, (x, y))
+                    canvas.save(png_path)
+
                 total_rendered += 1
                 context_counts.setdefault(context, [0, 0, 0])
                 context_counts[context][0] += 1
@@ -149,8 +177,10 @@ def main():
                     sizes.sort()
                     icon_data["sizes"] = sizes
             else:
-                os.remove(png_path)
-                log_anomaly(theme, f"{icon_id}: PNG invalid after render")
+                if os.path.exists(png_path):
+                    os.remove(png_path)
+                stderr = result.stderr.decode(errors="replace").strip()
+                log_anomaly(theme, f"{icon_id}: Render failed - {stderr}")
                 total_failed += 1
                 context_counts.setdefault(context, [0, 0, 0])
                 context_counts[context][2] += 1
