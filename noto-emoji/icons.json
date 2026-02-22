@@ -4581,7 +4581,7 @@
     "noto-emoji_food-drink_u1f368": {
       "file": "emoji_u1f368.png",
       "sizes": [16, 32, 128],
-      "hints": ["ice-cream", "sundae", "scoops", "chocolate", "strawberry", "vanilla", "glass-dish", "dessert", "frozen", "food"],
+      "hints": ["ice", "cream", "sundae", "scoops", "chocolate", "strawberry", "vanilla", "glass", "dessert", "food"],
       "label": "Ice Cream",
       "context": "food-drink"
     },
@@ -4595,21 +4595,21 @@
     "noto-emoji_food-drink_u1f36a": {
       "file": "emoji_u1f36a.png",
       "sizes": [16, 32, 128],
-      "hints": ["cookie", "chocolate-chip", "baked", "round", "golden", "brown", "snack", "bakery", "dessert", "food"],
+      "hints": ["cookie", "chocolate", "chip", "baked", "round", "golden", "brown", "snack", "dessert", "food"],
       "label": "Cookie",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f36b": {
       "file": "emoji_u1f36b.png",
       "sizes": [16, 32, 128],
-      "hints": ["chocolate-bar", "chocolate", "brown", "squares", "red-wrapper", "foil", "unwrapped", "candy", "sweet", "food"],
+      "hints": ["chocolate", "bar", "brown", "squares", "red", "foil", "unwrapped", "candy", "dessert", "food"],
       "label": "Chocolate Bar",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f36c": {
       "file": "emoji_u1f36c.png",
       "sizes": [16, 32, 128],
-      "hints": ["candy", "wrapped", "pink", "striped", "round", "sweet", "hard-candy", "wrapper", "treat", "food"],
+      "hints": ["candy", "wrapped", "pink", "striped", "round", "sweet", "twisted", "wrapper", "treat", "food"],
       "label": "Candy",
       "context": "food-drink"
     },
@@ -4630,35 +4630,35 @@
     "noto-emoji_food-drink_u1f36f": {
       "file": "emoji_u1f36f.png",
       "sizes": [16, 32, 128],
-      "hints": ["honey-pot", "honey", "golden", "dipper", "jar", "dripping", "sweet", "bee", "syrup", "food"],
+      "hints": ["honey", "pot", "golden", "dipper", "jar", "dripping", "sweet", "bee", "syrup", "food"],
       "label": "Honey Pot",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f370": {
       "file": "emoji_u1f370.png",
       "sizes": [16, 32, 128],
-      "hints": ["shortcake", "strawberry", "cake", "slice", "whipped-cream", "layered", "pink", "dessert", "bakery", "food"],
+      "hints": ["shortcake", "strawberry", "cake", "slice", "whipped", "layered", "pink", "dessert", "bakery", "food"],
       "label": "Shortcake",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f371": {
       "file": "emoji_u1f371.png",
       "sizes": [16, 32, 128],
-      "hints": ["bento-box", "bento", "lunch-box", "rice", "compartments", "japanese", "shrimp", "vegetables", "meal", "food"],
+      "hints": ["bento", "box", "lunch", "rice", "compartments", "japanese", "shrimp", "vegetables", "meal", "food"],
       "label": "Bento Box",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f372": {
       "file": "emoji_u1f372.png",
       "sizes": [16, 32, 128],
-      "hints": ["pot-of-food", "stew", "soup", "cooking-pot", "steaming", "vegetables", "hot", "meal", "casserole", "food"],
+      "hints": ["pot", "stew", "soup", "cooking", "steaming", "vegetables", "hot", "meal", "casserole", "food"],
       "label": "Pot of Food",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f373": {
       "file": "emoji_u1f373.png",
       "sizes": [16, 32, 128],
-      "hints": ["cooking", "frying-pan", "egg", "fried-egg", "sunny-side-up", "skillet", "breakfast", "yolk", "kitchen", "food"],
+      "hints": ["cooking", "frying", "pan", "egg", "fried", "skillet", "breakfast", "yolk", "kitchen", "food"],
       "label": "Cooking",
       "context": "food-drink"
     },
@@ -4672,7 +4672,7 @@
     "noto-emoji_food-drink_u1f375": {
       "file": "emoji_u1f375.png",
       "sizes": [16, 32, 128],
-      "hints": ["teacup", "green-tea", "matcha", "steaming", "cup", "hot", "japanese", "beverage", "drink", "food"],
+      "hints": ["teacup", "green", "tea", "matcha", "steaming", "cup", "hot", "japanese", "drink", "food"],
       "label": "Teacup without Handle",
       "context": "food-drink"
     },
@@ -4686,70 +4686,70 @@
     "noto-emoji_food-drink_u1f377": {
       "file": "emoji_u1f377.png",
       "sizes": [16, 32, 128],
-      "hints": ["wine-glass", "red-wine", "glass", "stem", "alcohol", "goblet", "beverage", "drink", "elegant", "food"],
+      "hints": ["wine", "red", "glass", "stem", "alcohol", "goblet", "beverage", "drink", "elegant", "food"],
       "label": "Wine Glass",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f378": {
       "file": "emoji_u1f378.png",
       "sizes": [16, 32, 128],
-      "hints": ["cocktail-glass", "martini", "olive", "toothpick", "stem", "alcohol", "mixed-drink", "bar", "beverage", "food"],
+      "hints": ["cocktail", "glass", "martini", "olive", "toothpick", "stem", "alcohol", "drink", "bar", "food"],
       "label": "Cocktail Glass",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f379": {
       "file": "emoji_u1f379.png",
       "sizes": [16, 32, 128],
-      "hints": ["tropical-drink", "cocktail", "cherry", "straw", "orange-slice", "hurricane-glass", "alcohol", "colorful", "beverage", "food"],
+      "hints": ["tropical", "drink", "cocktail", "cherry", "straw", "orange", "glass", "alcohol", "colorful", "food"],
       "label": "Tropical Drink",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f37a": {
       "file": "emoji_u1f37a.png",
       "sizes": [16, 32, 128],
-      "hints": ["beer-mug", "beer", "lager", "frothy", "foam", "golden", "glass", "handle", "alcohol", "food"],
+      "hints": ["beer", "mug", "lager", "frothy", "foam", "golden", "glass", "handle", "alcohol", "food"],
       "label": "Beer Mug",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f37b": {
       "file": "emoji_u1f37b.png",
       "sizes": [16, 32, 128],
-      "hints": ["clinking-beer-mugs", "cheers", "toast", "beer", "foam", "splashing", "celebration", "two-mugs", "alcohol", "food"],
+      "hints": ["clinking", "cheers", "toast", "beer", "foam", "splashing", "celebration", "mugs", "alcohol", "food"],
       "label": "Clinking Beer Mugs",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f37c": {
       "file": "emoji_u1f37c.png",
       "sizes": [16, 32, 128],
-      "hints": ["baby-bottle", "milk", "nipple", "infant", "feeding", "formula", "white", "blue-ring", "nursery", "food"],
+      "hints": ["baby", "bottle", "milk", "nipple", "infant", "feeding", "formula", "white", "blue", "food"],
       "label": "Baby Bottle",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f37d": {
       "file": "emoji_u1f37d.png",
       "sizes": [16, 32, 128],
-      "hints": ["fork-and-knife-with-plate", "place-setting", "plate", "fork", "knife", "cutlery", "dining", "silver", "restaurant", "food"],
+      "hints": ["plate", "fork", "knife", "cutlery", "setting", "dining", "silver", "restaurant", "meal", "food"],
       "label": "Fork and Knife with Plate",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f37e": {
       "file": "emoji_u1f37e.png",
       "sizes": [16, 32, 128],
-      "hints": ["champagne", "popping-cork", "bottle", "sparkling", "green", "celebration", "fizz", "alcohol", "beverage", "food"],
+      "hints": ["champagne", "popping", "cork", "bottle", "sparkling", "green", "celebration", "fizz", "alcohol", "food"],
       "label": "Bottle with Popping Cork",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f37f": {
       "file": "emoji_u1f37f.png",
       "sizes": [16, 32, 128],
-      "hints": ["popcorn", "bucket", "red-striped", "white-striped", "movie", "cinema", "snack", "yellow", "kernels", "food"],
+      "hints": ["popcorn", "bucket", "red", "striped", "movie", "cinema", "snack", "yellow", "kernels", "food"],
       "label": "Popcorn",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f382": {
       "file": "emoji_u1f382.png",
       "sizes": [16, 32, 128],
-      "hints": ["birthday-cake", "cake", "candles", "strawberries", "frosting", "celebration", "party", "dessert", "sweet", "food"],
+      "hints": ["birthday", "cake", "candles", "strawberries", "frosting", "celebration", "party", "dessert", "sweet", "food"],
       "label": "Birthday Cake",
       "context": "food-drink"
     },
@@ -4763,21 +4763,21 @@
     "noto-emoji_food-drink_u1f52a": {
       "file": "emoji_u1f52a.png",
       "sizes": [16, 32, 128],
-      "hints": ["kitchen-knife", "chef-knife", "blade", "sharp", "steel", "cutting", "dark-handle", "cooking", "utensil", "food"],
+      "hints": ["kitchen", "knife", "chef", "blade", "sharp", "steel", "cutting", "handle", "cooking", "food"],
       "label": "Kitchen Knife",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f942": {
       "file": "emoji_u1f942.png",
       "sizes": [16, 32, 128],
-      "hints": ["clinking-glasses", "champagne", "flutes", "toast", "cheers", "celebration", "sparkling", "two-glasses", "alcohol", "food"],
+      "hints": ["clinking", "glasses", "champagne", "flutes", "toast", "cheers", "celebration", "sparkling", "alcohol", "food"],
       "label": "Clinking Glasses",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f943": {
       "file": "emoji_u1f943.png",
       "sizes": [16, 32, 128],
-      "hints": ["tumbler-glass", "whiskey", "bourbon", "amber", "rocks-glass", "neat", "liquor", "alcohol", "beverage", "food"],
+      "hints": ["tumbler", "glass", "whiskey", "bourbon", "amber", "rocks", "neat", "liquor", "alcohol", "food"],
       "label": "Tumbler Glass",
       "context": "food-drink"
     },
@@ -4826,35 +4826,35 @@
     "noto-emoji_food-drink_u1f955": {
       "file": "emoji_u1f955.png",
       "sizes": [16, 32, 128],
-      "hints": ["carrot", "orange", "green-top", "root", "vegetable", "leafy", "tapering", "crunchy", "healthy", "food"],
+      "hints": ["carrot", "orange", "green", "root", "vegetable", "leafy", "tapering", "crunchy", "healthy", "food"],
       "label": "Carrot",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f956": {
       "file": "emoji_u1f956.png",
       "sizes": [16, 32, 128],
-      "hints": ["baguette", "french-bread", "loaf", "golden", "scored", "crust", "long", "baked", "bakery", "food"],
+      "hints": ["baguette", "french", "bread", "loaf", "golden", "scored", "crust", "long", "baked", "food"],
       "label": "Baguette Bread",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f957": {
       "file": "emoji_u1f957.png",
       "sizes": [16, 32, 128],
-      "hints": ["green-salad", "salad", "lettuce", "tomato", "bowl", "onion", "vegetables", "healthy", "fresh", "food"],
+      "hints": ["green", "salad", "lettuce", "tomato", "bowl", "onion", "vegetables", "healthy", "fresh", "food"],
       "label": "Green Salad",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f958": {
       "file": "emoji_u1f958.png",
       "sizes": [16, 32, 128],
-      "hints": ["paella", "shallow-pan", "rice", "vegetables", "meat", "handles", "cooking", "spanish", "meal", "food"],
+      "hints": ["paella", "shallow", "pan", "rice", "vegetables", "meat", "handles", "cooking", "spanish", "food"],
       "label": "Shallow Pan of Food",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f959": {
       "file": "emoji_u1f959.png",
       "sizes": [16, 32, 128],
-      "hints": ["stuffed-flatbread", "pita", "falafel", "wrap", "lettuce", "tomato", "onion", "gyro", "sandwich", "food"],
+      "hints": ["stuffed", "flatbread", "pita", "falafel", "wrap", "lettuce", "tomato", "onion", "gyro", "food"],
       "label": "Stuffed Flatbread",
       "context": "food-drink"
     },
@@ -4868,7 +4868,7 @@
     "noto-emoji_food-drink_u1f95b": {
       "file": "emoji_u1f95b.png",
       "sizes": [16, 32, 128],
-      "hints": ["glass-of-milk", "milk", "white", "dairy", "tall-glass", "cream", "calcium", "beverage", "drink", "food"],
+      "hints": ["glass", "milk", "white", "dairy", "tall", "cream", "calcium", "beverage", "drink", "food"],
       "label": "Glass of Milk",
       "context": "food-drink"
     },
@@ -4882,7 +4882,7 @@
     "noto-emoji_food-drink_u1f95d": {
       "file": "emoji_u1f95d.png",
       "sizes": [16, 32, 128],
-      "hints": ["kiwi-fruit", "kiwi", "halved", "green", "seeds", "brown-skin", "tropical", "cross-section", "fresh", "food"],
+      "hints": ["kiwi", "fruit", "halved", "green", "seeds", "brown", "tropical", "sliced", "fresh", "food"],
       "label": "Kiwi Fruit",
       "context": "food-drink"
     },
@@ -4903,21 +4903,21 @@
     "noto-emoji_food-drink_u1f960": {
       "file": "emoji_u1f960.png",
       "sizes": [16, 32, 128],
-      "hints": ["fortune-cookie", "cookie", "paper-slip", "folded", "golden", "chinese", "luck", "dessert", "crispy", "food"],
+      "hints": ["fortune", "cookie", "paper", "folded", "golden", "chinese", "luck", "dessert", "crispy", "food"],
       "label": "Fortune Cookie",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f961": {
       "file": "emoji_u1f961.png",
       "sizes": [16, 32, 128],
-      "hints": ["takeout-box", "chinese", "pagoda", "container", "white", "carton", "to-go", "restaurant", "meal", "food"],
+      "hints": ["takeout", "box", "chinese", "pagoda", "container", "white", "carton", "restaurant", "meal", "food"],
       "label": "Takeout Box",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f962": {
       "file": "emoji_u1f962.png",
       "sizes": [16, 32, 128],
-      "hints": ["chopsticks", "red", "pair", "dark-tips", "crossed", "asian", "utensil", "eating", "dining", "food"],
+      "hints": ["chopsticks", "red", "pair", "wooden", "crossed", "asian", "utensil", "eating", "dining", "food"],
       "label": "Chopsticks",
       "context": "food-drink"
     },
@@ -4931,28 +4931,28 @@
     "noto-emoji_food-drink_u1f964": {
       "file": "emoji_u1f964.png",
       "sizes": [16, 32, 128],
-      "hints": ["cup-with-straw", "cup", "straw", "red-straw", "light-blue", "drink", "beverage", "soda", "takeout", "food"],
+      "hints": ["cup", "straw", "red", "blue", "plastic", "drink", "beverage", "soda", "takeout", "food"],
       "label": "Cup with Straw",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f965": {
       "file": "emoji_u1f965.png",
       "sizes": [16, 32, 128],
-      "hints": ["coconut", "halved", "white-flesh", "brown-shell", "hairy", "tropical", "fruit", "palm", "split", "food"],
+      "hints": ["coconut", "halved", "white", "brown", "hairy", "tropical", "fruit", "palm", "split", "food"],
       "label": "Coconut",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f966": {
       "file": "emoji_u1f966.png",
       "sizes": [16, 32, 128],
-      "hints": ["broccoli", "green", "florets", "stalk", "vegetable", "healthy", "cruciferous", "tree-shaped", "fresh", "food"],
+      "hints": ["broccoli", "green", "florets", "stalk", "vegetable", "healthy", "cruciferous", "tree", "fresh", "food"],
       "label": "Broccoli",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f967": {
       "file": "emoji_u1f967.png",
       "sizes": [16, 32, 128],
-      "hints": ["pie", "golden-crust", "baked", "steam", "silver-tin", "pastry", "dessert", "whole", "homemade", "food"],
+      "hints": ["pie", "golden", "crust", "baked", "steam", "tin", "pastry", "dessert", "homemade", "food"],
       "label": "Pie",
       "context": "food-drink"
     },
@@ -4966,7 +4966,7 @@
     "noto-emoji_food-drink_u1f969": {
       "file": "emoji_u1f969.png",
       "sizes": [16, 32, 128],
-      "hints": ["cut-of-meat", "steak", "red", "marbling", "bone", "fat", "raw", "beef", "t-bone", "food"],
+      "hints": ["meat", "steak", "red", "marbling", "bone", "fat", "raw", "beef", "cut", "food"],
       "label": "Cut of Meat",
       "context": "food-drink"
     },
@@ -4980,63 +4980,63 @@
     "noto-emoji_food-drink_u1f96b": {
       "file": "emoji_u1f96b.png",
       "sizes": [16, 32, 128],
-      "hints": ["canned-food", "can", "tin", "silver", "yellow-label", "tomato", "preserved", "pantry", "metal", "food"],
+      "hints": ["canned", "can", "tin", "silver", "yellow", "tomato", "preserved", "pantry", "metal", "food"],
       "label": "Canned Food",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f96c": {
       "file": "emoji_u1f96c.png",
       "sizes": [16, 32, 128],
-      "hints": ["leafy-green", "bok-choy", "cabbage", "vegetable", "leaves", "white-stalk", "salad", "healthy", "fresh", "food"],
+      "hints": ["leafy", "green", "cabbage", "vegetable", "leaves", "stalk", "salad", "healthy", "fresh", "food"],
       "label": "Leafy Green",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f96d": {
       "file": "emoji_u1f96d.png",
       "sizes": [16, 32, 128],
-      "hints": ["mango", "fruit", "tropical", "orange", "green-leaf", "red-blush", "yellow", "whole", "juicy", "food"],
+      "hints": ["mango", "fruit", "tropical", "orange", "green", "red", "yellow", "whole", "juicy", "food"],
       "label": "Mango",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f96e": {
       "file": "emoji_u1f96e.png",
       "sizes": [16, 32, 128],
-      "hints": ["moon-cake", "mooncake", "chinese", "golden", "ornate", "floral-pattern", "pastry", "mid-autumn", "traditional", "food"],
+      "hints": ["mooncake", "chinese", "golden", "ornate", "floral", "pastry", "autumn", "traditional", "dessert", "food"],
       "label": "Moon Cake",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f96f": {
       "file": "emoji_u1f96f.png",
       "sizes": [16, 32, 128],
-      "hints": ["bagel", "sesame-seeds", "cream-cheese", "round", "golden", "hole", "bread", "breakfast", "baked", "food"],
+      "hints": ["bagel", "sesame", "cream", "round", "golden", "hole", "bread", "breakfast", "baked", "food"],
       "label": "Bagel",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f9c0": {
       "file": "emoji_u1f9c0.png",
       "sizes": [16, 32, 128],
-      "hints": ["cheese-wedge", "cheese", "swiss", "yellow", "holes", "triangle", "dairy", "slice", "cheddar", "food"],
+      "hints": ["cheese", "wedge", "swiss", "yellow", "holes", "triangle", "dairy", "slice", "cheddar", "food"],
       "label": "Cheese Wedge",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f9c1": {
       "file": "emoji_u1f9c1.png",
       "sizes": [16, 32, 128],
-      "hints": ["cupcake", "frosting", "sprinkles", "blue-wrapper", "swirl", "muffin", "dessert", "sweet", "bakery", "food"],
+      "hints": ["cupcake", "frosting", "sprinkles", "wrapper", "swirl", "muffin", "dessert", "sweet", "bakery", "food"],
       "label": "Cupcake",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f9c2": {
       "file": "emoji_u1f9c2.png",
       "sizes": [16, 32, 128],
-      "hints": ["salt", "shaker", "glass", "metal-top", "holes", "seasoning", "condiment", "white", "spice", "food"],
+      "hints": ["salt", "shaker", "glass", "metal", "holes", "seasoning", "condiment", "white", "spice", "food"],
       "label": "Salt",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f9c3": {
       "file": "emoji_u1f9c3.png",
       "sizes": [16, 32, 128],
-      "hints": ["beverage-box", "juice-box", "green", "yellow-straw", "fruit", "carton", "drink", "kids", "portable", "food"],
+      "hints": ["beverage", "juice", "box", "green", "straw", "fruit", "carton", "drink", "kids", "food"],
       "label": "Beverage Box",
       "context": "food-drink"
     },
@@ -5050,14 +5050,14 @@
     "noto-emoji_food-drink_u1f9c5": {
       "file": "emoji_u1f9c5.png",
       "sizes": [16, 32, 128],
-      "hints": ["onion", "whole", "golden", "brown-skin", "ridges", "root", "vegetable", "bulb", "layers", "food"],
+      "hints": ["onion", "whole", "golden", "brown", "ridges", "root", "vegetable", "bulb", "layers", "food"],
       "label": "Onion",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f9c6": {
       "file": "emoji_u1f9c6.png",
       "sizes": [16, 32, 128],
-      "hints": ["falafel", "balls", "fried", "plate", "hummus", "parsley", "chickpea", "middle-eastern", "brown", "food"],
+      "hints": ["falafel", "balls", "fried", "plate", "hummus", "parsley", "chickpea", "arabic", "brown", "food"],
       "label": "Falafel",
       "context": "food-drink"
     },
@@ -5078,21 +5078,21 @@
     "noto-emoji_food-drink_u1f9c9": {
       "file": "emoji_u1f9c9.png",
       "sizes": [16, 32, 128],
-      "hints": ["mate", "yerba-mate", "gourd", "bombilla", "brown", "green-tea", "calabash", "argentinian", "beverage", "food"],
+      "hints": ["mate", "yerba", "gourd", "bombilla", "brown", "tea", "calabash", "argentinian", "beverage", "food"],
       "label": "Mate",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f9ca": {
       "file": "emoji_u1f9ca.png",
       "sizes": [16, 32, 128],
-      "hints": ["ice", "ice-cube", "frozen", "blue", "translucent", "cold", "water", "droplets", "cube", "food"],
+      "hints": ["ice", "cube", "frozen", "blue", "translucent", "cold", "water", "droplets", "crystal", "food"],
       "label": "Ice",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1f9cb": {
       "file": "emoji_u1f9cb.png",
       "sizes": [16, 32, 128],
-      "hints": ["bubble-tea", "boba", "tapioca-pearls", "milk-tea", "green-lid", "purple-straw", "asian", "drink", "cup", "food"],
+      "hints": ["bubble", "tea", "boba", "tapioca", "milk", "straw", "asian", "drink", "cup", "food"],
       "label": "Bubble Tea",
       "context": "food-drink"
     },
@@ -5106,7 +5106,7 @@
     "noto-emoji_food-drink_u1fad1": {
       "file": "emoji_u1fad1.png",
       "sizes": [16, 32, 128],
-      "hints": ["bell-pepper", "green", "pepper", "stem", "vegetable", "capsicum", "whole", "crunchy", "sweet", "food"],
+      "hints": ["bell", "pepper", "green", "stem", "vegetable", "capsicum", "whole", "crunchy", "sweet", "food"],
       "label": "Bell Pepper",
       "context": "food-drink"
     },
@@ -5120,14 +5120,14 @@
     "noto-emoji_food-drink_u1fad3": {
       "file": "emoji_u1fad3.png",
       "sizes": [16, 32, 128],
-      "hints": ["flatbread", "round", "grill-marks", "golden", "naan", "pita", "baked", "bread", "dough", "food"],
+      "hints": ["flatbread", "round", "grilled", "golden", "naan", "pita", "baked", "bread", "dough", "food"],
       "label": "Flatbread",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1fad4": {
       "file": "emoji_u1fad4.png",
       "sizes": [16, 32, 128],
-      "hints": ["tamale", "corn-husk", "wrapped", "tied", "yellow", "filling", "mexican", "steamed", "traditional", "food"],
+      "hints": ["tamale", "corn", "husk", "wrapped", "tied", "yellow", "filling", "mexican", "steamed", "food"],
       "label": "Tamale",
       "context": "food-drink"
     },
@@ -5141,14 +5141,14 @@
     "noto-emoji_food-drink_u1fad6": {
       "file": "emoji_u1fad6.png",
       "sizes": [16, 32, 128],
-      "hints": ["teapot", "red", "coral", "gold-band", "lid", "spout", "handle", "ceramic", "tea", "food"],
+      "hints": ["teapot", "red", "coral", "gold", "lid", "spout", "handle", "ceramic", "tea", "food"],
       "label": "Teapot",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1fad7": {
       "file": "emoji_u1fad7.png",
       "sizes": [16, 32, 128],
-      "hints": ["pouring-liquid", "glass", "tilted", "stream", "brown", "transparent", "spilling", "beverage", "drink", "food"],
+      "hints": ["pouring", "liquid", "glass", "tilted", "stream", "brown", "spilling", "beverage", "drink", "food"],
       "label": "Pouring Liquid",
       "context": "food-drink"
     },
@@ -5162,35 +5162,35 @@
     "noto-emoji_food-drink_u1fad9": {
       "file": "emoji_u1fad9.png",
       "sizes": [16, 32, 128],
-      "hints": ["jar", "glass", "empty", "transparent", "blue-tint", "gold-lid", "container", "mason", "storage", "food"],
+      "hints": ["jar", "glass", "empty", "transparent", "blue", "gold", "container", "mason", "storage", "food"],
       "label": "Jar",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1fada": {
       "file": "emoji_u1fada.png",
       "sizes": [16, 32, 128],
-      "hints": ["ginger-root", "ginger", "knobby", "tan", "yellow-flesh", "cut", "spice", "rhizome", "aromatic", "food"],
+      "hints": ["ginger", "root", "knobby", "tan", "yellow", "cut", "spice", "rhizome", "aromatic", "food"],
       "label": "Ginger Root",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1fadb": {
       "file": "emoji_u1fadb.png",
       "sizes": [16, 32, 128],
-      "hints": ["pea-pod", "peas", "green", "open", "three", "round", "vegetable", "legume", "fresh", "food"],
+      "hints": ["pea", "pod", "peas", "green", "open", "three", "round", "vegetable", "legume", "food"],
       "label": "Pea Pod",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u1fadc": {
       "file": "emoji_u1fadc.png",
       "sizes": [16, 32, 128],
-      "hints": ["root-vegetable", "beet", "magenta", "green-leaves", "bulbous", "turnip", "taproot", "garden", "earthy", "food"],
+      "hints": ["root", "vegetable", "beet", "magenta", "green", "bulbous", "turnip", "taproot", "earthy", "food"],
       "label": "Root Vegetable",
       "context": "food-drink"
     },
     "noto-emoji_food-drink_u2615": {
       "file": "emoji_u2615.png",
       "sizes": [16, 32, 128],
-      "hints": ["hot-beverage", "coffee", "tea", "cup", "saucer", "steam", "white", "brown", "warm", "food"],
+      "hints": ["hot", "beverage", "coffee", "tea", "cup", "saucer", "steam", "white", "warm", "food"],
       "label": "Hot Beverage",
       "context": "food-drink"
     },
@@ -5204,84 +5204,84 @@
     "noto-emoji_objects_u1f393": {
       "file": "emoji_u1f393.png",
       "sizes": [16, 32, 128],
-      "hints": ["graduation-cap", "mortarboard", "black", "tassel", "gold", "academic", "diploma", "ceremony", "education", "object"],
+      "hints": ["graduation", "cap", "mortarboard", "black", "tassel", "gold", "academic", "diploma", "ceremony", "object"],
       "label": "Graduation Cap",
       "context": "objects"
     },
     "noto-emoji_objects_u1f399": {
       "file": "emoji_u1f399.png",
       "sizes": [16, 32, 128],
-      "hints": ["studio-microphone", "vintage", "retro", "blue", "grille", "recording", "audio", "broadcast", "singing", "object"],
+      "hints": ["studio", "microphone", "vintage", "retro", "blue", "grille", "recording", "audio", "broadcast", "object"],
       "label": "Studio Microphone",
       "context": "objects"
     },
     "noto-emoji_objects_u1f39a": {
       "file": "emoji_u1f39a.png",
       "sizes": [16, 32, 128],
-      "hints": ["level-slider", "fader", "vertical", "gray", "tick-marks", "knob", "mixer", "audio", "control", "object"],
+      "hints": ["level", "slider", "fader", "vertical", "gray", "knob", "mixer", "audio", "control", "object"],
       "label": "Level Slider",
       "context": "objects"
     },
     "noto-emoji_objects_u1f39b": {
       "file": "emoji_u1f39b.png",
       "sizes": [16, 32, 128],
-      "hints": ["control-knobs", "rotary", "four", "gray-panel", "dials", "pointer", "mixer", "audio", "settings", "object"],
+      "hints": ["control", "knobs", "rotary", "four", "gray", "dials", "pointer", "mixer", "audio", "object"],
       "label": "Control Knobs",
       "context": "objects"
     },
     "noto-emoji_objects_u1f39e": {
       "file": "emoji_u1f39e.png",
       "sizes": [16, 32, 128],
-      "hints": ["film-frames", "filmstrip", "sprocket", "amber", "celluloid", "movie", "cinema", "analog", "negative", "object"],
+      "hints": ["film", "frames", "filmstrip", "sprocket", "amber", "celluloid", "movie", "cinema", "analog", "object"],
       "label": "Film Frames",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3a4": {
       "file": "emoji_u1f3a4.png",
       "sizes": [16, 32, 128],
-      "hints": ["microphone", "handheld", "karaoke", "gray", "blue-head", "mesh", "singing", "audio", "stage", "object"],
+      "hints": ["microphone", "handheld", "karaoke", "gray", "blue", "mesh", "singing", "audio", "stage", "object"],
       "label": "Microphone",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3a5": {
       "file": "emoji_u1f3a5.png",
       "sizes": [16, 32, 128],
-      "hints": ["movie-camera", "film", "reels", "lens", "dark-gray", "cinema", "projector", "video", "recording", "object"],
+      "hints": ["movie", "camera", "film", "reels", "lens", "dark", "cinema", "projector", "video", "object"],
       "label": "Movie Camera",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3a7": {
       "file": "emoji_u1f3a7.png",
       "sizes": [16, 32, 128],
-      "hints": ["headphone", "headphones", "gray", "padded", "ear-cups", "headband", "audio", "music", "listening", "object"],
+      "hints": ["headphone", "headphones", "gray", "padded", "cushioned", "headband", "audio", "music", "listening", "object"],
       "label": "Headphone",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3a9": {
       "file": "emoji_u1f3a9.png",
       "sizes": [16, 32, 128],
-      "hints": ["top-hat", "black", "red-band", "brim", "tall", "formal", "magic", "gentleman", "cylinder", "object"],
+      "hints": ["top", "hat", "black", "red", "brim", "tall", "formal", "magic", "gentleman", "object"],
       "label": "Top Hat",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3ac": {
       "file": "emoji_u1f3ac.png",
       "sizes": [16, 32, 128],
-      "hints": ["clapper-board", "clapperboard", "slate", "striped", "black", "movie", "cinema", "film", "director", "object"],
+      "hints": ["clapper", "board", "clapperboard", "slate", "striped", "black", "movie", "cinema", "film", "object"],
       "label": "Clapper Board",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3b5": {
       "file": "emoji_u1f3b5.png",
       "sizes": [16, 32, 128],
-      "hints": ["musical-note", "eighth-note", "quaver", "blue-gray", "flag", "stem", "music", "song", "melody", "object"],
+      "hints": ["musical", "note", "eighth", "quaver", "blue", "stem", "music", "song", "melody", "object"],
       "label": "Musical Note",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3b6": {
       "file": "emoji_u1f3b6.png",
       "sizes": [16, 32, 128],
-      "hints": ["musical-notes", "three", "eighth-notes", "blue-gray", "quavers", "music", "song", "melody", "sound", "object"],
+      "hints": ["musical", "notes", "three", "eighth", "quavers", "blue", "music", "song", "melody", "object"],
       "label": "Musical Notes",
       "context": "objects"
     },
@@ -5295,14 +5295,14 @@
     "noto-emoji_objects_u1f3b8": {
       "file": "emoji_u1f3b8.png",
       "sizes": [16, 32, 128],
-      "hints": ["guitar", "electric", "red", "white-pickguard", "neck", "strings", "rock", "stratocaster", "instrument", "object"],
+      "hints": ["guitar", "electric", "red", "pickguard", "neck", "strings", "rock", "stratocaster", "instrument", "object"],
       "label": "Guitar",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3b9": {
       "file": "emoji_u1f3b9.png",
       "sizes": [16, 32, 128],
-      "hints": ["musical-keyboard", "piano", "keys", "black-and-white", "octave", "ivory", "synthesizer", "instrument", "playing", "object"],
+      "hints": ["musical", "keyboard", "piano", "keys", "black", "white", "octave", "synthesizer", "instrument", "object"],
       "label": "Musical Keyboard",
       "context": "objects"
     },
@@ -5316,70 +5316,70 @@
     "noto-emoji_objects_u1f3bb": {
       "file": "emoji_u1f3bb.png",
       "sizes": [16, 32, 128],
-      "hints": ["violin", "bow", "orange-brown", "strings", "f-holes", "scroll", "classical", "fiddle", "instrument", "object"],
+      "hints": ["violin", "bow", "brown", "strings", "holes", "scroll", "classical", "fiddle", "instrument", "object"],
       "label": "Violin",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3bc": {
       "file": "emoji_u1f3bc.png",
       "sizes": [16, 32, 128],
-      "hints": ["musical-score", "treble-clef", "staff", "lines", "blue-gray", "sheet-music", "notation", "composition", "melody", "object"],
+      "hints": ["musical", "score", "treble", "clef", "staff", "blue", "sheet", "notation", "melody", "object"],
       "label": "Musical Score",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3ee": {
       "file": "emoji_u1f3ee.png",
       "sizes": [16, 32, 128],
-      "hints": ["red-paper-lantern", "lantern", "chinese", "ridged", "cylindrical", "glowing", "traditional", "festival", "hanging", "object"],
+      "hints": ["red", "paper", "lantern", "chinese", "ridged", "cylindrical", "glowing", "traditional", "festival", "object"],
       "label": "Red Paper Lantern",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3f7": {
       "file": "emoji_u1f3f7.png",
       "sizes": [16, 32, 128],
-      "hints": ["label", "tag", "beige", "tan", "orange-outline", "blue-ring", "price", "name-tag", "retail", "object"],
+      "hints": ["label", "tag", "beige", "tan", "orange", "ring", "price", "name", "retail", "object"],
       "label": "Label",
       "context": "objects"
     },
     "noto-emoji_objects_u1f3f9": {
       "file": "emoji_u1f3f9.png",
       "sizes": [16, 32, 128],
-      "hints": ["bow-and-arrow", "bow", "arrow", "brown", "wooden", "red-fletching", "gray-arrowhead", "archery", "weapon", "object"],
+      "hints": ["bow", "arrow", "brown", "wooden", "red", "gray", "archery", "weapon", "hunting", "object"],
       "label": "Bow and Arrow",
       "context": "objects"
     },
     "noto-emoji_objects_u1f451": {
       "file": "emoji_u1f451.png",
       "sizes": [16, 32, 128],
-      "hints": ["crown", "gold", "five-points", "gemstones", "teal", "red", "royal", "king", "queen", "object"],
+      "hints": ["crown", "gold", "pointed", "gemstones", "teal", "red", "royal", "king", "queen", "object"],
       "label": "Crown",
       "context": "objects"
     },
     "noto-emoji_objects_u1f452": {
       "file": "emoji_u1f452.png",
       "sizes": [16, 32, 128],
-      "hints": ["womans-hat", "straw", "wide-brim", "purple-ribbon", "bow", "yellow", "sun-hat", "summer", "fashion", "object"],
+      "hints": ["hat", "straw", "wide", "purple", "bow", "yellow", "sun", "summer", "fashion", "object"],
       "label": "Woman's Hat",
       "context": "objects"
     },
     "noto-emoji_objects_u1f453": {
       "file": "emoji_u1f453.png",
       "sizes": [16, 32, 128],
-      "hints": ["glasses", "eyeglasses", "brown-frame", "blue-lenses", "square", "reading", "spectacles", "vision", "eyewear", "object"],
+      "hints": ["glasses", "eyeglasses", "brown", "blue", "square", "reading", "spectacles", "vision", "eyewear", "object"],
       "label": "Glasses",
       "context": "objects"
     },
     "noto-emoji_objects_u1f454": {
       "file": "emoji_u1f454.png",
       "sizes": [16, 32, 128],
-      "hints": ["necktie", "tie", "orange", "striped", "blue-shirt", "collar", "dress-shirt", "formal", "business", "object"],
+      "hints": ["necktie", "tie", "orange", "striped", "blue", "collar", "dress", "formal", "business", "object"],
       "label": "Necktie",
       "context": "objects"
     },
     "noto-emoji_objects_u1f455": {
       "file": "emoji_u1f455.png",
       "sizes": [16, 32, 128],
-      "hints": ["t-shirt", "tee", "light-blue", "short-sleeves", "blue-collar", "casual", "cotton", "clothing", "apparel", "object"],
+      "hints": ["tshirt", "tee", "light", "blue", "short", "sleeves", "casual", "cotton", "clothing", "object"],
       "label": "T-Shirt",
       "context": "objects"
     },
@@ -5393,91 +5393,91 @@
     "noto-emoji_objects_u1f457": {
       "file": "emoji_u1f457.png",
       "sizes": [16, 32, 128],
-      "hints": ["dress", "blue", "sleeveless", "flared-skirt", "waist-sash", "a-line", "elegant", "fashion", "clothing", "object"],
+      "hints": ["dress", "blue", "sleeveless", "flared", "sash", "elegant", "waist", "fashion", "clothing", "object"],
       "label": "Dress",
       "context": "objects"
     },
     "noto-emoji_objects_u1f458": {
       "file": "emoji_u1f458.png",
       "sizes": [16, 32, 128],
-      "hints": ["kimono", "pink", "cherry-blossom", "obi", "striped-sash", "japanese", "traditional", "floral", "clothing", "object"],
+      "hints": ["kimono", "pink", "cherry", "obi", "striped", "japanese", "traditional", "floral", "clothing", "object"],
       "label": "Kimono",
       "context": "objects"
     },
     "noto-emoji_objects_u1f459": {
       "file": "emoji_u1f459.png",
       "sizes": [16, 32, 128],
-      "hints": ["bikini", "red", "polka-dot", "two-piece", "halter-neck", "swimwear", "beach", "summer", "clothing", "object"],
+      "hints": ["bikini", "red", "polka", "piece", "halter", "swimwear", "beach", "summer", "clothing", "object"],
       "label": "Bikini",
       "context": "objects"
     },
     "noto-emoji_objects_u1f45a": {
       "file": "emoji_u1f45a.png",
       "sizes": [16, 32, 128],
-      "hints": ["womans-clothes", "blouse", "lavender", "peter-pan-collar", "white-collar", "puffed-sleeves", "top", "fashion", "clothing", "object"],
+      "hints": ["blouse", "lavender", "collar", "white", "puffed", "sleeves", "top", "fashion", "clothing", "object"],
       "label": "Woman's Clothes",
       "context": "objects"
     },
     "noto-emoji_objects_u1f45b": {
       "file": "emoji_u1f45b.png",
       "sizes": [16, 32, 128],
-      "hints": ["purse", "coin-purse", "pink", "gold-clasp", "ball-closure", "yellow-frame", "small", "money", "accessory", "object"],
+      "hints": ["purse", "coin", "pink", "gold", "clasp", "yellow", "small", "money", "accessory", "object"],
       "label": "Purse",
       "context": "objects"
     },
     "noto-emoji_objects_u1f45c": {
       "file": "emoji_u1f45c.png",
       "sizes": [16, 32, 128],
-      "hints": ["handbag", "brown", "leather", "two-handles", "gold-clasp", "tan-accent", "purse", "fashion", "accessory", "object"],
+      "hints": ["handbag", "brown", "leather", "handles", "gold", "tan", "purse", "fashion", "accessory", "object"],
       "label": "Handbag",
       "context": "objects"
     },
     "noto-emoji_objects_u1f45d": {
       "file": "emoji_u1f45d.png",
       "sizes": [16, 32, 128],
-      "hints": ["clutch-bag", "pouch", "yellow", "gold", "blue-zipper", "rounded", "cosmetic", "small", "accessory", "object"],
+      "hints": ["clutch", "bag", "pouch", "yellow", "gold", "zipper", "rounded", "cosmetic", "accessory", "object"],
       "label": "Clutch Bag",
       "context": "objects"
     },
     "noto-emoji_objects_u1f45e": {
       "file": "emoji_u1f45e.png",
       "sizes": [16, 32, 128],
-      "hints": ["mans-shoe", "oxford", "brown", "leather", "laces", "dress-shoe", "formal", "heel", "footwear", "object"],
+      "hints": ["shoe", "oxford", "brown", "leather", "laces", "dress", "formal", "heel", "footwear", "object"],
       "label": "Man's Shoe",
       "context": "objects"
     },
     "noto-emoji_objects_u1f45f": {
       "file": "emoji_u1f45f.png",
       "sizes": [16, 32, 128],
-      "hints": ["running-shoe", "sneaker", "blue", "white-laces", "white-sole", "athletic", "trainer", "sport", "footwear", "object"],
+      "hints": ["running", "shoe", "sneaker", "blue", "white", "laces", "athletic", "trainer", "footwear", "object"],
       "label": "Running Shoe",
       "context": "objects"
     },
     "noto-emoji_objects_u1f460": {
       "file": "emoji_u1f460.png",
       "sizes": [16, 32, 128],
-      "hints": ["high-heeled-shoe", "pump", "red", "stiletto", "heel", "elegant", "fashion", "dress-shoe", "footwear", "object"],
+      "hints": ["high", "heeled", "pump", "red", "stiletto", "heel", "elegant", "fashion", "footwear", "object"],
       "label": "High-Heeled Shoe",
       "context": "objects"
     },
     "noto-emoji_objects_u1f461": {
       "file": "emoji_u1f461.png",
       "sizes": [16, 32, 128],
-      "hints": ["womans-sandal", "sandal", "orange", "block-heel", "open-toe", "strap", "slide", "summer", "footwear", "object"],
+      "hints": ["sandal", "orange", "block", "heel", "open", "strap", "slide", "summer", "footwear", "object"],
       "label": "Woman's Sandal",
       "context": "objects"
     },
     "noto-emoji_objects_u1f462": {
       "file": "emoji_u1f462.png",
       "sizes": [16, 32, 128],
-      "hints": ["womans-boot", "boot", "orange", "side-zipper", "block-heel", "mid-calf", "leather", "fashion", "footwear", "object"],
+      "hints": ["boot", "orange", "zipper", "heel", "calf", "tall", "leather", "fashion", "footwear", "object"],
       "label": "Woman's Boot",
       "context": "objects"
     },
     "noto-emoji_objects_u1f484": {
       "file": "emoji_u1f484.png",
       "sizes": [16, 32, 128],
-      "hints": ["lipstick", "red", "bullet", "tube", "gold-band", "dark-gray", "cosmetic", "makeup", "beauty", "object"],
+      "hints": ["lipstick", "red", "bullet", "tube", "gold", "dark", "cosmetic", "makeup", "beauty", "object"],
       "label": "Lipstick",
       "context": "objects"
     },
@@ -5491,7 +5491,7 @@
     "noto-emoji_objects_u1f48a": {
       "file": "emoji_u1f48a.png",
       "sizes": [16, 32, 128],
-      "hints": ["pill", "capsule", "yellow", "red", "two-tone", "medicine", "pharmaceutical", "tablet", "health", "object"],
+      "hints": ["pill", "capsule", "yellow", "red", "bicolor", "medicine", "pharmaceutical", "tablet", "health", "object"],
       "label": "Pill",
       "context": "objects"
     },
@@ -5505,14 +5505,14 @@
     "noto-emoji_objects_u1f48e": {
       "file": "emoji_u1f48e.png",
       "sizes": [16, 32, 128],
-      "hints": ["gem-stone", "diamond", "blue", "faceted", "crystal", "brilliant", "precious", "jewel", "sparkle", "object"],
+      "hints": ["gem", "stone", "diamond", "blue", "faceted", "crystal", "precious", "jewel", "sparkle", "object"],
       "label": "Gem Stone",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4a1": {
       "file": "emoji_u1f4a1.png",
       "sizes": [16, 32, 128],
-      "hints": ["light-bulb", "incandescent", "yellow", "glowing", "filament", "screw-base", "idea", "electricity", "bright", "object"],
+      "hints": ["light", "bulb", "incandescent", "yellow", "glowing", "filament", "screw", "idea", "bright", "object"],
       "label": "Light Bulb",
       "context": "objects"
     },
@@ -5526,56 +5526,56 @@
     "noto-emoji_objects_u1f4b0": {
       "file": "emoji_u1f4b0.png",
       "sizes": [16, 32, 128],
-      "hints": ["money-bag", "dollar-sign", "gold", "yellow", "tied", "sack", "wealth", "rich", "cash", "object"],
+      "hints": ["money", "bag", "dollar", "gold", "yellow", "tied", "sack", "wealth", "cash", "object"],
       "label": "Money Bag",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4b3": {
       "file": "emoji_u1f4b3.png",
       "sizes": [16, 32, 128],
-      "hints": ["credit-card", "gold", "yellow", "magnetic-stripe", "signature", "payment", "bank", "debit", "finance", "object"],
+      "hints": ["credit", "card", "gold", "yellow", "magnetic", "payment", "bank", "debit", "finance", "object"],
       "label": "Credit Card",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4b4": {
       "file": "emoji_u1f4b4.png",
       "sizes": [16, 32, 128],
-      "hints": ["yen-banknote", "yen", "japanese", "currency", "yellow", "gold", "money", "paper", "cash", "object"],
+      "hints": ["yen", "banknote", "japanese", "currency", "yellow", "gold", "money", "paper", "cash", "object"],
       "label": "Yen Banknote",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4b5": {
       "file": "emoji_u1f4b5.png",
       "sizes": [16, 32, 128],
-      "hints": ["dollar-banknote", "dollar", "green", "stack", "gold-band", "currency", "money", "cash", "usd", "object"],
+      "hints": ["dollar", "banknote", "green", "stack", "gold", "currency", "money", "cash", "usd", "object"],
       "label": "Dollar Banknote",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4b6": {
       "file": "emoji_u1f4b6.png",
       "sizes": [16, 32, 128],
-      "hints": ["euro-banknote", "euro", "blue", "stack", "gold-band", "currency", "money", "cash", "eur", "object"],
+      "hints": ["euro", "banknote", "blue", "stack", "gold", "currency", "money", "cash", "eur", "object"],
       "label": "Euro Banknote",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4b7": {
       "file": "emoji_u1f4b7.png",
       "sizes": [16, 32, 128],
-      "hints": ["pound-banknote", "pound", "purple", "stack", "gold-band", "currency", "money", "cash", "gbp", "object"],
+      "hints": ["pound", "banknote", "purple", "stack", "gold", "currency", "money", "cash", "gbp", "object"],
       "label": "Pound Banknote",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4b8": {
       "file": "emoji_u1f4b8.png",
       "sizes": [16, 32, 128],
-      "hints": ["money-with-wings", "dollar", "green", "wings", "flying", "spending", "cash", "bills", "expense", "object"],
+      "hints": ["money", "dollar", "green", "wings", "flying", "spending", "cash", "bills", "expense", "object"],
       "label": "Money with Wings",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4b9": {
       "file": "emoji_u1f4b9.png",
       "sizes": [16, 32, 128],
-      "hints": ["chart-increasing-with-yen", "chart", "graph", "upward", "yen", "green", "trend", "stock", "finance", "object"],
+      "hints": ["chart", "increasing", "graph", "upward", "yen", "green", "trend", "stock", "finance", "object"],
       "label": "Chart Increasing with Yen",
       "context": "objects"
     },
@@ -5589,28 +5589,28 @@
     "noto-emoji_objects_u1f4bc": {
       "file": "emoji_u1f4bc.png",
       "sizes": [16, 32, 128],
-      "hints": ["briefcase", "brown", "leather", "gold-clasp", "handle", "business", "work", "professional", "bag", "object"],
+      "hints": ["briefcase", "brown", "leather", "gold", "handle", "business", "work", "professional", "bag", "object"],
       "label": "Briefcase",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4bd": {
       "file": "emoji_u1f4bd.png",
       "sizes": [16, 32, 128],
-      "hints": ["computer-disk", "cd", "dvd", "optical", "disc", "iridescent", "sleeve", "storage", "media", "object"],
+      "hints": ["computer", "disk", "cd", "dvd", "optical", "disc", "iridescent", "sleeve", "media", "object"],
       "label": "Computer Disk",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4be": {
       "file": "emoji_u1f4be.png",
       "sizes": [16, 32, 128],
-      "hints": ["floppy-disk", "floppy", "diskette", "gray", "blue-slider", "save", "retro", "storage", "data", "object"],
+      "hints": ["floppy", "disk", "diskette", "gray", "blue", "save", "retro", "storage", "data", "object"],
       "label": "Floppy Disk",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4bf": {
       "file": "emoji_u1f4bf.png",
       "sizes": [16, 32, 128],
-      "hints": ["optical-disk", "cd", "disc", "iridescent", "rainbow", "shiny", "circular", "music", "media", "object"],
+      "hints": ["optical", "disk", "cd", "disc", "iridescent", "rainbow", "shiny", "circular", "media", "object"],
       "label": "Optical Disk",
       "context": "objects"
     },
@@ -5624,91 +5624,91 @@
     "noto-emoji_objects_u1f4c1": {
       "file": "emoji_u1f4c1.png",
       "sizes": [16, 32, 128],
-      "hints": ["file-folder", "folder", "yellow", "tab", "closed", "directory", "documents", "organize", "filing", "object"],
+      "hints": ["file", "folder", "yellow", "tab", "closed", "directory", "documents", "organize", "filing", "object"],
       "label": "File Folder",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c2": {
       "file": "emoji_u1f4c2.png",
       "sizes": [16, 32, 128],
-      "hints": ["open-file-folder", "folder", "yellow", "open", "tab", "empty", "directory", "documents", "organize", "object"],
+      "hints": ["file", "folder", "yellow", "open", "tab", "empty", "directory", "documents", "organize", "object"],
       "label": "Open File Folder",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c3": {
       "file": "emoji_u1f4c3.png",
       "sizes": [16, 32, 128],
-      "hints": ["page-with-curl", "page", "document", "curled", "blue-border", "text-lines", "paper", "note", "sheet", "object"],
+      "hints": ["page", "document", "curled", "blue", "text", "lines", "paper", "note", "sheet", "object"],
       "label": "Page with Curl",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c4": {
       "file": "emoji_u1f4c4.png",
       "sizes": [16, 32, 128],
-      "hints": ["page-facing-up", "page", "document", "folded-corner", "blue-border", "text-lines", "paper", "file", "sheet", "object"],
+      "hints": ["page", "document", "folded", "blue", "text", "lines", "paper", "file", "sheet", "object"],
       "label": "Page Facing Up",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c5": {
       "file": "emoji_u1f4c5.png",
       "sizes": [16, 32, 128],
-      "hints": ["calendar", "july", "17", "red-header", "date", "day", "schedule", "planner", "appointment", "object"],
+      "hints": ["calendar", "july", "17", "red", "date", "day", "schedule", "planner", "appointment", "object"],
       "label": "Calendar",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c6": {
       "file": "emoji_u1f4c6.png",
       "sizes": [16, 32, 128],
-      "hints": ["tear-off-calendar", "calendar", "july", "17", "red-header", "peeling", "stacked", "date", "daily", "object"],
+      "hints": ["tearoff", "calendar", "july", "17", "red", "peeling", "stacked", "date", "daily", "object"],
       "label": "Tear-Off Calendar",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c7": {
       "file": "emoji_u1f4c7.png",
       "sizes": [16, 32, 128],
-      "hints": ["card-index", "rolodex", "contact", "avatar", "gray-holder", "tray", "address", "business", "organizer", "object"],
+      "hints": ["card", "index", "rolodex", "contact", "gray", "tray", "address", "business", "organizer", "object"],
       "label": "Card Index",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c8": {
       "file": "emoji_u1f4c8.png",
       "sizes": [16, 32, 128],
-      "hints": ["chart-increasing", "chart", "graph", "red-line", "upward", "grid", "trend", "growth", "stock", "object"],
+      "hints": ["chart", "increasing", "graph", "red", "upward", "grid", "trend", "growth", "stock", "object"],
       "label": "Chart Increasing",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4c9": {
       "file": "emoji_u1f4c9.png",
       "sizes": [16, 32, 128],
-      "hints": ["chart-decreasing", "chart", "graph", "blue-line", "downward", "grid", "trend", "decline", "loss", "object"],
+      "hints": ["chart", "decreasing", "graph", "blue", "downward", "grid", "trend", "decline", "loss", "object"],
       "label": "Chart Decreasing",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4ca": {
       "file": "emoji_u1f4ca.png",
       "sizes": [16, 32, 128],
-      "hints": ["bar-chart", "chart", "graph", "green", "red", "blue", "bars", "vertical", "statistics", "object"],
+      "hints": ["bar", "chart", "graph", "green", "red", "blue", "bars", "vertical", "statistics", "object"],
       "label": "Bar Chart",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4cb": {
       "file": "emoji_u1f4cb.png",
       "sizes": [16, 32, 128],
-      "hints": ["clipboard", "brown", "blue-clip", "paper", "text-lines", "notes", "list", "checklist", "office", "object"],
+      "hints": ["clipboard", "brown", "blue", "paper", "text", "notes", "list", "checklist", "office", "object"],
       "label": "Clipboard",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4cc": {
       "file": "emoji_u1f4cc.png",
       "sizes": [16, 32, 128],
-      "hints": ["pushpin", "thumbtack", "red", "pin", "blue-point", "angled", "tack", "bulletin", "board", "object"],
+      "hints": ["pushpin", "thumbtack", "red", "pin", "blue", "angled", "tack", "bulletin", "board", "object"],
       "label": "Pushpin",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4cd": {
       "file": "emoji_u1f4cd.png",
       "sizes": [16, 32, 128],
-      "hints": ["round-pushpin", "pin", "red", "spherical", "blue-needle", "map", "location", "marker", "tack", "object"],
+      "hints": ["round", "pushpin", "pin", "red", "spherical", "needle", "map", "location", "marker", "object"],
       "label": "Round Pushpin",
       "context": "objects"
     },
@@ -5722,77 +5722,77 @@
     "noto-emoji_objects_u1f4cf": {
       "file": "emoji_u1f4cf.png",
       "sizes": [16, 32, 128],
-      "hints": ["straight-ruler", "ruler", "teal", "measurement", "markings", "inches", "centimeters", "measuring", "stationery", "object"],
+      "hints": ["straight", "ruler", "teal", "measurement", "markings", "inches", "centimeters", "measuring", "stationery", "object"],
       "label": "Straight Ruler",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d0": {
       "file": "emoji_u1f4d0.png",
       "sizes": [16, 32, 128],
-      "hints": ["triangular-ruler", "set-square", "triangle", "teal", "ruler", "markings", "geometry", "drafting", "measuring", "object"],
+      "hints": ["triangular", "ruler", "square", "triangle", "teal", "markings", "geometry", "drafting", "measuring", "object"],
       "label": "Triangular Ruler",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d1": {
       "file": "emoji_u1f4d1.png",
       "sizes": [16, 32, 128],
-      "hints": ["bookmark-tabs", "tabs", "colorful", "pages", "blue-border", "text-lines", "dividers", "index", "organize", "object"],
+      "hints": ["bookmark", "tabs", "colorful", "pages", "blue", "text", "dividers", "index", "organize", "object"],
       "label": "Bookmark Tabs",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d2": {
       "file": "emoji_u1f4d2.png",
       "sizes": [16, 32, 128],
-      "hints": ["ledger", "notebook", "yellow", "spiral-bound", "blue-rings", "journal", "book", "notepad", "accounting", "object"],
+      "hints": ["ledger", "notebook", "yellow", "spiral", "rings", "journal", "book", "notepad", "accounting", "object"],
       "label": "Ledger",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d3": {
       "file": "emoji_u1f4d3.png",
       "sizes": [16, 32, 128],
-      "hints": ["notebook", "composition", "marbled", "gray", "white-label", "school", "writing", "journal", "book", "object"],
+      "hints": ["notebook", "composition", "marbled", "gray", "white", "school", "writing", "journal", "book", "object"],
       "label": "Notebook",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d4": {
       "file": "emoji_u1f4d4.png",
       "sizes": [16, 32, 128],
-      "hints": ["decorative-notebook", "notebook", "orange", "diamond-label", "hardcover", "journal", "book", "fancy", "stationery", "object"],
+      "hints": ["decorative", "notebook", "orange", "diamond", "hardcover", "journal", "book", "fancy", "stationery", "object"],
       "label": "Notebook with Decorative Cover",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d5": {
       "file": "emoji_u1f4d5.png",
       "sizes": [16, 32, 128],
-      "hints": ["closed-book", "book", "red", "hardcover", "dark-spine", "reading", "literature", "library", "text", "object"],
+      "hints": ["closed", "book", "red", "hardcover", "spine", "reading", "literature", "library", "text", "object"],
       "label": "Closed Book",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d6": {
       "file": "emoji_u1f4d6.png",
       "sizes": [16, 32, 128],
-      "hints": ["open-book", "book", "red", "pages", "text-lines", "reading", "literature", "spread", "library", "object"],
+      "hints": ["open", "book", "red", "pages", "text", "reading", "literature", "spread", "library", "object"],
       "label": "Open Book",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d7": {
       "file": "emoji_u1f4d7.png",
       "sizes": [16, 32, 128],
-      "hints": ["green-book", "book", "green", "hardcover", "dark-spine", "closed", "reading", "literature", "library", "object"],
+      "hints": ["book", "green", "hardcover", "spine", "closed", "reading", "literature", "library", "cover", "object"],
       "label": "Green Book",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d8": {
       "file": "emoji_u1f4d8.png",
       "sizes": [16, 32, 128],
-      "hints": ["blue-book", "book", "blue", "hardcover", "dark-spine", "closed", "reading", "literature", "library", "object"],
+      "hints": ["book", "blue", "hardcover", "spine", "closed", "reading", "literature", "library", "cover", "object"],
       "label": "Blue Book",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4d9": {
       "file": "emoji_u1f4d9.png",
       "sizes": [16, 32, 128],
-      "hints": ["orange-book", "book", "orange", "hardcover", "dark-spine", "closed", "reading", "literature", "library", "object"],
+      "hints": ["book", "orange", "hardcover", "spine", "closed", "reading", "literature", "library", "cover", "object"],
       "label": "Orange Book",
       "context": "objects"
     },
@@ -5806,42 +5806,42 @@
     "noto-emoji_objects_u1f4dc": {
       "file": "emoji_u1f4dc.png",
       "sizes": [16, 32, 128],
-      "hints": ["scroll", "parchment", "beige", "rolled", "text-lines", "ancient", "paper", "document", "medieval", "object"],
+      "hints": ["scroll", "parchment", "beige", "rolled", "text", "ancient", "paper", "document", "medieval", "object"],
       "label": "Scroll",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4dd": {
       "file": "emoji_u1f4dd.png",
       "sizes": [16, 32, 128],
-      "hints": ["memo", "pencil", "notepad", "yellow", "writing", "text-lines", "blue-border", "eraser", "note", "object"],
+      "hints": ["memo", "pencil", "notepad", "yellow", "writing", "text", "blue", "eraser", "note", "object"],
       "label": "Memo",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4de": {
       "file": "emoji_u1f4de.png",
       "sizes": [16, 32, 128],
-      "hints": ["telephone-receiver", "handset", "phone", "dark-gray", "receiver", "call", "communication", "classic", "landline", "object"],
+      "hints": ["telephone", "receiver", "handset", "phone", "dark", "call", "communication", "classic", "landline", "object"],
       "label": "Telephone Receiver",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4df": {
       "file": "emoji_u1f4df.png",
       "sizes": [16, 32, 128],
-      "hints": ["pager", "beeper", "gray", "green-lcd", "1998", "buttons", "retro", "communication", "device", "object"],
+      "hints": ["pager", "beeper", "gray", "green", "1998", "buttons", "retro", "communication", "device", "object"],
       "label": "Pager",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4e0": {
       "file": "emoji_u1f4e0.png",
       "sizes": [16, 32, 128],
-      "hints": ["fax-machine", "fax", "gray", "handset", "keypad", "paper", "office", "communication", "printer", "object"],
+      "hints": ["fax", "machine", "gray", "handset", "keypad", "paper", "office", "communication", "printer", "object"],
       "label": "Fax Machine",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4e1": {
       "file": "emoji_u1f4e1.png",
       "sizes": [16, 32, 128],
-      "hints": ["satellite-antenna", "dish", "teal", "receiver", "stand", "broadcast", "signal", "communication", "radar", "object"],
+      "hints": ["satellite", "antenna", "dish", "teal", "receiver", "broadcast", "signal", "communication", "radar", "object"],
       "label": "Satellite Antenna",
       "context": "objects"
     },
@@ -5855,21 +5855,21 @@
     "noto-emoji_objects_u1f4e3": {
       "file": "emoji_u1f4e3.png",
       "sizes": [16, 32, 128],
-      "hints": ["megaphone", "cheering", "red", "cone", "teal-interior", "handle", "loud", "announcement", "cheer", "object"],
+      "hints": ["megaphone", "cheering", "red", "cone", "teal", "handle", "loud", "announcement", "cheer", "object"],
       "label": "Megaphone",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4e4": {
       "file": "emoji_u1f4e4.png",
       "sizes": [16, 32, 128],
-      "hints": ["outbox-tray", "tray", "orange", "red-arrow", "upward", "outgoing", "send", "mail", "office", "object"],
+      "hints": ["outbox", "tray", "orange", "red", "upward", "outgoing", "send", "mail", "office", "object"],
       "label": "Outbox Tray",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4e5": {
       "file": "emoji_u1f4e5.png",
       "sizes": [16, 32, 128],
-      "hints": ["inbox-tray", "tray", "orange", "red-arrow", "downward", "incoming", "receive", "mail", "office", "object"],
+      "hints": ["inbox", "tray", "orange", "arrow", "downward", "incoming", "receive", "mail", "office", "object"],
       "label": "Inbox Tray",
       "context": "objects"
     },
@@ -5883,49 +5883,49 @@
     "noto-emoji_objects_u1f4e7": {
       "file": "emoji_u1f4e7.png",
       "sizes": [16, 32, 128],
-      "hints": ["e-mail", "email", "envelope", "blue", "letter-e", "message", "inbox", "electronic", "communication", "object"],
+      "hints": ["email", "envelope", "blue", "letter", "message", "inbox", "electronic", "communication", "digital", "object"],
       "label": "E-Mail",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4e8": {
       "file": "emoji_u1f4e8.png",
       "sizes": [16, 32, 128],
-      "hints": ["incoming-envelope", "envelope", "blue", "motion-lines", "arriving", "mail", "letter", "message", "delivery", "object"],
+      "hints": ["incoming", "envelope", "blue", "motion", "arriving", "mail", "letter", "message", "delivery", "object"],
       "label": "Incoming Envelope",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4e9": {
       "file": "emoji_u1f4e9.png",
       "sizes": [16, 32, 128],
-      "hints": ["envelope-with-arrow", "envelope", "blue", "red-arrow", "downward", "download", "receive", "mail", "letter", "object"],
+      "hints": ["envelope", "arrow", "blue", "red", "downward", "download", "receive", "mail", "letter", "object"],
       "label": "Envelope with Arrow",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4ea": {
       "file": "emoji_u1f4ea.png",
       "sizes": [16, 32, 128],
-      "hints": ["closed-mailbox-lowered-flag", "mailbox", "blue", "red-flag", "down", "post", "postal", "mail", "american", "object"],
+      "hints": ["closed", "mailbox", "blue", "red", "flag", "down", "postal", "mail", "american", "object"],
       "label": "Closed Mailbox with Lowered Flag",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4eb": {
       "file": "emoji_u1f4eb.png",
       "sizes": [16, 32, 128],
-      "hints": ["closed-mailbox-raised-flag", "mailbox", "blue", "red-flag", "up", "post", "postal", "mail", "american", "object"],
+      "hints": ["closed", "mailbox", "blue", "flag", "up", "raised", "postal", "mail", "american", "object"],
       "label": "Closed Mailbox with Raised Flag",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4ec": {
       "file": "emoji_u1f4ec.png",
       "sizes": [16, 32, 128],
-      "hints": ["open-mailbox-raised-flag", "mailbox", "blue", "red-flag", "envelope", "open", "postal", "mail", "american", "object"],
+      "hints": ["open", "mailbox", "blue", "flag", "envelope", "raised", "postal", "mail", "american", "object"],
       "label": "Open Mailbox with Raised Flag",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4ed": {
       "file": "emoji_u1f4ed.png",
       "sizes": [16, 32, 128],
-      "hints": ["open-mailbox-lowered-flag", "mailbox", "blue", "red-flag", "empty", "open", "postal", "mail", "american", "object"],
+      "hints": ["open", "mailbox", "blue", "flag", "empty", "lowered", "postal", "mail", "american", "object"],
       "label": "Open Mailbox with Lowered Flag",
       "context": "objects"
     },
@@ -5939,175 +5939,175 @@
     "noto-emoji_objects_u1f4ef": {
       "file": "emoji_u1f4ef.png",
       "sizes": [16, 32, 128],
-      "hints": ["postal-horn", "horn", "yellow", "red-ribbon", "brass", "bugle", "instrument", "mail", "announcement", "object"],
+      "hints": ["postal", "horn", "yellow", "red", "brass", "bugle", "instrument", "mail", "announcement", "object"],
       "label": "Postal Horn",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4f0": {
       "file": "emoji_u1f4f0.png",
       "sizes": [16, 32, 128],
-      "hints": ["newspaper", "news", "gray", "globe", "world-map", "text-lines", "headlines", "press", "media", "object"],
+      "hints": ["newspaper", "news", "gray", "globe", "world", "text", "headlines", "press", "media", "object"],
       "label": "Newspaper",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4f1": {
       "file": "emoji_u1f4f1.png",
       "sizes": [16, 32, 128],
-      "hints": ["mobile-phone", "smartphone", "dark", "colorful-apps", "touchscreen", "cell", "device", "technology", "communication", "object"],
+      "hints": ["mobile", "phone", "smartphone", "dark", "colorful", "touchscreen", "cell", "device", "technology", "object"],
       "label": "Mobile Phone",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4f2": {
       "file": "emoji_u1f4f2.png",
       "sizes": [16, 32, 128],
-      "hints": ["mobile-phone-with-arrow", "smartphone", "incoming", "gray-arrow", "call", "receive", "download", "device", "communication", "object"],
+      "hints": ["mobile", "phone", "smartphone", "incoming", "arrow", "call", "receive", "download", "device", "object"],
       "label": "Mobile Phone with Arrow",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4f7": {
       "file": "emoji_u1f4f7.png",
       "sizes": [16, 32, 128],
-      "hints": ["camera", "point-and-shoot", "dark", "teal-lens", "silver-flash", "photography", "photo", "picture", "device", "object"],
+      "hints": ["camera", "compact", "dark", "teal", "silver", "photography", "photo", "picture", "device", "object"],
       "label": "Camera",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4f8": {
       "file": "emoji_u1f4f8.png",
       "sizes": [16, 32, 128],
-      "hints": ["camera-with-flash", "camera", "flash-burst", "orange-star", "photography", "snapshot", "photo", "picture", "device", "object"],
+      "hints": ["camera", "flash", "orange", "burst", "photography", "snapshot", "photo", "picture", "device", "object"],
       "label": "Camera with Flash",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4f9": {
       "file": "emoji_u1f4f9.png",
       "sizes": [16, 32, 128],
-      "hints": ["video-camera", "camcorder", "teal", "red-light", "recording", "viewfinder", "film", "movie", "device", "object"],
+      "hints": ["video", "camera", "camcorder", "teal", "red", "recording", "viewfinder", "film", "movie", "object"],
       "label": "Video Camera",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4fa": {
       "file": "emoji_u1f4fa.png",
       "sizes": [16, 32, 128],
-      "hints": ["television", "tv", "retro", "teal", "rabbit-ears", "antenna", "dials", "crt", "screen", "object"],
+      "hints": ["television", "tv", "retro", "teal", "rabbit", "antenna", "dials", "crt", "screen", "object"],
       "label": "Television",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4fb": {
       "file": "emoji_u1f4fb.png",
       "sizes": [16, 32, 128],
-      "hints": ["radio", "portable", "orange", "antenna", "speaker-grille", "tuning-dials", "retro", "broadcast", "music", "object"],
+      "hints": ["radio", "portable", "orange", "antenna", "speaker", "tuning", "retro", "broadcast", "music", "object"],
       "label": "Radio",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4fc": {
       "file": "emoji_u1f4fc.png",
       "sizes": [16, 32, 128],
-      "hints": ["videocassette", "vhs", "tape", "dark-gray", "red-label", "reels", "retro", "recording", "media", "object"],
+      "hints": ["videocassette", "vhs", "tape", "dark", "red", "reels", "retro", "recording", "media", "object"],
       "label": "Videocassette",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4fd": {
       "file": "emoji_u1f4fd.png",
       "sizes": [16, 32, 128],
-      "hints": ["film-projector", "projector", "teal", "reels", "movie", "cinema", "screening", "vintage", "device", "object"],
+      "hints": ["film", "projector", "teal", "reels", "movie", "cinema", "screening", "vintage", "device", "object"],
       "label": "Film Projector",
       "context": "objects"
     },
     "noto-emoji_objects_u1f4ff": {
       "file": "emoji_u1f4ff.png",
       "sizes": [16, 32, 128],
-      "hints": ["prayer-beads", "rosary", "red-orange", "yellow-tassel", "necklace", "spiritual", "meditation", "religion", "mala", "object"],
+      "hints": ["prayer", "beads", "rosary", "red", "yellow", "necklace", "spiritual", "meditation", "religion", "object"],
       "label": "Prayer Beads",
       "context": "objects"
     },
     "noto-emoji_objects_u1f507": {
       "file": "emoji_u1f507.png",
       "sizes": [16, 32, 128],
-      "hints": ["muted-speaker", "speaker", "gray", "red-prohibition", "no-sound", "silent", "volume-off", "quiet", "audio", "object"],
+      "hints": ["muted", "speaker", "gray", "red", "silent", "volume", "off", "quiet", "audio", "object"],
       "label": "Muted Speaker",
       "context": "objects"
     },
     "noto-emoji_objects_u1f508": {
       "file": "emoji_u1f508.png",
       "sizes": [16, 32, 128],
-      "hints": ["speaker-low-volume", "speaker", "teal", "cone", "quiet", "soft", "volume-low", "audio", "sound", "object"],
+      "hints": ["speaker", "low", "teal", "cone", "quiet", "soft", "volume", "audio", "sound", "object"],
       "label": "Speaker Low Volume",
       "context": "objects"
     },
     "noto-emoji_objects_u1f509": {
       "file": "emoji_u1f509.png",
       "sizes": [16, 32, 128],
-      "hints": ["speaker-medium-volume", "speaker", "teal", "sound-wave", "moderate", "volume-medium", "audio", "playing", "sound", "object"],
+      "hints": ["speaker", "medium", "teal", "wave", "moderate", "volume", "audio", "playing", "sound", "object"],
       "label": "Speaker Medium Volume",
       "context": "objects"
     },
     "noto-emoji_objects_u1f50a": {
       "file": "emoji_u1f50a.png",
       "sizes": [16, 32, 128],
-      "hints": ["speaker-high-volume", "speaker", "teal", "sound-waves", "loud", "volume-max", "audio", "blasting", "sound", "object"],
+      "hints": ["speaker", "high", "teal", "waves", "loud", "volume", "audio", "blasting", "sound", "object"],
       "label": "Speaker High Volume",
       "context": "objects"
     },
     "noto-emoji_objects_u1f50b": {
       "file": "emoji_u1f50b.png",
       "sizes": [16, 32, 128],
-      "hints": ["battery", "green", "full", "plus-minus", "silver-terminal", "power", "energy", "charge", "cell", "object"],
+      "hints": ["battery", "green", "full", "plus", "silver", "power", "energy", "charge", "cell", "object"],
       "label": "Battery",
       "context": "objects"
     },
     "noto-emoji_objects_u1f50c": {
       "file": "emoji_u1f50c.png",
       "sizes": [16, 32, 128],
-      "hints": ["electric-plug", "plug", "dark-gray", "two-prongs", "cord", "power", "outlet", "electricity", "connector", "object"],
+      "hints": ["electric", "plug", "dark", "prongs", "cord", "power", "outlet", "electricity", "connector", "object"],
       "label": "Electric Plug",
       "context": "objects"
     },
     "noto-emoji_objects_u1f50d": {
       "file": "emoji_u1f50d.png",
       "sizes": [16, 32, 128],
-      "hints": ["magnifying-glass-tilted-left", "magnifying-glass", "silver", "blue-lens", "gray-handle", "search", "zoom", "inspect", "find", "object"],
+      "hints": ["magnifying", "glass", "silver", "blue", "handle", "search", "zoom", "inspect", "find", "object"],
       "label": "Magnifying Glass Tilted Left",
       "context": "objects"
     },
     "noto-emoji_objects_u1f50e": {
       "file": "emoji_u1f50e.png",
       "sizes": [16, 32, 128],
-      "hints": ["magnifying-glass-tilted-right", "magnifying-glass", "silver", "blue-lens", "gray-handle", "search", "zoom", "inspect", "find", "object"],
+      "hints": ["magnifying", "glass", "silver", "blue", "handle", "search", "zoom", "inspect", "find", "object"],
       "label": "Magnifying Glass Tilted Right",
       "context": "objects"
     },
     "noto-emoji_objects_u1f50f": {
       "file": "emoji_u1f50f.png",
       "sizes": [16, 32, 128],
-      "hints": ["locked-with-pen", "padlock", "yellow", "fountain-pen", "keyhole", "security", "privacy", "signing", "secure", "object"],
+      "hints": ["locked", "padlock", "yellow", "fountain", "pen", "keyhole", "security", "privacy", "signing", "object"],
       "label": "Locked with Pen",
       "context": "objects"
     },
     "noto-emoji_objects_u1f510": {
       "file": "emoji_u1f510.png",
       "sizes": [16, 32, 128],
-      "hints": ["locked-with-key", "padlock", "yellow", "gold-key", "blue-shackle", "keyhole", "security", "access", "protect", "object"],
+      "hints": ["locked", "padlock", "yellow", "gold", "key", "blue", "keyhole", "security", "access", "object"],
       "label": "Locked with Key",
       "context": "objects"
     },
     "noto-emoji_objects_u1f511": {
       "file": "emoji_u1f511.png",
       "sizes": [16, 32, 128],
-      "hints": ["key", "gold", "classic", "round-bow", "teeth", "unlock", "lock", "access", "security", "object"],
+      "hints": ["key", "gold", "classic", "round", "teeth", "unlock", "lock", "access", "security", "object"],
       "label": "Key",
       "context": "objects"
     },
     "noto-emoji_objects_u1f512": {
       "file": "emoji_u1f512.png",
       "sizes": [16, 32, 128],
-      "hints": ["locked", "padlock", "yellow", "blue-shackle", "keyhole", "closed", "security", "protect", "safe", "object"],
+      "hints": ["locked", "padlock", "yellow", "blue", "keyhole", "closed", "security", "protect", "safe", "object"],
       "label": "Locked",
       "context": "objects"
     },
     "noto-emoji_objects_u1f513": {
       "file": "emoji_u1f513.png",
       "sizes": [16, 32, 128],
-      "hints": ["unlocked", "padlock", "yellow", "open-shackle", "keyhole", "unsecured", "access", "open", "security", "object"],
+      "hints": ["unlocked", "padlock", "yellow", "shackle", "keyhole", "unsecured", "access", "open", "security", "object"],
       "label": "Unlocked",
       "context": "objects"
     },
@@ -6121,14 +6121,14 @@
     "noto-emoji_objects_u1f515": {
       "file": "emoji_u1f515.png",
       "sizes": [16, 32, 128],
-      "hints": ["bell-with-slash", "bell", "gold", "red-prohibition", "muted", "no-sound", "silent", "notification-off", "quiet", "object"],
+      "hints": ["bell", "slash", "gold", "red", "muted", "silent", "notification", "off", "quiet", "object"],
       "label": "Bell with Slash",
       "context": "objects"
     },
     "noto-emoji_objects_u1f516": {
       "file": "emoji_u1f516.png",
       "sizes": [16, 32, 128],
-      "hints": ["bookmark", "tag", "red", "gold-star", "brown-string", "ribbon", "label", "marker", "reading", "object"],
+      "hints": ["bookmark", "tag", "red", "gold", "brown", "ribbon", "label", "marker", "reading", "object"],
       "label": "Bookmark",
       "context": "objects"
     },
@@ -6142,350 +6142,350 @@
     "noto-emoji_objects_u1f526": {
       "file": "emoji_u1f526.png",
       "sizes": [16, 32, 128],
-      "hints": ["flashlight", "torch", "teal", "yellow-beam", "light", "button", "portable", "illuminate", "tool", "object"],
+      "hints": ["flashlight", "torch", "teal", "yellow", "light", "button", "portable", "illuminate", "tool", "object"],
       "label": "Flashlight",
       "context": "objects"
     },
     "noto-emoji_objects_u1f527": {
       "file": "emoji_u1f527.png",
       "sizes": [16, 32, 128],
-      "hints": ["wrench", "spanner", "teal", "open-end", "round-hole", "tool", "repair", "mechanic", "fix", "object"],
+      "hints": ["wrench", "spanner", "teal", "open", "round", "tool", "repair", "mechanic", "fix", "object"],
       "label": "Wrench",
       "context": "objects"
     },
     "noto-emoji_objects_u1f528": {
       "file": "emoji_u1f528.png",
       "sizes": [16, 32, 128],
-      "hints": ["hammer", "claw-hammer", "teal", "brown-handle", "wooden", "tool", "construction", "carpentry", "build", "object"],
+      "hints": ["hammer", "claw", "teal", "brown", "wooden", "tool", "construction", "carpentry", "build", "object"],
       "label": "Hammer",
       "context": "objects"
     },
     "noto-emoji_objects_u1f529": {
       "file": "emoji_u1f529.png",
       "sizes": [16, 32, 128],
-      "hints": ["nut-and-bolt", "fastener", "teal", "hexagonal", "threaded", "hardware", "mechanical", "assembly", "tool", "object"],
+      "hints": ["nut", "bolt", "fastener", "teal", "hexagonal", "threaded", "hardware", "mechanical", "assembly", "object"],
       "label": "Nut and Bolt",
       "context": "objects"
     },
     "noto-emoji_objects_u1f52c": {
       "file": "emoji_u1f52c.png",
       "sizes": [16, 32, 128],
-      "hints": ["microscope", "teal", "white-eyepiece", "gray-knobs", "science", "laboratory", "biology", "research", "magnify", "object"],
+      "hints": ["microscope", "teal", "white", "gray", "science", "laboratory", "biology", "research", "magnify", "object"],
       "label": "Microscope",
       "context": "objects"
     },
     "noto-emoji_objects_u1f52d": {
       "file": "emoji_u1f52d.png",
       "sizes": [16, 32, 128],
-      "hints": ["telescope", "silver", "blue-tripod", "blue-lens", "astronomy", "stargazing", "sky", "science", "optics", "object"],
+      "hints": ["telescope", "silver", "blue", "lens", "astronomy", "stargazing", "sky", "science", "optics", "object"],
       "label": "Telescope",
       "context": "objects"
     },
     "noto-emoji_objects_u1f56f": {
       "file": "emoji_u1f56f.png",
       "sizes": [16, 32, 128],
-      "hints": ["candle", "white", "yellow-flame", "dripping-wax", "wick", "burning", "light", "glow", "warm", "object"],
+      "hints": ["candle", "white", "yellow", "flame", "dripping", "wick", "burning", "light", "glow", "object"],
       "label": "Candle",
       "context": "objects"
     },
     "noto-emoji_objects_u1f576": {
       "file": "emoji_u1f576.png",
       "sizes": [16, 32, 128],
-      "hints": ["sunglasses", "shades", "gray-frames", "dark-lenses", "eyewear", "cool", "fashion", "summer", "uv-protection", "object"],
+      "hints": ["sunglasses", "shades", "gray", "dark", "eyewear", "cool", "fashion", "summer", "protection", "object"],
       "label": "Sunglasses",
       "context": "objects"
     },
     "noto-emoji_objects_u1f587": {
       "file": "emoji_u1f587.png",
       "sizes": [16, 32, 128],
-      "hints": ["linked-paperclips", "paperclip", "light-blue", "interlocked", "two", "office", "stationery", "attachment", "fastener", "object"],
+      "hints": ["linked", "paperclips", "paperclip", "blue", "interlocked", "two", "office", "stationery", "attachment", "object"],
       "label": "Linked Paperclips",
       "context": "objects"
     },
     "noto-emoji_objects_u1f58a": {
       "file": "emoji_u1f58a.png",
       "sizes": [16, 32, 128],
-      "hints": ["pen", "ballpoint", "blue", "gold-clip", "silver-tip", "writing", "stationery", "ink", "office", "object"],
+      "hints": ["pen", "ballpoint", "blue", "gold", "silver", "writing", "stationery", "ink", "office", "object"],
       "label": "Pen",
       "context": "objects"
     },
     "noto-emoji_objects_u1f58b": {
       "file": "emoji_u1f58b.png",
       "sizes": [16, 32, 128],
-      "hints": ["fountain-pen", "dark-gray", "gold-bands", "teal-nib", "ink", "writing", "calligraphy", "elegant", "stationery", "object"],
+      "hints": ["fountain", "pen", "dark", "gold", "teal", "ink", "writing", "calligraphy", "elegant", "object"],
       "label": "Fountain Pen",
       "context": "objects"
     },
     "noto-emoji_objects_u1f58c": {
       "file": "emoji_u1f58c.png",
       "sizes": [16, 32, 128],
-      "hints": ["paintbrush", "brush", "blue-handle", "orange-bristles", "silver-ferrule", "art", "painting", "creative", "artist", "object"],
+      "hints": ["paintbrush", "brush", "blue", "orange", "silver", "art", "painting", "creative", "artist", "object"],
       "label": "Paintbrush",
       "context": "objects"
     },
     "noto-emoji_objects_u1f58d": {
       "file": "emoji_u1f58d.png",
       "sizes": [16, 32, 128],
-      "hints": ["crayon", "red", "wax", "pointed-tip", "dark-stripe", "coloring", "drawing", "art", "children", "object"],
+      "hints": ["crayon", "red", "wax", "pointed", "stripe", "coloring", "drawing", "art", "children", "object"],
       "label": "Crayon",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5a5": {
       "file": "emoji_u1f5a5.png",
       "sizes": [16, 32, 128],
-      "hints": ["desktop-computer", "monitor", "light-blue", "keyboard", "screen", "display", "pc", "technology", "device", "object"],
+      "hints": ["desktop", "computer", "monitor", "blue", "keyboard", "screen", "display", "pc", "technology", "object"],
       "label": "Desktop Computer",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5a8": {
       "file": "emoji_u1f5a8.png",
       "sizes": [16, 32, 128],
-      "hints": ["printer", "gray", "green-button", "paper", "output-tray", "print", "office", "document", "device", "object"],
+      "hints": ["printer", "gray", "green", "paper", "tray", "print", "office", "document", "device", "object"],
       "label": "Printer",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5b1": {
       "file": "emoji_u1f5b1.png",
       "sizes": [16, 32, 128],
-      "hints": ["computer-mouse", "mouse", "white", "scroll-wheel", "two-buttons", "click", "pointer", "peripheral", "device", "object"],
+      "hints": ["computer", "mouse", "white", "scroll", "buttons", "click", "pointer", "peripheral", "device", "object"],
       "label": "Computer Mouse",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5b2": {
       "file": "emoji_u1f5b2.png",
       "sizes": [16, 32, 128],
-      "hints": ["trackball", "red-ball", "dark-gray", "side-buttons", "input", "pointer", "peripheral", "ergonomic", "device", "object"],
+      "hints": ["trackball", "red", "dark", "buttons", "input", "pointer", "peripheral", "ergonomic", "device", "object"],
       "label": "Trackball",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5c2": {
       "file": "emoji_u1f5c2.png",
       "sizes": [16, 32, 128],
-      "hints": ["card-index-dividers", "yellow", "colored-tabs", "folders", "filing", "organize", "office", "stationery", "sorting", "object"],
+      "hints": ["card", "index", "dividers", "yellow", "colored", "tabs", "filing", "organize", "office", "object"],
       "label": "Card Index Dividers",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5c3": {
       "file": "emoji_u1f5c3.png",
       "sizes": [16, 32, 128],
-      "hints": ["card-file-box", "teal", "colored-folders", "label-slot", "drawer", "filing", "storage", "organize", "office", "object"],
+      "hints": ["card", "file", "box", "teal", "colored", "folders", "drawer", "filing", "storage", "object"],
       "label": "Card File Box",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5c4": {
       "file": "emoji_u1f5c4.png",
       "sizes": [16, 32, 128],
-      "hints": ["file-cabinet", "teal", "two-drawers", "label-holders", "pull-handles", "storage", "filing", "office", "furniture", "object"],
+      "hints": ["file", "cabinet", "teal", "drawers", "handles", "storage", "filing", "office", "furniture", "object"],
       "label": "File Cabinet",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5d1": {
       "file": "emoji_u1f5d1.png",
       "sizes": [16, 32, 128],
-      "hints": ["wastebasket", "trash-can", "light-blue", "mesh-pattern", "open-top", "delete", "garbage", "recycle", "bin", "object"],
+      "hints": ["wastebasket", "trash", "light", "blue", "mesh", "delete", "garbage", "recycle", "bin", "object"],
       "label": "Wastebasket",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5d2": {
       "file": "emoji_u1f5d2.png",
       "sizes": [16, 32, 128],
-      "hints": ["spiral-notepad", "notepad", "white", "blue-lines", "spiral-bound", "curled-corner", "writing", "notes", "paper", "object"],
+      "hints": ["spiral", "notepad", "white", "blue", "lines", "curled", "writing", "notes", "paper", "object"],
       "label": "Spiral Notepad",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5d3": {
       "file": "emoji_u1f5d3.png",
       "sizes": [16, 32, 128],
-      "hints": ["spiral-calendar", "calendar", "red-header", "blue-grid", "spiral-bound", "date", "schedule", "planner", "month", "object"],
+      "hints": ["spiral", "calendar", "red", "blue", "grid", "date", "schedule", "planner", "month", "object"],
       "label": "Spiral Calendar",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5dc": {
       "file": "emoji_u1f5dc.png",
       "sizes": [16, 32, 128],
-      "hints": ["clamp", "c-clamp", "teal", "screw", "swivel-pad", "grip", "tool", "woodworking", "workshop", "object"],
+      "hints": ["clamp", "teal", "screw", "swivel", "pad", "grip", "tool", "woodworking", "workshop", "object"],
       "label": "Clamp",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5dd": {
       "file": "emoji_u1f5dd.png",
       "sizes": [16, 32, 128],
-      "hints": ["old-key", "skeleton-key", "light-blue", "clover-bow", "antique", "vintage", "unlock", "lock", "security", "object"],
+      "hints": ["old", "key", "skeleton", "blue", "clover", "antique", "vintage", "unlock", "lock", "object"],
       "label": "Old Key",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5de": {
       "file": "emoji_u1f5de.png",
       "sizes": [16, 32, 128],
-      "hints": ["rolled-up-newspaper", "newspaper", "orange-band", "gray-text", "rolled", "press", "news", "media", "delivery", "object"],
+      "hints": ["rolled", "newspaper", "orange", "band", "gray", "press", "news", "media", "delivery", "object"],
       "label": "Rolled-Up Newspaper",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5e1": {
       "file": "emoji_u1f5e1.png",
       "sizes": [16, 32, 128],
-      "hints": ["dagger", "knife", "silver-blade", "gold-crossguard", "brown-handle", "weapon", "sharp", "medieval", "sword", "object"],
+      "hints": ["dagger", "knife", "silver", "gold", "brown", "weapon", "sharp", "medieval", "sword", "object"],
       "label": "Dagger",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5f3": {
       "file": "emoji_u1f5f3.png",
       "sizes": [16, 32, 128],
-      "hints": ["ballot-box-with-ballot", "blue", "paper-ballot", "slot", "round-lock", "voting", "election", "democracy", "poll", "object"],
+      "hints": ["ballot", "box", "blue", "paper", "slot", "voting", "election", "democracy", "poll", "object"],
       "label": "Ballot Box with Ballot",
       "context": "objects"
     },
     "noto-emoji_objects_u1f5ff": {
       "file": "emoji_u1f5ff.png",
       "sizes": [16, 32, 128],
-      "hints": ["moai", "stone-head", "gray", "easter-island", "statue", "sculpture", "ancient", "monument", "face", "object"],
+      "hints": ["moai", "stone", "gray", "easter", "island", "statue", "sculpture", "ancient", "monument", "object"],
       "label": "Moai",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6aa": {
       "file": "emoji_u1f6aa.png",
       "sizes": [16, 32, 128],
-      "hints": ["door", "brown", "wooden", "two-panels", "silver-doorknob", "entrance", "exit", "room", "house", "object"],
+      "hints": ["door", "brown", "wooden", "panels", "doorknob", "entrance", "exit", "room", "house", "object"],
       "label": "Door",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6ac": {
       "file": "emoji_u1f6ac.png",
       "sizes": [16, 32, 128],
-      "hints": ["cigarette", "smoking", "white", "orange-filter", "gray-smoke", "lit", "tobacco", "ash", "habit", "object"],
+      "hints": ["cigarette", "smoking", "white", "orange", "gray", "lit", "tobacco", "ash", "habit", "object"],
       "label": "Cigarette",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6bd": {
       "file": "emoji_u1f6bd.png",
       "sizes": [16, 32, 128],
-      "hints": ["toilet", "white", "teal-tank", "blue-seat", "porcelain", "bathroom", "restroom", "plumbing", "lavatory", "object"],
+      "hints": ["toilet", "white", "teal", "blue", "porcelain", "bathroom", "restroom", "plumbing", "lavatory", "object"],
       "label": "Toilet",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6bf": {
       "file": "emoji_u1f6bf.png",
       "sizes": [16, 32, 128],
-      "hints": ["shower", "showerhead", "silver", "blue-water", "spray", "droplets", "bathroom", "bathing", "hygiene", "object"],
+      "hints": ["shower", "showerhead", "silver", "blue", "spray", "droplets", "bathroom", "bathing", "hygiene", "object"],
       "label": "Shower",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6c1": {
       "file": "emoji_u1f6c1.png",
       "sizes": [16, 32, 128],
-      "hints": ["bathtub", "light-blue", "claw-feet", "bubbles", "foam", "showerhead", "bathroom", "bathing", "tub", "object"],
+      "hints": ["bathtub", "light", "blue", "bubbles", "foam", "showerhead", "bathroom", "bathing", "tub", "object"],
       "label": "Bathtub",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6cb": {
       "file": "emoji_u1f6cb.png",
       "sizes": [16, 32, 128],
-      "hints": ["couch-and-lamp", "sofa", "blue", "yellow-lampshade", "floor-lamp", "furniture", "living-room", "seating", "home", "object"],
+      "hints": ["couch", "lamp", "sofa", "blue", "yellow", "furniture", "living", "room", "seating", "object"],
       "label": "Couch and Lamp",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6cd": {
       "file": "emoji_u1f6cd.png",
       "sizes": [16, 32, 128],
-      "hints": ["shopping-bags", "green-bag", "pink-bag", "handles", "two", "retail", "purchase", "store", "fashion", "object"],
+      "hints": ["shopping", "bags", "green", "pink", "handles", "two", "retail", "purchase", "store", "object"],
       "label": "Shopping Bags",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6cf": {
       "file": "emoji_u1f6cf.png",
       "sizes": [16, 32, 128],
-      "hints": ["bed", "brown-headboard", "blue-blanket", "white-pillow", "wooden", "furniture", "bedroom", "sleep", "rest", "object"],
+      "hints": ["bed", "brown", "blue", "pillow", "wooden", "furniture", "bedroom", "sleep", "rest", "object"],
       "label": "Bed",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6d2": {
       "file": "emoji_u1f6d2.png",
       "sizes": [16, 32, 128],
-      "hints": ["shopping-cart", "trolley", "light-blue", "red-handle", "wheels", "grocery", "supermarket", "retail", "purchase", "object"],
+      "hints": ["shopping", "cart", "trolley", "blue", "red", "wheels", "grocery", "supermarket", "retail", "object"],
       "label": "Shopping Cart",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6d7": {
       "file": "emoji_u1f6d7.png",
       "sizes": [16, 32, 128],
-      "hints": ["elevator", "lift", "blue-sign", "white-figures", "up-arrow", "down-arrow", "building", "floor", "accessibility", "object"],
+      "hints": ["elevator", "lift", "blue", "white", "up", "down", "building", "floor", "accessibility", "object"],
       "label": "Elevator",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6e0": {
       "file": "emoji_u1f6e0.png",
       "sizes": [16, 32, 128],
-      "hints": ["hammer-and-wrench", "crossed", "teal", "brown-handle", "tools", "repair", "settings", "fix", "maintenance", "object"],
+      "hints": ["hammer", "wrench", "crossed", "teal", "brown", "tools", "repair", "settings", "fix", "object"],
       "label": "Hammer and Wrench",
       "context": "objects"
     },
     "noto-emoji_objects_u1f6e1": {
       "file": "emoji_u1f6e1.png",
       "sizes": [16, 32, 128],
-      "hints": ["shield", "light-blue", "rivets", "studs", "pointed", "armor", "defense", "protection", "medieval", "object"],
+      "hints": ["shield", "light", "blue", "rivets", "pointed", "armor", "defense", "protection", "medieval", "object"],
       "label": "Shield",
       "context": "objects"
     },
     "noto-emoji_objects_u1f941": {
       "file": "emoji_u1f941.png",
       "sizes": [16, 32, 128],
-      "hints": ["drum", "snare-drum", "red", "drumsticks", "brown-sticks", "metal-lugs", "percussion", "music", "instrument", "object"],
+      "hints": ["drum", "snare", "red", "drumsticks", "brown", "metal", "percussion", "music", "instrument", "object"],
       "label": "Drum",
       "context": "objects"
     },
     "noto-emoji_objects_u1f97b": {
       "file": "emoji_u1f97b.png",
       "sizes": [16, 32, 128],
-      "hints": ["sari", "teal", "gold-border", "red-blouse", "draped", "indian", "clothing", "traditional", "garment", "object"],
+      "hints": ["sari", "teal", "gold", "red", "draped", "indian", "clothing", "traditional", "garment", "object"],
       "label": "Sari",
       "context": "objects"
     },
     "noto-emoji_objects_u1f97c": {
       "file": "emoji_u1f97c.png",
       "sizes": [16, 32, 128],
-      "hints": ["lab-coat", "white-coat", "light-blue", "pockets", "buttons", "science", "doctor", "laboratory", "medical", "object"],
+      "hints": ["lab", "coat", "white", "blue", "pockets", "buttons", "science", "doctor", "laboratory", "object"],
       "label": "Lab Coat",
       "context": "objects"
     },
     "noto-emoji_objects_u1f97d": {
       "file": "emoji_u1f97d.png",
       "sizes": [16, 32, 128],
-      "hints": ["goggles", "safety-goggles", "teal-strap", "clear-lenses", "gray-frame", "eyewear", "protection", "laboratory", "science", "object"],
+      "hints": ["goggles", "safety", "teal", "clear", "gray", "eyewear", "protection", "laboratory", "science", "object"],
       "label": "Goggles",
       "context": "objects"
     },
     "noto-emoji_objects_u1f97e": {
       "file": "emoji_u1f97e.png",
       "sizes": [16, 32, 128],
-      "hints": ["hiking-boot", "brown", "red-laces", "yellow-sole", "teal-eyelets", "rugged", "footwear", "outdoor", "trail", "object"],
+      "hints": ["hiking", "boot", "brown", "red", "yellow", "teal", "rugged", "footwear", "outdoor", "object"],
       "label": "Hiking Boot",
       "context": "objects"
     },
     "noto-emoji_objects_u1f97f": {
       "file": "emoji_u1f97f.png",
       "sizes": [16, 32, 128],
-      "hints": ["flat-shoe", "ballet-flat", "blue", "brown-sole", "slip-on", "footwear", "fashion", "casual", "women", "object"],
+      "hints": ["flat", "shoe", "ballet", "blue", "brown", "footwear", "fashion", "casual", "women", "object"],
       "label": "Flat Shoe",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9af": {
       "file": "emoji_u1f9af.png",
       "sizes": [16, 32, 128],
-      "hints": ["white-cane", "red-band", "gray-handle", "ball-tip", "wrist-strap", "blind", "accessibility", "mobility", "vision", "object"],
+      "hints": ["white", "cane", "red", "gray", "tip", "blind", "accessibility", "mobility", "vision", "object"],
       "label": "White Cane",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9ba": {
       "file": "emoji_u1f9ba.png",
       "sizes": [16, 32, 128],
-      "hints": ["safety-vest", "orange", "yellow-stripes", "reflective", "red-lining", "high-visibility", "construction", "worker", "clothing", "object"],
+      "hints": ["safety", "vest", "orange", "yellow", "reflective", "visibility", "construction", "worker", "clothing", "object"],
       "label": "Safety Vest",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9e2": {
       "file": "emoji_u1f9e2.png",
       "sizes": [16, 32, 128],
-      "hints": ["billed-cap", "baseball-cap", "blue", "visor", "brim", "hat", "headwear", "sports", "casual", "object"],
+      "hints": ["billed", "cap", "baseball", "blue", "visor", "brim", "hat", "headwear", "sports", "object"],
       "label": "Billed Cap",
       "context": "objects"
     },
@@ -6499,91 +6499,91 @@
     "noto-emoji_objects_u1f9e4": {
       "file": "emoji_u1f9e4.png",
       "sizes": [16, 32, 128],
-      "hints": ["gloves", "pair", "light-blue", "knitted", "ribbed-cuffs", "five-fingers", "winter", "warm", "clothing", "object"],
+      "hints": ["gloves", "pair", "light", "blue", "knitted", "ribbed", "winter", "warm", "clothing", "object"],
       "label": "Gloves",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9e5": {
       "file": "emoji_u1f9e5.png",
       "sizes": [16, 32, 128],
-      "hints": ["coat", "trench-coat", "tan", "belted", "lapels", "brown-cuffs", "outerwear", "winter", "fashion", "object"],
+      "hints": ["coat", "trench", "tan", "belted", "lapels", "brown", "outerwear", "winter", "fashion", "object"],
       "label": "Coat",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9e6": {
       "file": "emoji_u1f9e6.png",
       "sizes": [16, 32, 128],
-      "hints": ["socks", "pair", "white", "red-stripes", "blue-heels", "blue-toes", "crew", "athletic", "clothing", "object"],
+      "hints": ["socks", "pair", "white", "red", "blue", "stripes", "crew", "athletic", "clothing", "object"],
       "label": "Socks",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9ea": {
       "file": "emoji_u1f9ea.png",
       "sizes": [16, 32, 128],
-      "hints": ["test-tube", "teal-liquid", "glass", "bubbles", "tilted", "cork", "science", "chemistry", "laboratory", "object"],
+      "hints": ["test", "tube", "teal", "glass", "bubbles", "tilted", "cork", "science", "chemistry", "object"],
       "label": "Test Tube",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9eb": {
       "file": "emoji_u1f9eb.png",
       "sizes": [16, 32, 128],
-      "hints": ["petri-dish", "glass", "red-medium", "colonies", "bacteria", "culture", "biology", "science", "laboratory", "object"],
+      "hints": ["petri", "dish", "glass", "red", "colonies", "bacteria", "culture", "biology", "science", "object"],
       "label": "Petri Dish",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9ec": {
       "file": "emoji_u1f9ec.png",
       "sizes": [16, 32, 128],
-      "hints": ["dna", "double-helix", "teal-strands", "colorful-bases", "pink", "genetics", "biology", "science", "molecule", "object"],
+      "hints": ["dna", "double", "helix", "teal", "colorful", "pink", "genetics", "biology", "science", "object"],
       "label": "DNA",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9ee": {
       "file": "emoji_u1f9ee.png",
       "sizes": [16, 32, 128],
-      "hints": ["abacus", "brown-frame", "red-beads", "wooden", "rods", "counting", "math", "calculator", "ancient", "object"],
+      "hints": ["abacus", "brown", "red", "wooden", "rods", "counting", "math", "calculator", "ancient", "object"],
       "label": "Abacus",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9ef": {
       "file": "emoji_u1f9ef.png",
       "sizes": [16, 32, 128],
-      "hints": ["fire-extinguisher", "red", "black-handle", "nozzle", "flame-label", "safety", "emergency", "firefighting", "equipment", "object"],
+      "hints": ["fire", "extinguisher", "red", "black", "nozzle", "safety", "emergency", "firefighting", "equipment", "object"],
       "label": "Fire Extinguisher",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9f0": {
       "file": "emoji_u1f9f0.png",
       "sizes": [16, 32, 128],
-      "hints": ["toolbox", "red", "black-handle", "teal-latch", "rectangular", "tools", "storage", "repair", "workshop", "object"],
+      "hints": ["toolbox", "red", "black", "teal", "rectangular", "tools", "storage", "repair", "workshop", "object"],
       "label": "Toolbox",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9f2": {
       "file": "emoji_u1f9f2.png",
       "sizes": [16, 32, 128],
-      "hints": ["magnet", "horseshoe", "red", "silver-tips", "u-shaped", "magnetic", "attract", "metal", "physics", "object"],
+      "hints": ["magnet", "horseshoe", "red", "silver", "shaped", "magnetic", "attract", "metal", "physics", "object"],
       "label": "Magnet",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9f4": {
       "file": "emoji_u1f9f4.png",
       "sizes": [16, 32, 128],
-      "hints": ["lotion-bottle", "teal", "pump-dispenser", "white-droplet", "soap", "moisturizer", "skincare", "hygiene", "cosmetic", "object"],
+      "hints": ["lotion", "bottle", "teal", "pump", "white", "soap", "moisturizer", "skincare", "hygiene", "object"],
       "label": "Lotion Bottle",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9f7": {
       "file": "emoji_u1f9f7.png",
       "sizes": [16, 32, 128],
-      "hints": ["safety-pin", "light-blue", "clasp", "metal", "fastener", "pointed", "sewing", "diaper", "craft", "object"],
+      "hints": ["safety", "pin", "blue", "clasp", "metal", "fastener", "pointed", "sewing", "diaper", "object"],
       "label": "Safety Pin",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9f9": {
       "file": "emoji_u1f9f9.png",
       "sizes": [16, 32, 128],
-      "hints": ["broom", "yellow-straw", "brown-handle", "red-bands", "sweeping", "cleaning", "witch", "household", "floor", "object"],
+      "hints": ["broom", "yellow", "brown", "red", "sweeping", "cleaning", "witch", "household", "floor", "object"],
       "label": "Broom",
       "context": "objects"
     },
@@ -6597,7 +6597,7 @@
     "noto-emoji_objects_u1f9fb": {
       "file": "emoji_u1f9fb.png",
       "sizes": [16, 32, 128],
-      "hints": ["toilet-paper", "roll", "white", "light-blue", "trailing-sheet", "tissue", "bathroom", "hygiene", "household", "object"],
+      "hints": ["toilet", "paper", "roll", "white", "blue", "tissue", "bathroom", "hygiene", "household", "object"],
       "label": "Roll of Paper",
       "context": "objects"
     },
@@ -6611,476 +6611,476 @@
     "noto-emoji_objects_u1f9fd": {
       "file": "emoji_u1f9fd.png",
       "sizes": [16, 32, 128],
-      "hints": ["sponge", "yellow", "porous", "holes", "blue-bubbles", "absorbent", "cleaning", "washing", "kitchen", "object"],
+      "hints": ["sponge", "yellow", "porous", "holes", "blue", "absorbent", "cleaning", "washing", "kitchen", "object"],
       "label": "Sponge",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9fe": {
       "file": "emoji_u1f9fe.png",
       "sizes": [16, 32, 128],
-      "hints": ["receipt", "light-blue", "zigzag-edges", "text-lines", "paper", "bill", "transaction", "purchase", "payment", "object"],
+      "hints": ["receipt", "light", "blue", "zigzag", "paper", "bill", "transaction", "purchase", "payment", "object"],
       "label": "Receipt",
       "context": "objects"
     },
     "noto-emoji_objects_u1f9ff": {
       "file": "emoji_u1f9ff.png",
       "sizes": [16, 32, 128],
-      "hints": ["nazar-amulet", "evil-eye", "blue", "concentric-circles", "talisman", "protection", "turkish", "superstition", "charm", "object"],
+      "hints": ["nazar", "amulet", "blue", "concentric", "circles", "talisman", "protection", "turkish", "superstition", "object"],
       "label": "Nazar Amulet",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa70": {
       "file": "emoji_u1fa70.png",
       "sizes": [16, 32, 128],
-      "hints": ["ballet-shoes", "pointe", "pink", "ribbons", "satin", "pair", "dance", "ballerina", "footwear", "object"],
+      "hints": ["ballet", "shoes", "pointe", "pink", "ribbons", "satin", "pair", "dance", "ballerina", "object"],
       "label": "Ballet Shoes",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa71": {
       "file": "emoji_u1fa71.png",
       "sizes": [16, 32, 128],
-      "hints": ["one-piece-swimsuit", "teal", "navy", "blue", "diagonal-stripes", "bathing-suit", "swimming", "beach", "clothing", "object"],
+      "hints": ["swimsuit", "teal", "navy", "blue", "stripes", "bathing", "swimming", "beach", "clothing", "object"],
       "label": "One-Piece Swimsuit",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa72": {
       "file": "emoji_u1fa72.png",
       "sizes": [16, 32, 128],
-      "hints": ["briefs", "blue", "underwear", "waistband", "dark-blue-accents", "underpants", "clothing", "garment", "swimwear", "object"],
+      "hints": ["briefs", "blue", "underwear", "waistband", "dark", "underpants", "clothing", "garment", "swimwear", "object"],
       "label": "Briefs",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa73": {
       "file": "emoji_u1fa73.png",
       "sizes": [16, 32, 128],
-      "hints": ["shorts", "swim-trunks", "blue", "drawstring", "green-waves", "waistband", "summer", "beach", "clothing", "object"],
+      "hints": ["shorts", "swim", "trunks", "blue", "drawstring", "green", "waistband", "summer", "beach", "object"],
       "label": "Shorts",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa74": {
       "file": "emoji_u1fa74.png",
       "sizes": [16, 32, 128],
-      "hints": ["thong-sandal", "flip-flop", "teal", "blue-strap", "rubber", "summer", "beach", "casual", "footwear", "object"],
+      "hints": ["thong", "sandal", "flip", "flop", "teal", "blue", "rubber", "summer", "beach", "object"],
       "label": "Thong Sandal",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa78": {
       "file": "emoji_u1fa78.png",
       "sizes": [16, 32, 128],
-      "hints": ["blood-drop", "red", "droplet", "highlight", "teardrop-shape", "donation", "medical", "health", "bleeding", "object"],
+      "hints": ["blood", "drop", "red", "droplet", "highlight", "teardrop", "donation", "medical", "health", "object"],
       "label": "Drop of Blood",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa79": {
       "file": "emoji_u1fa79.png",
       "sizes": [16, 32, 128],
-      "hints": ["adhesive-bandage", "band-aid", "white", "gauze-pad", "perforated", "plaster", "first-aid", "medical", "wound", "object"],
+      "hints": ["adhesive", "bandage", "white", "gauze", "perforated", "plaster", "first", "aid", "medical", "object"],
       "label": "Adhesive Bandage",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa7a": {
       "file": "emoji_u1fa7a.png",
       "sizes": [16, 32, 128],
-      "hints": ["stethoscope", "blue-tubing", "gray-earpieces", "silver-chestpiece", "medical", "doctor", "heartbeat", "diagnosis", "health", "object"],
+      "hints": ["stethoscope", "blue", "gray", "silver", "medical", "doctor", "heartbeat", "diagnosis", "health", "object"],
       "label": "Stethoscope",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa7b": {
       "file": "emoji_u1fa7b.png",
       "sizes": [16, 32, 128],
-      "hints": ["x-ray", "ribcage", "chest", "white-bones", "blue-background", "skeleton", "radiology", "medical", "scan", "object"],
+      "hints": ["xray", "ribcage", "chest", "white", "blue", "skeleton", "radiology", "medical", "scan", "object"],
       "label": "X-Ray",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa7c": {
       "file": "emoji_u1fa7c.png",
       "sizes": [16, 32, 128],
-      "hints": ["crutch", "light-blue", "brown-padding", "rubber-tip", "armpit-rest", "mobility", "injury", "medical", "walking-aid", "object"],
+      "hints": ["crutch", "light", "blue", "brown", "rubber", "mobility", "injury", "medical", "walking", "object"],
       "label": "Crutch",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa83": {
       "file": "emoji_u1fa83.png",
       "sizes": [16, 32, 128],
-      "hints": ["boomerang", "brown", "yellow-tips", "v-shaped", "motion-lines", "throwing", "australian", "return", "weapon", "object"],
+      "hints": ["boomerang", "brown", "yellow", "shaped", "motion", "throwing", "australian", "return", "weapon", "object"],
       "label": "Boomerang",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa87": {
       "file": "emoji_u1fa87.png",
       "sizes": [16, 32, 128],
-      "hints": ["maracas", "pair", "green", "yellow", "orange-flowers", "brown-handles", "shaker", "percussion", "latin", "object"],
+      "hints": ["maracas", "pair", "green", "yellow", "orange", "brown", "shaker", "percussion", "latin", "object"],
       "label": "Maracas",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa88": {
       "file": "emoji_u1fa88.png",
       "sizes": [16, 32, 128],
-      "hints": ["flute", "bamboo", "yellow", "brown-band", "finger-holes", "woodwind", "instrument", "music", "recorder", "object"],
+      "hints": ["flute", "bamboo", "yellow", "brown", "holes", "woodwind", "instrument", "music", "recorder", "object"],
       "label": "Flute",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa89": {
       "file": "emoji_u1fa89.png",
       "sizes": [16, 32, 128],
-      "hints": ["harp", "golden", "blue-strings", "tuning-pegs", "curved-frame", "stringed", "instrument", "classical", "music", "object"],
+      "hints": ["harp", "golden", "blue", "strings", "curved", "stringed", "instrument", "classical", "music", "object"],
       "label": "Harp",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa8f": {
       "file": "emoji_u1fa8f.png",
       "sizes": [16, 32, 128],
-      "hints": ["shovel", "blue-blade", "brown-handle", "d-grip", "pointed", "digging", "garden", "tool", "spade", "object"],
+      "hints": ["shovel", "blue", "brown", "grip", "pointed", "digging", "garden", "tool", "spade", "object"],
       "label": "Shovel",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa91": {
       "file": "emoji_u1fa91.png",
       "sizes": [16, 32, 128],
-      "hints": ["chair", "wooden", "brown", "orange-seat", "backrest", "four-legs", "furniture", "seating", "dining", "object"],
+      "hints": ["chair", "wooden", "brown", "orange", "backrest", "four", "furniture", "seating", "dining", "object"],
       "label": "Chair",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa92": {
       "file": "emoji_u1fa92.png",
       "sizes": [16, 32, 128],
-      "hints": ["razor", "safety-razor", "silver-blade", "brown-handle", "wooden", "shaving", "grooming", "hygiene", "barber", "object"],
+      "hints": ["razor", "safety", "silver", "brown", "wooden", "shaving", "grooming", "hygiene", "barber", "object"],
       "label": "Razor",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa93": {
       "file": "emoji_u1fa93.png",
       "sizes": [16, 32, 128],
-      "hints": ["axe", "red-head", "silver-blade", "tan-handle", "wooden", "hatchet", "chopping", "lumber", "tool", "object"],
+      "hints": ["axe", "red", "silver", "tan", "wooden", "hatchet", "chopping", "lumber", "tool", "object"],
       "label": "Axe",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa94": {
       "file": "emoji_u1fa94.png",
       "sizes": [16, 32, 128],
-      "hints": ["diya-lamp", "clay", "yellow-flame", "orange-bowl", "colorful-dots", "oil-lamp", "diwali", "indian", "festival", "object"],
+      "hints": ["diya", "lamp", "clay", "yellow", "orange", "colorful", "oil", "diwali", "indian", "object"],
       "label": "Diya Lamp",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa95": {
       "file": "emoji_u1fa95.png",
       "sizes": [16, 32, 128],
-      "hints": ["banjo", "round-body", "brown-neck", "tuning-pegs", "strings", "fretboard", "stringed", "instrument", "bluegrass", "object"],
+      "hints": ["banjo", "round", "brown", "tuning", "strings", "fretboard", "stringed", "instrument", "bluegrass", "object"],
       "label": "Banjo",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa96": {
       "file": "emoji_u1fa96.png",
       "sizes": [16, 32, 128],
-      "hints": ["military-helmet", "green", "dome-shaped", "brown-chinstrap", "buckle", "army", "soldier", "combat", "protective", "object"],
+      "hints": ["military", "helmet", "green", "dome", "brown", "buckle", "army", "soldier", "combat", "object"],
       "label": "Military Helmet",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa97": {
       "file": "emoji_u1fa97.png",
       "sizes": [16, 32, 128],
-      "hints": ["accordion", "orange", "red", "piano-keys", "bellows", "folds", "squeeze-box", "instrument", "music", "object"],
+      "hints": ["accordion", "orange", "red", "piano", "keys", "bellows", "folds", "squeeze", "instrument", "object"],
       "label": "Accordion",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa98": {
       "file": "emoji_u1fa98.png",
       "sizes": [16, 32, 128],
-      "hints": ["long-drum", "djembe", "orange", "white-drumhead", "black-ropes", "goblet-shaped", "percussion", "african", "instrument", "object"],
+      "hints": ["long", "drum", "djembe", "orange", "white", "black", "goblet", "percussion", "african", "object"],
       "label": "Long Drum",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa99": {
       "file": "emoji_u1fa99.png",
       "sizes": [16, 32, 128],
-      "hints": ["coin", "gold", "round", "temple-columns", "stars", "embossed", "money", "currency", "treasure", "object"],
+      "hints": ["coin", "gold", "round", "temple", "columns", "embossed", "money", "currency", "treasure", "object"],
       "label": "Coin",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa9a": {
       "file": "emoji_u1fa9a.png",
       "sizes": [16, 32, 128],
-      "hints": ["carpentry-saw", "silver-blade", "teeth", "brown-handle", "rivets", "handsaw", "cutting", "woodworking", "tool", "object"],
+      "hints": ["carpentry", "saw", "silver", "teeth", "brown", "handsaw", "cutting", "woodworking", "tool", "object"],
       "label": "Carpentry Saw",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa9b": {
       "file": "emoji_u1fa9b.png",
       "sizes": [16, 32, 128],
-      "hints": ["screwdriver", "flat-head", "light-blue-shaft", "red-handle", "slotted", "metal-tip", "repair", "hardware", "tool", "object"],
+      "hints": ["screwdriver", "flat", "blue", "red", "slotted", "metal", "repair", "hardware", "tool", "object"],
       "label": "Screwdriver",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa9c": {
       "file": "emoji_u1fa9c.png",
       "sizes": [16, 32, 128],
-      "hints": ["ladder", "wooden", "brown-rails", "tan-rungs", "four-steps", "step-ladder", "climbing", "height", "tool", "object"],
+      "hints": ["ladder", "wooden", "brown", "tan", "rungs", "steps", "climbing", "height", "tool", "object"],
       "label": "Ladder",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa9d": {
       "file": "emoji_u1fa9d.png",
       "sizes": [16, 32, 128],
-      "hints": ["hook", "yellow", "gold", "curved", "pointed-tip", "eye-loop", "crane-hook", "lifting", "metal", "object"],
+      "hints": ["hook", "yellow", "gold", "curved", "pointed", "loop", "crane", "lifting", "metal", "object"],
       "label": "Hook",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa9e": {
       "file": "emoji_u1fa9e.png",
       "sizes": [16, 32, 128],
-      "hints": ["mirror", "oval", "ornate-frame", "orange-gold", "scrollwork", "light-blue-glass", "reflective", "vanity", "decorative", "object"],
+      "hints": ["mirror", "oval", "ornate", "orange", "gold", "scrollwork", "blue", "reflective", "vanity", "object"],
       "label": "Mirror",
       "context": "objects"
     },
     "noto-emoji_objects_u1fa9f": {
       "file": "emoji_u1fa9f.png",
       "sizes": [16, 32, 128],
-      "hints": ["window", "four-pane", "brown-frame", "wooden", "blue-glass", "light-reflections", "square", "building", "house", "object"],
+      "hints": ["window", "four", "pane", "brown", "wooden", "blue", "glass", "square", "building", "object"],
       "label": "Window",
       "context": "objects"
     },
     "noto-emoji_objects_u1faa0": {
       "file": "emoji_u1faa0.png",
       "sizes": [16, 32, 128],
-      "hints": ["plunger", "pink-cup", "rubber", "brown-handle", "wooden", "suction", "toilet", "plumbing", "bathroom", "object"],
+      "hints": ["plunger", "pink", "rubber", "brown", "wooden", "suction", "toilet", "plumbing", "bathroom", "object"],
       "label": "Plunger",
       "context": "objects"
     },
     "noto-emoji_objects_u1faa3": {
       "file": "emoji_u1faa3.png",
       "sizes": [16, 32, 128],
-      "hints": ["bucket", "blue", "plastic", "gray-handle", "metal", "pail", "container", "cleaning", "water", "object"],
+      "hints": ["bucket", "blue", "plastic", "gray", "metal", "pail", "container", "cleaning", "water", "object"],
       "label": "Bucket",
       "context": "objects"
     },
     "noto-emoji_objects_u1faa4": {
       "file": "emoji_u1faa4.png",
       "sizes": [16, 32, 128],
-      "hints": ["mouse-trap", "brown-wood", "metal-spring", "yellow-cheese", "bait", "snap-trap", "pest-control", "rodent", "catch", "object"],
+      "hints": ["mouse", "trap", "brown", "metal", "yellow", "bait", "snap", "pest", "rodent", "object"],
       "label": "Mouse Trap",
       "context": "objects"
     },
     "noto-emoji_objects_u1faa5": {
       "file": "emoji_u1faa5.png",
       "sizes": [16, 32, 128],
-      "hints": ["toothbrush", "orange-handle", "white-bristles", "blue-bristles", "dental", "brushing", "teeth", "hygiene", "oral-care", "object"],
+      "hints": ["toothbrush", "orange", "white", "blue", "dental", "brushing", "teeth", "hygiene", "oral", "object"],
       "label": "Toothbrush",
       "context": "objects"
     },
     "noto-emoji_objects_u1faa6": {
       "file": "emoji_u1faa6.png",
       "sizes": [16, 32, 128],
-      "hints": ["headstone", "gray-stone", "rounded-top", "engraved-text", "tombstone", "gravestone", "cemetery", "memorial", "death", "object"],
+      "hints": ["headstone", "gray", "stone", "rounded", "engraved", "tombstone", "gravestone", "cemetery", "memorial", "object"],
       "label": "Headstone",
       "context": "objects"
     },
     "noto-emoji_objects_u1faa7": {
       "file": "emoji_u1faa7.png",
       "sizes": [16, 32, 128],
-      "hints": ["placard", "white-sign", "brown-stick", "text-lines", "rectangular", "protest", "banner", "picket", "demonstration", "object"],
+      "hints": ["placard", "white", "brown", "text", "rectangular", "protest", "banner", "picket", "demonstration", "object"],
       "label": "Placard",
       "context": "objects"
     },
     "noto-emoji_objects_u1faaa": {
       "file": "emoji_u1faaa.png",
       "sizes": [16, 32, 128],
-      "hints": ["identification-card", "light-blue", "photo", "person-silhouette", "text-lines", "badge", "id", "license", "credential", "object"],
+      "hints": ["identification", "card", "blue", "photo", "person", "text", "badge", "id", "license", "object"],
       "label": "Identification Card",
       "context": "objects"
     },
     "noto-emoji_objects_u1faab": {
       "file": "emoji_u1faab.png",
       "sizes": [16, 32, 128],
-      "hints": ["low-battery", "cylindrical", "red-indicator", "plus-symbol", "gray", "depleted", "power", "energy", "charge", "object"],
+      "hints": ["low", "battery", "cylindrical", "red", "plus", "gray", "depleted", "power", "energy", "object"],
       "label": "Low Battery",
       "context": "objects"
     },
     "noto-emoji_objects_u1faac": {
       "file": "emoji_u1faac.png",
       "sizes": [16, 32, 128],
-      "hints": ["hamsa", "blue-hand", "evil-eye", "five-fingers", "palm", "talisman", "protection", "middle-eastern", "amulet", "object"],
+      "hints": ["hamsa", "blue", "hand", "eye", "fingers", "palm", "talisman", "protection", "amulet", "object"],
       "label": "Hamsa",
       "context": "objects"
     },
     "noto-emoji_objects_u1faad": {
       "file": "emoji_u1faad.png",
       "sizes": [16, 32, 128],
-      "hints": ["folding-hand-fan", "red-fabric", "wooden-ribs", "bamboo", "pivot", "semicircle", "breeze", "cooling", "japanese", "object"],
+      "hints": ["folding", "fan", "red", "wooden", "bamboo", "pivot", "semicircle", "breeze", "cooling", "object"],
       "label": "Folding Hand Fan",
       "context": "objects"
     },
     "noto-emoji_objects_u1faae": {
       "file": "emoji_u1faae.png",
       "sizes": [16, 32, 128],
-      "hints": ["hair-pick", "afro-comb", "dark-gray", "wide-teeth", "handle-hole", "black", "grooming", "styling", "detangle", "object"],
+      "hints": ["hair", "pick", "afro", "comb", "dark", "gray", "black", "grooming", "styling", "object"],
       "label": "Hair Pick",
       "context": "objects"
     },
     "noto-emoji_objects_u1fae7": {
       "file": "emoji_u1fae7.png",
       "sizes": [16, 32, 128],
-      "hints": ["bubbles", "light-blue", "soap", "three", "spheres", "reflective", "highlights", "transparent", "floating", "object"],
+      "hints": ["bubbles", "light", "blue", "soap", "three", "spheres", "reflective", "highlights", "transparent", "object"],
       "label": "Bubbles",
       "context": "objects"
     },
     "noto-emoji_objects_u2328": {
       "file": "emoji_u2328.png",
       "sizes": [16, 32, 128],
-      "hints": ["keyboard", "teal", "white-keys", "rows", "rectangular", "computer", "typing", "input", "peripheral", "object"],
+      "hints": ["keyboard", "teal", "white", "keys", "rectangular", "computer", "typing", "input", "peripheral", "object"],
       "label": "Keyboard",
       "context": "objects"
     },
     "noto-emoji_objects_u260e": {
       "file": "emoji_u260e.png",
       "sizes": [16, 32, 128],
-      "hints": ["telephone", "red", "push-button", "handset", "number-pad", "desk-phone", "landline", "retro", "calling", "object"],
+      "hints": ["telephone", "red", "push", "button", "handset", "number", "pad", "landline", "retro", "object"],
       "label": "Telephone",
       "context": "objects"
     },
     "noto-emoji_objects_u2692": {
       "file": "emoji_u2692.png",
       "sizes": [16, 32, 128],
-      "hints": ["hammer-and-pick", "crossed", "blue-steel", "brown-handles", "wooden", "mining", "construction", "tools", "labor", "object"],
+      "hints": ["hammer", "pick", "crossed", "blue", "brown", "wooden", "mining", "construction", "tools", "object"],
       "label": "Hammer and Pick",
       "context": "objects"
     },
     "noto-emoji_objects_u2694": {
       "file": "emoji_u2694.png",
       "sizes": [16, 32, 128],
-      "hints": ["crossed-swords", "blue-blades", "steel", "brown-grips", "gold-pommels", "x-shape", "battle", "combat", "weapon", "object"],
+      "hints": ["crossed", "swords", "blue", "steel", "brown", "gold", "battle", "combat", "weapon", "object"],
       "label": "Crossed Swords",
       "context": "objects"
     },
     "noto-emoji_objects_u2696": {
       "file": "emoji_u2696.png",
       "sizes": [16, 32, 128],
-      "hints": ["balance-scale", "teal", "two-pans", "hanging", "beam", "pedestal", "justice", "law", "weighing", "object"],
+      "hints": ["balance", "scale", "teal", "pans", "hanging", "beam", "pedestal", "justice", "law", "object"],
       "label": "Balance Scale",
       "context": "objects"
     },
     "noto-emoji_objects_u2697": {
       "file": "emoji_u2697.png",
       "sizes": [16, 32, 128],
-      "hints": ["alembic", "glass-flask", "purple-liquid", "spout", "teal-stand", "distillation", "chemistry", "science", "laboratory", "object"],
+      "hints": ["alembic", "glass", "flask", "purple", "teal", "spout", "distillation", "chemistry", "science", "object"],
       "label": "Alembic",
       "context": "objects"
     },
     "noto-emoji_objects_u2699": {
       "file": "emoji_u2699.png",
       "sizes": [16, 32, 128],
-      "hints": ["gear", "teal", "cogwheel", "teeth", "center-hole", "metallic", "mechanical", "engineering", "settings", "object"],
+      "hints": ["gear", "teal", "cogwheel", "teeth", "center", "metallic", "mechanical", "engineering", "settings", "object"],
       "label": "Gear",
       "context": "objects"
     },
     "noto-emoji_objects_u26b0": {
       "file": "emoji_u26b0.png",
       "sizes": [16, 32, 128],
-      "hints": ["coffin", "brown-wood", "hexagonal-lid", "gold-handles", "clasps", "casket", "burial", "funeral", "death", "object"],
+      "hints": ["coffin", "brown", "wood", "hexagonal", "gold", "clasps", "casket", "burial", "funeral", "object"],
       "label": "Coffin",
       "context": "objects"
     },
     "noto-emoji_objects_u26b1": {
       "file": "emoji_u26b1.png",
       "sizes": [16, 32, 128],
-      "hints": ["funeral-urn", "orange", "yellow", "red-bands", "lid", "vase-shaped", "cremation", "ashes", "memorial", "object"],
+      "hints": ["funeral", "urn", "orange", "yellow", "red", "lid", "vase", "cremation", "ashes", "object"],
       "label": "Funeral Urn",
       "context": "objects"
     },
     "noto-emoji_objects_u26cf": {
       "file": "emoji_u26cf.png",
       "sizes": [16, 32, 128],
-      "hints": ["pick", "pickaxe", "teal-head", "pointed-tip", "brown-handle", "wooden", "mining", "digging", "construction", "object"],
+      "hints": ["pick", "pickaxe", "teal", "pointed", "brown", "wooden", "mining", "digging", "construction", "object"],
       "label": "Pick",
       "context": "objects"
     },
     "noto-emoji_objects_u26d1": {
       "file": "emoji_u26d1.png",
       "sizes": [16, 32, 128],
-      "hints": ["rescue-helmet", "red", "white-cross", "hard-hat", "brim", "safety", "emergency", "first-responder", "protective", "object"],
+      "hints": ["rescue", "helmet", "red", "white", "cross", "brim", "safety", "emergency", "protective", "object"],
       "label": "Rescue Worker's Helmet",
       "context": "objects"
     },
     "noto-emoji_objects_u26d3": {
       "file": "emoji_u26d3.png",
       "sizes": [16, 32, 128],
-      "hints": ["chains", "light-blue", "steel", "two-strands", "linked", "oval-links", "metal", "restraint", "connected", "object"],
+      "hints": ["chains", "light", "blue", "steel", "linked", "oval", "metal", "restraint", "connected", "object"],
       "label": "Chains",
       "context": "objects"
     },
     "noto-emoji_objects_u26d3_200d_1f4a5": {
       "file": "emoji_u26d3_200d_1f4a5.png",
       "sizes": [16, 32, 128],
-      "hints": ["broken-chain", "light-blue", "steel", "snapped-links", "separated", "spark-lines", "freedom", "released", "unlinked", "object"],
+      "hints": ["broken", "chain", "blue", "steel", "snapped", "separated", "spark", "freedom", "released", "object"],
       "label": "Broken Chain",
       "context": "objects"
     },
     "noto-emoji_objects_u2702": {
       "file": "emoji_u2702.png",
       "sizes": [16, 32, 128],
-      "hints": ["scissors", "red-handles", "blue-blades", "open", "pivot-screw", "cutting", "craft", "paper", "stationery", "object"],
+      "hints": ["scissors", "red", "blue", "open", "pivot", "cutting", "craft", "paper", "stationery", "object"],
       "label": "Scissors",
       "context": "objects"
     },
     "noto-emoji_objects_u2709": {
       "file": "emoji_u2709.png",
       "sizes": [16, 32, 128],
-      "hints": ["envelope", "light-blue", "outline", "flap", "rectangular", "mail", "letter", "postal", "message", "object"],
+      "hints": ["envelope", "light", "blue", "outline", "flap", "rectangular", "mail", "letter", "postal", "object"],
       "label": "Envelope",
       "context": "objects"
     },
     "noto-emoji_objects_u270f": {
       "file": "emoji_u270f.png",
       "sizes": [16, 32, 128],
-      "hints": ["pencil", "yellow", "pink-eraser", "sharp-tip", "wooden", "graphite", "writing", "drawing", "stationery", "object"],
+      "hints": ["pencil", "yellow", "pink", "eraser", "wooden", "graphite", "writing", "drawing", "stationery", "object"],
       "label": "Pencil",
       "context": "objects"
     },
     "noto-emoji_objects_u2712": {
       "file": "emoji_u2712.png",
       "sizes": [16, 32, 128],
-      "hints": ["black-nib", "fountain-pen", "teal-tip", "dark-cap", "metal-point", "ink", "calligraphy", "writing", "pen", "object"],
+      "hints": ["black", "nib", "fountain", "pen", "teal", "dark", "metal", "ink", "calligraphy", "object"],
       "label": "Black Nib",
       "context": "objects"
     },
     "noto-emoji_people-body_u1f385": {
       "file": "emoji_u1f385.png",
       "sizes": [16, 32, 128],
-      "hints": ["santa-claus", "red-hat", "white-beard", "yellow-face", "christmas", "jolly", "holiday", "winter", "festive", "person"],
+      "hints": ["santa", "claus", "red", "hat", "white", "beard", "christmas", "jolly", "holiday", "person"],
       "label": "Santa Claus",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f3c2": {
       "file": "emoji_u1f3c2.png",
       "sizes": [16, 32, 128],
-      "hints": ["snowboarder", "red-board", "orange-jacket", "goggles", "helmet", "snow-slope", "winter-sport", "jumping", "extreme", "person"],
+      "hints": ["snowboarder", "red", "orange", "goggles", "helmet", "snow", "winter", "sport", "jumping", "person"],
       "label": "Snowboarder",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f3c3": {
       "file": "emoji_u1f3c3.png",
       "sizes": [16, 32, 128],
-      "hints": ["person-running", "orange-shirt", "gray-pants", "blue-shoes", "brown-hair", "stride", "jogging", "exercise", "sprint", "person"],
+      "hints": ["running", "orange", "gray", "blue", "brown", "stride", "jogging", "exercise", "sprint", "person"],
       "label": "Person Running",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f3c4": {
       "file": "emoji_u1f3c4.png",
       "sizes": [16, 32, 128],
-      "hints": ["person-surfing", "orange-surfboard", "blue-wave", "gray-wetsuit", "brown-hair", "standing", "ocean", "water-sport", "beach", "person"],
+      "hints": ["surfing", "orange", "surfboard", "blue", "wave", "standing", "ocean", "water", "beach", "person"],
       "label": "Person Surfing",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f3c7": {
       "file": "emoji_u1f3c7.png",
       "sizes": [16, 32, 128],
-      "hints": ["horse-racing", "brown-horse", "jockey", "helmet", "galloping", "saddle", "equestrian", "derby", "sport", "person"],
+      "hints": ["horse", "racing", "brown", "jockey", "helmet", "galloping", "saddle", "equestrian", "derby", "person"],
       "label": "Horse Racing",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f3ca": {
       "file": "emoji_u1f3ca.png",
       "sizes": [16, 32, 128],
-      "hints": ["person-swimming", "goggles", "swim-cap", "blue-water", "orange-arm", "freestyle", "stroke", "pool", "aquatic", "person"],
+      "hints": ["swimming", "goggles", "swim", "cap", "blue", "orange", "freestyle", "stroke", "pool", "person"],
       "label": "Person Swimming",
       "context": "people-body"
     },
@@ -7094,56 +7094,56 @@
     "noto-emoji_people-body_u1f3cc": {
       "file": "emoji_u1f3cc.png",
       "sizes": [16, 32, 128],
-      "hints": ["person-golfing", "blue-cap", "orange-shirt", "gray-pants", "golf-club", "swing", "tee-shot", "sport", "outdoor", "person"],
+      "hints": ["golfing", "blue", "orange", "gray", "golf", "club", "swing", "tee", "sport", "person"],
       "label": "Person Golfing",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f440": {
       "file": "emoji_u1f440.png",
       "sizes": [16, 32, 128],
-      "hints": ["eyes", "pair", "white-sclera", "dark-pupils", "looking-left", "oval", "watching", "seeing", "vision", "body-part"],
+      "hints": ["eyes", "pair", "white", "dark", "pupils", "oval", "watching", "seeing", "vision", "body"],
       "label": "Eyes",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f441": {
       "file": "emoji_u1f441.png",
       "sizes": [16, 32, 128],
-      "hints": ["eye", "single", "brown-iris", "dark-pupil", "white-sclera", "oval", "looking", "sight", "vision", "body-part"],
+      "hints": ["eye", "single", "brown", "iris", "dark", "pupil", "white", "looking", "sight", "body"],
       "label": "Eye",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f442": {
       "file": "emoji_u1f442.png",
       "sizes": [16, 32, 128],
-      "hints": ["ear", "yellow", "orange-inner", "lobe", "canal", "cartilage", "hearing", "listening", "sound", "body-part"],
+      "hints": ["ear", "yellow", "orange", "lobe", "canal", "cartilage", "hearing", "listening", "sound", "body"],
       "label": "Ear",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f443": {
       "file": "emoji_u1f443.png",
       "sizes": [16, 32, 128],
-      "hints": ["nose", "yellow", "nostrils", "bridge", "front-view", "sniffing", "smelling", "face", "scent", "body-part"],
+      "hints": ["nose", "yellow", "nostrils", "bridge", "front", "sniffing", "smelling", "face", "scent", "body"],
       "label": "Nose",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f444": {
       "file": "emoji_u1f444.png",
       "sizes": [16, 32, 128],
-      "hints": ["mouth", "pink-lips", "red", "open", "teeth", "glossy", "lipstick", "kiss", "speaking", "body-part"],
+      "hints": ["mouth", "pink", "lips", "red", "open", "teeth", "glossy", "lipstick", "kiss", "body"],
       "label": "Mouth",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f445": {
       "file": "emoji_u1f445.png",
       "sizes": [16, 32, 128],
-      "hints": ["tongue", "pink", "red-tip", "sticking-out", "mouth-opening", "taste", "licking", "playful", "wet", "body-part"],
+      "hints": ["tongue", "pink", "red", "tip", "sticking", "out", "taste", "licking", "playful", "body"],
       "label": "Tongue",
       "context": "people-body"
     },
     "noto-emoji_people-body_u1f446": {
       "file": "emoji_u1f446.png",
       "sizes": [16, 32, 128],
-      "hints": ["backhand-index-pointing-up", "yellow-hand", "finger", "upward", "fist", "gesture", "direction", "above", "indicating", "body-part"],
+      "hints": ["backhand", "index", "pointing", "up", "yellow", "hand", "finger", "gesture", "direction", "body"],
       "label": "Backhand Index Pointing Up",
       "context": "people-body"
     },
