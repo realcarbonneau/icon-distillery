@@ -417,6 +417,22 @@ class Theme:
                 hits.append(str(match))
         return hits
 
+    def get_icon_paths_by_size(self, internal_context_id, filename, sizes):
+        """Return {effective_size: absolute_path} for an icon's known sizes.
+
+        Uses context_map (from index.theme + contexts.json) to resolve
+        directory paths for each size. Only returns paths that exist on disk
+        (multiple directories may map to the same context and size).
+        """
+        paths = {}
+        for entry in self.context_map.get(internal_context_id, []):
+            size = entry["effective_size"]
+            if size in sizes and size not in paths:
+                path = os.path.join(self.dir, entry["dir"], filename)
+                if os.path.isfile(path):
+                    paths[size] = path
+        return paths
+
     def convert_svg_to_png(self, svg_path):
         """Convert SVG to PNG. Returns png_path or error string."""
         rel = self.strip_dir_base(svg_path)

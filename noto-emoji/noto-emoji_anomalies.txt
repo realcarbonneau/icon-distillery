@@ -1,0 +1,2 @@
+noto-emoji_flags_AS: Render failed - EntitiesForbidden(name='ns_extend', system_id=None, public_id=None)
+noto-emoji_flags_AS: Render failed - unbound prefix: line 8, column 2

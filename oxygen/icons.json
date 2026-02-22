@@ -4,7 +4,7 @@
     "oxygen_actions_acrobat": {
       "file": "acrobat.png",
       "sizes": [16, 22],
-      "hints": ["acrobat", "pdf", "adobe", "document", "reader", "file", "red"],
+      "hints": ["acrobat", "pdf", "adobe", "document", "reader", "file", "red", "page", "format", "viewer"],
       "label": "Acrobat",
       "context": "actions"
     },
@@ -12,7 +12,7 @@
       "file": "address-book-new.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": [],
-      "hints": ["address", "book", "new", "contact", "plus", "add", "folder"],
+      "hints": ["address", "book", "new", "contact", "plus", "add", "folder", "blue", "green", "create"],
       "label": "Address Book New",
       "context": "actions"
     },
@@ -20,7 +20,7 @@
       "file": "albumfolder-importimages.png",
       "sizes": [32],
       "duplicate_of": "oxygen_actions_document-import",
-      "hints": ["album", "folder", "import", "images", "photos", "arrow", "download", "transfer"],
+      "hints": ["album", "folder", "import", "images", "photos", "arrow", "download", "transfer", "picture", "landscape"],
       "label": "Albumfolder Importimages",
       "context": "actions"
     },
@@ -28,14 +28,14 @@
       "file": "albumfolder-properties.png",
       "sizes": [32],
       "duplicate_of": "oxygen_actions_configure",
-      "hints": ["album", "folder", "properties", "photos", "images", "edit", "pencil"],
+      "hints": ["album", "folder", "properties", "photos", "images", "edit", "pencil", "blue", "settings", "configure"],
       "label": "Albumfolder Properties",
       "context": "actions"
     },
     "oxygen_actions_align-horizontal-bottom-out": {
       "file": "align-horizontal-bottom-out.png",
       "sizes": [16, 32, 48],
-      "hints": ["align", "horizontal", "bottom", "out", "layout", "objects", "rectangles"],
+      "hints": ["align", "horizontal", "bottom", "out", "layout", "objects", "rectangles", "distribute", "arrange", "position"],
       "label": "Align Horizontal Bottom Out",
       "context": "actions"
     },
@@ -43,7 +43,7 @@
       "file": "align-horizontal-center.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["align", "horizontal", "center", "layout", "middle", "objects"],
+      "hints": ["align", "horizontal", "center", "layout", "middle", "objects", "rectangles", "distribute", "arrange", "position"],
       "label": "Align Horizontal Center",
       "context": "actions"
     },
@@ -51,21 +51,21 @@
       "file": "align-horizontal-left.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["align", "horizontal", "left", "object", "edge", "layout", "arrange", "position"],
+      "hints": ["align", "horizontal", "left", "object", "edge", "layout", "arrange", "position", "rectangles", "distribute"],
       "label": "Align Horizontal Left",
       "context": "actions"
     },
     "oxygen_actions_align-horizontal-left-out": {
       "file": "align-horizontal-left-out.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["align", "horizontal", "left", "out", "outside", "layout", "arrange", "position"],
+      "hints": ["align", "horizontal", "left", "out", "outside", "layout", "arrange", "position", "rectangles", "distribute"],
       "label": "Align Horizontal Left Out",
       "context": "actions"
     },
     "oxygen_actions_align-horizontal-left-to-anchor": {
       "file": "align-horizontal-left-to-anchor.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["align", "horizontal", "left", "anchor", "layout", "objects", "snap"],
+      "hints": ["align", "horizontal", "left", "anchor", "layout", "objects", "snap", "rectangles", "arrange", "position"],
       "label": "Align Horizontal Left To Anchor",
       "context": "actions"
     },
@@ -73,28 +73,28 @@
       "file": "align-horizontal-right.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["align", "horizontal", "right", "layout", "objects", "edge"],
+      "hints": ["align", "horizontal", "right", "layout", "objects", "edge", "rectangles", "arrange", "position", "distribute"],
       "label": "Align Horizontal Right",
       "context": "actions"
     },
     "oxygen_actions_align-horizontal-right-out": {
       "file": "align-horizontal-right-out.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["align", "horizontal", "right", "outside", "layout", "arrange", "position"],
+      "hints": ["align", "horizontal", "right", "outside", "layout", "arrange", "position", "rectangles", "distribute", "edge"],
       "label": "Align Horizontal Right Out",
       "context": "actions"
     },
     "oxygen_actions_align-horizontal-right-to-anchor": {
       "file": "align-horizontal-right-to-anchor.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["align", "horizontal", "right", "anchor", "layout", "position", "objects"],
+      "hints": ["align", "horizontal", "right", "anchor", "layout", "position", "objects", "rectangles", "snap", "arrange"],
       "label": "Align Horizontal Right To Anchor",
       "context": "actions"
     },
     "oxygen_actions_align-horizontal-top-out": {
       "file": "align-horizontal-top-out.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["align", "horizontal", "top", "outside", "layout", "objects", "position"],
+      "hints": ["align", "horizontal", "top", "outside", "layout", "objects", "position", "rectangles", "arrange", "distribute"],
       "label": "Align Horizontal Top Out",
       "context": "actions"
     },
@@ -102,14 +102,14 @@
       "file": "align-vertical-bottom.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["align", "vertical", "bottom", "rectangles", "layout", "position", "arrange"],
+      "hints": ["align", "vertical", "bottom", "rectangles", "layout", "position", "arrange", "objects", "edge", "distribute"],
       "label": "Align Vertical Bottom",
       "context": "actions"
     },
     "oxygen_actions_align-vertical-bottom-out": {
       "file": "align-vertical-bottom-out.png",
       "sizes": [16, 22],
-      "hints": ["align", "vertical", "bottom", "out", "rectangles", "layout", "outside"],
+      "hints": ["align", "vertical", "bottom", "out", "rectangles", "layout", "outside", "arrange", "position", "distribute"],
       "label": "Align Vertical Bottom Out",
       "duplicates": [],
       "context": "actions"
@@ -118,7 +118,7 @@
       "file": "align-vertical-center.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["align", "vertical", "center", "middle", "layout", "arrange", "position"],
+      "hints": ["align", "vertical", "center", "middle", "layout", "arrange", "position", "rectangles", "objects", "distribute"],
       "label": "Align Vertical Center",
       "context": "actions"
     },
@@ -126,14 +126,14 @@
       "file": "align-vertical-top.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["align", "vertical", "top", "layout", "objects", "edge", "arrange"],
+      "hints": ["align", "vertical", "top", "layout", "objects", "edge", "arrange", "rectangles", "position", "distribute"],
       "label": "Align Vertical Top",
       "context": "actions"
     },
     "oxygen_actions_align-vertical-top-out": {
       "file": "align-vertical-top-out.png",
       "sizes": [16, 22],
-      "hints": ["align", "vertical", "top", "outside", "layout", "arrange", "position"],
+      "hints": ["align", "vertical", "top", "outside", "layout", "arrange", "position", "rectangles", "distribute", "edge"],
       "label": "Align Vertical Top Out",
       "context": "actions"
     },
@@ -141,7 +141,7 @@
       "file": "application-exit.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": [],
-      "hints": ["exit", "close", "quit", "stop", "red", "x", "terminate", "end"],
+      "hints": ["exit", "close", "quit", "stop", "red", "x", "terminate", "end", "button", "shutdown"],
       "label": "Application Exit",
       "context": "actions"
     },
@@ -149,7 +149,7 @@
       "file": "appointment-new.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": [],
-      "hints": ["appointment", "new", "calendar", "plus", "event", "schedule", "add", "meeting"],
+      "hints": ["appointment", "new", "calendar", "plus", "event", "schedule", "add", "meeting", "create", "green"],
       "label": "Appointment New",
       "context": "actions"
     },
@@ -157,14 +157,14 @@
       "file": "archive-extract.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["archive", "extract", "unzip", "decompress", "file", "arrow", "up"],
+      "hints": ["archive", "extract", "unzip", "decompress", "file", "arrow", "up", "document", "unpack", "export"],
       "label": "Archive Extract",
       "context": "actions"
     },
     "oxygen_actions_archive-insert": {
       "file": "archive-insert.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["archive", "insert", "add", "file", "document", "plus", "compress"],
+      "hints": ["archive", "insert", "add", "file", "document", "plus", "compress", "zip", "pack", "green"],
       "label": "Archive Insert",
       "context": "actions"
     },
@@ -172,70 +172,70 @@
       "file": "archive-insert-directory.png",
       "sizes": [16, 22, 32, 48, 256],
       "duplicates": [],
-      "hints": ["archive", "folder", "add", "insert", "directory", "plus", "new folder"],
+      "hints": ["archive", "folder", "add", "insert", "directory", "plus", "create", "blue", "green", "compress"],
       "label": "Archive Insert Directory",
       "context": "actions"
     },
     "oxygen_actions_archive-remove": {
       "file": "archive-remove.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["archive", "remove", "delete", "document", "zip", "x", "unarchive", "extract"],
+      "hints": ["archive", "remove", "delete", "document", "zip", "x", "unarchive", "extract", "red", "file"],
       "label": "Archive Remove",
       "context": "actions"
     },
     "oxygen_actions_arrow-down": {
       "file": "arrow-down.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "down", "green", "triangle", "direction", "navigate", "descend"],
+      "hints": ["arrow", "down", "green", "triangle", "direction", "navigate", "descend", "pointer", "bottom", "south"],
       "label": "Arrow Down",
       "context": "actions"
     },
     "oxygen_actions_arrow-down-double": {
       "file": "arrow-down-double.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "down", "double", "green", "download", "fast", "navigation"],
+      "hints": ["arrow", "down", "double", "green", "download", "fast", "navigation", "bottom", "skip", "descend"],
       "label": "Arrow Down Double",
       "context": "actions"
     },
     "oxygen_actions_arrow-left": {
       "file": "arrow-left.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "left", "back", "previous", "navigation", "green", "direction", "return"],
+      "hints": ["arrow", "left", "back", "previous", "navigation", "green", "direction", "return", "triangle", "west"],
       "label": "Arrow Left",
       "context": "actions"
     },
     "oxygen_actions_arrow-left-double": {
       "file": "arrow-left-double.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "left", "double", "fast", "backward", "rewind", "previous"],
+      "hints": ["arrow", "left", "double", "fast", "backward", "rewind", "previous", "green", "skip", "navigation"],
       "label": "Arrow Left Double",
       "context": "actions"
     },
     "oxygen_actions_arrow-right": {
       "file": "arrow-right.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "right", "next", "forward", "direction", "navigate", "go", "east"],
+      "hints": ["arrow", "right", "next", "forward", "direction", "navigate", "go", "east", "green", "triangle"],
       "label": "Arrow Right",
       "context": "actions"
     },
     "oxygen_actions_arrow-right-double": {
       "file": "arrow-right-double.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "right", "double", "fast", "forward", "skip", "next"],
+      "hints": ["arrow", "right", "double", "fast", "forward", "skip", "next", "green", "navigation", "advance"],
       "label": "Arrow Right Double",
       "context": "actions"
     },
     "oxygen_actions_arrow-up": {
       "file": "arrow-up.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "up", "green", "direction", "move", "north", "upload", "ascend"],
+      "hints": ["arrow", "up", "green", "direction", "move", "north", "upload", "ascend", "triangle", "top"],
       "label": "Arrow Up",
       "context": "actions"
     },
     "oxygen_actions_arrow-up-double": {
       "file": "arrow-up-double.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["arrow", "up", "double", "increase", "scroll", "top", "previous"],
+      "hints": ["arrow", "up", "double", "increase", "scroll", "top", "previous", "green", "fast", "navigation"],
       "label": "Arrow Up Double",
       "context": "actions"
     },
@@ -243,21 +243,21 @@
       "file": "bookmark-new.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": ["oxygen_actions_bookmarks"],
-      "hints": ["bookmark", "new", "add", "plus", "favorite", "ribbon", "document", "page"],
+      "hints": ["bookmark", "new", "add", "plus", "favorite", "ribbon", "document", "page", "create", "save"],
       "label": "Bookmark New",
       "context": "actions"
     },
     "oxygen_actions_bookmark-new-list": {
       "file": "bookmark-new-list.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["bookmark", "new", "list", "star", "plus", "favorite", "add", "yellow"],
+      "hints": ["bookmark", "new", "list", "star", "plus", "favorite", "add", "yellow", "create", "green"],
       "label": "Bookmark New List",
       "context": "actions"
     },
     "oxygen_actions_bookmark-toolbar": {
       "file": "bookmark-toolbar.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["bookmark", "toolbar", "star", "favorite", "bar", "quick", "access", "panel"],
+      "hints": ["bookmark", "toolbar", "star", "favorite", "bar", "quick", "access", "panel", "yellow", "navigation"],
       "label": "Bookmark Toolbar",
       "context": "actions"
     },
@@ -265,14 +265,14 @@
       "file": "bookmarks.png",
       "sizes": [22],
       "duplicate_of": "oxygen_actions_bookmark-new",
-      "hints": ["bookmarks", "star", "favorite", "save", "mark", "browser", "saved"],
+      "hints": ["bookmarks", "star", "favorite", "save", "mark", "browser", "saved", "yellow", "rating", "gold"],
       "label": "Bookmarks",
       "context": "actions"
     },
     "oxygen_actions_bookmarks-organize": {
       "file": "bookmarks-organize.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["bookmarks", "organize", "folder", "ribbon", "favorites", "manage", "arrange"],
+      "hints": ["bookmarks", "organize", "folder", "ribbon", "favorites", "manage", "arrange", "blue", "red", "sort"],
       "label": "Bookmarks Organize",
       "context": "actions"
     },
@@ -280,35 +280,35 @@
       "file": "call-start.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": ["oxygen_actions_im-skype"],
-      "hints": ["call", "start", "phone", "answer", "green", "dial", "telephone"],
+      "hints": ["call", "start", "phone", "answer", "green", "dial", "telephone", "handset", "receiver", "connect"],
       "label": "Call Start",
       "context": "actions"
     },
     "oxygen_actions_call-stop": {
       "file": "call-stop.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["call", "stop", "hangup", "phone", "end", "red", "decline", "reject"],
+      "hints": ["call", "stop", "hangup", "phone", "end", "red", "decline", "reject", "disconnect", "telephone"],
       "label": "Call Stop",
       "context": "actions"
     },
     "oxygen_actions_character-set": {
       "file": "character-set.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["character", "set", "font", "text", "letters", "alphabet", "encoding", "special"],
+      "hints": ["character", "set", "font", "text", "letters", "alphabet", "encoding", "special", "unicode", "glyph"],
       "label": "Character Set",
       "context": "actions"
     },
     "oxygen_actions_checkbox": {
       "file": "checkbox.png",
       "sizes": [16, 22, 32],
-      "hints": ["checkbox", "check", "tick", "green", "selected", "done", "complete", "form"],
+      "hints": ["checkbox", "check", "tick", "green", "selected", "done", "complete", "form", "approve", "verified"],
       "label": "Checkbox",
       "context": "actions"
     },
     "oxygen_actions_chronometer": {
       "file": "chronometer.png",
       "sizes": [16, 22, 32, 48, 64],
-      "hints": ["chronometer", "stopwatch", "timer", "time", "clock", "measure", "speed"],
+      "hints": ["chronometer", "stopwatch", "timer", "time", "clock", "measure", "speed", "silver", "countdown", "lap"],
       "label": "Chronometer",
       "context": "actions"
     },
@@ -316,7 +316,7 @@
       "file": "code-block.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["code", "block", "array", "grid", "elements", "programming", "structure"],
+      "hints": ["code", "block", "array", "grid", "elements", "programming", "structure", "matrix", "table", "cells"],
       "label": "Code Block",
       "context": "actions"
     },
@@ -324,28 +324,28 @@
       "file": "code-class.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["class", "code", "hierarchy", "inheritance", "OOP", "diagram", "structure", "programming"],
+      "hints": ["class", "code", "hierarchy", "inheritance", "OOP", "diagram", "structure", "programming", "object", "tree"],
       "label": "Code Class",
       "context": "actions"
     },
     "oxygen_actions_code-context": {
       "file": "code-context.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["code", "context", "braces", "curly", "programming", "scope", "block"],
+      "hints": ["code", "context", "braces", "curly", "programming", "scope", "block", "brackets", "syntax", "developer"],
       "label": "Code Context",
       "context": "actions"
     },
     "oxygen_actions_code-function": {
       "file": "code-function.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["code", "function", "method", "block", "programming", "purple", "routine"],
+      "hints": ["code", "function", "method", "block", "programming", "purple", "routine", "cube", "procedure", "subroutine"],
       "label": "Code Function",
       "context": "actions"
     },
     "oxygen_actions_code-typedef": {
       "file": "code-typedef.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["typedef", "code", "type", "definition", "green", "programming", "alias"],
+      "hints": ["typedef", "code", "type", "definition", "green", "programming", "alias", "block", "declare", "structure"],
       "label": "Code Typedef",
       "context": "actions"
     },
@@ -353,7 +353,7 @@
       "file": "code-variable.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["code", "variable", "programming", "symbol", "identifier", "value", "data", "developer"],
+      "hints": ["code", "variable", "programming", "symbol", "identifier", "value", "data", "developer", "gray", "parameter"],
       "label": "Code Variable",
       "context": "actions"
     },
@@ -361,35 +361,35 @@
       "file": "color-picker.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["color", "picker", "eyedropper", "pipette", "sample", "dropper", "select", "palette"],
+      "hints": ["color", "picker", "eyedropper", "pipette", "sample", "dropper", "select", "palette", "green", "tool"],
       "label": "Color Picker",
       "context": "actions"
     },
     "oxygen_actions_color-picker-black": {
       "file": "color-picker-black.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["color", "picker", "black", "dropper", "pipette", "eyedropper", "sample"],
+      "hints": ["color", "picker", "black", "dropper", "pipette", "eyedropper", "sample", "dark", "tool", "swatch"],
       "label": "Color Picker Black",
       "context": "actions"
     },
     "oxygen_actions_color-picker-grey": {
       "file": "color-picker-grey.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["color picker", "grey", "eyedropper", "grayscale", "sample", "pipette", "select", "dropper"],
+      "hints": ["color", "picker", "grey", "eyedropper", "grayscale", "sample", "pipette", "select", "dropper", "tool"],
       "label": "Color Picker Grey",
       "context": "actions"
     },
     "oxygen_actions_color-picker-white": {
       "file": "color-picker-white.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["color", "picker", "white", "eyedropper", "sample", "select", "dropper"],
+      "hints": ["color", "picker", "white", "eyedropper", "sample", "select", "dropper", "pipette", "light", "tool"],
       "label": "Color Picker White",
       "context": "actions"
     },
     "oxygen_actions_configure": {
       "file": "configure.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["configure", "wrench", "settings", "options", "setup", "preferences", "tool", "adjust"],
+      "hints": ["configure", "wrench", "settings", "options", "setup", "preferences", "tool", "adjust", "silver", "spanner"],
       "label": "Configure",
       "duplicates": ["oxygen_actions_albumfolder-properties", "oxygen_actions_tag-properties"],
       "context": "actions"
@@ -397,98 +397,98 @@
     "oxygen_actions_configure-shortcuts": {
       "file": "configure-shortcuts.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["configure", "shortcuts", "keyboard", "keys", "settings", "hotkeys", "wrench"],
+      "hints": ["configure", "shortcuts", "keyboard", "keys", "settings", "hotkeys", "wrench", "keybinding", "accelerator", "preferences"],
       "label": "Configure Shortcuts",
       "context": "actions"
     },
     "oxygen_actions_configure-toolbars": {
       "file": "configure-toolbars.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["configure", "toolbars", "wrench", "customize", "settings", "buttons"],
+      "hints": ["configure", "toolbars", "wrench", "customize", "settings", "buttons", "bar", "layout", "preferences", "spanner"],
       "label": "Configure Toolbars",
       "context": "actions"
     },
     "oxygen_actions_contact-new": {
       "file": "contact-new.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["contact", "new", "add", "person", "vcard", "user", "profile"],
+      "hints": ["contact", "new", "add", "person", "vcard", "user", "profile", "card", "create", "green"],
       "label": "Contact New",
       "context": "actions"
     },
     "oxygen_actions_continue-data-project": {
       "file": "continue-data-project.png",
       "sizes": [64, 128, 256],
-      "hints": ["continue", "data", "project", "disc", "refresh", "resume", "burn"],
+      "hints": ["continue", "data", "project", "disc", "refresh", "resume", "burn", "CD", "arrow", "optical"],
       "label": "Continue Data Project",
       "context": "actions"
     },
     "oxygen_actions_dashboard-show": {
       "file": "dashboard-show.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["dashboard", "show", "desktop", "widgets", "plasma", "display", "view"],
+      "hints": ["dashboard", "show", "desktop", "widgets", "plasma", "display", "view", "panel", "screen", "applets"],
       "label": "Dashboard Show",
       "context": "actions"
     },
     "oxygen_actions_debug-execute-from-cursor": {
       "file": "debug-execute-from-cursor.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "execute", "cursor", "run", "code", "breakpoint", "start"],
+      "hints": ["debug", "execute", "cursor", "run", "code", "breakpoint", "start", "arrow", "line", "purple"],
       "label": "Debug Execute From Cursor",
       "context": "actions"
     },
     "oxygen_actions_debug-execute-to-cursor": {
       "file": "debug-execute-to-cursor.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "execute", "cursor", "run", "arrow", "line", "breakpoint"],
+      "hints": ["debug", "execute", "cursor", "run", "arrow", "line", "breakpoint", "purple", "step", "code"],
       "label": "Debug Execute To Cursor",
       "context": "actions"
     },
     "oxygen_actions_debug-run": {
       "file": "debug-run.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "run", "execute", "gear", "arrow", "code", "start"],
+      "hints": ["debug", "run", "execute", "gear", "arrow", "code", "start", "cog", "blue", "launch"],
       "label": "Debug Run",
       "context": "actions"
     },
     "oxygen_actions_debug-run-cursor": {
       "file": "debug-run-cursor.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "run", "cursor", "gear", "execute", "breakpoint", "code", "step"],
+      "hints": ["debug", "run", "cursor", "gear", "execute", "breakpoint", "code", "step", "cog", "purple"],
       "label": "Debug Run Cursor",
       "context": "actions"
     },
     "oxygen_actions_debug-step-instruction": {
       "file": "debug-step-instruction.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "step", "instruction", "code", "breakpoint", "execute", "trace", "developer"],
+      "hints": ["debug", "step", "instruction", "code", "breakpoint", "execute", "trace", "developer", "brace", "loop"],
       "label": "Debug Step Instruction",
       "context": "actions"
     },
     "oxygen_actions_debug-step-into": {
       "file": "debug-step-into.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "step", "into", "code", "function", "enter", "breakpoint", "trace"],
+      "hints": ["debug", "step", "into", "code", "function", "enter", "breakpoint", "trace", "arrow", "purple"],
       "label": "Debug Step Into",
       "context": "actions"
     },
     "oxygen_actions_debug-step-into-instruction": {
       "file": "debug-step-into-instruction.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "step", "into", "instruction", "arrow", "code", "debugger"],
+      "hints": ["debug", "step", "into", "instruction", "arrow", "code", "debugger", "purple", "brace", "trace"],
       "label": "Debug Step Into Instruction",
       "context": "actions"
     },
     "oxygen_actions_debug-step-out": {
       "file": "debug-step-out.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "step out", "exit", "function", "return", "breakpoint", "code", "developer"],
+      "hints": ["debug", "step", "out", "exit", "function", "return", "breakpoint", "code", "developer", "arrow"],
       "label": "Debug Step Out",
       "context": "actions"
     },
     "oxygen_actions_debug-step-over": {
       "file": "debug-step-over.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["debug", "step over", "skip", "code", "breakpoint", "function", "bypass", "developer"],
+      "hints": ["debug", "step", "over", "skip", "code", "breakpoint", "function", "bypass", "developer", "arrow"],
       "label": "Debug Step Over",
       "context": "actions"
     },
@@ -496,21 +496,21 @@
       "file": "dialog-cancel.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["dialog", "cancel", "no", "forbidden", "red", "stop", "reject", "abort"],
+      "hints": ["dialog", "cancel", "no", "forbidden", "red", "stop", "reject", "abort", "prohibit", "circle"],
       "label": "Dialog Cancel",
       "context": "actions"
     },
     "oxygen_actions_dialog-close": {
       "file": "dialog-close.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["close", "dialog", "red", "x", "error", "cancel", "stop"],
+      "hints": ["close", "dialog", "red", "x", "error", "cancel", "stop", "cross", "dismiss", "circle"],
       "label": "Dialog Close",
       "context": "actions"
     },
     "oxygen_actions_dialog-ok": {
       "file": "dialog-ok.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["dialog", "ok", "check", "confirm", "accept", "yes", "tick", "approve"],
+      "hints": ["dialog", "ok", "check", "confirm", "accept", "yes", "tick", "approve", "blue", "checkmark"],
       "label": "Dialog Ok",
       "context": "actions"
     },
@@ -518,126 +518,126 @@
       "file": "dialog-ok-apply.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": [],
-      "hints": ["dialog", "ok", "apply", "checkmark", "green", "confirm", "accept", "tick"],
+      "hints": ["dialog", "ok", "apply", "checkmark", "green", "confirm", "accept", "tick", "yes", "approve"],
       "label": "Dialog Ok Apply",
       "context": "actions"
     },
     "oxygen_actions_dialog-scripts": {
       "file": "dialog-scripts.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["scripts", "terminal", "console", "command", "prompt", "shell", "code"],
+      "hints": ["scripts", "terminal", "console", "command", "prompt", "shell", "code", "bash", "execute", "CLI"],
       "label": "Dialog Scripts",
       "context": "actions"
     },
     "oxygen_actions_distribute-horizontal-center": {
       "file": "distribute-horizontal-center.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "horizontal", "center", "spacing", "layout", "align", "objects", "middle"],
+      "hints": ["distribute", "horizontal", "center", "spacing", "layout", "align", "objects", "middle", "rectangles", "arrangement"],
       "label": "Distribute Horizontal Center",
       "context": "actions"
     },
     "oxygen_actions_distribute-horizontal-equal": {
       "file": "distribute-horizontal-equal.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "horizontal", "equal", "spacing", "layout", "align", "arrange", "objects"],
+      "hints": ["distribute", "horizontal", "equal", "spacing", "layout", "align", "arrange", "objects", "rectangles", "gaps"],
       "label": "Distribute Horizontal Equal",
       "context": "actions"
     },
     "oxygen_actions_distribute-horizontal-left": {
       "file": "distribute-horizontal-left.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "horizontal", "left", "align", "layout", "spacing", "arrange"],
+      "hints": ["distribute", "horizontal", "left", "align", "layout", "spacing", "arrange", "rectangles", "objects", "edge"],
       "label": "Distribute Horizontal Left",
       "context": "actions"
     },
     "oxygen_actions_distribute-horizontal-margin": {
       "file": "distribute-horizontal-margin.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "horizontal", "margin", "spacing", "layout", "gap", "rectangles"],
+      "hints": ["distribute", "horizontal", "margin", "spacing", "layout", "gap", "rectangles", "align", "objects", "padding"],
       "label": "Distribute Horizontal Margin",
       "context": "actions"
     },
     "oxygen_actions_distribute-horizontal-page": {
       "file": "distribute-horizontal-page.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "horizontal", "page", "layout", "arrange", "align", "objects"],
+      "hints": ["distribute", "horizontal", "page", "layout", "arrange", "align", "objects", "rectangles", "spacing", "boundary"],
       "label": "Distribute Horizontal Page",
       "context": "actions"
     },
     "oxygen_actions_distribute-horizontal-right": {
       "file": "distribute-horizontal-right.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "horizontal", "right", "spacing", "layout", "arrange", "align"],
+      "hints": ["distribute", "horizontal", "right", "spacing", "layout", "arrange", "align", "rectangles", "objects", "edge"],
       "label": "Distribute Horizontal Right",
       "context": "actions"
     },
     "oxygen_actions_distribute-horizontal-x": {
       "file": "distribute-horizontal-x.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "horizontal", "spacing", "layout", "objects", "equal", "arrange"],
+      "hints": ["distribute", "horizontal", "spacing", "layout", "objects", "equal", "arrange", "rectangles", "axis", "position"],
       "label": "Distribute Horizontal X",
       "context": "actions"
     },
     "oxygen_actions_distribute-vertical-bottom": {
       "file": "distribute-vertical-bottom.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "vertical", "bottom", "align", "layout", "objects", "rectangles"],
+      "hints": ["distribute", "vertical", "bottom", "align", "layout", "objects", "rectangles", "spacing", "arrange", "edge"],
       "label": "Distribute Vertical Bottom",
       "context": "actions"
     },
     "oxygen_actions_distribute-vertical-center": {
       "file": "distribute-vertical-center.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "vertical", "center", "layout", "spacing", "objects", "arrange"],
+      "hints": ["distribute", "vertical", "center", "layout", "spacing", "objects", "arrange", "rectangles", "middle", "align"],
       "label": "Distribute Vertical Center",
       "context": "actions"
     },
     "oxygen_actions_distribute-vertical-equal": {
       "file": "distribute-vertical-equal.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "vertical", "equal", "spacing", "layout", "arrange", "align"],
+      "hints": ["distribute", "vertical", "equal", "spacing", "layout", "arrange", "align", "rectangles", "objects", "gaps"],
       "label": "Distribute Vertical Equal",
       "context": "actions"
     },
     "oxygen_actions_distribute-vertical-margin": {
       "file": "distribute-vertical-margin.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "vertical", "margin", "spacing", "align", "layout", "even", "gap"],
+      "hints": ["distribute", "vertical", "margin", "spacing", "align", "layout", "even", "gap", "rectangles", "padding"],
       "label": "Distribute Vertical Margin",
       "context": "actions"
     },
     "oxygen_actions_distribute-vertical-page": {
       "file": "distribute-vertical-page.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "vertical", "page", "layout", "spacing", "arrange", "objects", "stack"],
+      "hints": ["distribute", "vertical", "page", "layout", "spacing", "arrange", "objects", "stack", "rectangles", "boundary"],
       "label": "Distribute Vertical Page",
       "context": "actions"
     },
     "oxygen_actions_distribute-vertical-top": {
       "file": "distribute-vertical-top.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "vertical", "top", "spacing", "layout", "arrange", "align"],
+      "hints": ["distribute", "vertical", "top", "spacing", "layout", "arrange", "align", "rectangles", "objects", "edge"],
       "label": "Distribute Vertical Top",
       "context": "actions"
     },
     "oxygen_actions_distribute-vertical-y": {
       "file": "distribute-vertical-y.png",
       "sizes": [16, 22, 32],
-      "hints": ["distribute", "vertical", "align", "spacing", "layout", "arrange", "y-axis"],
+      "hints": ["distribute", "vertical", "align", "spacing", "layout", "arrange", "axis", "rectangles", "objects", "position"],
       "label": "Distribute Vertical Y",
       "context": "actions"
     },
     "oxygen_actions_document-close": {
       "file": "document-close.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "close", "file", "exit", "red", "x", "cancel"],
+      "hints": ["document", "close", "file", "exit", "red", "x", "cancel", "page", "remove", "dismiss"],
       "label": "Document Close",
       "context": "actions"
     },
     "oxygen_actions_document-decrypt": {
       "file": "document-decrypt.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "decrypt", "unlock", "padlock", "security", "open", "unprotect"],
+      "hints": ["document", "decrypt", "unlock", "padlock", "security", "open", "unprotect", "gold", "lock", "key"],
       "label": "Document Decrypt",
       "duplicates": [],
       "context": "actions"
@@ -646,28 +646,28 @@
       "file": "document-edit.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": [],
-      "hints": ["document", "edit", "pencil", "write", "modify", "paper", "page"],
+      "hints": ["document", "edit", "pencil", "write", "modify", "paper", "page", "yellow", "compose", "text"],
       "label": "Document Edit",
       "context": "actions"
     },
     "oxygen_actions_document-edit-decrypt": {
       "file": "document-edit-decrypt.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "decrypt", "edit", "key", "unlock", "encrypted", "secure", "file"],
+      "hints": ["document", "decrypt", "edit", "key", "unlock", "encrypted", "secure", "file", "page", "modify"],
       "label": "Document Edit Decrypt",
       "context": "actions"
     },
     "oxygen_actions_document-edit-decrypt-verify": {
       "file": "document-edit-decrypt-verify.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "decrypt", "verify", "magnify", "search", "security", "check", "inspect"],
+      "hints": ["document", "decrypt", "verify", "magnify", "search", "security", "check", "inspect", "file", "glass"],
       "label": "Document Edit Decrypt Verify",
       "context": "actions"
     },
     "oxygen_actions_document-edit-encrypt": {
       "file": "document-edit-encrypt.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "edit", "encrypt", "pencil", "secure", "lock", "file", "write"],
+      "hints": ["document", "edit", "encrypt", "pencil", "secure", "lock", "file", "write", "page", "protect"],
       "label": "Document Edit Encrypt",
       "context": "actions"
     },
@@ -675,28 +675,28 @@
       "file": "document-edit-sign.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["document", "edit", "sign", "signature", "pen", "write", "pencil"],
+      "hints": ["document", "edit", "sign", "signature", "pen", "write", "pencil", "autograph", "page", "file"],
       "label": "Document Edit Sign",
       "context": "actions"
     },
     "oxygen_actions_document-edit-sign-encrypt": {
       "file": "document-edit-sign-encrypt.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "edit", "sign", "encrypt", "pencil", "secure", "signature"],
+      "hints": ["document", "edit", "sign", "encrypt", "pencil", "secure", "signature", "file", "lock", "write"],
       "label": "Document Edit Sign Encrypt",
       "context": "actions"
     },
     "oxygen_actions_document-edit-verify": {
       "file": "document-edit-verify.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "edit", "verify", "check", "magnify", "search", "inspect", "review"],
+      "hints": ["document", "edit", "verify", "check", "magnify", "search", "inspect", "review", "file", "glass"],
       "label": "Document Edit Verify",
       "context": "actions"
     },
     "oxygen_actions_document-encrypt": {
       "file": "document-encrypt.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["encrypt", "document", "lock", "security", "padlock", "protect", "secure"],
+      "hints": ["encrypt", "document", "lock", "security", "padlock", "protect", "secure", "gold", "closed", "file"],
       "label": "Document Encrypt",
       "duplicates": [],
       "context": "actions"
@@ -705,14 +705,14 @@
       "file": "document-encrypted.png",
       "sizes": [22, 32, 48],
       "duplicates": [],
-      "hints": ["document", "encrypted", "secure", "locked", "cipher", "grid", "protection"],
+      "hints": ["document", "encrypted", "secure", "locked", "cipher", "grid", "protection", "file", "scrambled", "page"],
       "label": "Document Encrypted",
       "context": "actions"
     },
     "oxygen_actions_document-export": {
       "file": "document-export.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "export", "arrow", "save", "out", "file", "send"],
+      "hints": ["document", "export", "arrow", "save", "out", "file", "send", "page", "output", "transfer"],
       "label": "Document Export",
       "duplicates": [],
       "context": "actions"
@@ -720,7 +720,7 @@
     "oxygen_actions_document-export-table": {
       "file": "document-export-table.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["export", "table", "database", "spreadsheet", "data", "csv", "save", "extract"],
+      "hints": ["export", "table", "database", "spreadsheet", "data", "csv", "save", "extract", "arrow", "output"],
       "label": "Document Export Table",
       "context": "actions"
     },
@@ -728,14 +728,14 @@
       "file": "document-import.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": ["oxygen_actions_albumfolder-importimages"],
-      "hints": ["document", "import", "file", "arrow", "load", "open", "incoming"],
+      "hints": ["document", "import", "file", "arrow", "load", "open", "incoming", "page", "input", "transfer"],
       "label": "Document Import",
       "context": "actions"
     },
     "oxygen_actions_document-new": {
       "file": "document-new.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "new", "file", "page", "create", "add", "plus", "blank"],
+      "hints": ["document", "new", "file", "page", "create", "add", "plus", "blank", "green", "empty"],
       "label": "Document New",
       "duplicates": [],
       "context": "actions"
@@ -744,7 +744,7 @@
       "file": "document-open.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": ["oxygen_actions_document-open-data", "oxygen_actions_tag-folder"],
-      "hints": ["document", "open", "folder", "file", "load", "browse", "directory"],
+      "hints": ["document", "open", "folder", "file", "load", "browse", "directory", "yellow", "page", "access"],
       "label": "Document Open",
       "context": "actions"
     },
@@ -752,42 +752,42 @@
       "file": "document-open-data.png",
       "sizes": [16],
       "duplicate_of": "oxygen_actions_document-open",
-      "hints": ["document", "open", "data", "folder", "file", "load", "import", "browse"],
+      "hints": ["document", "open", "data", "folder", "file", "load", "import", "browse", "directory", "access"],
       "label": "Document Open Data",
       "context": "actions"
     },
     "oxygen_actions_document-open-folder": {
       "file": "document-open-folder.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "open", "folder", "file", "directory", "browse", "blue"],
+      "hints": ["document", "open", "folder", "file", "directory", "browse", "blue", "navigate", "path", "access"],
       "label": "Document Open Folder",
       "context": "actions"
     },
     "oxygen_actions_document-open-recent": {
       "file": "document-open-recent.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "open", "recent", "file", "clock", "time", "history"],
+      "hints": ["document", "open", "recent", "file", "clock", "time", "history", "page", "past", "previous"],
       "label": "Document Open Recent",
       "context": "actions"
     },
     "oxygen_actions_document-open-remote": {
       "file": "document-open-remote.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["open", "remote", "document", "folder", "network", "globe", "cloud", "internet"],
+      "hints": ["open", "remote", "document", "folder", "network", "globe", "cloud", "internet", "world", "server"],
       "label": "Document Open Remote",
       "context": "actions"
     },
     "oxygen_actions_document-preview": {
       "file": "document-preview.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["document", "preview", "magnify", "view", "search", "look", "examine"],
+      "hints": ["document", "preview", "magnify", "view", "search", "look", "examine", "glass", "page", "inspect"],
       "label": "Document Preview",
       "context": "actions"
     },
     "oxygen_actions_document-preview-archive": {
       "file": "document-preview-archive.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["document", "preview", "archive", "box", "package", "magnify", "search", "zip"],
+      "hints": ["document", "preview", "archive", "box", "package", "magnify", "search", "zip", "cardboard", "inspect"],
       "label": "Document Preview Archive",
       "context": "actions"
     },
@@ -795,35 +795,35 @@
       "file": "document-print.png",
       "sizes": [16, 22, 32, 48],
       "duplicate_of": "oxygen_apps_preferences-desktop-printer",
-      "hints": ["print", "printer", "document", "paper", "output", "hardcopy", "page", "publish"],
+      "hints": ["print", "printer", "document", "paper", "output", "hardcopy", "page", "publish", "silver", "tray"],
       "label": "Document Print",
       "context": "actions"
     },
     "oxygen_actions_document-print-direct": {
       "file": "document-print-direct.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["print", "printer", "direct", "quick", "lightning", "fast", "instant"],
+      "hints": ["print", "printer", "direct", "quick", "lightning", "fast", "instant", "bolt", "yellow", "paper"],
       "label": "Document Print Direct",
       "context": "actions"
     },
     "oxygen_actions_document-print-frame": {
       "file": "document-print-frame.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["print", "document", "frame", "printer", "paper", "output", "page"],
+      "hints": ["print", "document", "frame", "printer", "paper", "output", "page", "border", "selection", "area"],
       "label": "Document Print Frame",
       "context": "actions"
     },
     "oxygen_actions_document-print-preview": {
       "file": "document-print-preview.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "print", "preview", "printer", "eye", "view", "page"],
+      "hints": ["document", "print", "preview", "printer", "eye", "view", "page", "look", "paper", "inspect"],
       "label": "Document Print Preview",
       "context": "actions"
     },
     "oxygen_actions_document-properties": {
       "file": "document-properties.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "properties", "pencil", "edit", "file", "metadata", "info", "settings"],
+      "hints": ["document", "properties", "pencil", "edit", "file", "metadata", "info", "settings", "yellow", "page"],
       "label": "Document Properties",
       "context": "actions"
     },
@@ -831,7 +831,7 @@
       "file": "document-revert.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["document", "revert", "undo", "arrow", "restore", "previous", "file"],
+      "hints": ["document", "revert", "undo", "arrow", "restore", "previous", "file", "back", "page", "rollback"],
       "label": "Document Revert",
       "context": "actions"
     },
@@ -839,7 +839,7 @@
       "file": "document-save.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["document", "save", "floppy", "disk", "file", "store", "write"],
+      "hints": ["document", "save", "floppy", "disk", "file", "store", "write", "blue", "backup", "keep"],
       "label": "Document Save",
       "context": "actions"
     },
@@ -847,49 +847,49 @@
       "file": "document-save-all.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["save", "floppy", "disk", "all", "multiple", "batch", "documents", "export"],
+      "hints": ["save", "floppy", "disk", "all", "multiple", "batch", "documents", "export", "stacked", "store"],
       "label": "Document Save All",
       "context": "actions"
     },
     "oxygen_actions_document-save-as": {
       "file": "document-save-as.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["save as", "document", "floppy", "disk", "export", "rename", "write", "pencil"],
+      "hints": ["save", "document", "floppy", "disk", "export", "rename", "write", "pencil", "yellow", "copy"],
       "label": "Document Save As",
       "context": "actions"
     },
     "oxygen_actions_document-sign": {
       "file": "document-sign.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["document", "sign", "signature", "pen", "write", "autograph", "contract"],
+      "hints": ["document", "sign", "signature", "pen", "write", "autograph", "contract", "fountain", "quill", "ink"],
       "label": "Document Sign",
       "context": "actions"
     },
     "oxygen_actions_document-swap": {
       "file": "document-swap.png",
       "sizes": [16],
-      "hints": ["document", "swap", "exchange", "arrows", "switch", "replace", "trade"],
+      "hints": ["document", "swap", "exchange", "arrows", "switch", "replace", "trade", "transfer", "file", "bidirectional"],
       "label": "Document Swap",
       "context": "actions"
     },
     "oxygen_actions_documentation": {
       "file": "documentation.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["documentation", "document", "tabs", "bookmarks", "help", "manual", "guide"],
+      "hints": ["documentation", "document", "tabs", "bookmarks", "help", "manual", "guide", "reference", "colored", "pages"],
       "label": "Documentation",
       "context": "actions"
     },
     "oxygen_actions_documentinfo": {
       "file": "documentinfo.png",
       "sizes": [16, 22],
-      "hints": ["document", "info", "information", "blue", "details", "properties", "metadata", "about"],
+      "hints": ["document", "info", "information", "blue", "details", "properties", "metadata", "about", "circle", "help"],
       "label": "Documentinfo",
       "context": "actions"
     },
     "oxygen_actions_download": {
       "file": "download.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["download", "arrow", "down", "internet", "globe", "save", "transfer"],
+      "hints": ["download", "arrow", "down", "internet", "globe", "save", "transfer", "world", "fetch", "receive"],
       "duplicates": [],
       "label": "Download",
       "context": "actions"
@@ -897,35 +897,35 @@
     "oxygen_actions_download-later": {
       "file": "download-later.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["download", "later", "schedule", "clock", "queue", "time", "defer", "postpone"],
+      "hints": ["download", "later", "schedule", "clock", "queue", "time", "defer", "postpone", "arrow", "wait"],
       "label": "Download Later",
       "context": "actions"
     },
     "oxygen_actions_draw-arrow-back": {
       "file": "draw-arrow-back.png",
       "sizes": [16, 22, 32],
-      "hints": ["arrow", "back", "draw", "left", "shape", "pointer", "return", "previous"],
+      "hints": ["arrow", "back", "draw", "left", "shape", "pointer", "return", "previous", "outline", "direction"],
       "label": "Draw Arrow Back",
       "context": "actions"
     },
     "oxygen_actions_draw-arrow-down": {
       "file": "draw-arrow-down.png",
       "sizes": [16, 22, 32],
-      "hints": ["draw", "arrow", "down", "shape", "direction", "pointer", "descend"],
+      "hints": ["draw", "arrow", "down", "shape", "direction", "pointer", "descend", "outline", "bottom", "vertical"],
       "label": "Draw Arrow Down",
       "context": "actions"
     },
     "oxygen_actions_draw-arrow-forward": {
       "file": "draw-arrow-forward.png",
       "sizes": [16, 22, 32],
-      "hints": ["draw", "arrow", "forward", "right", "shape", "direction", "pointer", "next"],
+      "hints": ["draw", "arrow", "forward", "right", "shape", "direction", "pointer", "next", "outline", "proceed"],
       "label": "Draw Arrow Forward",
       "context": "actions"
     },
     "oxygen_actions_draw-arrow-up": {
       "file": "draw-arrow-up.png",
       "sizes": [16, 22, 32],
-      "hints": ["arrow", "up", "draw", "upward", "shape", "direction", "pointer"],
+      "hints": ["arrow", "up", "draw", "upward", "shape", "direction", "pointer", "outline", "top", "ascend"],
       "label": "Draw Arrow Up",
       "context": "actions"
     },
@@ -933,7 +933,7 @@
       "file": "draw-bezier-curves.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["bezier", "curve", "vector", "draw", "path", "spline", "control-points"],
+      "hints": ["bezier", "curve", "vector", "draw", "path", "spline", "nodes", "blue", "points", "smooth"],
       "label": "Draw Bezier Curves",
       "context": "actions"
     },
@@ -941,7 +941,7 @@
       "file": "draw-brush.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["brush", "draw", "paint", "art", "stroke", "tool", "painting", "artistic"],
+      "hints": ["brush", "draw", "paint", "art", "stroke", "tool", "painting", "artistic", "bristle", "canvas"],
       "label": "Draw Brush",
       "context": "actions"
     },
@@ -949,21 +949,21 @@
       "file": "draw-circle.png",
       "sizes": [16, 22, 32],
       "duplicates": [],
-      "hints": ["draw", "circle", "shape", "round", "ellipse", "oval", "outline"],
+      "hints": ["draw", "circle", "shape", "round", "ellipse", "oval", "outline", "ring", "geometry", "curve"],
       "label": "Draw Circle",
       "context": "actions"
     },
     "oxygen_actions_draw-cross": {
       "file": "draw-cross.png",
       "sizes": [16, 22, 32],
-      "hints": ["cross", "draw", "shape", "plus", "medical", "symbol", "add"],
+      "hints": ["cross", "draw", "shape", "plus", "medical", "symbol", "add", "outline", "intersection", "geometry"],
       "label": "Draw Cross",
       "context": "actions"
     },
     "oxygen_actions_draw-donut": {
       "file": "draw-donut.png",
       "sizes": [16, 22, 32],
-      "hints": ["donut", "draw", "ring", "circle", "shape", "torus", "hole"],
+      "hints": ["donut", "draw", "ring", "circle", "shape", "torus", "hole", "annulus", "outline", "round"],
       "label": "Draw Donut",
       "context": "actions"
     },
@@ -971,7 +971,7 @@
       "file": "draw-ellipse.png",
       "sizes": [16, 22, 32],
       "duplicates": [],
-      "hints": ["draw", "ellipse", "oval", "shape", "circle", "geometry", "round", "curve"],
+      "hints": ["draw", "ellipse", "oval", "shape", "circle", "geometry", "round", "curve", "outline", "oblong"],
       "label": "Draw Ellipse",
       "context": "actions"
     },
@@ -979,7 +979,7 @@
       "file": "draw-eraser.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["eraser", "draw", "delete", "remove", "rubber", "clear", "undo"],
+      "hints": ["eraser", "draw", "delete", "remove", "rubber", "clear", "undo", "red", "white", "wipe"],
       "label": "Draw Eraser",
       "context": "actions"
     },
@@ -987,42 +987,42 @@
       "file": "draw-freehand.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["draw", "freehand", "pencil", "sketch", "write", "pen", "scribble"],
+      "hints": ["draw", "freehand", "pencil", "sketch", "write", "pen", "scribble", "yellow", "tool", "handwriting"],
       "label": "Draw Freehand",
       "context": "actions"
     },
     "oxygen_actions_draw-halfcircle1": {
       "file": "draw-halfcircle1.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["halfcircle", "semicircle", "draw", "shape", "arc", "curve", "geometry", "graphic"],
+      "hints": ["halfcircle", "semicircle", "draw", "shape", "arc", "curve", "geometry", "graphic", "outline", "half"],
       "label": "Draw Halfcircle1",
       "context": "actions"
     },
     "oxygen_actions_draw-halfcircle2": {
       "file": "draw-halfcircle2.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["draw", "halfcircle", "arc", "shape", "semicircle", "curve", "geometry", "half"],
+      "hints": ["draw", "halfcircle", "arc", "shape", "semicircle", "curve", "geometry", "half", "outline", "right"],
       "label": "Draw Halfcircle2",
       "context": "actions"
     },
     "oxygen_actions_draw-halfcircle3": {
       "file": "draw-halfcircle3.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["draw", "halfcircle", "semicircle", "arc", "shape", "curve", "geometry", "dome"],
+      "hints": ["draw", "halfcircle", "semicircle", "arc", "shape", "curve", "geometry", "dome", "outline", "top"],
       "label": "Draw Halfcircle3",
       "context": "actions"
     },
     "oxygen_actions_draw-halfcircle4": {
       "file": "draw-halfcircle4.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["draw", "half", "circle", "semicircle", "shape", "arc", "geometry"],
+      "hints": ["draw", "half", "circle", "semicircle", "shape", "arc", "geometry", "outline", "bottom", "curve"],
       "label": "Draw Halfcircle4",
       "context": "actions"
     },
     "oxygen_actions_draw-line": {
       "file": "draw-line.png",
       "sizes": [16],
-      "hints": ["draw", "line", "stroke", "tool", "graphic", "vector", "segment", "path"],
+      "hints": ["draw", "line", "stroke", "tool", "graphic", "vector", "segment", "path", "diagonal", "straight"],
       "label": "Draw Line",
       "context": "actions"
     },
@@ -1030,14 +1030,14 @@
       "file": "draw-path.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["draw", "path", "pen", "curve", "line", "bezier", "vector"],
+      "hints": ["draw", "path", "pen", "curve", "line", "bezier", "vector", "red", "nib", "stroke"],
       "label": "Draw Path",
       "context": "actions"
     },
     "oxygen_actions_draw-polygon": {
       "file": "draw-polygon.png",
       "sizes": [16, 22, 32],
-      "hints": ["draw", "polygon", "pentagon", "shape", "create", "outline", "vertices"],
+      "hints": ["draw", "polygon", "pentagon", "shape", "create", "outline", "vertices", "geometry", "sides", "angles"],
       "label": "Draw Polygon",
       "context": "actions"
     },
@@ -1045,7 +1045,7 @@
       "file": "draw-polyline.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["polyline", "draw", "line", "path", "vector", "polygon", "segments"],
+      "hints": ["polyline", "draw", "line", "path", "vector", "polygon", "segments", "connected", "outline", "zigzag"],
       "label": "Draw Polyline",
       "context": "actions"
     },
@@ -1053,21 +1053,21 @@
       "file": "draw-rectangle.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["rectangle", "draw", "shape", "square", "box", "outline", "geometry"],
+      "hints": ["rectangle", "draw", "shape", "square", "box", "outline", "geometry", "frame", "border", "quadrilateral"],
       "label": "Draw Rectangle",
       "context": "actions"
     },
     "oxygen_actions_draw-spiral": {
       "file": "draw-spiral.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["spiral", "draw", "curve", "swirl", "shape", "vector", "coil"],
+      "hints": ["spiral", "draw", "curve", "swirl", "shape", "vector", "coil", "blue", "helix", "twist"],
       "label": "Draw Spiral",
       "context": "actions"
     },
     "oxygen_actions_draw-square-inverted-corners": {
       "file": "draw-square-inverted-corners.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["square", "shape", "inverted", "corners", "draw", "curved", "concave"],
+      "hints": ["square", "shape", "inverted", "corners", "draw", "curved", "concave", "outline", "geometry", "indented"],
       "label": "Draw Square Inverted Corners",
       "context": "actions"
     },
@@ -1075,14 +1075,14 @@
       "file": "draw-star.png",
       "sizes": [16, 22, 32],
       "duplicates": [],
-      "hints": ["draw", "star", "shape", "favorite", "create", "five-pointed", "outline"],
+      "hints": ["draw", "star", "shape", "favorite", "create", "pointed", "outline", "rating", "geometry", "pentagram"],
       "label": "Draw Star",
       "context": "actions"
     },
     "oxygen_actions_draw-text": {
       "file": "draw-text.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["text", "draw", "type", "font", "letter", "insert", "typography"],
+      "hints": ["text", "draw", "type", "font", "letter", "insert", "typography", "serif", "character", "write"],
       "label": "Draw Text",
       "duplicates": [],
       "context": "actions"
@@ -1090,42 +1090,42 @@
     "oxygen_actions_draw-triangle": {
       "file": "draw-triangle.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["triangle", "draw", "shape", "geometry", "polygon", "outline"],
+      "hints": ["triangle", "draw", "shape", "geometry", "polygon", "outline", "angles", "vertices", "corner", "right"],
       "label": "Draw Triangle",
       "context": "actions"
     },
     "oxygen_actions_draw-triangle1": {
       "file": "draw-triangle1.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["draw", "triangle", "shape", "geometry", "polygon", "outline", "vector"],
+      "hints": ["draw", "triangle", "shape", "geometry", "polygon", "outline", "vector", "equilateral", "angles", "pointed"],
       "label": "Draw Triangle1",
       "context": "actions"
     },
     "oxygen_actions_draw-triangle2": {
       "file": "draw-triangle2.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["draw", "triangle", "shape", "geometry", "polygon", "three", "sides", "angle"],
+      "hints": ["draw", "triangle", "shape", "geometry", "polygon", "three", "sides", "angle", "outline", "vector"],
       "label": "Draw Triangle2",
       "context": "actions"
     },
     "oxygen_actions_draw-triangle3": {
       "file": "draw-triangle3.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["triangle", "draw", "shape", "polygon", "geometry", "three-sided", "graphic", "vector"],
+      "hints": ["triangle", "draw", "shape", "polygon", "geometry", "outline", "graphic", "vector", "angular", "sided"],
       "label": "Draw Triangle3",
       "context": "actions"
     },
     "oxygen_actions_draw-triangle4": {
       "file": "draw-triangle4.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["triangle", "draw", "shape", "geometry", "polygon", "pointing down"],
+      "hints": ["triangle", "draw", "shape", "geometry", "polygon", "downward", "outline", "vector", "angular", "inverted"],
       "label": "Draw Triangle4",
       "context": "actions"
     },
     "oxygen_actions_edit-bomb": {
       "file": "edit-bomb.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["edit", "bomb", "explosive", "black", "fuse", "danger", "delete"],
+      "hints": ["edit", "bomb", "explosive", "black", "fuse", "danger", "delete", "spherical", "destroy", "weapon"],
       "label": "Edit Bomb",
       "context": "actions"
     },
@@ -1133,35 +1133,35 @@
       "file": "edit-clear.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["clear", "edit", "erase", "broom", "delete", "remove", "clean", "sweep"],
+      "hints": ["clear", "edit", "erase", "broom", "delete", "remove", "clean", "sweep", "cross", "wipe"],
       "label": "Edit Clear",
       "context": "actions"
     },
     "oxygen_actions_edit-clear-history": {
       "file": "edit-clear-history.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "clear", "history", "hourglass", "time", "delete", "remove"],
+      "hints": ["edit", "clear", "history", "hourglass", "time", "delete", "remove", "arrow", "refresh", "past"],
       "label": "Edit Clear History",
       "context": "actions"
     },
     "oxygen_actions_edit-clear-list": {
       "file": "edit-clear-list.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "clear", "list", "delete", "remove", "erase", "document"],
+      "hints": ["edit", "clear", "list", "delete", "remove", "erase", "document", "cross", "lines", "page"],
       "label": "Edit Clear List",
       "context": "actions"
     },
     "oxygen_actions_edit-clear-locationbar-ltr": {
       "file": "edit-clear-locationbar-ltr.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["clear", "locationbar", "close", "x", "delete", "remove", "cancel", "erase"],
+      "hints": ["clear", "locationbar", "close", "x", "delete", "remove", "cancel", "erase", "button", "black"],
       "label": "Edit Clear Locationbar Ltr",
       "context": "actions"
     },
     "oxygen_actions_edit-clear-locationbar-rtl": {
       "file": "edit-clear-locationbar-rtl.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["clear", "edit", "locationbar", "delete", "rtl", "remove", "x"],
+      "hints": ["clear", "edit", "locationbar", "delete", "rtl", "remove", "x", "button", "close", "cancel"],
       "label": "Edit Clear Locationbar Rtl",
       "context": "actions"
     },
@@ -1169,14 +1169,14 @@
       "file": "edit-copy.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["copy", "duplicate", "clone", "documents", "clipboard", "edit", "paste", "pages"],
+      "hints": ["copy", "duplicate", "clone", "documents", "clipboard", "edit", "paste", "pages", "white", "overlapping"],
       "label": "Edit Copy",
       "context": "actions"
     },
     "oxygen_actions_edit-cut": {
       "file": "edit-cut.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "cut", "scissors", "clipboard", "snip", "remove", "trim"],
+      "hints": ["edit", "cut", "scissors", "clipboard", "snip", "remove", "trim", "blades", "open", "shear"],
       "label": "Edit Cut",
       "context": "actions"
     },
@@ -1184,14 +1184,14 @@
       "file": "edit-delete.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": ["oxygen_actions_tag-delete"],
-      "hints": ["delete", "remove", "x", "red", "cross", "cancel", "erase"],
+      "hints": ["delete", "remove", "x", "red", "cross", "cancel", "erase", "close", "reject", "deny"],
       "label": "Edit Delete",
       "context": "actions"
     },
     "oxygen_actions_edit-delete-shred": {
       "file": "edit-delete-shred.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["shred", "delete", "secure", "destroy", "paper", "document", "file", "permanent"],
+      "hints": ["shred", "delete", "secure", "destroy", "paper", "document", "file", "permanent", "cross", "erase"],
       "label": "Edit Delete Shred",
       "context": "actions"
     },
@@ -1199,35 +1199,35 @@
       "file": "edit-find.png",
       "sizes": [16, 22, 32, 48, 64, 128],
       "duplicates": [],
-      "hints": ["edit", "find", "search", "binoculars", "look", "locate", "discover"],
+      "hints": ["edit", "find", "search", "binoculars", "look", "locate", "discover", "orange", "lenses", "spy"],
       "label": "Edit Find",
       "context": "actions"
     },
     "oxygen_actions_edit-find-mail": {
       "file": "edit-find-mail.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["find", "mail", "search", "email", "binoculars", "envelope", "look"],
+      "hints": ["find", "mail", "search", "email", "binoculars", "envelope", "look", "locate", "message", "letter"],
       "label": "Edit Find Mail",
       "context": "actions"
     },
     "oxygen_actions_edit-find-project": {
       "file": "edit-find-project.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "find", "project", "search", "binoculars", "locate", "keyboard"],
+      "hints": ["edit", "find", "project", "search", "binoculars", "locate", "keyboard", "terminal", "window", "code"],
       "label": "Edit Find Project",
       "context": "actions"
     },
     "oxygen_actions_edit-find-replace": {
       "file": "edit-find-replace.png",
       "sizes": [16, 22, 32],
-      "hints": ["find", "replace", "search", "substitute", "magnifier", "pencil", "text", "change"],
+      "hints": ["find", "replace", "search", "substitute", "magnifier", "pencil", "text", "change", "edit", "swap"],
       "label": "Edit Find Replace",
       "context": "actions"
     },
     "oxygen_actions_edit-find-user": {
       "file": "edit-find-user.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["find", "user", "search", "person", "binoculars", "lookup", "locate"],
+      "hints": ["find", "user", "search", "person", "binoculars", "lookup", "locate", "profile", "account", "contact"],
       "label": "Edit Find User",
       "context": "actions"
     },
@@ -1235,28 +1235,28 @@
       "file": "edit-guides.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["edit", "guides", "lines", "ruler", "align", "snap", "grid", "layout"],
+      "hints": ["edit", "guides", "lines", "ruler", "align", "snap", "grid", "layout", "blue", "vertical"],
       "label": "Edit Guides",
       "context": "actions"
     },
     "oxygen_actions_edit-image-face-add": {
       "file": "edit-image-face-add.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "image", "face", "add", "photo", "tag", "person", "recognition"],
+      "hints": ["edit", "image", "face", "add", "photo", "tag", "person", "recognition", "plus", "green"],
       "label": "Edit Image Face Add",
       "context": "actions"
     },
     "oxygen_actions_edit-image-face-detect": {
       "file": "edit-image-face-detect.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["face", "detect", "image", "edit", "recognition", "smiley", "photo"],
+      "hints": ["face", "detect", "image", "edit", "recognition", "smiley", "photo", "blue", "scan", "identify"],
       "label": "Edit Image Face Detect",
       "context": "actions"
     },
     "oxygen_actions_edit-image-face-recognize": {
       "file": "edit-image-face-recognize.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["face", "recognize", "image", "person", "detect", "identify", "question", "photo"],
+      "hints": ["face", "recognize", "image", "person", "detect", "identify", "question", "photo", "unknown", "tag"],
       "label": "Edit Image Face Recognize",
       "context": "actions"
     },
@@ -1264,7 +1264,7 @@
       "file": "edit-image-face-show.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["face", "detection", "photo", "image", "people", "recognition", "portrait", "show"],
+      "hints": ["face", "detection", "photo", "image", "people", "recognition", "portrait", "show", "tags", "rectangles"],
       "label": "Edit Image Face Show",
       "context": "actions"
     },
@@ -1272,7 +1272,7 @@
       "file": "edit-link.png",
       "sizes": [16],
       "duplicate_of": "oxygen_emblems_emblem-symbolic-link",
-      "hints": ["edit", "link", "chain", "hyperlink", "url", "anchor", "connection", "web"],
+      "hints": ["edit", "link", "chain", "hyperlink", "url", "anchor", "connection", "web", "attach", "reference"],
       "label": "Edit Link",
       "context": "actions"
     },
@@ -1280,14 +1280,14 @@
       "file": "edit-node.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["edit", "node", "path", "shape", "point", "bezier", "vertex", "triangle"],
+      "hints": ["edit", "node", "path", "shape", "point", "bezier", "vertex", "triangle", "vector", "anchor"],
       "label": "Edit Node",
       "context": "actions"
     },
     "oxygen_actions_edit-paste": {
       "file": "edit-paste.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["paste", "clipboard", "document", "paper", "insert", "copy"],
+      "hints": ["paste", "clipboard", "document", "paper", "insert", "copy", "clip", "page", "white", "board"],
       "label": "Edit Paste",
       "context": "actions"
     },
@@ -1295,14 +1295,14 @@
       "file": "edit-redo.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["redo", "forward", "arrow", "green", "repeat", "restore", "again"],
+      "hints": ["redo", "forward", "arrow", "green", "repeat", "restore", "again", "curved", "right", "reapply"],
       "label": "Edit Redo",
       "context": "actions"
     },
     "oxygen_actions_edit-rename": {
       "file": "edit-rename.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "rename", "text", "input", "cursor", "field", "name"],
+      "hints": ["edit", "rename", "text", "input", "cursor", "field", "name", "type", "label", "change"],
       "label": "Edit Rename",
       "context": "actions"
     },
@@ -1310,7 +1310,7 @@
       "file": "edit-select.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["edit", "select", "cursor", "pointer", "arrow", "mouse", "click"],
+      "hints": ["edit", "select", "cursor", "pointer", "arrow", "mouse", "click", "white", "pick", "choose"],
       "label": "Edit Select",
       "context": "actions"
     },
@@ -1318,56 +1318,56 @@
       "file": "edit-select-all.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["select", "all", "document", "text", "selection", "dashed", "highlight", "edit"],
+      "hints": ["select", "all", "document", "text", "selection", "dashed", "highlight", "edit", "page", "lines"],
       "label": "Edit Select All",
       "context": "actions"
     },
     "oxygen_actions_edit-select-none": {
       "file": "edit-select-none.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["select", "none", "deselect", "edit", "clear", "unselect", "document"],
+      "hints": ["select", "none", "deselect", "edit", "clear", "unselect", "document", "cross", "remove", "page"],
       "label": "Edit Select None",
       "context": "actions"
     },
     "oxygen_actions_edit-table-cell-merge": {
       "file": "edit-table-cell-merge.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "table", "cell", "merge", "combine", "grid", "join"],
+      "hints": ["edit", "table", "cell", "merge", "combine", "grid", "join", "arrows", "columns", "rows"],
       "label": "Edit Table Cell Merge",
       "context": "actions"
     },
     "oxygen_actions_edit-table-cell-split": {
       "file": "edit-table-cell-split.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "table", "cell", "split", "divide", "grid", "spreadsheet"],
+      "hints": ["edit", "table", "cell", "split", "divide", "grid", "spreadsheet", "separate", "columns", "red"],
       "label": "Edit Table Cell Split",
       "context": "actions"
     },
     "oxygen_actions_edit-table-delete-column": {
       "file": "edit-table-delete-column.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["table", "delete", "column", "remove", "grid", "spreadsheet", "edit"],
+      "hints": ["table", "delete", "column", "remove", "grid", "spreadsheet", "edit", "cross", "red", "cell"],
       "label": "Edit Table Delete Column",
       "context": "actions"
     },
     "oxygen_actions_edit-table-delete-row": {
       "file": "edit-table-delete-row.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "table", "delete", "row", "remove", "grid", "spreadsheet"],
+      "hints": ["edit", "table", "delete", "row", "remove", "grid", "spreadsheet", "cross", "red", "cell"],
       "label": "Edit Table Delete Row",
       "context": "actions"
     },
     "oxygen_actions_edit-table-insert-column-left": {
       "file": "edit-table-insert-column-left.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["table", "insert", "column", "left", "add", "grid", "spreadsheet"],
+      "hints": ["table", "insert", "column", "left", "add", "grid", "spreadsheet", "plus", "green", "cell"],
       "label": "Edit Table Insert Column Left",
       "context": "actions"
     },
     "oxygen_actions_edit-table-insert-column-right": {
       "file": "edit-table-insert-column-right.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "table", "insert", "column", "right", "add", "grid", "spreadsheet"],
+      "hints": ["edit", "table", "insert", "column", "right", "add", "grid", "spreadsheet", "plus", "green"],
       "label": "Edit Table Insert Column Right",
       "context": "actions"
     },
@@ -1375,28 +1375,28 @@
       "file": "edit-table-insert-row-above.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["table", "insert", "row", "above", "add", "grid", "spreadsheet", "plus"],
+      "hints": ["table", "insert", "row", "above", "add", "grid", "spreadsheet", "plus", "green", "cell"],
       "label": "Edit Table Insert Row Above",
       "context": "actions"
     },
     "oxygen_actions_edit-table-insert-row-below": {
       "file": "edit-table-insert-row-below.png",
       "sizes": [16, 32, 48],
-      "hints": ["table", "row", "insert", "below", "add", "grid", "cell"],
+      "hints": ["table", "row", "insert", "below", "add", "grid", "cell", "plus", "green", "spreadsheet"],
       "label": "Edit Table Insert Row Below",
       "context": "actions"
     },
     "oxygen_actions_edit-table-insert-row-under": {
       "file": "edit-table-insert-row-under.png",
       "sizes": [16, 22],
-      "hints": ["table", "insert", "row", "under", "below", "add", "grid", "spreadsheet"],
+      "hints": ["table", "insert", "row", "under", "below", "add", "grid", "spreadsheet", "plus", "green"],
       "label": "Edit Table Insert Row Under",
       "context": "actions"
     },
     "oxygen_actions_edit-text-frame-update": {
       "file": "edit-text-frame-update.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["edit", "text", "frame", "update", "refresh", "document", "sync"],
+      "hints": ["edit", "text", "frame", "update", "refresh", "document", "sync", "arrows", "page", "reload"],
       "label": "Edit Text Frame Update",
       "context": "actions"
     },
@@ -1404,14 +1404,14 @@
       "file": "edit-undo.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": ["oxygen_actions_tag-reset"],
-      "hints": ["edit", "undo", "back", "revert", "arrow", "yellow", "history"],
+      "hints": ["edit", "undo", "back", "revert", "arrow", "yellow", "history", "curved", "left", "gold"],
       "label": "Edit Undo",
       "context": "actions"
     },
     "oxygen_actions_edit-web-search": {
       "file": "edit-web-search.png",
       "sizes": [48],
-      "hints": ["web", "search", "globe", "binoculars", "internet", "find", "browse"],
+      "hints": ["web", "search", "globe", "binoculars", "internet", "find", "browse", "blue", "earth", "world"],
       "label": "Edit Web Search",
       "context": "actions"
     },
@@ -1419,21 +1419,21 @@
       "file": "feed-subscribe.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["feed", "subscribe", "rss", "atom", "news", "syndication", "follow"],
+      "hints": ["feed", "subscribe", "rss", "atom", "news", "syndication", "follow", "orange", "tag", "broadcast"],
       "label": "Feed Subscribe",
       "context": "actions"
     },
     "oxygen_actions_file-zoom-in": {
       "file": "file-zoom-in.png",
       "sizes": [16, 22],
-      "hints": ["file", "document", "page", "zoom", "magnify", "enlarge", "view"],
+      "hints": ["file", "document", "page", "zoom", "magnify", "enlarge", "view", "white", "plus", "increase"],
       "label": "File Zoom In",
       "context": "actions"
     },
     "oxygen_actions_file-zoom-out": {
       "file": "file-zoom-out.png",
       "sizes": [16, 22],
-      "hints": ["file", "document", "page", "zoom", "reduce", "shrink", "view"],
+      "hints": ["file", "document", "page", "zoom", "reduce", "shrink", "view", "white", "minus", "decrease"],
       "label": "File Zoom Out",
       "context": "actions"
     },
@@ -1441,7 +1441,7 @@
       "file": "fileview-preview.png",
       "sizes": [32],
       "duplicate_of": "oxygen_actions_view-preview",
-      "hints": ["preview", "file", "view", "thumbnail", "image", "picture", "look", "display"],
+      "hints": ["preview", "file", "view", "thumbnail", "image", "picture", "look", "display", "balloon", "photo"],
       "label": "Fileview Preview",
       "context": "actions"
     },
@@ -1449,28 +1449,28 @@
       "file": "fill-color.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["fill", "color", "paint", "bucket", "flood", "background", "splash", "colorful"],
+      "hints": ["fill", "color", "paint", "bucket", "flood", "background", "splash", "colorful", "yellow", "pour"],
       "label": "Fill Color",
       "context": "actions"
     },
     "oxygen_actions_flag-black": {
       "file": "flag-black.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["flag", "black", "marker", "label", "tag", "priority", "banner"],
+      "hints": ["flag", "black", "marker", "label", "tag", "priority", "banner", "pole", "pennant", "dark"],
       "label": "Flag Black",
       "context": "actions"
     },
     "oxygen_actions_flag-blue": {
       "file": "flag-blue.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["flag", "blue", "marker", "banner", "tag", "label", "priority"],
+      "hints": ["flag", "blue", "marker", "banner", "tag", "label", "priority", "pole", "pennant", "wave"],
       "label": "Flag Blue",
       "context": "actions"
     },
     "oxygen_actions_flag-green": {
       "file": "flag-green.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["flag", "green", "marker", "bookmark", "important", "pole", "banner"],
+      "hints": ["flag", "green", "marker", "bookmark", "important", "pole", "banner", "pennant", "tag", "wave"],
       "label": "Flag Green",
       "duplicates": [],
       "context": "actions"
@@ -1479,21 +1479,21 @@
       "file": "flag-red.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["flag", "red", "marker", "banner", "tag", "label", "priority", "important"],
+      "hints": ["flag", "red", "marker", "banner", "tag", "label", "priority", "important", "pole", "pennant"],
       "label": "Flag Red",
       "context": "actions"
     },
     "oxygen_actions_flag-yellow": {
       "file": "flag-yellow.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["flag", "yellow", "marker", "bookmark", "important", "attention", "warning"],
+      "hints": ["flag", "yellow", "marker", "bookmark", "important", "attention", "warning", "pole", "pennant", "banner"],
       "label": "Flag Yellow",
       "context": "actions"
     },
     "oxygen_actions_folder-new": {
       "file": "folder-new.png",
       "sizes": [16, 22, 32],
-      "hints": ["folder", "new", "create", "directory", "add", "plus", "files"],
+      "hints": ["folder", "new", "create", "directory", "add", "plus", "files", "blue", "green", "open"],
       "label": "Folder New",
       "duplicates": [],
       "context": "actions"
@@ -1501,14 +1501,14 @@
     "oxygen_actions_folder-sync": {
       "file": "folder-sync.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["folder", "sync", "synchronize", "refresh", "update", "directory", "backup"],
+      "hints": ["folder", "sync", "synchronize", "refresh", "update", "directory", "backup", "arrows", "blue", "green"],
       "label": "Folder Sync",
       "context": "actions"
     },
     "oxygen_actions_fork": {
       "file": "fork.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["fork", "utensil", "eat", "branch", "split", "silverware", "dining"],
+      "hints": ["fork", "utensil", "eat", "branch", "split", "silverware", "dining", "metal", "silver", "food"],
       "label": "Fork",
       "context": "actions"
     },
@@ -1516,7 +1516,7 @@
       "file": "format-add-node.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["add", "node", "point", "path", "curve", "plus", "format"],
+      "hints": ["add", "node", "point", "path", "curve", "plus", "format", "green", "red", "line"],
       "label": "Format Add Node",
       "context": "actions"
     },
@@ -1524,7 +1524,7 @@
       "file": "format-break-node.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["format", "break", "node", "split", "path", "vector", "disconnect", "separate"],
+      "hints": ["format", "break", "node", "split", "path", "vector", "disconnect", "separate", "red", "line"],
       "label": "Format Break Node",
       "context": "actions"
     },
@@ -1532,7 +1532,7 @@
       "file": "format-connect-node.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["format", "connect", "node", "link", "path", "join", "line"],
+      "hints": ["format", "connect", "node", "link", "path", "join", "line", "red", "blue", "vector"],
       "label": "Format Connect Node",
       "context": "actions"
     },
@@ -1540,35 +1540,35 @@
       "file": "format-disconnect-node.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["disconnect", "node", "break", "separate", "unlink", "path", "vector"],
+      "hints": ["disconnect", "node", "break", "separate", "unlink", "path", "vector", "red", "line", "gap"],
       "label": "Format Disconnect Node",
       "context": "actions"
     },
     "oxygen_actions_format-font-size-less": {
       "file": "format-font-size-less.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["font", "size", "less", "smaller", "decrease", "text", "reduce"],
+      "hints": ["font", "size", "less", "smaller", "decrease", "text", "reduce", "letter", "arrow", "red"],
       "label": "Format Font Size Less",
       "context": "actions"
     },
     "oxygen_actions_format-font-size-more": {
       "file": "format-font-size-more.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["font", "size", "increase", "larger", "bigger", "text", "zoom", "format"],
+      "hints": ["font", "size", "increase", "larger", "bigger", "text", "zoom", "format", "letter", "green"],
       "label": "Format Font Size More",
       "context": "actions"
     },
     "oxygen_actions_format-indent-less": {
       "file": "format-indent-less.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["indent", "less", "format", "decrease", "outdent", "text", "margin", "left"],
+      "hints": ["indent", "less", "format", "decrease", "outdent", "text", "margin", "left", "arrow", "lines"],
       "label": "Format Indent Less",
       "context": "actions"
     },
     "oxygen_actions_format-indent-more": {
       "file": "format-indent-more.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["format", "indent", "more", "arrow", "right", "text", "increase"],
+      "hints": ["format", "indent", "more", "arrow", "right", "text", "increase", "green", "lines", "margin"],
       "label": "Format Indent More",
       "context": "actions"
     },
@@ -1576,56 +1576,56 @@
       "file": "format-join-node.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["join", "node", "format", "merge", "vector", "path", "connect"],
+      "hints": ["join", "node", "format", "merge", "vector", "path", "connect", "red", "line", "point"],
       "label": "Format Join Node",
       "context": "actions"
     },
     "oxygen_actions_format-justify-center": {
       "file": "format-justify-center.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["justify", "center", "align", "text", "format", "paragraph", "middle"],
+      "hints": ["justify", "center", "align", "text", "format", "paragraph", "middle", "lines", "horizontal", "layout"],
       "label": "Format Justify Center",
       "context": "actions"
     },
     "oxygen_actions_format-justify-fill": {
       "file": "format-justify-fill.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["justify", "fill", "text", "align", "format", "lines", "paragraph"],
+      "hints": ["justify", "fill", "text", "align", "format", "lines", "paragraph", "horizontal", "layout", "equal"],
       "label": "Format Justify Fill",
       "context": "actions"
     },
     "oxygen_actions_format-justify-left": {
       "file": "format-justify-left.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["format", "justify", "left", "align", "text", "paragraph", "lines"],
+      "hints": ["format", "justify", "left", "align", "text", "paragraph", "lines", "horizontal", "layout", "flush"],
       "label": "Format Justify Left",
       "context": "actions"
     },
     "oxygen_actions_format-justify-right": {
       "file": "format-justify-right.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["format", "justify", "right", "align", "text", "lines", "paragraph"],
+      "hints": ["format", "justify", "right", "align", "text", "lines", "paragraph", "horizontal", "layout", "flush"],
       "label": "Format Justify Right",
       "context": "actions"
     },
     "oxygen_actions_format-line-spacing-double": {
       "file": "format-line-spacing-double.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["line spacing", "double", "format", "text", "paragraph", "spacing", "lines", "typography"],
+      "hints": ["double", "format", "text", "paragraph", "spacing", "lines", "typography", "vertical", "gap", "height"],
       "label": "Format Line Spacing Double",
       "context": "actions"
     },
     "oxygen_actions_format-line-spacing-normal": {
       "file": "format-line-spacing-normal.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["format", "line", "spacing", "normal", "text", "paragraph", "lines"],
+      "hints": ["format", "line", "spacing", "normal", "text", "paragraph", "lines", "vertical", "gap", "typography"],
       "label": "Format Line Spacing Normal",
       "context": "actions"
     },
     "oxygen_actions_format-line-spacing-triple": {
       "file": "format-line-spacing-triple.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["line", "spacing", "triple", "format", "text", "paragraph", "wide"],
+      "hints": ["line", "spacing", "triple", "format", "text", "paragraph", "wide", "vertical", "gap", "typography"],
       "label": "Format Line Spacing Triple",
       "context": "actions"
     },
@@ -1633,14 +1633,14 @@
       "file": "format-list-ordered.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["list", "ordered", "numbered", "format", "bullets", "outline"],
+      "hints": ["list", "ordered", "numbered", "format", "bullets", "outline", "text", "lines", "blue", "sequence"],
       "label": "Format List Ordered",
       "context": "actions"
     },
     "oxygen_actions_format-list-unordered": {
       "file": "format-list-unordered.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["format", "list", "unordered", "bullet", "points", "items", "text"],
+      "hints": ["format", "list", "unordered", "bullet", "points", "items", "text", "blue", "lines", "dots"],
       "label": "Format List Unordered",
       "context": "actions"
     },
@@ -1648,14 +1648,14 @@
       "file": "format-remove-node.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["format", "remove", "node", "delete", "point", "path", "red"],
+      "hints": ["format", "remove", "node", "delete", "point", "path", "red", "cross", "line", "vector"],
       "label": "Format Remove Node",
       "context": "actions"
     },
     "oxygen_actions_format-stroke-color": {
       "file": "format-stroke-color.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["format", "stroke", "color", "pen", "marker", "rainbow", "outline", "draw"],
+      "hints": ["format", "stroke", "color", "pen", "marker", "rainbow", "outline", "draw", "black", "paint"],
       "label": "Format Stroke Color",
       "context": "actions"
     },
@@ -1663,28 +1663,28 @@
       "file": "format-text-bold.png",
       "sizes": [16, 22, 32, 48],
       "duplicates": [],
-      "hints": ["format", "text", "bold", "B", "font", "weight", "strong", "style"],
+      "hints": ["format", "text", "bold", "B", "font", "weight", "strong", "style", "letter", "typography"],
       "label": "Format Text Bold",
       "context": "actions"
     },
     "oxygen_actions_format-text-color": {
       "file": "format-text-color.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["text", "color", "format", "font", "typography", "A", "palette"],
+      "hints": ["text", "color", "format", "font", "typography", "A", "palette", "rainbow", "letter", "paint"],
       "label": "Format Text Color",
       "context": "actions"
     },
     "oxygen_actions_format-text-direction-ltr": {
       "file": "format-text-direction-ltr.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["text", "direction", "ltr", "left-to-right", "format", "alignment", "paragraph"],
+      "hints": ["text", "direction", "ltr", "format", "alignment", "paragraph", "arrow", "right", "green", "layout"],
       "label": "Format Text Direction Ltr",
       "context": "actions"
     },
     "oxygen_actions_format-text-direction-rtl": {
       "file": "format-text-direction-rtl.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["rtl", "text", "direction", "right", "left", "format", "arrow", "arabic"],
+      "hints": ["rtl", "text", "direction", "right", "left", "format", "arrow", "arabic", "green", "paragraph"],
       "label": "Format Text Direction Rtl",
       "context": "actions"
     },
@@ -1869,7 +1869,7 @@
     "oxygen_actions_go-home": {
       "file": "go-home.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["home", "house", "go", "navigate", "main", "start", "root", "directory"],
+      "hints": ["home", "house", "roof", "door", "chimney", "windows", "building", "dwelling", "orange", "gray"],
       "label": "Go Home",
       "duplicates": [],
       "context": "actions"
@@ -4059,18 +4059,16 @@
     },
     "oxygen_actions_view-bank": {
       "file": "view-bank.png",
-      "sizes": [16, 32, 48],
-      "hints": ["bank", "building", "financial", "columns", "institution", "money", "finance"],
+      "sizes": [16, 22, 32, 48],
+      "hints": ["bank", "building", "financial", "columns", "institution", "money", "finance", "temple", "pediment", "steps"],
       "label": "View Bank",
-      "duplicates": ["oxygen_actions_view-bank-account"],
       "context": "actions"
     },
     "oxygen_actions_view-bank-account": {
       "file": "view-bank-account.png",
-      "sizes": [22, 32, 48],
-      "hints": ["bank", "account", "money", "dollar", "ledger", "finance", "statement"],
+      "sizes": [32, 48],
+      "hints": ["dollar", "bill", "ledger", "document", "spreadsheet", "account", "money", "green", "finance", "statement"],
       "label": "View Bank Account",
-      "duplicate_of": "oxygen_actions_view-bank",
       "context": "actions"
     },
     "oxygen_actions_view-bank-account-checking": {
@@ -5034,7 +5032,7 @@
     "oxygen_apps_accessories-calculator": {
       "file": "accessories-calculator.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["calculator", "math", "numbers", "compute", "arithmetic", "buttons", "keypad", "accounting"],
+      "hints": ["calculator", "math", "numbers", "compute", "arithmetic", "buttons", "keypad", "accounting", "silver", "display"],
       "label": "Accessories Calculator",
       "duplicates": [],
       "context": "apps"
@@ -5695,7 +5693,7 @@
     "oxygen_apps_kwalletmanager": {
       "file": "kwalletmanager.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["wallet", "password", "credentials", "leather", "security", "kwallet", "keys"],
+      "hints": ["wallet", "brown", "leather", "clasp", "stitching", "billfold", "closed", "money", "security", "flat"],
       "label": "Kwalletmanager",
       "duplicates": [],
       "context": "apps"
@@ -6680,7 +6678,7 @@
     "oxygen_categories_applications-engineering": {
       "file": "applications-engineering.png",
       "sizes": [16, 22, 32, 48, 64, 128, 256],
-      "hints": ["engineering", "hardhat", "helmet", "yellow", "construction", "build", "safety", "work"],
+      "hints": ["engineering", "hardhat", "helmet", "yellow", "construction", "build", "safety", "work", "glossy", "brim"],
       "label": "Applications Engineering",
       "context": "categories"
     },
@@ -11210,14 +11208,14 @@
     "oxygen_status_wallet-closed": {
       "file": "wallet-closed.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["wallet", "closed", "money", "leather", "billfold", "finance", "brown", "secure"],
+      "hints": ["wallet", "closed", "money", "leather", "billfold", "finance", "brown", "secure", "clasp", "flat"],
       "label": "Wallet Closed",
       "context": "status"
     },
     "oxygen_status_wallet-open": {
       "file": "wallet-open.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["wallet", "open", "money", "leather", "billfold", "finance", "brown", "cash"],
+      "hints": ["wallet", "open", "money", "leather", "billfold", "finance", "brown", "cash", "bills", "clasp"],
       "label": "Wallet Open",
       "context": "status"
     },

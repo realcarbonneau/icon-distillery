@@ -127,13 +127,7 @@ class IconDataModel:
             return
         icons = icons_data.get("icons", {})
 
-        # Scan disk for actual file paths
-        try:
-            discovered = theme.scan_directory()
-        except SystemExit:
-            discovered = {}
-
-        # Build IconEntry objects from icons.json, paths from disk scan
+        # Build IconEntry objects from icons.json, paths from theme library
         for icon_id, info in icons.items():
             context = info.get("context", "")
             filename = info.get("file", "")
@@ -147,12 +141,11 @@ class IconDataModel:
             else:
                 status = "pending"
 
-            # Paths from disk scan (take first path per size)
-            paths = {}
-            if icon_id in discovered:
-                for size, path_list in discovered[icon_id].get("paths", {}).items():
-                    paths[size] = path_list[0]
-                    self._discovered_sizes.add(size)
+            # Paths from theme library (icons.json sizes + context_map)
+            sizes = set(info.get("sizes", []))
+            paths = theme.get_icon_paths_by_size(context, filename, sizes) if context and filename else {}
+            for size in paths:
+                self._discovered_sizes.add(size)
 
             key = (theme_id, icon_id)
             self._entries[key] = IconEntry(
@@ -1085,7 +1078,7 @@ class ControlsPanel(wx.Panel):
             self._theme_available, self._theme_labels,
             size=(220, -1))
         # Select oxygen and papirus by default
-        default_themes = {"nuvola", "oxygen", "papirus"}
+        default_themes = {"nuvola", "oxygen", "papirus", "noto-emoji"}
         for i, theme_id in enumerate(self._theme_ids):
             if theme_id in default_themes and self._theme_available.get(theme_id):
                 self._theme_combo.check(i, True)

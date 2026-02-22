@@ -2,6 +2,20 @@
 
 Post-processing for common icon theme packs. Normalizes themes to PNG at standard sizes, extracts hints, flags duplicates, and saves metadata in JSON files at the top level.
 
+## Table of Contents
+
+- [Objectives](#objectives)
+- [TODO](#todo)
+- [Theme Packs](#theme-packs)
+- [Example](#example)
+- [Emoji Icons](#emoji-icons)
+- [References](#references)
+
+## TODO
+
+1. Cleanup all hyphenated and non-unigram hints in noto-emoji (replace compound hints like "board-game", "trick-or-treat" with single-word unigrams)
+2. Review all hints and labels across all themes for proper words and no special characters
+
 ## Objectives
 
 - Normalize icon theme packs to PNG for standard sizes (16, 22, 32, 48, 64, 128, 256)
