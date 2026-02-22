@@ -15839,14 +15839,14 @@
       "sizes": [16, 22, 24],
       "context": "actions",
       "label": "Overflow Menu Left",
-      "hints": ["overflow", "menu", "dots", "more", "vertical", "ellipsis", "left", "options", "extra", "three dots", "kebab"]
+      "hints": ["overflow", "menu", "dots", "more", "vertical", "ellipsis", "left", "options", "three", "kebab"]
     },
     "papirus_actions_overflow-menu-right": {
       "file": "overflow-menu-right.png",
       "sizes": [16, 22, 24],
       "context": "actions",
       "label": "Overflow Menu Right",
-      "hints": ["overflow", "menu", "dots", "more", "vertical", "ellipsis", "right", "options", "extra", "three dots", "kebab"]
+      "hints": ["overflow", "menu", "dots", "more", "vertical", "ellipsis", "right", "options", "three", "kebab"]
     },
     "papirus_actions_pack-less": {
       "file": "pack-less.png",
@@ -32001,7 +32001,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Kwalletmanager",
-      "hints": ["card", "ID", "wallet", "blue", "stripe", "person", "white", "credentials", "identity", "orange"]
+      "hints": ["card", "id", "wallet", "blue", "stripe", "person", "white", "credentials", "identity", "orange"]
     },
     "papirus_apps_kwave": {
       "file": "kwave.png",
@@ -37622,7 +37622,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "QPhotoRec",
-      "hints": ["camera", "lens", "circle", "colorful", "recovery", "photo", "dark", "segments", "red", "green", "blue", "yellow"]
+      "hints": ["camera", "lens", "circle", "colorful", "recovery", "photo", "segments", "red", "green", "blue"]
     },
     "papirus_apps_qreator": {
       "file": "qreator.png",
@@ -37735,7 +37735,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Quake 3 Team Arena",
-      "hints": ["trident", "logo", "blue", "red", "purple", "dark", "circle", "game", "FPS", "shooter"]
+      "hints": ["trident", "logo", "blue", "red", "purple", "dark", "circle", "game", "fps", "shooter"]
     },
     "papirus_apps_quake4": {
       "file": "quake4.png",
@@ -37812,28 +37812,28 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Qv2ray",
-      "hints": ["bird", "swallow", "streaks", "colorful", "pink", "blue", "purple", "white", "square", "proxy", "V2Ray"]
+      "hints": ["bird", "swallow", "streaks", "colorful", "pink", "blue", "purple", "square", "proxy", "v2ray"]
     },
     "papirus_apps_qv4l2": {
       "file": "qv4l2.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "qv4l2",
-      "hints": ["camera", "lens", "circle", "green", "pink", "magenta", "gear", "settings", "video", "V4L2"]
+      "hints": ["camera", "lens", "circle", "green", "pink", "magenta", "gear", "settings", "video", "v4l2"]
     },
     "papirus_apps_qvge": {
       "file": "qvge.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "qvge",
-      "hints": ["graph", "nodes", "circles", "lines", "edges", "colorful", "green", "pink", "yellow", "blue", "network", "diagram"]
+      "hints": ["graph", "nodes", "circles", "lines", "edges", "colorful", "blue", "network", "diagram", "editor"]
     },
     "papirus_apps_qvidcap": {
       "file": "qvidcap.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "qvidcap",
-      "hints": ["monitor", "TV", "CRT", "screen", "brown", "olive", "dark", "video", "capture", "V4L2"]
+      "hints": ["monitor", "tv", "crt", "screen", "brown", "olive", "dark", "video", "capture", "v4l2"]
     },
     "papirus_apps_qview": {
       "file": "qview.png",
@@ -37854,7 +37854,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Racket Slideshow",
-      "hints": ["monitor", "screen", "Racket", "logo", "red", "blue", "white", "gray", "presentation", "slideshow"]
+      "hints": ["monitor", "screen", "racket", "logo", "red", "blue", "white", "gray", "presentation", "slideshow"]
     },
     "papirus_apps_radicle-upstream": {
       "file": "radicle-upstream.png",
@@ -37868,7 +37868,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RadioTunes",
-      "hints": ["R", "letter", "music", "note", "blue", "white", "rounded", "square", "radio", "streaming"]
+      "hints": ["r", "letter", "music", "note", "blue", "white", "rounded", "square", "radio", "streaming"]
     },
     "papirus_apps_rakarrack": {
       "file": "rakarrack.png",
@@ -37889,14 +37889,14 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Rapid Photo Downloader",
-      "hints": ["SD", "card", "memory", "blue", "red", "two", "overlap", "photo", "download", "import"]
+      "hints": ["sd", "card", "memory", "blue", "red", "two", "overlap", "photo", "download", "import"]
     },
     "papirus_apps_rapidsvn": {
       "file": "rapidsvn.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RapidSVN",
-      "hints": ["face", "pirate", "eye", "patch", "grin", "dark", "gray", "circle", "SVN", "Subversion"]
+      "hints": ["face", "pirate", "eye", "patch", "grin", "dark", "gray", "circle", "svn", "subversion"]
     },
     "papirus_apps_rare": {
       "file": "rare.png",
@@ -37910,14 +37910,14 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Raven Reader",
-      "hints": ["raven", "crow", "bird", "dark", "teal", "green", "circle", "silhouette", "RSS", "reader"]
+      "hints": ["raven", "crow", "bird", "dark", "teal", "green", "circle", "silhouette", "rss", "reader"]
     },
     "papirus_apps_razercommander": {
       "file": "razercommander.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Razer Commander",
-      "hints": ["snake", "three", "heads", "Razer", "logo", "green", "dark", "gray", "square", "gaming", "peripherals"]
+      "hints": ["snake", "three", "heads", "razer", "logo", "green", "dark", "gray", "square", "gaming"]
     },
     "papirus_apps_rclone-browser": {
       "file": "rclone-browser.png",
@@ -37959,7 +37959,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Tangram",
-      "hints": ["tangram", "puzzle", "geometric", "triangles", "colorful", "blue", "purple", "red", "pink", "yellow", "green", "square"]
+      "hints": ["tangram", "puzzle", "geometric", "triangles", "colorful", "blue", "purple", "red", "green", "square"]
     },
     "papirus_apps_reactotron": {
       "file": "reactotron.png",
@@ -37980,14 +37980,14 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RecStudio",
-      "hints": ["binary", "digits", "code", "C", "letter", "green", "yellow", "circle", "decompiler", "reverse"]
+      "hints": ["binary", "digits", "code", "c", "letter", "green", "yellow", "circle", "decompiler", "reverse"]
     },
     "papirus_apps_redeclipse": {
       "file": "redeclipse.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Red Eclipse",
-      "hints": ["eclipse", "sun", "corona", "flames", "red", "dark", "circle", "game", "FPS", "shooter"]
+      "hints": ["eclipse", "sun", "corona", "flames", "red", "dark", "circle", "game", "fps", "shooter"]
     },
     "papirus_apps_redirection": {
       "file": "redirection.png",
@@ -38001,14 +38001,14 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RedisInsight",
-      "hints": ["blocks", "bars", "stacked", "3D", "cube", "red", "dark", "Redis", "database", "logo"]
+      "hints": ["blocks", "bars", "stacked", "3d", "cube", "red", "dark", "redis", "database", "logo"]
     },
     "papirus_apps_reditr": {
       "file": "reditr.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Reditr",
-      "hints": ["planet", "Saturn", "ring", "orbit", "blue", "white", "rounded", "square", "Reddit", "client"]
+      "hints": ["planet", "saturn", "ring", "orbit", "blue", "white", "rounded", "square", "reddit", "client"]
     },
     "papirus_apps_redream": {
       "file": "redream.png",
@@ -38071,7 +38071,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Remmina",
-      "hints": ["arrows", "circle", "blue", "green", "white", "rotating", "connection", "remote", "desktop", "VNC", "RDP"]
+      "hints": ["arrows", "circle", "blue", "green", "rotating", "connection", "remote", "desktop", "vnc", "rdp"]
     },
     "papirus_apps_remnote": {
       "file": "remnote.png",
@@ -38085,77 +38085,77 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RenderDoc",
-      "hints": ["person", "silhouette", "user", "head", "shoulders", "white", "green", "rounded", "square", "graphics", "debugger"]
+      "hints": ["person", "silhouette", "head", "shoulders", "white", "green", "rounded", "square", "graphics", "debugger"]
     },
     "papirus_apps_renoise": {
       "file": "renoise.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Renoise",
-      "hints": ["R", "letter", "rectangle", "tilted", "brown", "orange", "white", "cutout", "music", "tracker", "DAW"]
+      "hints": ["r", "letter", "rectangle", "tilted", "brown", "orange", "cutout", "music", "tracker", "daw"]
     },
     "papirus_apps_renpy": {
       "file": "renpy.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Ren'Py",
-      "hints": ["anime", "girl", "face", "straw", "hat", "pink", "hair", "blue", "circle", "visual", "novel", "engine"]
+      "hints": ["anime", "girl", "face", "hat", "pink", "hair", "blue", "visual", "novel", "engine"]
     },
     "papirus_apps_renpy-demo": {
       "file": "renpy-demo.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Ren'Py Demo",
-      "hints": ["anime", "girl", "face", "pink", "hair", "blue", "circle", "eyes", "visual", "novel", "demo"]
+      "hints": ["anime", "girl", "face", "pink", "hair", "blue", "eyes", "visual", "novel", "demo"]
     },
     "papirus_apps_rescuetime": {
       "file": "rescuetime.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RescueTime",
-      "hints": ["cross", "plus", "clock", "hand", "red", "circle", "white", "gray", "time", "tracking", "productivity"]
+      "hints": ["cross", "plus", "clock", "hand", "red", "circle", "white", "time", "tracking", "productivity"]
     },
     "papirus_apps_residualvm": {
       "file": "residualvm.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "ResidualVM",
-      "hints": ["R", "letter", "bold", "orange", "yellow", "dark", "outline", "3D", "game", "engine", "emulator"]
+      "hints": ["r", "letter", "orange", "yellow", "dark", "outline", "3d", "game", "engine", "emulator"]
     },
     "papirus_apps_resolve": {
       "file": "resolve.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "DaVinci Resolve",
-      "hints": ["circles", "three", "overlapping", "green", "yellow", "blue", "pink", "dark", "rounded", "square", "video", "editing"]
+      "hints": ["circles", "three", "overlapping", "green", "blue", "pink", "dark", "video", "editing", "davinci"]
     },
     "papirus_apps_restic": {
       "file": "restic.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Restic",
-      "hints": ["owl", "bird", "umbrella", "yellow", "red", "cute", "cartoon", "dark", "gray", "circle", "backup"]
+      "hints": ["owl", "bird", "umbrella", "yellow", "red", "cute", "cartoon", "dark", "circle", "backup"]
     },
     "papirus_apps_retroarch": {
       "file": "retroarch.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RetroArch",
-      "hints": ["gamepad", "controller", "pixel", "retro", "white", "dark", "gray", "rounded", "square", "emulator", "gaming"]
+      "hints": ["gamepad", "controller", "pixel", "retro", "white", "dark", "rounded", "square", "emulator", "gaming"]
     },
     "papirus_apps_retropie": {
       "file": "retropie.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RetroPie",
-      "hints": ["joystick", "arcade", "buttons", "red", "green", "yellow", "retro", "gaming", "Raspberry", "Pi", "emulator"]
+      "hints": ["joystick", "arcade", "buttons", "red", "green", "retro", "gaming", "raspberry", "pi", "emulator"]
     },
     "papirus_apps_retroshare": {
       "file": "retroshare.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RetroShare",
-      "hints": ["nodes", "circles", "network", "connected", "lines", "blue", "dark", "gray", "graph", "P2P", "sharing"]
+      "hints": ["nodes", "circles", "network", "connected", "lines", "blue", "dark", "graph", "p2p", "sharing"]
     },
     "papirus_apps_revolt": {
       "file": "revolt.png",
@@ -38169,7 +38169,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Revolt Desktop",
-      "hints": ["R", "letter", "red", "dark", "navy", "blue", "rounded", "square", "chat", "messaging"]
+      "hints": ["r", "letter", "red", "dark", "navy", "blue", "rounded", "square", "chat", "messaging"]
     },
     "papirus_apps_revolt-symbolic": {
       "file": "revolt-symbolic.svg",
@@ -38200,7 +38200,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Rider",
-      "hints": ["RD", "letters", "dark", "orange", "purple", "blue", "rounded", "square", "JetBrains", "IDE", "dotnet"]
+      "hints": ["rd", "letters", "orange", "purple", "blue", "rounded", "square", "jetbrains", "ide", "dotnet"]
     },
     "papirus_apps_rigs-of-rods": {
       "file": "rigs-of-rods.png",
@@ -38221,35 +38221,35 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Riot Web",
-      "hints": ["R", "letter", "speech", "bubble", "blue", "light", "chat", "messaging", "Matrix", "Element"]
+      "hints": ["r", "letter", "speech", "bubble", "blue", "light", "chat", "messaging", "matrix", "element"]
     },
     "papirus_apps_rise-to-ruins": {
       "file": "rise-to-ruins.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Rise to Ruins",
-      "hints": ["R", "letter", "3D", "stone", "gray", "block", "shadow", "tower", "defense", "game"]
+      "hints": ["r", "letter", "3d", "stone", "gray", "block", "shadow", "tower", "defense", "game"]
     },
     "papirus_apps_ristretto": {
       "file": "ristretto.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Ristretto",
-      "hints": ["coffee", "cup", "circle", "blue", "green", "orange", "colorful", "segments", "image", "viewer", "Xfce"]
+      "hints": ["coffee", "cup", "circle", "blue", "green", "orange", "segments", "image", "viewer", "xfce"]
     },
     "papirus_apps_rivals-of-aether": {
       "file": "rivals-of-aether.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Rivals of Aether",
-      "hints": ["dragon", "creature", "A", "letter", "purple", "flowing", "stylized", "fighting", "game", "platform"]
+      "hints": ["dragon", "creature", "a", "letter", "purple", "flowing", "stylized", "fighting", "game", "platform"]
     },
     "papirus_apps_rnote": {
       "file": "rnote.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Rnote",
-      "hints": ["notebook", "paper", "pen", "stroke", "squiggle", "dark", "white", "gray", "spine", "handwriting", "notes"]
+      "hints": ["notebook", "paper", "pen", "stroke", "squiggle", "dark", "white", "spine", "handwriting", "notes"]
     },
     "papirus_apps_roam-research": {
       "file": "roam-research.png",
@@ -38263,7 +38263,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Robo 3T",
-      "hints": ["robot", "face", "eye", "lens", "green", "antenna", "cute", "character", "MongoDB", "database"]
+      "hints": ["robot", "face", "eye", "lens", "green", "antenna", "cute", "character", "mongodb", "database"]
     },
     "papirus_apps_robocraft": {
       "file": "robocraft.png",
@@ -38284,7 +38284,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Rochard",
-      "hints": ["r", "letter", "curved", "hook", "orange", "yellow", "dark", "gray", "rounded", "square", "game"]
+      "hints": ["r", "letter", "curved", "hook", "orange", "yellow", "dark", "rounded", "square", "game"]
     },
     "papirus_apps_rocketchat": {
       "file": "rocketchat.png",
@@ -38312,7 +38312,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "ROG Control Center",
-      "hints": ["eye", "logo", "ASUS", "ROG", "red", "dark", "white", "rounded", "square", "gaming", "settings"]
+      "hints": ["eye", "logo", "asus", "rog", "red", "dark", "rounded", "square", "gaming", "settings"]
     },
     "papirus_apps_rolled-out": {
       "file": "rolled-out.png",
@@ -38326,21 +38326,21 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RPCS3",
-      "hints": ["3", "lines", "horizontal", "white", "purple", "rounded", "square", "PS3", "emulator", "gaming"]
+      "hints": ["3", "lines", "horizontal", "white", "purple", "rounded", "square", "ps3", "emulator", "gaming"]
     },
     "papirus_apps_rpg-maker-mv": {
       "file": "rpg-maker-mv.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "RPG Maker MV",
-      "hints": ["castle", "towers", "blue", "green", "purple", "pixel", "blocks", "fortress", "RPG", "game", "engine"]
+      "hints": ["castle", "towers", "blue", "green", "purple", "pixel", "blocks", "rpg", "game", "engine"]
     },
     "papirus_apps_rrootage": {
       "file": "rrootage.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "rRootage",
-      "hints": ["r", "R", "letters", "text", "dark", "gray", "rounded", "square", "shoot-em-up", "bullet", "game"]
+      "hints": ["r", "letters", "text", "dark", "gray", "rounded", "square", "shooter", "bullet", "game"]
     },
     "papirus_apps_rsibreak": {
       "file": "rsibreak.png",
@@ -38445,49 +38445,49 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Satisfactory",
-      "hints": ["S", "letter", "light", "blue", "dark", "gray", "rounded", "square", "industrial", "factory", "game"]
+      "hints": ["s", "letter", "blue", "dark", "gray", "rounded", "square", "industrial", "factory", "game"]
     },
     "papirus_apps_sauerbraten": {
       "file": "sauerbraten.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Sauerbraten",
-      "hints": ["cube", "brown", "dark", "gray", "red", "orange", "3D", "isometric", "FPS", "game"]
+      "hints": ["cube", "brown", "dark", "gray", "red", "orange", "3d", "isometric", "fps", "game"]
     },
     "papirus_apps_sayonara": {
       "file": "sayonara.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Sayonara",
-      "hints": ["playlist", "rows", "circles", "pills", "white", "orange", "dark", "gray", "rounded", "square", "music", "player"]
+      "hints": ["playlist", "rows", "circles", "pills", "white", "orange", "dark", "music", "player", "audio"]
     },
     "papirus_apps_sc_ide": {
       "file": "sc_ide.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "SuperCollider IDE",
-      "hints": ["concentric", "circles", "rings", "gray", "gradient", "dark", "light", "white", "center", "audio", "programming"]
+      "hints": ["concentric", "circles", "rings", "gray", "gradient", "dark", "white", "center", "audio", "programming"]
     },
     "papirus_apps_scania-truck-driving-simulator": {
       "file": "scania-truck-driving-simulator.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Scania Truck Driving Simulator",
-      "hints": ["wheel", "spokes", "star", "gold", "yellow", "red", "circle", "blue", "ring", "truck", "simulator", "game"]
+      "hints": ["wheel", "spokes", "star", "gold", "red", "circle", "ring", "truck", "simulator", "driving"]
     },
     "papirus_apps_scans2pdf": {
       "file": "scans2pdf.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Scans2PDF",
-      "hints": ["diagonal", "stripes", "purple", "red", "orange", "yellow", "green", "blue", "bar", "scanner", "dark", "rectangle", "PDF", "document"]
+      "hints": ["diagonal", "stripes", "purple", "red", "orange", "blue", "scanner", "dark", "pdf", "document"]
     },
     "papirus_apps_scantailor": {
       "file": "scantailor.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "ScanTailor",
-      "hints": ["S", "curve", "red", "cross", "plus", "white", "tan", "beige", "square", "dashed", "line", "scan", "document"]
+      "hints": ["s", "curve", "red", "cross", "white", "tan", "square", "dashed", "scan", "document"]
     },
     "papirus_apps_scenarist": {
       "file": "scenarist.png",
@@ -38501,7 +38501,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "SCID",
-      "hints": ["chessboard", "grid", "gold", "yellow", "S", "letter", "purple", "navy", "squares", "chess", "database"]
+      "hints": ["chessboard", "grid", "gold", "yellow", "s", "letter", "purple", "navy", "chess", "database"]
     },
     "papirus_apps_scilab": {
       "file": "scilab.png",
@@ -38522,7 +38522,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "Scout App",
-      "hints": ["dog", "face", "terrier", "white", "brown", "black", "eyes", "nose", "ears", "animal", "Sass", "CSS"]
+      "hints": ["dog", "face", "terrier", "white", "brown", "black", "animal", "nose", "sass", "css"]
     },
     "papirus_apps_scratch": {
       "file": "scratch.png",
@@ -38565,21 +38565,21 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "INSTEAD",
-      "hints": ["book", "blue", "red", "bookmark", "ribbon", "gears", "cogs", "yellow", "gold", "interactive", "fiction"]
+      "hints": ["book", "blue", "red", "bookmark", "ribbon", "gears", "cogs", "gold", "interactive", "fiction"]
     },
     "papirus_apps_sdrangel": {
       "file": "sdrangel.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "SDRangel",
-      "hints": ["S", "letter", "blue", "wing", "halo", "angel", "dark", "gray", "rounded", "square", "radio", "SDR"]
+      "hints": ["s", "letter", "blue", "wing", "halo", "angel", "dark", "square", "radio", "sdr"]
     },
     "papirus_apps_seamonkey": {
       "file": "seamonkey.png",
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "SeaMonkey",
-      "hints": ["bird", "blue", "purple", "circle", "teal", "green", "tail", "profile", "left", "browser", "internet"]
+      "hints": ["bird", "blue", "purple", "circle", "teal", "green", "tail", "profile", "browser", "internet"]
     },
     "papirus_apps_searchmonkey": {
       "file": "searchmonkey.png",
@@ -38593,7 +38593,7 @@
       "sizes": [16, 22, 24, 32, 48, 64],
       "context": "apps",
       "label": "SecureCRT",
-      "hints": ["terminal", "console", "gray", "prompt", "dollar", "cursor", "purple", "WiFi", "signal", "badge", "SSH"]
+      "hints": ["terminal", "console", "gray", "prompt", "dollar", "cursor", "purple", "wifi", "signal", "ssh"]
     },
     "papirus_apps_security-high": {
       "file": "security-high.png",
@@ -63634,14 +63634,14 @@
       "sizes": [16, 22, 24],
       "context": "status",
       "label": "Indicator Keyboard Cr",
-      "hints": ["keyboard", "language", "input", "Croatian", "layout", "indicator", "Cr", "locale", "typing", "panel"]
+      "hints": ["keyboard", "language", "input", "croatian", "layout", "indicator", "cr", "locale", "typing", "panel"]
     },
     "papirus_status_indicator-keyboard-Cs": {
       "file": "indicator-keyboard-Cs.svg",
       "sizes": [16, 22, 24],
       "context": "status",
       "label": "Indicator Keyboard Cs",
-      "hints": ["keyboard", "language", "input", "Czech", "layout", "indicator", "Cs", "locale", "typing", "panel"]
+      "hints": ["keyboard", "language", "input", "czech", "layout", "indicator", "cs", "locale", "typing", "panel"]
     },
     "papirus_status_indicator-keyboard-Da": {
       "file": "indicator-keyboard-Da.svg",

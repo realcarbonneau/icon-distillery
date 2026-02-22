@@ -2108,21 +2108,21 @@
     "oxygen_actions_im-gadugadu": {
       "file": "im-gadugadu.png",
       "sizes": [22, 32, 48],
-      "hints": ["gadugadu", "im", "instant-message", "chat", "smiley", "sun", "messenger"],
+      "hints": ["gadugadu", "im", "instant", "message", "chat", "smiley", "sun", "messenger"],
       "label": "Im Gadugadu",
       "context": "actions"
     },
     "oxygen_actions_im-google": {
       "file": "im-google.png",
       "sizes": [22, 32, 48],
-      "hints": ["google", "im", "instant-message", "chat", "talk", "messenger", "gtalk"],
+      "hints": ["google", "im", "instant", "message", "chat", "talk", "messenger", "gtalk"],
       "label": "Im Google",
       "context": "actions"
     },
     "oxygen_actions_im-google-talk": {
       "file": "im-google-talk.png",
       "sizes": [22, 32, 48],
-      "hints": ["google-talk", "gtalk", "im", "chat", "voice", "messenger", "hangouts"],
+      "hints": ["google", "talk", "gtalk", "im", "chat", "voice", "messenger", "hangouts"],
       "label": "Im Google Talk",
       "context": "actions"
     },
@@ -2863,7 +2863,7 @@
     "oxygen_actions_mixer-lfe": {
       "file": "mixer-lfe.png",
       "sizes": [22],
-      "hints": ["mixer", "lfe", "subwoofer", "bass", "speaker", "audio", "low-frequency"],
+      "hints": ["mixer", "lfe", "subwoofer", "bass", "speaker", "audio", "low", "frequency"],
       "label": "Mixer Lfe",
       "duplicates": [],
       "context": "actions"
@@ -3028,7 +3028,7 @@
     "oxygen_actions_object-order-back": {
       "file": "object-order-back.png",
       "sizes": [16],
-      "hints": ["object", "order", "back", "layer", "behind", "arrange", "stack", "z-order"],
+      "hints": ["object", "order", "back", "layer", "behind", "arrange", "stack", "depth"],
       "label": "Object Order Back",
       "duplicates": [],
       "context": "actions"
@@ -3188,7 +3188,7 @@
     "oxygen_actions_page-2sides": {
       "file": "page-2sides.png",
       "sizes": [16, 22, 32],
-      "hints": ["page", "duplex", "double-sided", "print", "two", "sides", "document"],
+      "hints": ["page", "duplex", "double", "sided", "print", "two", "sides", "document"],
       "label": "Page 2Sides",
       "context": "actions"
     },
@@ -3350,7 +3350,7 @@
     "oxygen_actions_resource-calendar-child-insert": {
       "file": "resource-calendar-child-insert.png",
       "sizes": [16, 22, 32, 48],
-      "hints": ["calendar", "child", "insert", "add", "schedule", "event", "resource", "sub-event"],
+      "hints": ["calendar", "child", "insert", "add", "schedule", "event", "resource", "subevent"],
       "label": "Resource Calendar Child Insert",
       "context": "actions"
     },
@@ -3629,7 +3629,7 @@
     "oxygen_actions_system-log-out": {
       "file": "system-log-out.png",
       "sizes": [16, 22, 32, 48, 64, 128],
-      "hints": ["logout", "log-out", "exit", "sign-out", "arrow", "down", "leave", "session"],
+      "hints": ["logout", "log", "exit", "signout", "arrow", "down", "leave", "session"],
       "label": "System Log Out",
       "context": "actions"
     },
@@ -4231,7 +4231,7 @@
     "oxygen_actions_view-catalog": {
       "file": "view-catalog.png",
       "sizes": [32, 48],
-      "hints": ["catalog", "chart", "bar-chart", "view", "statistics", "colorful", "data"],
+      "hints": ["catalog", "chart", "bar", "view", "statistics", "colorful", "data", "graph"],
       "label": "View Catalog",
       "context": "actions"
     },
@@ -4323,7 +4323,7 @@
     "oxygen_actions_view-credit-card-account": {
       "file": "view-credit-card-account.png",
       "sizes": [32, 48],
-      "hints": ["credit-card", "account", "payment", "card", "bank", "finance", "plastic"],
+      "hints": ["credit", "account", "payment", "card", "bank", "finance", "plastic"],
       "label": "View Credit Card Account",
       "context": "actions"
     },
@@ -4379,7 +4379,7 @@
     "oxygen_actions_view-financial-payment-mode": {
       "file": "view-financial-payment-mode.png",
       "sizes": [32, 48],
-      "hints": ["payment", "credit-card", "money", "financial", "bank", "house", "mode"],
+      "hints": ["payment", "credit", "card", "money", "financial", "bank", "house", "mode"],
       "label": "View Financial Payment Mode",
       "context": "actions"
     },
@@ -4443,14 +4443,14 @@
     "oxygen_actions_view-income-categories": {
       "file": "view-income-categories.png",
       "sizes": [32, 48],
-      "hints": ["income", "categories", "money-bag", "calculator", "budget", "earnings", "finance"],
+      "hints": ["income", "categories", "money", "bag", "calculator", "budget", "earnings", "finance"],
       "label": "View Income Categories",
       "context": "actions"
     },
     "oxygen_actions_view-investment": {
       "file": "view-investment.png",
       "sizes": [32, 48],
-      "hints": ["investment", "chart", "growth", "money", "dollar", "bar-chart", "finance"],
+      "hints": ["investment", "chart", "growth", "money", "dollar", "bar", "finance", "graph"],
       "label": "View Investment",
       "context": "actions"
     },
@@ -4900,7 +4900,7 @@
     "oxygen_actions_window-suppressed": {
       "file": "window-suppressed.png",
       "sizes": [48],
-      "hints": ["window", "suppressed", "blocked", "popup", "close", "red-x", "deny"],
+      "hints": ["window", "suppressed", "blocked", "popup", "close", "red", "deny", "forbidden"],
       "label": "Window Suppressed",
       "context": "actions"
     },
@@ -5119,7 +5119,7 @@
     "oxygen_apps_baloo": {
       "file": "baloo.png",
       "sizes": [128],
-      "hints": ["baloo", "search", "index", "magnifying-glass", "paw", "find", "file-search"],
+      "hints": ["baloo", "search", "index", "magnifier", "paw", "find", "file", "lookup"],
       "label": "Baloo",
       "duplicate_of": "oxygen_apps_nepomuk",
       "context": "apps"
@@ -5232,7 +5232,7 @@
     "oxygen_apps_filelight": {
       "file": "filelight.png",
       "sizes": [22, 32, 48, 64],
-      "hints": ["filelight", "disk", "usage", "pie-chart", "storage", "hard-drive", "analyze"],
+      "hints": ["filelight", "disk", "usage", "pie", "chart", "storage", "drive", "analyze"],
       "label": "Filelight",
       "context": "apps"
     },
