@@ -65,10 +65,13 @@ def main():
 
     icons = data.get("icons", {})
     total = len(icons)
-    done = sum(1 for v in icons.values() if "hints" in v)
+    target_hints = 10
+    done = sum(1 for v in icons.values()
+               if len(v.get("hints", [])) >= target_hints)
 
     for icon_id, icon_data in icons.items():
-        if "hints" in icon_data:
+        existing_hints = icon_data.get("hints", [])
+        if len(existing_hints) >= target_hints:
             continue
 
         # Found the next Named Icon to process
@@ -131,6 +134,8 @@ def main():
 
         print(f"CURRENT JSON ENTRY ({rel_path(json_path)})")
         print(f"  \"icon_id\": \"{icon_id}\"")
+        if existing_hints:
+            print(f"  EXISTING HINTS: {existing_hints}")
 
         # Display files grouped by type, each section sorted by size descending
         print("DISK_FILES:")
@@ -142,10 +147,12 @@ def main():
 
         # Worker instruction blocks
         print("NEXT STEP - WORKER INSTRUCTIONS")
-        print("- View the largest PNG file (the first PNG in the list). Then, generate 5-8 \"hints\"")
-        print("  based on what you SEE in the image + filename context. Then, edit the JSON to")
-        print("  add \"hints\": [...] array for this icon's entry. Format: \"hints\" must be a")
+        print("- View the largest PNG file (the first PNG in the list). Then, generate 10 \"hints\"")
+        print("  based on what you SEE in the image + filename, path, label, context, and")
+        print("  existing hints if any. Then, edit the JSON to add \"hints\": [...] array for")
+        print("  this icon's entry. Format: \"hints\" must be a")
         print("  SINGLE LINE array, e.g.: \"hints\": [\"keyword1\", \"keyword2\", ...]")
+        print("- IMPORTANT: Each hint must be a single unigram (one word, no hyphens, no spaces).")
         print("- CRITICAL: ONLY edit the JSON file manually (using the Edit tool)! NEVER use")
         print("  scripts, json.dump, or any programmatic method to write the JSON file!")
         print("- !!! NEVER read, open, or interpret SVG/SVGZ/SVGX files! Only view PNG images! !!!")
@@ -164,7 +171,7 @@ def main():
         return
 
     # If we get here, no icons need processing
-    print(f"ALL_DONE ({done}/{total} icons have hints)")
+    print(f"ALL_DONE ({done}/{total} icons have {target_hints}+ hints)")
 
 
 if __name__ == "__main__":
