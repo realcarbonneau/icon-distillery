@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+ <title>Markdown</title>
+ <!-- Markdown as a square icon, drawn for reading at small sizes: the
+      mark's M with its down arrow under it instead of beside it, on a
+      tile. The arrow's tail is as wide as the M's legs and rises
+      between them without touching, so the arrow is long and the M
+      tall. Side by side, as the official mark has them, the pair is
+      twice as wide as tall and its letters 6 pixels high in a 16 pixel
+      icon. Drawn on a 32 unit grid: 32, 64 and 128 are exact. 16 and
+      22 have their own drawings (markdown_icon-16.svg, -22.svg):
+      neither scales from this grid on whole pixels -->
+ <rect width="32" height="32" rx="6" fill="#1f7fd1"/>
+ <path fill="#ffffff" d="M4 20V2h6l6 6 6-6h6v18h-6V8l-6 6-6-6v12zM13 16h6v8h6l-9 6-9-6h6z"/>
+</svg>

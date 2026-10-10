@@ -63,6 +63,27 @@
       "label": "Paste Subitem",
       "context": "actions"
     },
+    "taskcoach_actions_markdown_icon": {
+      "file": "markdown_icon.png",
+      "sizes": [16, 22, 32, 48, 64, 128],
+      "hints": ["markdown", "md", "arrow", "down", "blue", "tile", "preview", "format"],
+      "label": "Markdown Icon",
+      "context": "actions"
+    },
+    "taskcoach_actions_markdown_side_blue_icon": {
+      "file": "markdown_side_blue_icon.png",
+      "sizes": [16, 22, 32, 48, 64, 128],
+      "hints": ["markdown", "md", "arrow", "down", "beside", "blue", "tile", "white"],
+      "label": "Markdown Side Blue Icon",
+      "context": "actions"
+    },
+    "taskcoach_actions_markdown_side_navy_icon": {
+      "file": "markdown_side_navy_icon.png",
+      "sizes": [16, 22, 32, 48, 64, 128],
+      "hints": ["markdown", "md", "arrow", "down", "beside", "navy", "tile", "white"],
+      "label": "Markdown Side Navy Icon",
+      "context": "actions"
+    },
     "taskcoach_actions_newsub": {
       "file": "newsub.png",
       "sizes": [16, 22, 32],

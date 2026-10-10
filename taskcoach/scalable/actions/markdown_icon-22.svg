@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+ <title>Markdown, 22 pixel</title>
+ <!-- The 22 pixel drawing of markdown_icon.svg: legs and tail 4 pixels
+      wide, on this size's own grid -->
+ <rect width="22" height="22" rx="4" fill="#1f7fd1"/>
+ <path fill="#ffffff" d="M3 14V2h4l4 4 4-4h4v12h-4V6l-4 4-4-4v8zM9 11h4v5h4l-6 4-6-4h4z"/>
+</svg>

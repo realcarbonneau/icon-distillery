@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+ <title>Markdown, 16 pixel</title>
+ <!-- The 16 pixel drawing of markdown_icon.svg. Legs and tail are 3
+      pixels wide with 2 pixel gaps, so the M is 13 wide: an odd
+      number, which centres only on a tile 15 wide. The last column is
+      left empty for that -->
+ <rect width="15" height="16" rx="3" fill="#1f7fd1"/>
+ <path fill="#ffffff" d="M1 10V1h3l3.5 3L11 1h3v9h-3V4L7.5 7 4 4v6zM6 8h3v4h3l-4.5 3L3 12h3z"/>
+</svg>

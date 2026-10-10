@@ -55,3 +55,28 @@ The script originally used CairoSVG (`cairosvg.svg2png()`) but was switched to I
 - **ViewBox overflow not clipped** — The same AS.svg has eagle drawing paths with y-coordinates extending to ~766, beyond its `viewBox="0 0 1000 500"`. Per the SVG spec, the root `<svg>` element defaults to `overflow="hidden"`, so content outside the viewBox should be invisible. CairoSVG does not implement this: "Clipping thanks to the overflow property is not supported" (cairosvg.org/svg_support). This rendered a visible "shadow eagle" below the flag.
 
 **Inkscape** handles both cases correctly — it resolves entity declarations and clips to the viewBox per the SVG spec. The tradeoff is speed (subprocess per icon vs in-process library call), but correctness wins.
+
+## The taskcoach Theme: Own Drawings
+
+Task Coach's custom icons are drawn here, not taken from an upstream
+set. The Markdown icons (`markdown_icon`, `markdown_side_navy_icon`,
+`markdown_side_blue_icon`) are the first with SVG sources, in
+`taskcoach/scalable/actions/`.
+
+- **One drawing per pixel grid.** A drawing is sharp only at sizes its
+  grid divides. `markdown_icon.svg` is on a 32 unit grid (32, 64, 128);
+  `markdown_icon-16.svg` and `markdown_icon-22.svg` are the 16 and 22
+  pixel drawings. The side-by-side icons are on a 16 unit grid (16, 32,
+  48, 64, 128) with a `-22.svg` each. The size suffix marks a drawing
+  for that size only.
+- **Rendered by hand.** `icon_render_png.py` takes one SVG per icon and
+  writes `{size}x{size}/{context}/`, which this flat theme does not
+  have (`16x16/` holds the PNGs directly). Render each size with the
+  same Inkscape call into `{size}x{size}/`:
+  `inkscape FILE.svg --export-type=png --export-filename=OUT.png --export-width=N`.
+  `icon_build_check_icons.py taskcoach` then checks the sizes against
+  `icons.json`; it skips `scalable/`, which `index.theme` does not list.
+- **Which is used.** Task Coach ships `markdown_icon` (the M over its
+  down arrow, on a blue tile) at 16, 22 and 32; the two side-by-side
+  icons are alternates kept here only. The reasons are in Task Coach's
+  `docs/ICON_LIBRARY.md`, "TaskCoach Custom Icons".
