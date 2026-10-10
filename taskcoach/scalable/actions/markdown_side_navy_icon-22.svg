@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+ <title>Markdown, side by side, navy, 22 pixel</title>
+ <!-- The 22 pixel drawing of markdown_side_navy_icon.svg: 16 does not
+      scale to 22 on whole pixels, so this size has its own grid -->
+ <rect width="22" height="22" rx="4" fill="#24364f"/>
+ <path fill="#ffffff" d="M1 16V6h3l2.5 2.500L9 6h3v10H9V9l-2.500 2.500L4 9v7zM15 6h3v6h3l-4.500 4.500L12 12h3z"/>
+</svg>

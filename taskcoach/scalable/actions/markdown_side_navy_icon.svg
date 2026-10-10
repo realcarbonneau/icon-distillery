@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+ <title>Markdown, side by side, navy</title>
+ <!-- The alternate to markdown_icon.svg: the M and the down arrow side
+      by side as in the official mark, the M as wide as it is tall and
+      the arrowhead touching it, white on a navy tile. Drawn on the 16
+      pixel grid, so 32, 48, 64 and 128 are exact multiples; 22 has its
+      own drawing, markdown_side_navy_icon-22.svg -->
+ <rect width="16" height="16" rx="3" fill="#24364f"/>
+ <path fill="#ffffff" d="M1 12V4h2l2 3 2-3h2v8H7V7L5 10 3 7v5zM11 4h2v4h2l-3 4-3-4h2z"/>
+</svg>

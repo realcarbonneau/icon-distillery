@@ -1077,8 +1077,8 @@ class ControlsPanel(wx.Panel):
             self, popup_labels, self._theme_ids,
             self._theme_available, self._theme_labels,
             size=(220, -1))
-        # Select oxygen and papirus by default
-        default_themes = {"nuvola", "oxygen", "papirus", "noto-emoji"}
+        # Select these themes by default
+        default_themes = {"nuvola", "oxygen", "papirus", "noto-emoji", "taskcoach"}
         for i, theme_id in enumerate(self._theme_ids):
             if theme_id in default_themes and self._theme_available.get(theme_id):
                 self._theme_combo.check(i, True)
